@@ -5,28 +5,18 @@ using UnityEngine.UI;
 
 public class BeatDisplay : MonoBehaviour
 {
-    Image _display;
+    [SerializeField] BeatManager _beatManager;
+    [SerializeField] Slider _sliderL2R;
+    [SerializeField] Slider _sliderR2L;
 
-    [SerializeField] Color _displayColor;
-    [SerializeField] Color _highlightColor;
-
-    const float DISPLAY_TIME = 0.2f;
-
-    private void Start()
+    private void Update()
     {
-        _display = GetComponent<Image>();
-        _display.color = _displayColor;
+        _sliderL2R.value = MyNormalize(_beatManager.ClipProgress);
+        _sliderR2L.value = MyNormalize(_beatManager.ClipProgress);
     }
 
-    public void Highlight()
+    float MyNormalize(float value)
     {
-        _display.color = _highlightColor;
-        Invoke("UnHighlight", DISPLAY_TIME);
+        return (value - Mathf.Floor(value))*10;
     }
-
-    void UnHighlight()
-    {
-        _display.color = _displayColor;
-    }
-
 }

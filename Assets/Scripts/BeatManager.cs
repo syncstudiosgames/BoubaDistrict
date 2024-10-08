@@ -12,15 +12,12 @@ public class BeatManager : MonoBehaviour
     AudioSource _audioSource;
     float _errorThreshold = 0.10f;
 
-    
-
     int _lastExaminedBeat;
     bool _windowOpen = true;
-    event Action _openWindowEvent;
-    event Action _closeWindowEvent;
-
 
     [SerializeField] private Interval[] _intervals;
+
+    public float ClipProgress { get { return _audioSource.timeSamples / (_audioSource.clip.frequency * (60f / _bpm)); } } // Playback position in PCM samples / (frequency * beat length)
 
     public void LoadInfo(int bpm, AudioSource audioSource, float errorThreshold)
     {
@@ -38,7 +35,7 @@ public class BeatManager : MonoBehaviour
     {
         foreach (var interval in _intervals)
         {
-            float clipProgress =    // Clip progress messured in samples (?). Each whole number is a black/beat.
+            float clipProgress =    
                 (
                 _audioSource.timeSamples / (_audioSource.clip.frequency * interval.GetBeatLength(_bpm))
                 );
