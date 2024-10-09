@@ -14,6 +14,12 @@ public class NoteManager : MonoBehaviour
     [SerializeField] List<Note> notes;
     List<Note> noteBuffer = new List<Note>();
 
+    event Action _onNoteLogged;
+    public event Action OnNoteLogged { add { _onNoteLogged += value; } remove { _onNoteLogged -= value; } }
+
+    public IReadOnlyList<Note> Notes {  get { return notes.AsReadOnly(); } }
+    public IReadOnlyList<Note> NoteBuffer { get { return noteBuffer.AsReadOnly(); } }
+
     public void LogNote(InputAction inputAction)
     {
         foreach (var note in notes)
@@ -21,6 +27,7 @@ public class NoteManager : MonoBehaviour
             if(note.Action == inputAction)
             {
                 noteBuffer.Add(note);
+                _onNoteLogged?.Invoke();
                 return;
             }
         }

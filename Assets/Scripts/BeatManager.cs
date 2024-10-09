@@ -61,7 +61,7 @@ public class BeatManager : MonoBehaviour
                 {
                     // Window open.
                     _windowOpen = true;
-                    Debug.Log($"Window open! at {clipProgress}");
+                    // Debug.Log($"Window open! at {clipProgress}");
                 }
             }
             else
@@ -72,7 +72,7 @@ public class BeatManager : MonoBehaviour
                     // Wndow closed.
                     _windowOpen = false;
                     _lastExaminedBeat = closestBeat;
-                    Debug.Log($"Window closed! at {clipProgress}");
+                    // Debug.Log($"Window closed! at {clipProgress}");
                 }
             }
         }
