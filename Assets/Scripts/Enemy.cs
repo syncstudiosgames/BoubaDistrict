@@ -17,6 +17,10 @@ public class Enemy : MonoBehaviour
         CreateSequence();
         _noteManager.OnNoteLogged += CheckSequence;
 
+        // Renderizar secuencia:
+        // Coger sprites de las n notas de death sequence.
+        // Crear componentes image con el sprrite y añadirlos al canva.
+
         Print();
     }
     public void Print()

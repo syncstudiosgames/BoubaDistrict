@@ -55,10 +55,12 @@ public class Note
 {
     public string noteName;
     public InputActionAsset actions;
+    [SerializeField] Sprite _sprite;
     
     [SerializeField] int actionIndex;
 
     public InputAction Action { get { return actions.actionMaps[0].actions[actionIndex]; } }
+    public Sprite Sprite { get { return _sprite; } }
 
     public override string ToString()
     {
