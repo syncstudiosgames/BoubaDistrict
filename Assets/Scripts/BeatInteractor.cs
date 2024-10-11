@@ -5,41 +5,51 @@ using UnityEngine.InputSystem;
 
 public class BeatInteractor : MonoBehaviour
 {
+    #region Variables & Propeties
     [SerializeField] BeatManager _beatManager;
     [SerializeField] NoteManager _noteManager;
     [SerializeField] PlayerInput _playerInput;
 
     [SerializeField] Cooldown _cooldown;
+    #endregion
 
-    private void Start()
-    {
-        _playerInput.onActionTriggered += RecieveInput;
-    }
+    #region Public Methods
     public void RecieveInput(InputAction.CallbackContext context)
     {
-        if (!context.performed) return;
+        if (!context.performed) return; // An action goes through three phases when trigger: Started, Performed and Cancelled.
+                                        // Execute this code only if in the performed phase.
 
-        if (_beatManager.IsOnBeat())
+        if (_beatManager.IsOnBeat())    // If the note was performed on beat.
         {
+            // Due to the error threshold the user may input multiple notes on the same beat so a cooldown implementation is required.
+            // NOTE: The cooldown input must be grater than errorThreshold*2 wich can lead to potential problems. 
+            // Ideally the cooldown resets when the beat window closes.
+            // Cooldown time and clip progress are not messured by the same units so errors may arise.
+
             if (_cooldown.IsCoolingDown) return;
 
             _noteManager.LogNote(context.action);
-            _noteManager.PrintNoteBuffer();
 
             _cooldown.StartCooldown();
         }
         else
         {
-            Debug.Log("Not on beat!");
+            // If the user 
             _noteManager.ResetBuffer();
+            Debug.Log("Not on beat!");
+            
         }
        
 
     }
-    private void Update()
-    {
+    #endregion
 
+    #region Private Methods
+    private void Start()
+    {
+        _playerInput.onActionTriggered += RecieveInput;
     }
+    #endregion
 }
 
 [System.Serializable]
