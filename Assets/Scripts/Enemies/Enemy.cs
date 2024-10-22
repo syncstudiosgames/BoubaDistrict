@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
         _complexity = Mathf.Clamp(complexity, 1, 4);
 
         CreateSequence();
+        _noteManager.OnNoteLogged += CheckSequence;
 
         // Pasar la secuencia generada al EnemyDisplay para que la renderice
         if (enemyDisplay != null)
@@ -41,18 +42,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "EnemyGoal")
-        {
-            _enemyManager.EnemyHit(_complexity);
-            Die();
-        }
-    }
-
     void CreateSequence()
     {
-        for(int i = 0; i<_complexity; i++)
+        for (int i = 0; i < _complexity; i++)
         {
             _deathSequence.Add(GetRandomNote());
         }
@@ -63,10 +55,37 @@ public class Enemy : MonoBehaviour
         var notes = _noteManager.Notes;
         return notes[Random.Range(0, notes.Count - 1)];
     }
+    void CheckSequence()
+    {
+        var noteBuffer = _noteManager.NoteBuffer;
 
+        if (noteBuffer.Count < _complexity) return;
 
+        for (int myNote = _complexity - 1, bufferNote = noteBuffer.Count - 1; myNote >= 0; myNote--, bufferNote--)
+        {
+            if (_deathSequence[myNote] != noteBuffer[bufferNote]) return;
+        }
+
+        Restore();
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "EnemyGoal")
+        {
+            _enemyManager.EnemyHit(_complexity);
+            Die();
+        }
+    }
+
+    void Restore()
+    {
+        _enemyManager.EnemyCured(_complexity);
+        Destroy(gameObject);
+    }
     void Die()
     {
+        _enemyManager.EnemyHit(_complexity);
         Destroy(gameObject);
     }
 }

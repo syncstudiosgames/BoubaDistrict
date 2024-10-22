@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] Rigidbody _rb;
-    float _moveSpeed = 50;
+    float _moveSpeed = 10;
     Vector3 _moveDirection;
     public void SetUp(GameObject goal)
     {

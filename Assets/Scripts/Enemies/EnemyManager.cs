@@ -13,9 +13,13 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] GameObject _enemyGoal;
 
     event Action<int> _onEnemyHit;
+    event Action<int> _onEnemyCured;
 
     public void EnemyHit(int damage) { _onEnemyHit?.Invoke(damage); }
     public event Action<int> OnEnemyHit { add {  _onEnemyHit += value; } remove { _onEnemyHit -= value; } }
+
+    public void EnemyCured(int healthPoints) { _onEnemyCured?.Invoke(healthPoints); }
+    public event Action<int> OnEnemyCured {  add { _onEnemyCured += value;} remove { _onEnemyCured -= value; } }
 
     float _spawningInterval = 2f;
     const float INTERVAL_ACELERATION_RATE = 0.05f;
@@ -23,6 +27,9 @@ public class EnemyManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(SpawningCoroutine());
+
+        _onEnemyCured += (int healthPoints) => { Debug.Log("EnemyCured!"); };
+        _onEnemyHit += (int damage) => { Debug.Log("EnemyHitYou"); };
     }
 
     IEnumerator SpawningCoroutine()
