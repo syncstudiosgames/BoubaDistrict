@@ -145,3 +145,185 @@ Usuarios más comprometidos con el producto, son personas interesadas en el gén
 
 #### Creadores de Contenido
 Usuarios minoritarios que se dedican total o parcialmente a crear contenido en redes o plataformas. Son un grupo de referencia para el resto con gran capacidad de influencia. Su compromiso con el producto es máxima y busca aumentar su reputación dentro del juego o mejorar su contenido a través de los cosméticos que ofrecemos, a esto se le suma su necesidad de  probar o mostrar nuevas características. Se sitúan en el centro de la horquilla de edad y su ocupación suele ser exclusiva o parcialmente crear contenido. Dentro de este grupo existen dos subdivisiones: Aquellos que centran su contenido basado en habilidad y dominación de las mecánicas de juego –grupo que disfruta de los retos más extremos y con mayor dificultad–; y, por otra parte, aquellos cuyo contenido gira alrededor de su personalidad y carisma –grupo que disfruta de retos más relajados, características más casuales y que les otorguen espacio para generar contenido humorístico y de entretenimiento.
+
+## 1.3 Mapa de empatía
+### ¿Qué piensa y qué siente?
+Nuestro usuario medio compagina trabajo o estudios con aficiones, pareja o amistades, tiene aspiraciones personales y profesionales e invierte gran parte de su día en desarrollarse a sí mismo, sin embargo sus ratos libres decide dedicarlos al gaming. Tiene, por tanto, un horario estructurado y una rutina diaria y buscan un producto que les aporte constancia y que puedan integrar en su día a día sin sacrificar otros aspectos. Sus sesiones de juego representan para ellos un momento de entretenimiento y evasión: un "pico de serotonina" en su día.
+
+### ¿Qué ve?
+Su entorno es eminentemente joven. La gente a su alrededor está familiarizada con los videojuegos y muchos disfrutan de ellos de forma casual, para algunos de ellos forman parte de sus hobbies. 
+
+Sus personas más cercanas son sociables y disfrutan de la conversación de temas varios, tienen gustos afines y son de mente abierta. Si el grupo decide probar algo todos lo hacen y comparten sus impresiones retroalimentando colectivamente el interés por dicha cosa.
+
+
+### ¿Qué oye?
+Nuestro usuario atiende a diferentes contextos sociales: universidad, amigos, ambiente de trabajo, pareja… Como es natural busca integrarse en su entorno y encontrar aficiones en común con la gente que le rodea, por lo general tiene gustos flexibles y está dispuesto a probar un producto si se lo recomiendan. Disfruta de compartir hobbies y temas de conversación con su grupo.
+
+### ¿Qué dice y qué hace?
+Teniendo como base un usuario social, integral (con aficiones y aspiraciones) y que busca pequeñas ventanas de entretenimiento, podemos extrapolar una rutina diaria donde atiende a sus obligaciones, comparte tiempo de calidad con personas de su entorno y disfruta en su tiempo libre de nuestro producto u otros –dedicándole de media entre una y dos horas. 
+
+Debido a que establece conversaciones rutinariamente con las personas cercanas a él, en ocasiones surge el tema de nuestro producto: si la otra persona no conoce el juego, como ambos comparten gustos similares es posible que surja una recomendación, si ambos ya conocen el juego, comentan nuevo contenido, nuevos récords o tal vez juegan una partida juntos.
+
+### Esfuerzos.
+El jugador tiene un fácil acceso inicial al producto: el juego es gratis y puede jugarse desde una variedad de dispositivos desde la web. El acercamiento al cliente se produce desde su entorno y sus allegados. 
+
+El equilibrio entre frustración-motivación se mantiene a través de un cuidadoso estudio entre la dificultad y progresión del juego y la accesibilidad de contenido adicional. El usuario encuentra resistencia cada día de tal manera que la experiencia se mantiene un reto, en ocasiones alcanza un estado de frustración y agota su tiempo de juego, pero esto solo contribuye a aumentar las probabilidades de que al día siguiente regrese al producto.
+
+### Resultados.
+El cliente considera un éxito el rendimiento de nuestro producto cuando es capaz de integrarlo en su rutina diaria sin que se convierta también en un elemento tedioso ni repetitivo. Idealmente la sensación de novedad, de reto y estímulo se mantiene el máximo tiempo posible. El éxito se sucede cuando se logra preservar ese efecto de “pico de serotonina” y sana competitividad consigo mismo.
+
+## 1.4 Caja de herramientas
+
+
+#### 1. Creadores de contenido
+- **De Sync Studios a los Creadores de contenido:** Sync Studios proporciona su producto a creadores de contenido de manera anticipada para que lo utilicen en sus plataformas, para hacer reseñas y streams. Además les proporciona dinero como pago por sus promociones.
+
+- **De los Creadores de contenido a Sync Studios:** Aportan información como reacciones de la audiencia o comentarios sobre el rendimiento del juego. También proporcionan visibilidad mediante sus streams, vídeos o redes sociales.
+
+#### 2. Otras Empresas
+- **De Otras Empresas a Sync Studios:** Las empresas colaboradoras aportan información (datos sobre tendencias de mercado, análisis de competencia, etc.), visibilidad (alianzas en marketing, eventos o promociones conjuntas) y servicios (infraestructura tecnológica o plataformas de distribución).
+
+- **De Sync Studios a Otras Empresas:** Sync Studios paga a estas empresas con dinero a cambio de sus servicios, colaboraciones o campañas de visibilidad.
+
+#### 3. Compradores/Jugadores
+- **De Sync Studios a los Compradores/Jugadores:** Sync Studios distribuye videojuegos a los jugadores. Además, ofrece contenido adicional como pases de batalla, y skins desbloqueables a través de microtransacciones y compras dentro del juego.
+
+- **De Compradores a Sync Studios:** Los jugadores aportan dinero a través de las microtransacciones y pases de batalla para adquirir contenido exclusivo o premium dentro del juego.
+
+#### 4. Gobierno
+- **De Sync Studios al Gobierno:** Sync Studios otorga derechos de propiedad al Gobierno sobre el videojuego, lo que incluye la posibilidad de participar en decisiones estratégicas y obtener beneficios derivados de su éxito.
+
+- **De Gobierno a Sync Studios:** El gobierno proporciona crédito a través de subvenciones para promover la innovación y el crecimiento de la empresa dentro del sector de los videojuegos.
+
+#### 5. Inversores
+- **De Sync Studios a los Inversores:** Sync Studios otorga derechos a los inversores en forma de participaciones o beneficios futuros del videojuego, de manera que los inversores se convierten en socios del proyecto.
+
+- **De Inversores a Sync Studios:** Los inversores proporcionan crédito financiero a Sync Studios, necesario para desarrollar nuevos videojuegos, mejorar los actuales o expandir la infraestructura de la empresa.
+
+## 1.5 Modelo de lienzo
+Supone una representación gráfica en una plantilla de la infraestructura, oferta, tipo de clientes y finanzas de la empresa a estudio. Posee 9 bloques que se encuentran en categorías que desarrollaremos a continuación. Aportamos además una representación esquemática del contenido, y otra más visual.
+
+#### Socios Clave
+**¿Quiénes son nuestros socios clave?**
+- Compositores y músicos para crear la banda sonora.
+- Plataformas de distribución digital (Google Play, App Store, Steam).
+- Equipos de marketing.
+- Proveedores de servicios en la nube (para almacenamiento de datos y sincronización).
+
+**¿Quiénes son nuestros proveedores clave?**
+- Proveedores de software de desarrollo de videojuegos (Unity, Unreal Engine).
+- Servicios de infraestructura en la nube (Amazon Web Services, Google Cloud).
+- Plataformas de música y licencias para las pistas.
+
+**¿Qué recursos clave estamos adquiriendo de nuestros proveedores clave?**
+- Licencias de software de desarrollo y herramientas de gráficos 3D.
+- Espacio en la nube para el almacenamiento de datos y partidas.
+- Música y efectos de sonido.
+
+**¿Qué actividades realizan nuestros socios clave?**
+- Composición y producción de música para el juego.
+- Distribución del juego en tiendas digitales.
+- Promoción del juego en redes sociales y otros canales.
+- Soporte de infraestructura para el juego en línea.
+
+#### Actividades clave
+**¿Qué actividades clave requiere nuestra propuesta de valor?**
+- Desarrollo y diseño de niveles rítmicos basados en música.
+- Producción de gráficos 3D con estilo cartoon.
+- Programación de mecánicas de juego sincronizadas con la música.
+- Marketing y promoción en múltiples plataformas.
+- Interacción con la comunidad.
+
+**¿Nuestros canales?**
+- Distribución en tiendas digitales (Google Play, App Store, Steam).
+- Publicidad en redes sociales y plataformas de streaming.
+- Canales directos como un sitio web oficial o foros de discusión.
+
+**¿Nuestras relaciones con los clientes?**
+- Atención al cliente y soporte técnico para resolver problemas.
+- Interacción en redes sociales y foros de comunidad para obtener retroalimentación.
+
+**¿Nuestras fuentes de ingresos?**
+Nuestra forma de monetización, mejor detallada más adelante, se basa en microtransacciones para acceder al contenido adicional, continuar un nivel tras haber perdido, obtención del pase de batalla… Esto no afectará a la jugabilidad pero sí que garantizará una mejor experiencia de juego en general.
+
+- Microtransacciones para acceder al contenido adicional.
+- Microtransacciones para obtener dinero de juego.
+- Pase de batalla.
+- Colaboraciones con artistas.
+
+#### Canales
+**¿A través de qué canales nuestros segmentos de clientes quieren ser alcanzados?**
+
+- Tiendas digitales (App Store, Google Play, Steam).
+- Redes sociales como Twitter, Instagram, y TikTok.
+- Plataformas de contenido visual como YouTube y Twitch.
+
+**¿Cómo los estamos alcanzando ahora?**
+- Promoción en redes sociales y plataformas de distribución.
+- Contacto directo con los jugadores a través de la comunidad en línea (foros, Discord).
+
+**¿Cómo están integrados nuestros canales?**
+- Tiendas digitales distribuyen el juego, redes sociales promocionan las novedades, y plataformas de streaming ayudan a expandir el alcance.
+
+**¿Cuáles funcionan mejor?**
+- Las tiendas de aplicaciones tienen una mayor tasa de éxito para el jugador casual.
+- Facebook para atraer a jugadores casuales, LinkedIn y Twitter para jugadores competitivos.
+
+**¿Cuáles son más rentables?**
+- Las tiendas digitales (App Store, Google Play, Steam) son clave para generar ingresos directos.
+
+**¿Cómo podemos integrarlos a las rutinas de nuestros clientes?**
+- Actualizaciones constantes en redes sociales y notificaciones dentro del juego para retener a los jugadores.
+
+#### Recursos Clave
+**¿Qué recursos clave requiere nuestra propuesta de valor?**
+- Personal cualificado en diseño, programación, y música.
+- Herramientas para desarrollar gráficos 3D y patrones rítmicos.
+- Música y efectos sonoros atractivos y sincronizados con la jugabilidad.
+
+**¿Nuestros canales?**
+- Plataformas de distribución como tiendas de aplicaciones móviles y plataformas de PC.
+- Redes sociales para comunicación con los jugadores.
+
+**¿Nuestras relaciones con los clientes?**
+- Servicios de atención al cliente, canales de soporte en redes sociales y dentro del juego.
+
+**¿Nuestras fuentes de ingresos?**
+- Monetización a través de compras dentro del juego, pase de batalla, accesorios especiales, moneda virtual.
+
+#### Propuesta de valor
+Juego alegre y desenfadado, disponible en cualquier momento, para el disfrute de los jugadores en aquellos momentos donde apetezca matar el tiempo con algo amable pero desafiante.
+
+Dificultad modular que se adapta tanto al jugador casual como al experto, en cualquier plataforma.
+
+**¿Qué valor estamos entregando a nuestros clientes?**
+- Una experiencia de juego rítmica divertida y accesible, con gráficos atractivos y música pegajosa.
+
+**¿Qué problemas estamos ayudando a resolver?**
+Ofrecemos una forma de entretenimiento rápida y accesible para jugadores que buscan sesiones cortas y relajadas.
+
+**¿Qué necesidad estamos satisfaciendo?**
+La necesidad de entretenimiento ligero, ideal para tiempos muertos o momentos de espera.
+
+**¿Qué paquetes de productos o servicios estamos ofreciendo a cada segmento de clientes?**
+
+- Una versión gratuita con niveles accesibles que permite una progresión normal de juego.
+- Una versión que permitirá al jugador gastar tanto dinero como quiera, permitiendo acceso a contenido y accesorios especiales, así como el pase batalla. Que aunque no implique un mejor rendimiento dentro del juego, sí que enriquecerá la experiencia haciéndola más personal. 
+
+---
+#### Relación con los Clientes
+**¿Qué tipo de relación espera que establezcamos en cada uno de nuestros segmentos de clientes?**
+- Soporte técnico eficiente, actualizaciones regulares de contenido, y una comunidad activa.
+
+**¿Qué relación hemos establecido?**
+Interacción continua en redes sociales, foros y plataformas de streaming para mantener a los jugadores informados y comprometidos.
+
+**¿Cuán costosas son?**
+- Relativamente bajas, centradas en la gestión de redes sociales y la creación de contenido de soporte técnico.
+
+**¿Cómo se integran con el resto de nuestro modelo de negocio?**
+- Ayudan a mantener a los jugadores comprometidos, promoviendo la retención y las compras dentro del juego.
+- Ayudan a crear el sentimiento de comunidad, y formar parte del proceso de creación de algo importante.
+---
+
+
