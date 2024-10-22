@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     List<Note> _deathSequence = new List<Note>();
     int _complexity;
 
+    [SerializeField] private EnemyDisplay enemyDisplay;
+
     public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager)
     {
         _noteManager = noteManager;
@@ -19,7 +21,16 @@ public class Enemy : MonoBehaviour
         _complexity = Mathf.Clamp(complexity, 1, 4);
 
         CreateSequence();
-        
+
+        // Pasar la secuencia generada al EnemyDisplay para que la renderice
+        if (enemyDisplay != null)
+        {
+            enemyDisplay.SetSequence(_deathSequence);
+        }
+        else
+        {
+            Debug.LogError("No asinado");
+        }
     }
     public void Print()
     {
@@ -52,7 +63,7 @@ public class Enemy : MonoBehaviour
         var notes = _noteManager.Notes;
         return notes[Random.Range(0, notes.Count - 1)];
     }
-    
+
 
     void Die()
     {

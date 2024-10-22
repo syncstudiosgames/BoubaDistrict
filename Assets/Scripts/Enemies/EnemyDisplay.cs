@@ -5,51 +5,73 @@ using UnityEngine.UI;
 
 public class EnemyDisplay : MonoBehaviour
 {
-    NoteManager _noteManager;
     List<Note> _deathSequence;
-    int _complexity;
 
-    // Canvas para mostrsr las notas
-    GameObject sequenceCanvas;
-    List<Image> noteImages = new List<Image>();
+    [SerializeField] public Canvas Canvas; //canvas del prefab
+    private Camera mainCamera;
 
     private void Start()
     {
-        //Renderizar la secuencia
-        CreateSequenceCanvas();
+        // Inicializar la referencia a la cámara principal
+        mainCamera = Camera.main;
+
+        // Cuando esté generada la secuencia renderizo
+        if (_deathSequence != null)
+        {
+            RenderNoteSequence();
+        }
     }
-    void CreateSequenceCanvas()
+    void Update()
     {
-        sequenceCanvas = new GameObject("NoteSequenceCanvas");
-        sequenceCanvas.transform.SetParent(this.transform);
-        Canvas canvas = sequenceCanvas.AddComponent<Canvas>();
-        canvas.renderMode = RenderMode.WorldSpace;
+        if (mainCamera != null)
+        {
+            Canvas.transform.LookAt(mainCamera.transform);
+            Canvas.transform.rotation = Quaternion.Euler(0, Canvas.transform.rotation.eulerAngles.y, 0);
+        }
+    }
+    //Recibo la secuencia 
+    public void SetSequence(List<Note> deathSequence)
+    {
+        _deathSequence = deathSequence;
+        RenderNoteSequence();
+    }
 
-        RectTransform rectTransform = sequenceCanvas.GetComponent<RectTransform>();
+    void RenderNoteSequence()
+    {
+        // Cojo las dimensiones del canvas  para centrar los sprites
+        RectTransform canvasRect = Canvas.GetComponent<RectTransform>();
+        float canvasWidth = canvasRect.rect.width;
+        float canvasHeight = canvasRect.rect.height;
 
-        rectTransform.sizeDelta = new Vector2(3f, 1f);
+        // En funcion del tamaño del canvas y del numero de notas de la sencuencia ajusto el tamaño del sprite
+        float noteSize = Mathf.Min(canvasWidth / _deathSequence.Count, canvasHeight / 2);
 
-        rectTransform.localPosition = new Vector3(0, 1.5f, 0);
-
-        float totalWidth = _deathSequence.Count * 0.4f;
-        float startX = -totalWidth / 2;
-
-        // cada nota en la secuencia crear una imagen la centramos y distribuimos para que mno estén pegadas
-        /////SEGUIR PROBANDO
         for (int i = 0; i < _deathSequence.Count; i++)
         {
-            GameObject noteGO = new GameObject($"Note_{i}");
-            noteGO.transform.SetParent(sequenceCanvas.transform);
+            //para cada nota de la sencuencia creo un objeto tipo Image en el canvas y asigno el sprite al Image
+            Note note = _deathSequence[i];
+            GameObject noteImageObject = new GameObject("NoteImage");
+            noteImageObject.transform.SetParent(Canvas.transform);
+            noteImageObject.transform.localScale = Vector3.one;
+            Image noteImage = noteImageObject.AddComponent<Image>();
+            noteImage.sprite = note.Sprite;
 
-            Image noteImage = noteGO.AddComponent<Image>();
-            noteImage.sprite = _deathSequence[i].Sprite;
 
-            RectTransform noteRect = noteGO.GetComponent<RectTransform>();
-            noteRect.sizeDelta = new Vector2(0.5f, 0.5f);
+            RectTransform rectTransform = noteImage.GetComponent<RectTransform>();
+            rectTransform.sizeDelta = new Vector2(noteSize, noteSize);
 
-            noteRect.anchoredPosition = new Vector2(startX + i * 0.4f, 0);
+            // Se coje el ancho del canvas y el numero de notas a mostrar y se divide el ancho entre el nº 
+            // de notas +1 (para dejar espacio libre entre las notas) se multiplica por i+1 para que cada nota se
+            //posicione más a la derecha en función de su indice. Se le resta la mitad del ancho para centrarlas
+            float xPosition = (canvasWidth / (_deathSequence.Count + 1)) * (i + 1) - (canvasWidth / 2);
+            float yPosition = 0; // para que esten en el medio vertical del canvas (centradas)
 
-            noteImages.Add(noteImage);
+            rectTransform.anchoredPosition = new Vector2(xPosition, yPosition);
+            rectTransform.localPosition = new Vector3(rectTransform.localPosition.x, rectTransform.localPosition.y, 0); // Z a 0 para que estén en el plano del canvas
+
+
+            // Voltear la imagen horizontalmente , si no las letars salen al reves
+            rectTransform.localScale = new Vector3(-1, 1, 1);
         }
     }
 }
