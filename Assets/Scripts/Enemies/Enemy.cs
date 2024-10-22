@@ -61,7 +61,7 @@ public class Enemy : MonoBehaviour
 
         if (noteBuffer.Count < _complexity) return;
 
-        for (int myNote = _complexity - 1, bufferNote = noteBuffer.Count - 1; myNote >= 0; myNote--, bufferNote--)
+        for (int myNote = _complexity - 1, bufferNote = noteBuffer.Count - _complexity; myNote >= 0; myNote--, bufferNote++)
         {
             if (_deathSequence[myNote] != noteBuffer[bufferNote]) return;
         }
@@ -87,5 +87,9 @@ public class Enemy : MonoBehaviour
     {
         _enemyManager.EnemyHit(_complexity);
         Destroy(gameObject);
+    }
+    void OnDestroy()
+    {
+        _noteManager.OnNoteLogged -= CheckSequence;
     }
 }

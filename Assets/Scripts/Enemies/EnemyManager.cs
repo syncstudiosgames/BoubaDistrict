@@ -21,15 +21,12 @@ public class EnemyManager : MonoBehaviour
     public void EnemyCured(int healthPoints) { _onEnemyCured?.Invoke(healthPoints); }
     public event Action<int> OnEnemyCured {  add { _onEnemyCured += value;} remove { _onEnemyCured -= value; } }
 
-    float _spawningInterval = 2f;
+    float _spawningInterval = 5f;
     const float INTERVAL_ACELERATION_RATE = 0.05f;
 
     private void Start()
     {
         StartCoroutine(SpawningCoroutine());
-
-        _onEnemyCured += (int healthPoints) => { Debug.Log("EnemyCured!"); };
-        _onEnemyHit += (int damage) => { Debug.Log("EnemyHitYou"); };
     }
 
     IEnumerator SpawningCoroutine()
