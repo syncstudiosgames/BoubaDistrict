@@ -36,20 +36,20 @@ public class EnemyManager : MonoBehaviour
     {
         while(true)
         {
-            SpawnEnemyAtRandom();
+            SpawnEnemyAtRandom(3);
             yield return new WaitForSeconds(_spawningInterval);
             _spawningInterval = Mathf.Clamp(_spawningInterval -= INTERVAL_ACELERATION_RATE, 1f, 10);
         }
     }
 
-    GameObject SpawnEnemyAtRandom()
+    GameObject SpawnEnemyAtRandom(int complexity)
     {
-        return SpawnEnemy(GetRandomPositionAtSpawn());
+        return SpawnEnemy(GetRandomPositionAtSpawn(), complexity);
     }
-    GameObject SpawnEnemy(Vector3 pos)
+    GameObject SpawnEnemy(Vector3 pos, int complexity)
     {
         var enemyGO = Instantiate(_enemyPrefab, pos, Quaternion.identity);
-        enemyGO.GetComponent<Enemy>().SetUp(3, _noteManager, this);
+        enemyGO.GetComponent<Enemy>().SetUp(complexity, _noteManager, this);
         enemyGO.GetComponent<EnemyController>().SetUp(_enemyGoal);
         return enemyGO;
     }

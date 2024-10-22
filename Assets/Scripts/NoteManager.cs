@@ -15,8 +15,11 @@ public class NoteManager : MonoBehaviour
     [SerializeField] List<Note> notes;          // List of existing notes in the game.
     List<Note> noteBuffer = new List<Note>();   // List of notes input by the player on time an consecutively.
 
-    event Action _onNoteLogged;
-    public event Action OnNoteLogged { add { _onNoteLogged += value; } remove { _onNoteLogged -= value; } }
+    event Action<Note, bool> _onNoteInput;
+    public event Action<Note, bool> OnNoteInput { add { _onNoteInput += value; } remove { _onNoteInput -= value; } }
+
+    event Action<Note> _onNoteLogged;
+    public event Action<Note> OnNoteLogged { add { _onNoteLogged += value; } remove { _onNoteLogged -= value; } }
 
     public IReadOnlyList<Note> Notes {  get { return notes.AsReadOnly(); } }
     public IReadOnlyList<Note> NoteBuffer { get { return noteBuffer.AsReadOnly(); } }
@@ -24,18 +27,25 @@ public class NoteManager : MonoBehaviour
 
     #region Public Methods
 
-    /// <summary>
-    /// Given an input action, log the coresponding note (if existing) in the note buffer.
-    /// </summary>
-    /// <param name="inputAction"></param>
-    public void LogNote(InputAction inputAction)
+    public void InputNote(InputAction action, bool onBeat)
     {
         foreach (var note in notes)
         {
-            if(note.Action == inputAction)
+            if (note.Action == action) // Not found or not.
             {
-                noteBuffer.Add(note);
-                _onNoteLogged?.Invoke();
+                _onNoteInput?.Invoke(note, onBeat);
+
+                // Check if log note (only if it's on beat):
+                if (onBeat)
+                {
+                    noteBuffer.Add(note);
+                    _onNoteLogged?.Invoke(note);
+                }
+                else
+                {
+                    ResetBuffer();
+                }
+                
                 return;
             }
         }

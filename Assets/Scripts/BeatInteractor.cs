@@ -28,16 +28,14 @@ public class BeatInteractor : MonoBehaviour
 
             if (_cooldown.IsCoolingDown) return;
 
-            _noteManager.LogNote(context.action);
+            _noteManager.InputNote(context.action, true);
 
             _cooldown.StartCooldown();
         }
         else
         {
-            // If the user 
-            _noteManager.ResetBuffer();
+            _noteManager.InputNote(context.action, false);
             Debug.Log("Not on beat!");
-            
         }
        
 

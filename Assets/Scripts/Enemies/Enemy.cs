@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour
         var notes = _noteManager.Notes;
         return notes[Random.Range(0, notes.Count - 1)];
     }
-    void CheckSequence()
+    void CheckSequence(Note inputNote)
     {
         var noteBuffer = _noteManager.NoteBuffer;
 
