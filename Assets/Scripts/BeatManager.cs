@@ -16,6 +16,12 @@ public class BeatManager : MonoBehaviour
     int _lastExaminedBeat;
     bool _windowOpen = true;    // Window of time when the user can input a note on beat.
 
+    event Action _onWindowOpen;
+    event Action _onWindowClose;
+
+    public event Action OnWindowOpen { add { _onWindowOpen += value; } remove { _onWindowOpen -= value; } }
+    public event Action OnWindowClose { add {  _onWindowClose += value; } remove { _onWindowClose -= value; } }
+
     [SerializeField] private Interval[] _intervals; // Each represents an n beats duration interval.
 
     public float ClipProgress { get { return _audioSource.timeSamples / (_audioSource.clip.frequency * (60f / _bpm)); } } // Each whole numbe is a beat.
@@ -75,7 +81,7 @@ public class BeatManager : MonoBehaviour
                 {
                     // Window open.
                     _windowOpen = true;
-                    // Debug.Log($"Window open! at {clipProgress}");
+                    _onWindowOpen?.Invoke();
                 }
             }
             else
@@ -86,7 +92,7 @@ public class BeatManager : MonoBehaviour
                     // Wndow closed.
                     _windowOpen = false;
                     _lastExaminedBeat = closestBeat;
-                    // Debug.Log($"Window closed! at {clipProgress}");
+                    _onWindowClose?.Invoke();
                 }
             }
         }

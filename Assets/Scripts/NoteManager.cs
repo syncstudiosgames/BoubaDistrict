@@ -12,8 +12,12 @@ using Unity.VisualScripting;
 public class NoteManager : MonoBehaviour
 {
     #region Variables and Properties
+    [SerializeField] BeatManager _beatManager;
+    
     [SerializeField] List<Note> notes;          // List of existing notes in the game.
     List<Note> noteBuffer = new List<Note>();   // List of notes input by the player on time an consecutively.
+
+    bool _noteWasLoggedLastBeat;
 
     event Action<Note, bool> _onNoteInput;
     public event Action<Note, bool> OnNoteInput { add { _onNoteInput += value; } remove { _onNoteInput -= value; } }
@@ -66,6 +70,32 @@ public class NoteManager : MonoBehaviour
         Debug.Log("................");
     }
     #endregion
+
+    private void Start()
+    {
+        _beatManager.OnWindowOpen += StartListenningForNote;
+        _beatManager.OnWindowClose += FinishListeningForNote;
+    }
+
+    // If the player doesn`t input any note we wanna reset the note buffer
+    // (as only consecutive notes count for completing a sequence.)
+    void StartListenningForNote()
+    {
+        _noteWasLoggedLastBeat = false; // Reset value.
+        OnNoteLogged += ListenForNote;  // Start listenning for note.
+    }
+    void FinishListeningForNote()
+    {
+        if (!_noteWasLoggedLastBeat)    // If no note was logger for this beat.
+        {
+            ResetBuffer();              // Reset note buffer.
+        }
+        OnNoteLogged -= ListenForNote;  // Stop listenning for note.
+    }
+    void ListenForNote(Note note)
+    {
+        _noteWasLoggedLastBeat = true;
+    }
 
 }
 
