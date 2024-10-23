@@ -4,12 +4,35 @@ using UnityEngine;
 
 public class EnemyModelLoader : MonoBehaviour
 {
-    [SerializeField] List<MeshFilter> _models = new List<MeshFilter>();
+    [SerializeField] private GameObject[] enemyModels;
 
-    [SerializeField] MeshFilter _meshFilter;
+    [SerializeField] private Transform modelHolder;
 
     private void Start()
     {
-        // Asignar un mesh random...
+        AssignRandomModel();
+    }
+
+    private void AssignRandomModel()
+    {
+        if (enemyModels.Length == 0)
+        {
+            Debug.LogError("No hay modelos asignados ");
+            return;
+        }
+
+        int randomIndex = UnityEngine.Random.Range(0, enemyModels.Length);
+        GameObject randomModel = enemyModels[randomIndex];
+
+        if (modelHolder == null)
+        {
+            return;
+        }
+
+        GameObject modelInstance = Instantiate(randomModel, modelHolder.position, modelHolder.rotation, modelHolder);
+
+        modelInstance.transform.localPosition = Vector3.zero;
+        modelInstance.transform.localRotation = Quaternion.identity;
+        modelInstance.transform.localScale = Vector3.one;
     }
 }
