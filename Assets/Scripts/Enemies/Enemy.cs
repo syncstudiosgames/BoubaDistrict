@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
     Note GetRandomNote()
     {
         var notes = _noteManager.Notes;
-        return notes[Random.Range(0, notes.Count - 1)];
+        return notes[Random.Range(0, notes.Count)];
     }
     void CheckSequence(Note inputNote)
     {
