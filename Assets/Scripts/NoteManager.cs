@@ -17,7 +17,10 @@ public class NoteManager : MonoBehaviour
     [SerializeField] List<Note> notes;          // List of existing notes in the game.
     List<Note> noteBuffer = new List<Note>();   // List of notes input by the player on time an consecutively.
 
-    bool _noteWasLoggedLastBeat;
+    bool _noteWasLoggedOnBeat;                  // If a noted was logged during this beat or last beat.
+
+    event Action _onEmptyBeat;
+    public event Action OnEmptyBeat { add { _onEmptyBeat += value; } remove { _onEmptyBeat -= value; } }
 
     event Action<Note, bool> _onNoteInput;
     public event Action<Note, bool> OnNoteInput { add { _onNoteInput += value; } remove { _onNoteInput -= value; } }
@@ -81,20 +84,21 @@ public class NoteManager : MonoBehaviour
     // (as only consecutive notes count for completing a sequence.)
     void StartListenningForNote()
     {
-        _noteWasLoggedLastBeat = false; // Reset value.
+        _noteWasLoggedOnBeat = false; // Reset value.
         OnNoteLogged += ListenForNote;  // Start listenning for note.
     }
     void FinishListeningForNote()
     {
-        if (!_noteWasLoggedLastBeat)    // If no note was logger for this beat.
+        if (!_noteWasLoggedOnBeat)    // If no note was logger for this beat.
         {
             ResetBuffer();              // Reset note buffer.
+            _onEmptyBeat?.Invoke();
         }
         OnNoteLogged -= ListenForNote;  // Stop listenning for note.
     }
     void ListenForNote(Note note)
     {
-        _noteWasLoggedLastBeat = true;
+        _noteWasLoggedOnBeat = true;
     }
 
 }
