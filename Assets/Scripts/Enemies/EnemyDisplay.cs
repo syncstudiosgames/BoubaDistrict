@@ -26,7 +26,7 @@ public class EnemyDisplay : MonoBehaviour
         if (mainCamera != null)
         {
             Canvas.transform.LookAt(mainCamera.transform);
-            Canvas.transform.rotation = Quaternion.Euler(0, Canvas.transform.rotation.eulerAngles.y, 0);
+            Canvas.transform.rotation = Quaternion.LookRotation(mainCamera.transform.position - Canvas.transform.position);
         }
     }
     //Recibo la secuencia 
