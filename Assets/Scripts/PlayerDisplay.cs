@@ -11,16 +11,15 @@ public class PlayerDisplay : MonoBehaviour
     [SerializeField] Slider _healthSlider;
 
     float _startingWidth;
-    float _startingMaxHealth;
+    float _lastMaxHealth;
 
     private void Start()
     {
         _player.OnHealthValueChange += UpdateDisplayData;
 
         _startingWidth = _healthSlider.gameObject.GetComponent<RectTransform>().sizeDelta.x;
-        _startingMaxHealth = _player.MaxHealthPoints;
+        _lastMaxHealth = _player.MaxHealthPoints;
 
-        UpdateDisplayData();
     }
 
     void UpdateDisplayData()
@@ -33,12 +32,16 @@ public class PlayerDisplay : MonoBehaviour
         // Update slider size (scaling with maxHealth):
         var rectTrans = _healthSlider.gameObject.GetComponent<RectTransform>();
         var sizeDelta = rectTrans.sizeDelta;
-        var newWidth = sizeDelta.x + _player.MaxHealthPoints - _startingMaxHealth;
+
+        var newWidth = sizeDelta.x + (_player.MaxHealthPoints - _lastMaxHealth);
+        _lastMaxHealth = _player.MaxHealthPoints;
+
         sizeDelta = new Vector2(newWidth, sizeDelta.y);
         rectTrans.sizeDelta = sizeDelta; 
 
         // Update text:
         string text = $"{_player.HealthPoints}/{_player.MaxHealthPoints}";
         _healthDisplay.text = text;
+
     }
 }
