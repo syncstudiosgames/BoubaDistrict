@@ -226,6 +226,8 @@ Supone una representación gráfica en una plantilla de la infraestructura, ofer
 - Promoción del juego en redes sociales y otros canales.
 - Soporte de infraestructura para el juego en línea.
 
+---
+
 #### Actividades clave
 **¿Qué actividades clave requiere nuestra propuesta de valor?**
 - Desarrollo y diseño de niveles rítmicos basados en música.
@@ -251,6 +253,8 @@ Nuestra forma de monetización, mejor detallada más adelante, se basa en microt
 - Pase de batalla.
 - Colaboraciones con artistas.
 
+---
+
 #### Canales
 **¿A través de qué canales nuestros segmentos de clientes quieren ser alcanzados?**
 
@@ -275,6 +279,8 @@ Nuestra forma de monetización, mejor detallada más adelante, se basa en microt
 **¿Cómo podemos integrarlos a las rutinas de nuestros clientes?**
 - Actualizaciones constantes en redes sociales y notificaciones dentro del juego para retener a los jugadores.
 
+---
+
 #### Recursos Clave
 **¿Qué recursos clave requiere nuestra propuesta de valor?**
 - Personal cualificado en diseño, programación, y música.
@@ -290,6 +296,8 @@ Nuestra forma de monetización, mejor detallada más adelante, se basa en microt
 
 **¿Nuestras fuentes de ingresos?**
 - Monetización a través de compras dentro del juego, pase de batalla, accesorios especiales, moneda virtual.
+
+---
 
 #### Propuesta de valor
 Juego alegre y desenfadado, disponible en cualquier momento, para el disfrute de los jugadores en aquellos momentos donde apetezca matar el tiempo con algo amable pero desafiante.
@@ -311,6 +319,7 @@ La necesidad de entretenimiento ligero, ideal para tiempos muertos o momentos de
 - Una versión que permitirá al jugador gastar tanto dinero como quiera, permitiendo acceso a contenido y accesorios especiales, así como el pase batalla. Que aunque no implique un mejor rendimiento dentro del juego, sí que enriquecerá la experiencia haciéndola más personal. 
 
 ---
+
 #### Relación con los Clientes
 **¿Qué tipo de relación espera que establezcamos en cada uno de nuestros segmentos de clientes?**
 - Soporte técnico eficiente, actualizaciones regulares de contenido, y una comunidad activa.
@@ -324,6 +333,85 @@ Interacción continua en redes sociales, foros y plataformas de streaming para m
 **¿Cómo se integran con el resto de nuestro modelo de negocio?**
 - Ayudan a mantener a los jugadores comprometidos, promoviendo la retención y las compras dentro del juego.
 - Ayudan a crear el sentimiento de comunidad, y formar parte del proceso de creación de algo importante.
+
 ---
+
+#### Segmentos de Clientes
+**¿Para quién estamos aportando valor?**
+- Jugadores casuales que buscan entretenimiento ligero.
+- Jugadores competitivos que disfrutan de desafíos rítmicos y tablas de clasificación.
+ 
+**¿Quiénes son nuestros clientes más importantes?**
+- Jugadores móviles que buscan entretenimiento rápido y accesible.
+- Jugadores de PC que disfrutan de juegos rítmicos.
+
+---
+#### Estructura de Costes
+**¿Cuáles son los costes más importantes en nuestro modelo de negocio?**
+- Desarrollo de software (salarios del equipo de desarrollo, licencias de software).
+- Marketing y promoción.
+- Mantenimiento de servidores y almacenamiento en la nube.
+
+**¿Cuáles recursos clave son más costosos?**
+- Licencias de música y herramientas de desarrollo 3D.
+
+**¿Cuáles actividades clave son las más costosas?**
+- Desarrollo y mantenimiento continuo del juego.
+- Marketing en diversas plataformas.
+
+---
+#### Fuente De Ingresos
+**¿Por qué valor nuestros clientes están dispuestos a pagar?**
+- Pistas musicales adicionales, mejoras estéticas de los personajes, pase de batalla, niveles adicionales, moneda virtual. 
+
+**¿Actualmente por qué se paga?**
+- Por contenido premium y compras dentro del juego.
+
+**¿Cómo están pagando?**
+- A través de pagos en las tiendas de aplicaciones o plataformas como Steam.
+
+**¿Cuánto aporta cada fuente de ingresos a los ingresos generales?**
+- El pase de batalla genera ingresos constantes, mientras que las microtransacciones para el contenido adicional genera picos ocasionales dependiendo de los eventos disponibles dentro del juego.
+
+#### Lienzo - Modelo de Negocio Esquemático
+FOTO DE LIENZOS
+
+
+#### Lienzo - Modelo de Negocio Visual
+FOTO DE LIENZOS
+
+# Monetización
+En cuanto a la monetización, se ha escogido el modelo freemium. Existirá la posibilidad de desbloquear contenido adicional comprando a través del juego. Se implementará una moneda virtual que permitirá a los usuarios comprar mejoras estéticas, desbloquear niveles estacionales, y retos. Estas mejora no afectarán a la jugabilidad.
+
+### PASE DE BATALLA
+Cada tres meses se harán disponibles de manera limitada niveles especiales, skins, enemigos y retos para incentivar las compras en el juego. Existe la posibilidad de desbloquear todas estas características comprando el pase de batalla, o comprando estos elementos de manera individual. Los jugadores podrán comprar la moneda del juego, con la que desbloquearán el contenido extra.
+
+### COLABORACION CON ARTISTAS
+Más adelante, se plantea la opción de colaborar con cantantes y artistas para aumentar la visibilidad del juego y enriquecer la experiencia de los jugadores. Los eventos serán también temporales y ofrecerán cosméticos especiales del cantante, así como nuevas pistas de audio para los diferentes niveles, que enriquecerá la experiencia en general para los amantes de la música.
+
+## 2.1 Métricas de éxito
+Las **métricas en un modelo de negocio** son indicadores clave que permiten medir el rendimiento y éxito de una empresa o proyecto. Estas métricas son fundamentales para evaluar si el modelo de negocio está logrando sus objetivos y para tomar decisiones informadas sobre ajustes o mejoras. Para nuestro proyecto tendremos en cuenta los siguientes indicadores:
+
+- **Usuarios activos mensuales:** número de personas que juegan al mes
+- **Retención de usuarios:** tiempo que emplea un jugador en el juego
+- **Tasa de conversión:** porcentaje de usuarios que invierten dinero
+- **Compras dentro del juego:** ingresos mensuales
+- **Ingresos por usuario:** media de ingresos mensuales por persona por mes
+- **Número de ventas del pase de batalla:** compras totales del pase completo cada tres meses
+- **Participación en eventos y retos:** porcentaje de usuarios que participan en las actividades especiales
+
+### MÉTRICAS DE ÉXITO - POP IT!
+| | Pesimista | Normal| Optimista|
+|---|---|---|---|
+|Usuarios activos mensuales|1.000|5.000|20.000|
+|Retención de usuarios|15 min|30 min|60 min|
+|Tasa de conversión|1%|5%|10%|
+|Compras dentro del juego|500€/mes|2000€/mes|7500€/mes|
+|Ingresos por usuario|1€/mes|3€/mes|5€/mes|
+|Número de ventas del pase de batalla (cada tres meses|100|350|350|
+|Participación en eventos y retos|20%|50%|70%|
+
+<h1 align="center">BOUBA DISTRICT</h1>
+<h2 align="center">Sync Studios</h2>
 
 
