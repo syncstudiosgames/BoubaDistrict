@@ -73,7 +73,6 @@ public class Enemy : MonoBehaviour
     {
         if(other.tag == "EnemyGoal")
         {
-            _enemyManager.EnemyHit(_complexity);
             Die();
         }
     }
