@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2390535305747589395}
   - component: {fileID: 5496789415506307513}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,9 +94,10 @@ GameObject:
   - component: {fileID: 45191044889853165}
   - component: {fileID: 975473335782110497}
   - component: {fileID: 466754705404082054}
+  - component: {fileID: 126708870483694212}
+  - component: {fileID: 6310265051965337683}
   - component: {fileID: 2344857285261633146}
   - component: {fileID: 2132590773957095831}
-  - component: {fileID: 126708870483694212}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -147,6 +148,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 2344857285261633146}
+--- !u!114 &126708870483694212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3971569818686494927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e416002b9c14f1f4bb2b3016ab5ecd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 7251590403582480685}
+--- !u!114 &6310265051965337683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3971569818686494927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378dbbbf9981330409c0961c65d54acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _models:
+  - {fileID: -5754084199372789682, guid: de1f114bbb4d3bb4ba489d24b97ae93d, type: 3}
+  _meshFilter: {fileID: 2390535305747589395}
 --- !u!54 &2344857285261633146
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -194,22 +223,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2.04
+  m_Height: 2.24
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &126708870483694212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3971569818686494927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e416002b9c14f1f4bb2b3016ab5ecd23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Canvas: {fileID: 7251590403582480685}
+  m_Center: {x: 0, y: 0.47, z: 0}
 --- !u!1 &7955744431689276520
 GameObject:
   m_ObjectHideFlags: 0

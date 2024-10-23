@@ -10,14 +10,12 @@ public class PlayerDisplay : MonoBehaviour
     [SerializeField] TextMeshProUGUI _healthDisplay;
     [SerializeField] Slider _healthSlider;
 
-    float _startingWidth;
     float _lastMaxHealth;
 
     private void Start()
     {
         _player.OnHealthValueChange += UpdateDisplayData;
 
-        _startingWidth = _healthSlider.gameObject.GetComponent<RectTransform>().sizeDelta.x;
         _lastMaxHealth = _player.MaxHealthPoints;
 
     }
