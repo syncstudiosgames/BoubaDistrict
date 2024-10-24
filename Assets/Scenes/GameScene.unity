@@ -2667,22 +2667,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _beatManager: {fileID: 526279949}
   notes:
-  - noteName: A
-    actions: {fileID: -944628639613478452, guid: 09a6c07672575e54591ef6baa2f07817, type: 3}
-    _sprite: {fileID: 21300000, guid: 9284941c58a078f46a5ee33389682e88, type: 3}
-    actionIndex: 0
-  - noteName: S
-    actions: {fileID: -944628639613478452, guid: 09a6c07672575e54591ef6baa2f07817, type: 3}
-    _sprite: {fileID: 21300000, guid: fe57d2a02aeb95048a569d859fff7977, type: 3}
-    actionIndex: 1
-  - noteName: D
-    actions: {fileID: -944628639613478452, guid: 09a6c07672575e54591ef6baa2f07817, type: 3}
-    _sprite: {fileID: 21300000, guid: 6251c90cce3952a489bce0ddc1099669, type: 3}
-    actionIndex: 2
-  - noteName: E
-    actions: {fileID: -944628639613478452, guid: 09a6c07672575e54591ef6baa2f07817, type: 3}
-    _sprite: {fileID: 21300000, guid: dc5fd83af352c2a4c9716fcd8d17722a, type: 3}
-    actionIndex: 3
+  - {fileID: 11400000, guid: b5a43896ae891bc4db4e7bf4cc5ac2e5, type: 2}
+  - {fileID: 11400000, guid: 7aa90060c274f4142baf3078549ff974, type: 2}
+  - {fileID: 11400000, guid: 8822446d6bdb0524fba42cbb9b155ee3, type: 2}
+  - {fileID: 11400000, guid: d494cd0f171879c4ba0c1073c420eac9, type: 2}
 --- !u!4 &726460153
 Transform:
   m_ObjectHideFlags: 0
