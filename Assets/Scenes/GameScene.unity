@@ -1065,8 +1065,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _beatManager: {fileID: 526279949}
-  _sliderL2R: {fileID: 797740055}
-  _sliderR2L: {fileID: 449595759}
+  _sliderLeftToRight: {fileID: 797740055}
+  _sliderRightToLeft: {fileID: 449595759}
 --- !u!1001 &189003286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2219,7 +2219,7 @@ GameObject:
   - component: {fileID: 449595758}
   - component: {fileID: 449595759}
   m_Layer: 5
-  m_Name: SliderR2L
+  m_Name: SliderRToL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3042,7 +3042,7 @@ GameObject:
   - component: {fileID: 797740054}
   - component: {fileID: 797740055}
   m_Layer: 5
-  m_Name: SliderL2R
+  m_Name: SliderLToR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3089,7 +3089,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
