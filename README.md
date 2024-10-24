@@ -414,4 +414,61 @@ Las **métricas en un modelo de negocio** son indicadores clave que permiten med
 <h1 align="center">BOUBA DISTRICT</h1>
 <h2 align="center">Sync Studios</h2>
 
+#  1. Introducción
+Bouba District es un juego competitivo musical que combina mecánicas que mezclan **acción y ritmo**. El jugador deberá enfrentarse a hordas de criaturas adorables pero peligrosas, que se acercan en masa para atacarlo. La **clave** para defenderse será seguir el ritmo de la **música** e ingresar secuencias de **teclas** correctas dentro del tiempo indicado. 
+
+## 1.1 Concepto 
+El estilo principal principal del juego es una combinación de **tower defense** y **juegos** de ritmo. El jugador debe evitar ser invadido por las criaturas siguiendo secuencias de teclas que aparecen en pantalla, ajustándose al ritmo de la música. 
+
+## 1.2 Historia y personajes (breve)
+Un experimento fallido ha provocado que unas criaturas mucosas, los “Boubas” se hayan escapado y quieran conquistar todo aquello con lo que se cruzan. Estas criaturas, atraídas por el sonido, han comenzado a invadir la ciudad, sembrando el caos y el desorden. Kiki un joven prodigio de la música es el único que puede detener esta invasión.  Utilizando sus dotes innatos para seguir el ritmo, deberá enfrentarse a estos mutantes e intentar restaurar el orden de la ciudad.
+
+## 1.3 Propósito, público objetivo y plataformas
+El juego pretende apelar a un **público joven**, incluyendo a estudiantes y profesionales ocupados.  Bouba District ofrece una experiencia rápida, ideal para jugar en breves intervalos de tiempo. Pretende crear momentos de **desconexión** y aportar un reto y sentido de logro al mejorar progresivamente las habilidades del jugador. También busca combinar elementos de **competición** al implementar los sistemas de ranking y puntuación. 
+
+El juego podrá jugarse tanto en **PC**, como **dispositivos móviles y tablets**. Esto promoverá la accesibilidad y atractivo para llegar a la mayor audiencia posible.
+
+# 2. Monetización
+El modelo de negocio escogido para Bouba District es un sistema **freemium**, que permite a los jugadores acceder al **contenido base** de **manera gratuita**. También ofrece opciones de pago para desbloquear **material extra** y **mejoras estéticas**. Todo ello no afectará a la jugabilidad.
+
+## 2.1 Tipo de modelo de monetización
+Bouba District ofrecerá un **pase de batalla** temporal con niveles adicionales y mejoras estéticas temáticos. También se podrá comprar una **moneda virtual** para obtener estos elementos de manera individual. 
+
+## 2.2 Tablas de productos y precios
+| | Pesimista | Normal|
+|---|---|---|
+|Pase de batalla|4,99€|Desbloquea acceso a niveles temporales y accesorios temáticos
+|Moneda virtual (paquete pequeño)|0,99€|Paquete que contiene 100 monedas virtuales|
+|Moneda virtual (paquete mediano)|2,99€|Paquete que contiene 350 monedas virtuales|
+|Moneda virtual (paquete grande)|4,99€|Paquete que contiene 600 monedas virtuales|
+
+# 3. Planificación y costes
+## 3.1. 3.1 Equipo humano
+El equipo está compuesto por **cinco desarrolladores multidisciplinares** que cubren con los apartados tanto artísticos como técnicos que requiere la producción del videojuego.
+
+La distribución general del equipo es la siguiente, aunque todos los miembros contribuyen en múltiples aspectos del desarrollo: 
+
+- **Programadora líder:** responsable de la implementación de las mecánicas del juego.
+- Especialista en **diseño y programación de interfaces de usuario (UI):** responsable de diseñar la experiencia visual y de interacción del usuario, asegurándose de que el juego sea intuitivo y accesible.
+- **Artista** y **programadora** enfocada en el **diseño de personajes:** creación y animación de los personajes del juego, también colabora en la programación.
+- **Diseñadora** y **modeladora de escenarios**: creación de los entornos del juego, asegurando que estén alineados con la temática. También es responsable de la promoción del proyecto y diseño de experiencia de usuario. 
+- **Especialista en modelado 3D:** diseñador y creador de modelos para personajes, y gestor del portafolio.
+
+## 3.2 Estimación temporal del desarrollo
+- **Fase de preproducción:** diseño y planteamiento del concepto de juego, elaboración de bocetos y definición de mecánicas principales.
+- **Fase de producción:** desarrollo de la programación del juego, pruebas y ajustes de mecánicas, creación de activos gráficos e implementación de música y efectos de sonido. Se presentará una versión Alpha con el juego base.
+- **Fase de prueba y correcciones:** pruebas de juego en diferentes dispositivos, retroalimentación y corrección de errores. Se presentará una versión Beta, un juego completo y más pulido y prácticamente terminado. Se realizará un Beta-Testing para obtener errores no detectados durante las pruebas del equipo y sugerencias que mejoren la jugabilidad o la experiencia del usuario.
+- **Lanzamiento:** corrección de errores y mejoras para ajustar el juego. Finalización de activos estéticos y preparación para el lanzamiento final. Se publicará una versión Gold Master del juego completo.
+
+## 3.3 Costes asociados
+Además de los salarios del equipo, existen otros costes asociados:
+
+- **Licencias de software:** motores de desarrollo profesional como Unity, licencias de software de diseño gráfico y edición de imagen como Photoshop o Procreate, y licencias de música y canciones con copyright (más adelante).
+- **Servicios en la nube:** almacenamiento y servicio en la web para el sistema de ranking y puntuación.
+- **Marketing y publicidad:** promoción en redes sociales, a través de anuncios y colaboración con creadores de contenido.
+- **Hosting en web oficial:** mantenimiento de la web oficial del juego y actualización del contenido a medida que avanza el proyecto.
+
+# 4. Mecánicas de juego y Elementos de juego
+## 4.1 Descripción detallada del concepto de juego
+Bouba District es un juego **casual competitivo** donde el jugador se enfrenta a oleadas de enemigos conocidos como “Boubas”. Estos intentarán invadir el territorio del jugador. El objetivo principal es defenderse siguiendo las secuencias de teclas que presentan los Boubas, ajustándose al ritmo de la música.
 
