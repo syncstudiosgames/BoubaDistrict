@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    
     public void Jugar()
-    {
+    {  
         SceneManager.LoadScene("GameScene");
+    }
+
+    public void Logo()
+    {
+        // funcion especifica para la primera pantalla
+        // una vez pulsas el logo se te redirige al menu de inicio
+        SceneManager.LoadScene("MenuInicio");
     }
 
     public void Salir()
