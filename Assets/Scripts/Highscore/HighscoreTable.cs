@@ -20,31 +20,26 @@ public class HighscoreTable : MonoBehaviour
 
         // Cargar datos desde el archivo JSON
         string filePath = Application.dataPath + "/Scripts/Highscore/ScoreData.json";
+        highscoreEntryList = new List<HighscoreEntry>();
+
         if (File.Exists(filePath))
         {
             string jsonString = File.ReadAllText(filePath);
             Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
-            highscoreEntryList = highscores.scoreList;
+
+            // Convertir cada puntaje en `Scores` a un `HighscoreEntry`
+            foreach (int score in highscores.Scores)
+            {
+                highscoreEntryList.Add(new HighscoreEntry { score = score });
+            }
         }
         else
         {
             Debug.LogError("El archivo JSON no se encontró en " + filePath);
-            highscoreEntryList = new List<HighscoreEntry>(); // Evitar que esté vacío si no se encuentra el archivo
         }
 
         // Ordenar la lista de puntuaciones
-        for (int i = 0; i < highscoreEntryList.Count; i++)
-        {
-            for (int j = 0; j < highscoreEntryList.Count; j++)
-            {
-                if (highscoreEntryList[j].score < highscoreEntryList[i].score)
-                {
-                    HighscoreEntry tmp = highscoreEntryList[i];
-                    highscoreEntryList[i] = highscoreEntryList[j];
-                    highscoreEntryList[j] = tmp;
-                }
-            }
-        }
+        highscoreEntryList.Sort((x, y) => y.score.CompareTo(x.score));
 
         highscoreEntryTransformList = new List<Transform>();
         foreach (HighscoreEntry highscoreEntry in highscoreEntryList)
@@ -69,21 +64,22 @@ public class HighscoreTable : MonoBehaviour
         int score = highscoreEntry.score;
         entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().text = score.ToString();
 
-        string name = highscoreEntry.name;
+        string name = "AAA";
         entryTransform.Find("NombreEntrada").GetComponent<Text>().text = name;
 
-        transformList.Add(entryTemplate);
+        transformList.Add(entryTransform);
     }
 
+    [System.Serializable]
     private class Highscores
     {
-        public List<HighscoreEntry> scoreList;
+        public List<int> Scores;  // Cambiado para coincidir con el JSON
     }
 
     [System.Serializable]
     private class HighscoreEntry
     {
         public int score;
-        public string name;
+        //public string name;
     }
 }
