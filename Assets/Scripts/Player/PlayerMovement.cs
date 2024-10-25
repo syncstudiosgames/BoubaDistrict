@@ -1,45 +1,74 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
-    private bool isKicking;
+    [SerializeField] private NoteManager noteManager; 
+    [SerializeField] private float punchDuration = 0.2f; 
+    private bool isPunching = false; 
 
     void Start()
     {
         animator = GetComponent<Animator>();
 
         animator.SetBool("IsDancing", true);
-        isKicking = false;
-    }
 
-    void Update()
-    {
-        if (isKicking)
+        if (noteManager != null)
         {
-            animator.SetBool("IsKicking", true);
-            animator.SetBool("IsDancing", false);
+            noteManager.OnNoteLogged += HandleNoteLogged;
         }
         else
         {
-            animator.SetBool("IsKicking", false);
-            animator.SetBool("IsDancing", true);
+            Debug.LogError("NoteManager no asignado en PlayerMovement");
         }
     }
 
-    public void PerformKick()
+    private void HandleNoteLogged(Note note)
     {
-        StartCoroutine(DoKick());
+        if (!isPunching) 
+        {
+            PerformPunch();
+        }
     }
 
-    private IEnumerator DoKick()
+    public void PerformPunch()
     {
-        isKicking = true;
+        isPunching = true; 
+        animator.SetBool("IsDancing", false);
+        animator.SetBool("IsPunching", true);
 
-        yield return new WaitForSeconds(1.0f);
+        StartCoroutine(ReturnToDance());
+    }
 
-        isKicking = false;
+    private IEnumerator ReturnToDance()
+    {
+        yield return new WaitForSeconds(punchDuration);
+
+        animator.SetBool("IsPunching", false);
+        animator.SetBool("IsDancing", true);
+        isPunching = false; 
+    }
+
+    public void Die()
+    {
+        animator.SetBool("IsDancing", false);
+        animator.SetBool("IsKicking", false);
+        animator.SetBool("IsPunching", false);
+
+        animator.SetBool("IsDead", true);
+
+        if (noteManager != null)
+        {
+            noteManager.OnNoteLogged -= HandleNoteLogged;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (noteManager != null)
+        {
+            noteManager.OnNoteLogged -= HandleNoteLogged;
+        }
     }
 }

@@ -5876,7 +5876,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 02f5e81badd4e22458d1238929abc1a6, type: 3}
   m_PrefabInstance: {fileID: 1912178831}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1401985901
+--- !u!114 &1401985904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5888,6 +5888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 309e3ff5945ce0444b38ff2829d56644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteManager: {fileID: 726460152}
+  kickDuration: 0.2
 --- !u!1001 &1405593771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7259,7 +7261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02f5e81badd4e22458d1238929abc1a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.16
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02f5e81badd4e22458d1238929abc1a6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7307,13 +7309,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: d3543e1ab4ca2d5489800c77a3d6bd5c, type: 2}
     - target: {fileID: 5866666021909216657, guid: 02f5e81badd4e22458d1238929abc1a6, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
-        'mixamorig:RightHandRing2'\n\tTransform 'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform
-        'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
-        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7321,7 +7317,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 02f5e81badd4e22458d1238929abc1a6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1401985901}
+      addedObject: {fileID: 1401985904}
   m_SourcePrefab: {fileID: 100100000, guid: 02f5e81badd4e22458d1238929abc1a6, type: 3}
 --- !u!1001 &1914118793
 PrefabInstance:
