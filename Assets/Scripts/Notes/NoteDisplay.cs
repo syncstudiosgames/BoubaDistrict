@@ -26,7 +26,7 @@ public class NoteDisplay : MonoBehaviour
         rectTransform.localPosition = Vector3.zero;
         rectTransform.sizeDelta = new Vector2(_imageWidth, _imageHeight);
 
-        // Create image and assigned sprite:
+        // Create image and assign sprite:
         var image = noteGO.AddComponent<Image>();
         image.sprite = note.Sprite;
 
