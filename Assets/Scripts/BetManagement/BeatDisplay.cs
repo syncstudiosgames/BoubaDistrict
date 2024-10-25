@@ -14,12 +14,13 @@ public class BeatDisplay : MonoBehaviour
     {
         _sliderLeftToRight.value = MyNormalize(_beatManager.ClipProgress);
         _sliderRightToLeft.value = MyNormalize(_beatManager.ClipProgress);
+
+        Debug.Log(MyNormalize(_beatManager.ClipProgress));
     }
 
     float MyNormalize(float value)
     {
-        //return (value - Mathf.Floor(value))*10;
-        //return Mathf.Repeat(value, 1.0f) * 10;
-        return (value % 1.0f) * 10;
+        var result = (value % 1.0f) * 10;
+        return float.IsNaN(result) ? 0 : result;
     }
 }
