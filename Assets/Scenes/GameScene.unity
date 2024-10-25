@@ -1067,8 +1067,8 @@ MonoBehaviour:
   _beatManager: {fileID: 526279949}
   _sliderLeftToRight: {fileID: 797740055}
   _sliderRightToLeft: {fileID: 449595759}
-  _fillColor: {r: 0.68016917, g: 0.3537736, b: 1, a: 0}
-  _fillHighlightColor: {r: 0.6719556, g: 1, b: 0.25, a: 0}
+  _fillColor: {r: 0.68016917, g: 0.3537736, b: 1, a: 1}
+  _fillHighlightColor: {r: 0.6719556, g: 1, b: 0.25, a: 1}
   _fillLeftToRight: {fileID: 169201894}
   _fillRightToLeft: {fileID: 280148971}
 --- !u!1001 &189003286
