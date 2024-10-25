@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
 {
     public void Jugar()
     {  
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("Character Selection");
     }
 
     public void Logo()

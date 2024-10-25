@@ -13,7 +13,6 @@ public class characterSelection : MonoBehaviour
         characters[selectedCharacter].SetActive(false);
         selectedCharacter = (selectedCharacter + 1) % characters.Length ;
         characters[selectedCharacter].SetActive(true);
-
     }
 
     public void previousCharacter()
@@ -26,9 +25,13 @@ public class characterSelection : MonoBehaviour
         }
         characters[selectedCharacter].SetActive(true);
     }
-
+    
     public void StartGame()
     {
-       // logica de implementar el personaje en gameScene
+        // logica de implementar el personaje en gameScene
+        //PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
+        SceneManager.LoadScene("GameScene");
     }
+    
 }
+
