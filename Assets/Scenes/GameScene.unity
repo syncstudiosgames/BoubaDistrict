@@ -4146,6 +4146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1124231277}
   - component: {fileID: 1124231276}
+  - component: {fileID: 1124231278}
   m_Layer: 0
   m_Name: '@ScoreManager'
   m_TagString: Untagged
@@ -4182,6 +4183,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1124231278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124231275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ce52a3169f63a47b7662b1caa66086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1131489207}
+  score: {fileID: 1124231276}
 --- !u!1 &1131489206
 GameObject:
   m_ObjectHideFlags: 0
