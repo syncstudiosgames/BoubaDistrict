@@ -5565,7 +5565,6 @@ MonoBehaviour:
   _enemyPrefab: {fileID: 3971569818686494927, guid: 0026da0c63e507247b4ea1ee7819ba03, type: 3}
   _noteManager: {fileID: 726460152}
   _enemySpawner: {fileID: 236771641}
-  _enemyGoal: {fileID: 491120447}
 --- !u!4 &1431879112
 Transform:
   m_ObjectHideFlags: 0
@@ -5671,8 +5670,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439948788}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5682,7 +5681,7 @@ Transform:
   - {fileID: 779343779}
   - {fileID: 1695848588}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1452226800
 PrefabInstance:
   m_ObjectHideFlags: 0
