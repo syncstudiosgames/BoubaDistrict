@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteName: S
   actions: {fileID: -944628639613478452, guid: 09a6c07672575e54591ef6baa2f07817, type: 3}
-  _sprite: {fileID: 21300000, guid: fe57d2a02aeb95048a569d859fff7977, type: 3}
+  _sprite: {fileID: 21300000, guid: 6f264798b45fcfd4c93b18553078c700, type: 3}
   actionIndex: 1

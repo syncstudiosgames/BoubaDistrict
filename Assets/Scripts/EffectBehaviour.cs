@@ -6,21 +6,21 @@ using UnityEngine;
 
 public class EffectBehaviour : MonoBehaviour
 {
+    Vector3 _initialScale;
     private void Start()
     {
-        Boing();
+        _initialScale = transform.localScale;
     }
 
     public void Boing()
     {
-        var startingScale = transform.localScale;
-        var newScale = transform.localScale + transform.localScale*0.3f;
-        transform.LeanScale(newScale, .1f)
-            .setEaseInExpo()
-            .setOnComplete(() =>
-            {
-                transform.LeanScale(startingScale, .5f).setEaseInQuad();
-            });
+        transform.localScale = _initialScale;
 
+        var newScale = transform.localScale + _initialScale * 0.7f;
+        transform.localScale = newScale;
+        //transform.LeanScale(newScale, .2f).setEaseInExpo();
+
+        //transform.localScale = _initialScale;
+        transform.LeanScale(_initialScale, .2f).setEaseInQuad();
     }
 }
