@@ -54,7 +54,6 @@ public class Player : MonoBehaviour
         if(_healthPoints - damage > 0)
         {
             _healthPoints -= damage;
-            Debug.Log(damage);
         }
         else
         {

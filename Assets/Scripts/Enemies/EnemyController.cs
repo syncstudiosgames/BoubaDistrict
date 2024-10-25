@@ -8,10 +8,9 @@ public class EnemyController : MonoBehaviour
     [SerializeField] Rigidbody _rb;
     float _moveSpeed = 15;
     Vector3 _moveDirection;
-    public void SetUp(GameObject goal)
+    public void SetUp(float moveSpeed)
     {
-        var goalZ = goal.transform.position.z;
-        _moveDirection = new Vector3(0,0,goalZ) - transform.position;
+        _moveSpeed = moveSpeed; 
         _moveDirection = transform.forward;
     }
 
