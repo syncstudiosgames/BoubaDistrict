@@ -2904,9 +2904,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 320a73fc84a1ff541b40e0f02d01ea0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioClip: {fileID: 8300000, guid: b56bb3549161a8646af3e7d59df61abe, type: 3}
-  _bpm: 60
-  _errorThreshold: 0.2
+  _audioClip: {fileID: 8300000, guid: 987bcb52bba136d43ba0d0c33cb05fa5, type: 3}
+  _bpm: 121
+  _errorThreshold: 0.3
 --- !u!4 &526279951
 Transform:
   m_ObjectHideFlags: 0
@@ -5889,7 +5889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteManager: {fileID: 726460152}
-  kickDuration: 0.2
+  punchDuration: 0.2
 --- !u!1001 &1405593771
 PrefabInstance:
   m_ObjectHideFlags: 0
