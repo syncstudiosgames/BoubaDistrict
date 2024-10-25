@@ -13,6 +13,10 @@ public class BeatManager : MonoBehaviour
     AudioSource _audioSource;
     float _errorThreshold = 0.10f;
 
+    int _lastBeat = 0;
+    event Action _onBeat;
+    public event Action OnBeat { add { _onBeat += value; } remove { _onBeat -= value; } }
+
     int _lastExaminedBeat;
     bool _windowOpen = true;    // Window of time when the user can input a note on beat.
 
@@ -45,6 +49,14 @@ public class BeatManager : MonoBehaviour
     #region Private Methods
     void FixedUpdate()
     {
+        // MAIN BEAT EVENT:
+        int currentBeat = Mathf.FloorToInt(ClipProgress);
+        if (currentBeat != _lastBeat) // Check if the interval has reached a whole number.
+        {
+            _lastBeat = currentBeat;
+            _onBeat?.Invoke();
+        }
+
         // BEAT EVENTS: Fire events each beat (different events for different intervals (1 beat, 2 beats, etc.)
         foreach (var interval in _intervals)
         {
