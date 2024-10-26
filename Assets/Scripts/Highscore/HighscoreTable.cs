@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class HighscoreTable : MonoBehaviour
 {
@@ -38,19 +39,23 @@ public class HighscoreTable : MonoBehaviour
             Debug.LogError("El archivo JSON no se encontró en " + filePath);
         }
 
+        // Marcar el último elemento añadido como el "más reciente"
+        HighscoreEntry mostRecentEntry = highscoreEntryList[highscoreEntryList.Count - 1];
+
         // Ordenar la lista de puntuaciones
         highscoreEntryList.Sort((x, y) => y.score.CompareTo(x.score));
 
         highscoreEntryTransformList = new List<Transform>();
         foreach (HighscoreEntry highscoreEntry in highscoreEntryList)
         {
-            CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList);
+            // Enviar un indicador si el elemento es el "más reciente"
+            CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList, highscoreEntry == mostRecentEntry);
         }
     }
 
-    private void CreateHighscoreEntryTransform(HighscoreEntry highscoreEntry, Transform container, List<Transform> transformList)
+    private void CreateHighscoreEntryTransform(HighscoreEntry highscoreEntry, Transform container, List<Transform> transformList, bool isMostRecent)
     {
-        float templateHeight = 30f;
+        float templateHeight = 40f;
 
         Transform entryTransform = Instantiate(entryTemplate, container);
         RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
@@ -67,19 +72,37 @@ public class HighscoreTable : MonoBehaviour
         string name = "AAA";
         entryTransform.Find("NombreEntrada").GetComponent<Text>().text = name;
 
+        // Cambiar el color del texto del puntaje
+        if (isMostRecent)
+        {
+            entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = Color.yellow;
+            entryTransform.Find("NombreEntrada").GetComponent<Text>().color = Color.yellow;
+            entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = Color.yellow;
+        }
+        else
+        {
+            entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = Color.black;
+            entryTransform.Find("NombreEntrada").GetComponent<Text>().color = Color.black;
+            entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = Color.black;
+        }
+
         transformList.Add(entryTransform);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Inicio");
     }
 
     [System.Serializable]
     private class Highscores
     {
-        public List<int> Scores;  // Cambiado para coincidir con el JSON
+        public List<int> Scores;
     }
 
     [System.Serializable]
     private class HighscoreEntry
     {
         public int score;
-        //public string name;
     }
 }
