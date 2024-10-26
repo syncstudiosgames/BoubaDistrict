@@ -472,3 +472,74 @@ Además de los salarios del equipo, existen otros costes asociados:
 ## 4.1 Descripción detallada del concepto de juego
 Bouba District es un juego **casual competitivo** donde el jugador se enfrenta a oleadas de enemigos conocidos como “Boubas”. Estos intentarán invadir el territorio del jugador. El objetivo principal es defenderse siguiendo las secuencias de teclas que presentan los Boubas, ajustándose al ritmo de la música.
 
+## 4.2 Descripción detallada de las mecánicas de juego
+Las mecánicas principales de Bouba District se centran en la combinación de acción y ritmo.
+
+- **Ritmo y secuencia de teclas:** el jugador deberá pulsar las teclas correctas o tocar los botones en pantalla en sintonía con la música. Las secuencias variarán en dificultad según el nivel.
+- **Defensa:** el pulsar las teclas correctas provocará que los enemigos mueran. El jugador tendrá que aguantar el mayor tiempo posible, consiguiendo la mayor puntuación o hasta que termine la canción, si se trata de un nivel de duración determinada (en el caso de canciones conocidas).
+- **Puntuación:** cuantas más teclas correctas consecutivas se consigan pulsar, se acumularán potenciadores que aumentarán la puntuación obtenida. También se tendrá en cuenta la vida final del jugador o el tiempo total que ha sobrevivido (dependiendo del tipo de nivel). Esta puntuación se llevará a un ranking global para fomentar el aspecto competitivo y la rejugabilidad.
+
+## 4.3 Controles
+Los controles de Bouba District están diseñados para ser accesibles, simples y precisos.
+
+- **En dispositivos móviles y tablets:** el jugador cuenta con cuatro botones, dos a ambos lados de la pantalla con los que ejecutar las secuencias de notas.
+- En PC: se controlará por teclado. Las teclas asignadas serán A, S, D y E.
+
+## 4.4 Niveles y misiones
+El juego contará con varios niveles que se irán actualizando cada 3 meses. Todos con estéticas diferentes y con mejoras y accesorios para el personaje, además de los Boubas característicos de cada temporada. También introducirán nuevos temas musicales y presentarán mayor dificultad, generando enemigos más complicados de matar y aumentando la velocidad de las canciones.
+
+A lo largo del juego, se asignarán misiones secundarias como completar un nivel sin fallar ninguna secuencia, derrotar a un número específico de Boubas en un tiempo limitado o superar un nivel utilizando solo tres de los botones.
+
+## 4.5 Objetos, armas y power ups
+El juego no contará con objetos ni armas como tal. Más adelante se implementarán mecánicas para hacer más interesante el juego. Por ejemplo, cuando se ejecute un número determinado de secuencias correctas consecutivas, se entrará en un modo que dará puntuación extra al jugador. De momento tampoco se implementarán power-ups.
+
+## 5. Trasfondo
+## 5.1 Descripción detallada de la historia y la trama
+La ciudad de Harmonia es un lugar vibrante donde la música y la creatividad son el alma de la vida cotidiana. Sin embargo, todo cambia cuando un experimento científico que buscaba crear una nueva forma de vida musical no sale como estaba planeado. De este experimento surgen las "Boubas", criaturas mucosas y adorables que pronto se convierten en seres agresivos y caóticos, sembrando el caos en toda la ciudad.
+
+Al principio, los Boubas aparentan ser inofensivos, criaturas pequeñas y curiosas que captan la atención de todos. Pero, se han vuelto incontrolables, afectando el ritmo de la vida diaria de Harmonia y dominando a sus habitantes. Harmonia, incapaz de defenderse por medios convencionales, cae bajo la invasión de los Boubas.
+
+En medio del caos, surge una oportunidad inesperada: la música. Kiki, Kike, y Kiko, los tres miembros de la boyband “Echo Squad”, descubren que sus habilidades musicales pueden calmar a los Boubas y luchar contra ellos. Cada uno con su estilo musical único, se convierten en los últimos héroes de la ciudad, utilizando su talento para salvar a Harmonia de la invasión.
+
+Aunque Kiki, el vocalista, es el líder predeterminado y principal del grupo, Kike el guitarrista, y Kiko el baterista también juegan un papel crucial en esta lucha musical. Los jugadores pueden elegir jugar como cualquiera de los tres, aprovechando sus habilidades específicas para derrotar a los Boubas en batallas de ritmo intensas.
+
+## 5.2 Personajes
+### 5.2.1 Kiki - Vocalista
+Kiki es un joven talentoso que ha pasado toda su vida perfeccionando su habilidad para conectarse con los ritmos del mundo. A través de su voz, puede sincronizarse con los Boubas y calmarlos. Aunque puede parecer despreocupado y algo irresponsable, su amor por la música y su deseo de proteger la ciudad lo impulsan a ser un verdadero héroe.
+
+- **Descripción física:** Kiki lleva una camiseta de tirantes blanca con el logo de un rayo rojo brillante, pantalones anchos que le permiten moverse con agilidad, y siempre tiene su micrófono a mano. Su estilo rebelde y despreocupado refleja su naturaleza enérgica y espontánea.
+- **Habilidad especial:** Como vocalista, Kiki puede usar su voz para realizar ataques sónicos que desorientan a los Boubas y sincronizarse con ellos para calmarlos.
+
+### 5.2.2 Kike - Guitarrista
+Kike es el corazón de la banda y su guitarra es su arma principal en la lucha contra los Boubas. Con su melena larga y rubia, y su camiseta de tirantes con el símbolo de la paz, Kike proyecta una vibra relajada y optimista, pero su música es potente. Sus acordes son capaces de desorientar a los Boubas y aturdirlos, lo que le da a la banda una ventaja crucial en la batalla. A pesar de su apariencia tranquila, Kike tiene una habilidad natural para improvisar y liderar con sus riffs devastadores.
+
+- **Descripción física:** Pelo largo y rubio, con una camiseta de tirantes que lleva el símbolo de la paz. Es el miembro más tranquilo de la banda, pero su música habla con una intensidad feroz.
+
+### 5.2.3 Kiko - Batería
+Kiko es el motor rítmico de la banda, el encargado de mantener el tempo tanto en los conciertos como en las batallas. Con su camiseta rockera y su cabello negro rizado y despeinado, Kiko es una presencia caótica y rebelde, pero sus habilidades en la batería son impecables. Su naturaleza inquieta lo convierte en el miembro más impredecible, pero su ritmo es inquebrantable.
+
+- **Descripción física:** Kiko lleva una camiseta con un diseño rockero y su cabello negro rizado siempre está despeinado, reflejando su actitud despreocupada y libre.
+
+### 5.2.4 Boubas
+Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, estos pequeños son de colores llamativos y diferentes permitiendo una diferenciación rápida entre ellos. También presentan siluetas variadas que facilitan su reconocimiento, aunque estas diferencias físicas también pueden repercutir en las habilidades que presentan.
+
+#### 5.2.4.1 Bouba 1
+Este bouba es una criatura gelatinosa de apariencia adorable, pero no te dejes engañar por su aspecto blando. Su cuerpo rosado y brillante lo hace parecer inofensivo. Su apariencia chiclosa engaña, es altamente tóxico y mortal al tacto para el que intente derrotarlo.
+
+#### 5.2.4.2 Bouba 2
+Este Bouba es una criatura gelatinosa de un vibrante verde esmeralda. Su cuerpo, blando y brillante, da la impresión de ser inofensivo, pero no te dejes engañar. Aunque aparenta ser lento y despreocupado, tiene la sorprendente habilidad de deslizarse ágilmente por el terreno.
+
+#### 5.2.4.3 Bouba 3
+Este Bouba azul es una criatura tímida y extremadamente asustadiza, con una forma alargada que evoca una vulnerabilidad innata. La combinación de su apariencia frágil y su eficaz método de defensa hace que el Bouba azul sea una criatura impredecible y peligrosa.
+
+#### 5.2.4.4 Bouba 4
+Este Bouba amarillo, con su apariencia simple y ojos desorientados, es conocido por su torpeza y falta de inteligencia. Aunque no es el más astuto del grupo, el Bouba amarillo demuestra que incluso la simplicidad puede convertirse en una formidable defensa.
+
+#### 5.2.4.5 Bouba 5
+Este Bouba azul es una criatura amorfa y altamente volátil, cuya forma es tan variable como su temperamento. Su combinación de movilidad impredecible y potencial eléctrico lo establece como una amenaza intrigante, capaz de convertir cualquier enfrentamiento en un espectáculo electrizante.
+
+#### 5.2.4.6 Bouba 6
+Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, que contrasta sorprendentemente con su cuerpo gelatinoso. Sus dientes, que sobresalen de su cara amarilla, son su principal arma, utilizados tanto para morder a sus oponentes como para defenderse de cualquier amenaza. 
+
+## 5.3 Entornos y lugares
+La ciudad de Harmonia es una ciudad urbana típica. La vida cotidiana es acelerada y está llena de movimiento. Está repleta de edificios y barrios densamente habitados. La vida en Harmonia cambia por completo cuando es invadida por los Boubas. Las calles, antes llenas de actividad, se convierten en lugares peligrosos, forzando a los vecinos a refugiarse en sus casas y dejando el centro prácticamente desierto.
