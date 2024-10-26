@@ -7055,6 +7055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 732240064}
+  defaultCharacter: {fileID: 7349720203443634812, guid: cfd89b6c5a5fd2142acf3e13f4a1202a, type: 3}
 --- !u!4 &1721709965
 Transform:
   m_ObjectHideFlags: 0

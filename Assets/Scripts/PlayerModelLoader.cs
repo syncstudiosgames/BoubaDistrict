@@ -2,19 +2,21 @@ using UnityEngine;
 
 public class PlayerModelLoader : MonoBehaviour
 {
-    public Transform spawnPoint; 
+    public Transform spawnPoint;
+    public GameObject defaultCharacter;
+
 
     private void Start()
     {
-        GameObject selectedCharacter = CharacterSelectionManager.Instance.GetSelectedCharacter();
 
-        if (selectedCharacter != null)
+        if (CharacterSelectionManager.Instance != null)
         {
+            GameObject selectedCharacter = CharacterSelectionManager.Instance.GetSelectedCharacter();
             Instantiate(selectedCharacter, spawnPoint.position, spawnPoint.rotation);
         }
         else
         {
-            Debug.LogError("No se seleccionó ningún personaje");
+            Instantiate(defaultCharacter, spawnPoint.position, spawnPoint.rotation);
         }
     }
 }
