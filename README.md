@@ -678,5 +678,7 @@ Esta experiencia nos ha enseñado la importancia de realizar pruebas tempranas p
 
 ## 9.3 Conclusión
 La planificación y la definición clara de los objetivos desde el principio del proyecto son esenciales. Encontrar un equilibrio entre el enfoque en los diferentes aspectos del juego ayudará a la toma de decisiones más adelante y el aprovechamiento del tiempo.
+
 A la hora de desarrollar cualquier proyecto es imprescindible contar con una buena comunicación y la capacidad de adaptarse a cambios. Fomentar un entorno de trabajo colaborativo y garantizar que todos estén alineados con los objetivos del proyecto mejora la eficiencia y la calidad del producto final.
+
 Los desafíos técnicos que surgien durante el desarrollo aunque molestos, aportan lecciones sobre el manejo de la programación y la integración de sistemas. Compartir estos aprendizajes facilitará el trabajo en futuros proyectos.
