@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class CharacterSelectionManager : MonoBehaviour
 {
-    public static CharacterSelectionManager Instance; 
-    public GameObject selectedCharacter;
+    public static CharacterSelectionManager Instance;
+    private GameObject selectedCharacter;
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject); // No destruir al cargar una nueva escena
         }
         else
         {
@@ -18,9 +18,13 @@ public class CharacterSelectionManager : MonoBehaviour
         }
     }
 
-    // Método para seleccionar el personaje
     public void SelectCharacter(GameObject character)
     {
         selectedCharacter = character;
+    }
+
+    public GameObject GetSelectedCharacter()
+    {
+        return selectedCharacter;
     }
 }

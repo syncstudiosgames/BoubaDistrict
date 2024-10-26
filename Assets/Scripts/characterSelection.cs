@@ -5,35 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour
 {
+    public GameObject charactersParent;
     public GameObject[] characters; // Array de personajes disponibles
     public int selectedCharacter = 0; // Índice del personaje seleccionado
 
     private void Start()
     {
-        // Asegurarse de que solo el personaje seleccionado esté activo al inicio
-        foreach (GameObject character in characters)
+        foreach (Transform child in charactersParent.transform)
         {
-            character.SetActive(false);
+            child.gameObject.SetActive(false);
         }
-        characters[selectedCharacter].SetActive(true);
+        charactersParent.transform.GetChild(selectedCharacter).gameObject.SetActive(true);
     }
 
     public void NextCharacter()
     {
-        characters[selectedCharacter].SetActive(false);
+        charactersParent.transform.GetChild(selectedCharacter).gameObject.SetActive(false);
         selectedCharacter = (selectedCharacter + 1) % characters.Length;
-        characters[selectedCharacter].SetActive(true);
+        charactersParent.transform.GetChild(selectedCharacter).gameObject.SetActive(true);
     }
 
     public void PreviousCharacter()
     {
-        characters[selectedCharacter].SetActive(false);
+        charactersParent.transform.GetChild(selectedCharacter).gameObject.SetActive(false);
         selectedCharacter--;
         if (selectedCharacter < 0)
         {
             selectedCharacter += characters.Length;
         }
-        characters[selectedCharacter].SetActive(true);
+        charactersParent.transform.GetChild(selectedCharacter).gameObject.SetActive(true);
     }
 
     public void StartGame()

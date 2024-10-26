@@ -6,9 +6,11 @@ public class PlayerModelLoader : MonoBehaviour
 
     private void Start()
     {
-        if (CharacterSelectionManager.Instance != null && CharacterSelectionManager.Instance.selectedCharacter != null)
+        GameObject selectedCharacter = CharacterSelectionManager.Instance.GetSelectedCharacter();
+
+        if (selectedCharacter != null)
         {
-            Instantiate(CharacterSelectionManager.Instance.selectedCharacter, spawnPoint.position, spawnPoint.rotation);
+            Instantiate(selectedCharacter, spawnPoint.position, spawnPoint.rotation);
         }
         else
         {
