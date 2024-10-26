@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDisplay: {fileID: 126708870483694212}
+  _modelHolder: {fileID: 15043435684243626}
   healing: {fileID: 2548145624421096867}
 --- !u!114 &466754705404082054
 MonoBehaviour:
