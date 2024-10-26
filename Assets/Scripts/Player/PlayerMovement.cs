@@ -4,9 +4,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
-    [SerializeField] private NoteManager noteManager; 
-    [SerializeField] private float punchDuration = 0.2f; 
-    private bool isPunching = false; 
+    [SerializeField] private NoteManager noteManager; // Mantener esto serializable para asignar en el Inspector
+    [SerializeField] private float punchDuration = 0.2f;
+    private bool isPunching = false;
 
     void Start()
     {
@@ -14,6 +14,13 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("IsDancing", true);
 
+        // Intentar asignar el NoteManager si no está asignado desde el Inspector
+        if (noteManager == null)
+        {
+            noteManager = FindObjectOfType<NoteManager>();
+        }
+
+        // Verificar si el NoteManager está correctamente asignado
         if (noteManager != null)
         {
             noteManager.OnNoteLogged += HandleNoteLogged;
@@ -26,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleNoteLogged(Note note)
     {
-        if (!isPunching) 
+        if (!isPunching)
         {
             PerformPunch();
         }
@@ -34,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void PerformPunch()
     {
-        isPunching = true; 
+        isPunching = true;
         animator.SetBool("IsDancing", false);
         animator.SetBool("IsPunching", true);
 
@@ -47,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("IsPunching", false);
         animator.SetBool("IsDancing", true);
-        isPunching = false; 
+        isPunching = false;
     }
 
     public void Die()
