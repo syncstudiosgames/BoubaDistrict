@@ -573,7 +573,7 @@ El ambiente complementará la experiencia del juego. Los efectos de sonido será
 
 Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el sonido que hacen los Boubas al avanzar hacia el jugador. Esto fomentará la inmersión del usuario en el mundo. Se implementarán también señales auditivas a modo de retroalimentación, para indicar cómo hay que mantener el ritmo, cuándo ha recibido daño o cuándo realiza una acción correcta y calma a los Boubas
 
-# Interfaz
+# 7. Interfaz
 ## 7.1 Diseños básicos de los menús
 Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmitir la atmósfera urbana del nivel principal.
 
@@ -603,3 +603,80 @@ Se realizarán pruebas en todos los niveles para encontrar errores o aspectos qu
 ## 8.5 Fecha de lanzamiento
 El juego se publicará oficialmente el **17 diciembre.**
 
+# Post-Mortem
+Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático de manera profesional. Buscamos crear una experiencia divertida que pudiera ser comercializada y aprender a solucionar los conflictos que fueran surgiendo a lo largo del desarrollo.
+
+## 9.1 Lo que salió bien
+### 9.1.1 Dirección creativa
+Al ser un equipo con mucha experiencia como consumidores de videojuegos, teníamos claro qué objetivos queríamos cumplir y a qué estándares se nos exigía que realizáramos el juego. Dirigimos nuestras elecciones inspirados en los juegos móviles casuales que jugamos en nuestra infancia, buscando maneras de aportar elementos diferentes.
+
+El equipo estableció una visión creativa clara desde el comienzo. Esto facilitó el desarrollo de todos los apartados. La realización de conceptos visuales también evitó desvíos o diferencias entre estilos y mantuvo el proyecto en una dirección constante, unificando el tono de la aplicación. 
+
+Por otro lado, se mantuvo el enfoque en la experiencia del usuario. El juego debía poder ser jugado tanto en PC como en dispositivos táctiles, por lo que desarrollamos el prototipo teniendo en cuenta los controles desde el principio. La simplicidad de estos ha incrementado su accesibilidad y no ha causado problemas en su implementación. 
+
+### 9.1.2 La llegada de los héroes
+Una vez planteadas las mecánicas principales, el juego carecía de un contexto en el que incluirlas. Barajamos varias opciones que dieran un sentido al juego: diferentes escenarios, maneras de matar o eliminar a los Boubas… Hasta que finalmente nos decantamos por incluir a un personaje que luchara contra las criaturas.
+
+Esta decisión nos ha permitido transmitir mejor la atmósfera que buscábamos y mejorar el branding de Bouba District. Los personajes permiten que el usuario pueda identificarse con ellos, que la historia se sienta más personal y que haya mayor conexión emocina. Conseguimos explorar una trama más compleja y desarrollar una narrativa más interesante.
+
+Los Boubas, aunque entrañables, no irradiaban tanta identidad como lo hacen los personajes. Más adelante, podrán tener habilidades diferenciadoras que enriquezcan la jugabilidad. Además, son otra herramienta de personalización que se utilizará para monetizar el juego. La creación de personajes nos ha abierto un espacio en el que poder explorar la expansión del universo de Bouba District.
+
+### 9.1.3 Apartado artístico
+Decidimos aprovechar el hecho de que uno de los puntos fuertes del equipo es el diseño 2D y 3D. Desde el comienzo tuvimos claro el tono que buscábamos. La realización de moodboards, bocetos y la búsqueda de referencias nos facilitó enormemente la implementación de elementos que no chocaran visualmente.
+
+Al predominar unos controles tan sencillos, quisimos darle peso al arte y estética general del juego, sin perder calidad en la jugabilidad. Tratamos de buscar un estilo visual llamativo y característico y elevar el nivel de producción.
+
+Las animaciones y la integración de las interfaces en el escenario han sido otro elemento diferenciador. Consiguen que el mundo se sienta más vivo y dinámico, y favorecen la inmersión. Ayudan a comunicar la personalidad de los personajes, y los Boubas y props proporcionan un feedback visual claro.
+
+Un apartado visual interesante siempre atrae la atención de nuevos jugadores. Muchas veces puede ser el factor decisivo para que alguien se anime a probar el juego. Ha facilitado el marketing del juego enormemente, y nos ha dado un montón de contenido para publicitarnos en redes sociales.
+
+Al igual que con los personajes, al construir un universo atractivo, el juego tiene mayor potencial de expansiones y posibilidad de indagar en diferentes estéticas a lo largo de su desarrollo, sin perder su estilo animado.
+
+### 9.1.4 Herramientas
+Durante el desarrollo del proyecto optamos por usar herramientas con las que ya teníamos experiencia. Esta decisión nos permitió trabajar con eficiencia y reducir el tiempo necesario para alcanzar un dominio de ellas. Pudimos prestar atención a más aspectos del juego que invertir tiempo en aprender el software con el que trabajamos.
+
+También mejoró la calidad del trabajo colaborativo. Al tener un conocimiento común de los recursos, los miembros del equipo pudimos ayudarnos a resolver conflictos y corregir errores.
+
+En resumen, la decisión de elegir programas familiares y con extensa documentación resultó clave para optimizar nuestro tiempo y recursos y centrarnos en otros detalles para darle vida al juego.
+
+### 9.1.5 Comunicación
+Uno de los aspectos más destacados del desarrollo ha sido la comunicación entre los miembros del equipo. Priorizamos mantener un flujo de información claro y constante. Esto ha sido clave para llevar a cabo las tareas, resolver problemas y tomar decisiones sobre el juego.
+
+Todos hemos estado al tanto de los cambios, favoreciendo un avance hacia nuestros objetivos. La retroalimentación ha sido fundamental. Nuestra capacidad para tanto dar opiniones como recibirlas nos ha permitido descartar ideas dispares rápidamente y resolver obstáculos antes de que se convirtieran en problemas mayores.
+
+Conseguimos generar un sentido de compromiso que nos ha llevado a esforzarnos de manera colectiva.  Impulsamos la creatividad y motivación de cada persona y nos aseguramos de que cada área contara con el apoyo necesario para realizar sus tareas.
+
+La comunicación favoreció la eficiencia de nuestro trabajo y nos ha fortalecido moralmente. En conclusión, hemos sido capaces de adaptarnos a los cambios y mantener un ritmo constante de trabajo gracias a ella.
+
+## 9.2 Lo que salió mal
+### 9.2.1 Juego de ritmo arrítmico
+El principal reto que enfrentamos en el desarrollo de nuestro juego fue la sincronización de los beats con la pista de audio. El equipo no contaba con experiencia diseñando este tipo de juegos. Aunque en la etapa inicial parecía sencillo implementar un temporizador que enviara una señal de beat cada segundo, a la hora de llevarlo a la sincronización con la música experimentamos varios problemas.
+
+La necesidad de calcular el tiempo de cada beat en función de la tasa de muestreo y la duración de la pista llevó a un aumento en la complejidad del código, lo que resultó en errores adicionales y desincronización. Esto era grave, ya que la mecánica principal del juego se basa en seguir los tiempos de la música.
+
+Finalmente conseguimos integrar la canción del nivel principal a base de pruebas e investigar cómo implementar lo que buscábamos. Ahora disponemos del conocimiento para crear nuevos niveles con otra música. 
+
+### 9.2.2 Juego sin historia
+Otro de los desafíos que enfrentamos durante el desarrollo fue la falta de una narrativa clara desde el inicio del proyecto. Esto afectó algunos aspectos del desarrollo y en retrospectiva podemos identificar consecuencias asociadas.
+
+Sin una historia y un contexto, los jugadores no podrían comprender la motivación de las acciones del juego. Empleamos mucho tiempo en decidir cómo encajar las mecánicas sin que se sintieran forzadas. Si hubiéramos elegido la temática desde un principio  podríamos haber empezado con el desarrollo antes.
+
+Esto también generó algo de frustración en el equipo, ya que cada vez que se proponían ideas no se llegaba a ninguna conclusión. Se barajaron varias propuestas, con otros escenarios y otras maneras de afectar a los Boubas pero tuvimos que comenzar el desarrollo debido a la brevedad del plazo de entrega. No fue hasta la elección de la arena que nos decantamos por el nivel actual.
+
+De cara al futuro buscaremos un enfoque más equilibrado a la hora de diseñar un videojuego para evitar este cuello de botella en el flujo de trabajo.
+
+### 9.2.3 Interfaces
+En las etapas iniciales pretendíamos crear interfaces 2D que se alinearan con el estilo visual y temática del juego. Creamos todas las pantallas para que fueran incluidas, pero, a medida que avanzamos y comenzamos a trabajar en la resolución del juego nos encontramos con varios problemas.
+
+Nos dimos cuenta de que las interfaces 2D no se adaptaban bien al modo retrato en dispositivos móviles y tablets. Nuestros diseños se recortaban y los botones no escalaban correctamente.
+
+Finalmente decidimos rehacerlas y aprovechar vistas del escenario que habíamos diseñado que no se apreciaban durante el juego. Resultó ser una decisión beneficiosa ya que las nuevas se integran mucho mejor. Al utilizar elementos tridimensionales, pudimos asegurar que la interfaz se mantuviera consistente y clara, sin importar la configuración del dispositivo.
+
+Además, conseguimos añadir animaciones en las pantallas. Mantienen la estética del escenario y mejoran la inmersión. Pudimos ajustar mucho mejor los botones y que la transición de menú a partida fuera más agradable.
+
+Esta experiencia nos ha enseñado la importancia de realizar pruebas tempranas para las interfaces. Nos habría permitido identificar problemas de resolución antes de avanzar con el apartado artístico. Por otro lado, reforzó la idea de que es necesario ser flexible y estar abiertos a cambios durante el desarrollo.
+
+## 9.3 Conclusión
+La planificación y la definición clara de los objetivos desde el principio del proyecto son esenciales. Encontrar un equilibrio entre el enfoque en los diferentes aspectos del juego ayudará a la toma de decisiones más adelante y el aprovechamiento del tiempo.
+A la hora de desarrollar cualquier proyecto es imprescindible contar con una buena comunicación y la capacidad de adaptarse a cambios. Fomentar un entorno de trabajo colaborativo y garantizar que todos estén alineados con los objetivos del proyecto mejora la eficiencia y la calidad del producto final.
+Los desafíos técnicos que surgien durante el desarrollo aunque molestos, aportan lecciones sobre el manejo de la programación y la integración de sistemas. Compartir estos aprendizajes facilitará el trabajo en futuros proyectos.
