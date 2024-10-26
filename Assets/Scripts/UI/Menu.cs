@@ -1,26 +1,24 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public float delay = 0.25f; // Duración del delay en segundos
+
     public void Jugar()
-    {  
-        SceneManager.LoadScene("Character Selection");
+    {
+        StartCoroutine(LoadSceneWithDelay("Character Selection"));
     }
 
     public void Logo()
     {
-        // funcion especifica para la primera pantalla
-        // una vez pulsas el logo se te redirige al menu de inicio
-        SceneManager.LoadScene("MenuInicio");
+        StartCoroutine(LoadSceneWithDelay("MenuInicio"));
     }
 
     public void Credits()
     {
-        // acceso a creditos 
-        SceneManager.LoadScene("Credits");
+        StartCoroutine(LoadSceneWithDelay("Credits"));
     }
 
     public void Salir()
@@ -32,7 +30,13 @@ public class Menu : MonoBehaviour
     public void MainMenu()
     {
         Debug.Log("Inicio");
-        SceneManager.LoadScene("Inicio");
+        StartCoroutine(LoadSceneWithDelay("Inicio"));
     }
 
+    // Corutina para esperar un delay antes de cambiar de escena
+    private IEnumerator LoadSceneWithDelay(string sceneName)
+    {
+        yield return new WaitForSeconds(delay); // Espera el tiempo especificado
+        SceneManager.LoadScene(sceneName); // Carga la escena
+    }
 }
