@@ -603,7 +603,7 @@ Se realizarán pruebas en todos los niveles para encontrar errores o aspectos qu
 ## 8.5 Fecha de lanzamiento
 El juego se publicará oficialmente el **17 diciembre.**
 
-# Post-Mortem
+# 9. Post-Mortem
 Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático de manera profesional. Buscamos crear una experiencia divertida que pudiera ser comercializada y aprender a solucionar los conflictos que fueran surgiendo a lo largo del desarrollo.
 
 ## 9.1 Lo que salió bien
