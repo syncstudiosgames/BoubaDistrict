@@ -543,3 +543,63 @@ Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, q
 
 ## 5.3 Entornos y lugares
 La ciudad de Harmonia es una ciudad urbana típica. La vida cotidiana es acelerada y está llena de movimiento. Está repleta de edificios y barrios densamente habitados. La vida en Harmonia cambia por completo cuando es invadida por los Boubas. Las calles, antes llenas de actividad, se convierten en lugares peligrosos, forzando a los vecinos a refugiarse en sus casas y dejando el centro prácticamente desierto.
+
+# 6. Arte
+## 6.1 Estética general del juego
+El juego busca evocar una mezcla de **alegría y tensión**, creando una atmósfera divertida pero emocionante, combinando **ritmo y acción**. La jugabilidad será fluida y adictiva, mezclando la defensa contra enemigos con la necesidad de mantener el ritmo, lo que mantendrá al jugador en constante movimiento y alerta.
+
+## 6.2 Apartado visual
+Se desarrollará en **3D**, con **vista picada**, pero se utilizarán elementos en 2D para algunos aspectos visuales, como la **interfaz de usuario** y los **marcadores rítmicos** que indiquen las secuencias de teclas.
+
+Los entornos y personajes están modelados en 3D, con un diseño artístico **caricaturesco y colorido**, inspirado en juegos casuales que transmiten un tono **alegre, divertido y desenfadado**, a pesar de las mecánicas de "ataque y defensa". Los enemigos serán criaturas pequeñas y amables.
+
+- **Entorno:** Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida.
+
+- **Personajes:** Los personajes enemigos serán adorables criaturas, con formas inspiradas en slimes o criaturas fantásticas. Serán coloridos, y aunque sean "enemigos", su aspecto visual será entrañable.
+
+- **Efectos visuales:** Al conseguir apaciguar a las criaturas y ser derrotadas, se verán efectos visuales llamativos que darán un toque al videojuego.
+
+## 6.3 Música
+La música será un elemento fundamental que impulse la jugabilidad. Se caracterizará por:
+
+- **Géneros musicales:** la banda sonora contará con una mezcla de estilos, como pop, electrónica, reggae, jazz… etc. Cada nivel tendrá su propia pista temática que refleje la atmósfera del escenario.
+
+- **Interactividad:** la música se adaptará a la acción del jugador. A medida que se mantenga con vida irán apareciendo cambios de ritmo y se aumentará la velocidad para incrementar progresivamente la dificultad.
+
+- **Motivos:** Kiki y los Boubas realizarán motivos musicales que se repiten a lo largo del juego para crear continuidad y familiaridad entre escenarios.
+
+## 6.4 Ambiente sonoro
+El ambiente complementará la experiencia del juego. Los efectos de sonido serán variados, desde los sonidos que emiten los integrantes con sus altavoces hasta los ruidos de los Boubas al ser derrotados. Cada acción de Kiki, Kike y Keko tendrá un efecto de sonido que hará que el juego sea más dinámico y rico.
+
+Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el sonido que hacen los Boubas al avanzar hacia el jugador. Esto fomentará la inmersión del usuario en el mundo. Se implementarán también señales auditivas a modo de retroalimentación, para indicar cómo hay que mantener el ritmo, cuándo ha recibido daño o cuándo realiza una acción correcta y calma a los Boubas
+
+# Interfaz
+## 7.1 Diseños básicos de los menús
+Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmitir la atmósfera urbana del nivel principal.
+
+## 7.2 Diagramas de flujo
+
+# 8. Hoja de ruta del desarrollo
+## 8.1 Hito 1 - Diseño conceptual y prototipo básico (2 meses).
+**Duración estimada:  2 Semanas**
+
+Definir el concepto, estética, y estilo del videojuego. Crear un documento del videojuego (GDD) que contenga bocetos de personajes y escenarios e incluso explicaciones acerca de las mecánicas. Tiene como objetivo definir las necesidades del proyecto para así poder planificar correctamente su desarrollo y crear un prototipo inicial que muestre los conceptos fundamentales del videojuego.
+
+## 8.2 Hito 2 - Implementación de mecánicas de juego (4 meses)
+**Duración estimada: 2 Meses**
+
+Tras definir textualmente todos los apartados y aspectos importantes del videojuego, se empiezan a implementar más mecánicas aparte de las fundamentales. Implementación de todos los aspectos del videojuego desde la interacción del jugador con el videojuego hasta el sistema de ritmo.
+
+## 8.3 Hito 3 - Desarrollo de niveles y personajes (6 meses).
+**Duración estimada: 2 Meses**
+
+Una vez definido el estilo artístico del videojuego y los personajes y escenarios que lo componen así como, la banda sonora, se deben realizar diferentes diseños para cada aspecto del videojuego. Una vez diseñado todo, se debe realizar un modelado 3D seguido de sus correspondientes animaciones de aquellos componentes del videojuego que lo requieran (Personajes, Boubas, Escenarios). Diseño de todas las interfaces del videojuego (Menú Inicio, Ajustes, Créditos, Pantalla final,...). Finalmente, implementar los elementos visuales en el videojuego y adecuarlos a las mecánicas y el mundo del videojuego.
+
+## 8.4 Hito 4 - Pruebas y ajustes finales (7 meses).
+**Duración estimada: 2 Semanas**
+
+Se realizarán pruebas en todos los niveles para encontrar errores o aspectos que necesiten ajustes. Se revisarán las mecánicas y se ajustará la dificultad, para balancear la experiencia de juego y cambiar los últimos detalles antes de su lanzamiento.
+
+## 8.5 Fecha de lanzamiento
+El juego se publicará oficialmente el **17 diciembre.**
+
