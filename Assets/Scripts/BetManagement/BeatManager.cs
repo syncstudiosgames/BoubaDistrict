@@ -8,6 +8,8 @@ using UnityEngine.Events;
 
 public class BeatManager : MonoBehaviour
 {
+    [SerializeField] bool _waitForTutorial;
+
     #region Variables & Properties
     int _bpm;
     AudioSource _audioSource;
@@ -40,6 +42,11 @@ public class BeatManager : MonoBehaviour
         _errorThreshold = errorThreshold;
     }
 
+    public void StartPlaying()
+    {
+        _audioSource.Play();
+    }
+
     public bool IsOnBeat()
     {
         return _windowOpen;
@@ -47,6 +54,11 @@ public class BeatManager : MonoBehaviour
     #endregion
 
     #region Private Methods
+
+    private void Start()
+    {
+        if (!_waitForTutorial) { _audioSource.Play(); }
+    }
     void FixedUpdate()
     {
         // MAIN BEAT EVENT:

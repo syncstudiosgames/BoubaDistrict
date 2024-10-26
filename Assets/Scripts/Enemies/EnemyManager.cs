@@ -16,6 +16,8 @@ public class EnemyManager : MonoBehaviour
 
     [SerializeField] GameObject _enemySpawner;
 
+    [SerializeField] bool _waitForTutorial;
+
     event Action<int> _onEnemyHit;
     event Action<int> _onEnemyCured;
 
@@ -39,12 +41,25 @@ public class EnemyManager : MonoBehaviour
 
     #endregion
 
-    #region Private Methods
-    void Start()
+    #region Public Methods
+
+    public void StartGame()
     {
+        Invoke("StartSpawning", 5f);
+    }
+    #endregion
+
+    #region Private Methods
+
+    private void Start()
+    {
+        if(!_waitForTutorial) { StartSpawning(); }
+    }
+    void StartSpawning()
+    {
+
         StartCoroutine(SpawningCoroutine());
     }
-
     IEnumerator SpawningCoroutine()
     {
         while(true)
