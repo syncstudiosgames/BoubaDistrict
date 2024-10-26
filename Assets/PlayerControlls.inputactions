@@ -9,7 +9,7 @@
                     "name": "Note1",
                     "type": "Button",
                     "id": "be9378f5-8f5d-489f-bc81-83be6f698bc2",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -18,7 +18,7 @@
                     "name": "Note2",
                     "type": "Button",
                     "id": "f890cd1e-cce6-4273-96fb-62a816236e79",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -27,7 +27,7 @@
                     "name": "Note3",
                     "type": "Button",
                     "id": "9142d5fc-57c6-4ad1-9a86-0f2c429c10de",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -36,7 +36,7 @@
                     "name": "Note4",
                     "type": "Button",
                     "id": "bf74f124-9df1-4987-ac45-5fd221ac8aad",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -56,11 +56,33 @@
                 },
                 {
                     "name": "",
+                    "id": "b887007f-9567-43d0-a0e5-1bc0d79f9288",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Note1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f976ef9c-da43-445c-9433-ddaf32bcb76d",
                     "path": "<Keyboard>/#(S)",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "Note2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "88007ee6-5294-42b9-858d-1d284e55a728",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Note2",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -78,11 +100,33 @@
                 },
                 {
                     "name": "",
+                    "id": "3731dc33-d878-4dca-b9c4-026cc8b023ef",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Note3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ebf02bb8-d86b-41a7-ab47-0af1560f7199",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "Note4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f7e8e672-e865-48fd-a154-9c636f4f08b5",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Note4",
                     "isComposite": false,
                     "isPartOfComposite": false

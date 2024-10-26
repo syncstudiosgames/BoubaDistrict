@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class Enemy : MonoBehaviour
     int _complexity;
 
     [SerializeField] private EnemyDisplay enemyDisplay;
+    [SerializeField] GameObject _modelHolder;
     [SerializeField] public GameObject healing; 
 
     public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager)
@@ -87,7 +89,21 @@ public class Enemy : MonoBehaviour
         if (healing != null)
         {
             healing.SetActive(true);
-            StartCoroutine(PlayHealingAnimation());
+
+            LeanTween.value(gameObject, 1f, 0f, 1f).setOnUpdate((float value) =>                                                                      // Animate alpha.
+            {
+                var renderer = _modelHolder.GetComponentInChildren<MeshRenderer>();
+                Color color = renderer.material.color;
+                color.a = value;
+                renderer.material.color = color;
+
+            }).setOnComplete(() =>                                                                                                                  // Destroy GO when the animation is done.
+            {
+                _enemyManager.EnemyCured(_complexity);
+                Destroy(gameObject);
+            });
+
+            //StartCoroutine(PlayHealingAnimation());
         }
     }
 
