@@ -352,7 +352,7 @@ RectTransform:
   m_GameObject: {fileID: 526969509}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.2031329, y: 1.040316, z: 1.040316}
+  m_LocalScale: {x: 4.091682, y: 1.040316, z: 1.040316}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 586181076}
@@ -405,7 +405,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 526969512}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 586181077}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &526969512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,6 +468,7 @@ GameObject:
   - component: {fileID: 586181075}
   - component: {fileID: 586181074}
   - component: {fileID: 586181073}
+  - component: {fileID: 586181077}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -548,6 +561,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &586181077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586181072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d925e6fea5ddd6e4a8c1489dca2ee7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1195503556
 GameObject:
   m_ObjectHideFlags: 0
