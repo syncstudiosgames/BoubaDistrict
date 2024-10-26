@@ -383,13 +383,13 @@ FOTO DE LIENZOS
 # 2. Monetización
 En cuanto a la monetización, se ha escogido el modelo freemium. Existirá la posibilidad de desbloquear contenido adicional comprando a través del juego. Se implementará una moneda virtual que permitirá a los usuarios comprar mejoras estéticas, desbloquear niveles estacionales, y retos. Estas mejora no afectarán a la jugabilidad.
 
-### 2.1 Pase de batala
+### Pase de batalla
 Cada tres meses se harán disponibles de manera limitada niveles especiales, skins, enemigos y retos para incentivar las compras en el juego. Existe la posibilidad de desbloquear todas estas características comprando el pase de batalla, o comprando estos elementos de manera individual. Los jugadores podrán comprar la moneda del juego, con la que desbloquearán el contenido extra.
 
-### 2.2. Colaboración con artistas
+### Colaboración con artistas
 Más adelante, se plantea la opción de colaborar con cantantes y artistas para aumentar la visibilidad del juego y enriquecer la experiencia de los jugadores. Los eventos serán también temporales y ofrecerán cosméticos especiales del cantante, así como nuevas pistas de audio para los diferentes niveles, que enriquecerá la experiencia en general para los amantes de la música.
 
-## 2.3 Métricas de éxito
+## 2.1 Métricas de éxito
 Las **métricas en un modelo de negocio** son indicadores clave que permiten medir el rendimiento y éxito de una empresa o proyecto. Estas métricas son fundamentales para evaluar si el modelo de negocio está logrando sus objetivos y para tomar decisiones informadas sobre ajustes o mejoras. Para nuestro proyecto tendremos en cuenta los siguientes indicadores:
 
 - **Usuarios activos mensuales:** número de personas que juegan al mes
