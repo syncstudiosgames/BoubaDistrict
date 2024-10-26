@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,11 +7,11 @@ public class Enemy : MonoBehaviour
 {
     NoteManager _noteManager;
     EnemyManager _enemyManager;
-
     List<Note> _deathSequence = new List<Note>();
     int _complexity;
 
     [SerializeField] private EnemyDisplay enemyDisplay;
+    [SerializeField] public GameObject healing; 
 
     public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager)
     {
@@ -23,20 +22,25 @@ public class Enemy : MonoBehaviour
         CreateSequence();
         _noteManager.OnNoteLogged += CheckSequence;
 
-        // Pasar la secuencia generada al EnemyDisplay para que la renderice
         if (enemyDisplay != null)
         {
             enemyDisplay.SetSequence(_deathSequence);
         }
         else
         {
-            Debug.LogError("No asinado");
+            Debug.LogError("No asignado");
+        }
+
+        if (healing != null)
+        {
+            healing.SetActive(false);
         }
     }
+
     public void Print()
     {
         Debug.Log($"Enemy. Complexity: {_complexity}, Death Sequence:");
-        foreach( Note note in _deathSequence )
+        foreach (Note note in _deathSequence)
         {
             Debug.Log(note);
         }
@@ -48,13 +52,14 @@ public class Enemy : MonoBehaviour
         {
             _deathSequence.Add(GetRandomNote());
         }
-
     }
+
     Note GetRandomNote()
     {
         var notes = _noteManager.Notes;
         return notes[Random.Range(0, notes.Count)];
     }
+
     void CheckSequence(Note inputNote)
     {
         var noteBuffer = _noteManager.NoteBuffer;
@@ -71,7 +76,7 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "EnemyGoal")
+        if (other.tag == "EnemyGoal")
         {
             Die();
         }
@@ -79,14 +84,27 @@ public class Enemy : MonoBehaviour
 
     void Restore()
     {
+        if (healing != null)
+        {
+            healing.SetActive(true);
+            StartCoroutine(PlayHealingAnimation());
+        }
+    }
+
+    IEnumerator PlayHealingAnimation()
+    {
+        yield return new WaitForSeconds(1.0f); 
+
         _enemyManager.EnemyCured(_complexity);
         Destroy(gameObject);
     }
+
     void Die()
     {
         _enemyManager.EnemyHit(_complexity);
         Destroy(gameObject);
     }
+
     void OnDestroy()
     {
         _noteManager.OnNoteLogged -= CheckSequence;
