@@ -656,7 +656,7 @@ La necesidad de calcular el tiempo de cada beat en función de la tasa de muestr
 
 Finalmente conseguimos integrar la canción del nivel principal a base de pruebas e investigar cómo implementar lo que buscábamos. Ahora disponemos del conocimiento para crear nuevos niveles con otra música. 
 
-### 9.2.2 Juego sin historia
+### 9.2.2 Sin historia
 Otro de los desafíos que enfrentamos durante el desarrollo fue la falta de una narrativa clara desde el inicio del proyecto. Esto afectó algunos aspectos del desarrollo y en retrospectiva podemos identificar consecuencias asociadas.
 
 Sin una historia y un contexto, los jugadores no podrían comprender la motivación de las acciones del juego. Empleamos mucho tiempo en decidir cómo encajar las mecánicas sin que se sintieran forzadas. Si hubiéramos elegido la temática desde un principio  podríamos haber empezado con el desarrollo antes.
