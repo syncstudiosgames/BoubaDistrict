@@ -21,7 +21,7 @@ public class FinalScore : MonoBehaviour
     void Start()
     {
         // Define la ruta del archivo en persistentDataPath
-        filePath = "Assets/Scripts/Highscore/ScoreData.json";
+        filePath = Application.dataPath + "/Scripts/Highscore/ScoreData.json";
 
         if (player != null)
         {
