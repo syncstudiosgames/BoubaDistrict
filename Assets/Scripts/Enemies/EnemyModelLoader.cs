@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyModelLoader : MonoBehaviour
 {
-    [SerializeField] private GameObject[] enemyModels;
+    [SerializeField] public GameObject[] enemyModels;
 
     [SerializeField] private Transform modelHolder;
 
@@ -17,7 +17,7 @@ public class EnemyModelLoader : MonoBehaviour
     {
         if (enemyModels.Length == 0)
         {
-            Debug.LogError("No hay modelos asignados ");
+            Debug.LogError("No hay modelos asignados");
             return;
         }
 
@@ -33,6 +33,7 @@ public class EnemyModelLoader : MonoBehaviour
 
         modelInstance.transform.localPosition = Vector3.zero;
         modelInstance.transform.localRotation = Quaternion.identity;
-        modelInstance.transform.localScale = Vector3.one;
+        modelInstance.transform.localScale = randomModel.transform.localScale;
     }
+
 }
