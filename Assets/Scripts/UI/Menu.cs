@@ -25,8 +25,8 @@ public class Menu : MonoBehaviour
 
     public void MainMenu()
     {
-        Debug.Log("MenuInicio");
-        SceneManager.LoadScene("MenuInicio");
+        Debug.Log("Inicio");
+        SceneManager.LoadScene("Inicio");
     }
 
 }
