@@ -738,6 +738,37 @@ El juego se publicará oficialmente el **17 diciembre.**
 # 9. Post-Mortem
 Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático de manera profesional. Buscamos crear una experiencia divertida que pudiera ser comercializada y aprender a solucionar los conflictos que fueran surgiendo a lo largo del desarrollo.
 
+## Trabajo individual
+
+### Laura
+En mi experiencia individual, las mayores dificultades se centraron en la adaptabilidad de las interfaces a los distintos sistemas, un aspecto que exigió revisiones constantes para asegurar una experiencia óptima en dispositivos de diferentes resoluciones y configuraciones. Esta tarea requirió no solo cambios en el diseño inicial, sino también el ajuste de elementos visuales y de escalabilidad, lo cual nos enseñó la importancia de realizar pruebas tempranas para prever estos desafíos.
+
+Por otro lado, lo más gratificante ha sido la ilusión compartida por el proyecto. Ver cómo cada miembro del equipo aportaba su creatividad y esfuerzo con entusiasmo nos mantuvo motivados a lo largo del desarrollo. Esta energía colectiva fue esencial para superar los obstáculos y seguir avanzando hacia nuestro objetivo común.
+
+### Marta 
+El mayor reto con el que me he encontrado en este proyecto ha sido la redacción del Game Design Document. Encontré que era fácil perderme en los detalles o dedicar demasiado tiempo a perfeccionar ciertas secciones. Este trabajo me ha permitido entender la importancia de tener una guía clara y detallada desde el incio del desarrollo y analizar muchos aspectos que no nos habíamos planteado sobre el juego y la empresa. 
+
+Al encargarme de los escenarios he mejorado mis habilidades en la construcción de atmósferas y apreciar los elementos visuales y contextuales.  Aún así, he tenido que reducir mis ideas iniciales por la falta de tiempo.
+
+Gestionar las redes sociales del proyecto me enseñó sobre la importancia de comunicar adecuadamente la visión y el tono del juego. Fue difícil mantener la frecuencia de publicaciones y, a la vez, asegurar que cada contenido tuviera un impacto significativo. Además, el tiempo destinado a redes sociales a veces afectaba mi enfoque en tareas creativas como los escenarios, por lo que aprender a equilibrar ambas actividades fue un reto
+
+### Francisco
+
+Mi mayor desafío fue el modelado de personajes redondos en estilo cartoon con pocos polígonos, lo que requería capturar una apariencia expresiva sin sobrecargar el rendimiento del juego. Tras varias intentos, logré optimizar el número de polígonos, manteniendo la estética deseada y la eficiencia técnica. En la programación de la escena de puntuaciones, optimicé la interfaz para que mostrara la puntuación de forma clara , cuidando cada elemento visual para mejorar la entendimiento del usuario ante la tabla de puntuaciones.
+
+### Ana
+En mi experiencia individual, he asumido la responsabilidad del diseño de personajes, la integración de sus animaciones en Unity, la gestión de los estados de los personajes y la organización del rendering de notas. A lo largo de esta tarea, uno de los principales desafíos ha sido asegurar la coherencia visual y funcional de los personajes, lo que requería una coordinación estrecha entre el diseño artístico y los aspectos técnicos del juego. La integración de las animaciones en Unity fue un proceso complejo, especialmente al adaptar los estados de los personajes para que respondieran adecuadamente en el entorno de juego y reflejaran las acciones de manera fluida.
+
+Esta experiencia me ha enseñado la importancia de realizar pruebas tempranas en las interfaces, ya que habría sido beneficioso para identificar problemas de resolución desde el inicio. De esta forma, podríamos haber optimizado el flujo de trabajo en el apartado artístico sin enfrentar retrasos derivados de problemas técnicos. Además, el proceso reforzó la necesidad de mantener flexibilidad y apertura ante cambios durante el desarrollo, ya que las adaptaciones y ajustes resultaron esenciales para alcanzar un resultado satisfactorio.
+
+Lo más gratificante fue ver cómo la personalidad de los personajes cobraba vida en el juego y cómo cada detalle aportaba a la experiencia inmersiva del usuario. Esta satisfacción, combinada con el esfuerzo compartido del equipo, fue clave para mantener la motivación y el enfoque en superar cualquier obstáculo.
+
+### Lucía
+Para esta parte inicial del desarrollo el equipo se organizó eficientemente. Cada uno se especializó en aquello en lo que más destacaba dentro de las habilidades generales que todos compartimos. Ser un grupo multidisciplinar nos permitió distribuir la carga de trabajo y evitar dependencias. En mi caso, que me centré en la programación de sistemas "core" de jugabilidad, desde el principio experimenté un desarrollo ordenado. Gracias a una buena limpieza y estructura de código mis compañeras pudieron implementar sus funcionalidades de forma que se integraban a la perfección en el código fuente general del proyecto. La comunicación fue buena y aceleró el proceso.
+
+Los tiempos y los esfuerzos han sido bien calculados por el equipo y hemos conseguido nuestros objetivos en el tiempo justo. Como contras o problemáticas que hemos podido experimentar señalaría la inconsistencia artística inicial, ya que la identidad visual del proyecto se fue configurando a medida que avanzaba este; sin embargo, su buena escalabilidad daba espacio a esta evolución y no supuso demasiados problemas.
+
+## Trabajo grupal
 ## 9.1 Lo que salió bien
 ### 9.1.1 Dirección creativa
 Al ser un equipo con mucha experiencia como consumidores de videojuegos, teníamos claro qué objetivos queríamos cumplir y a qué estándares se nos exigía que realizáramos el juego. Dirigimos nuestras elecciones inspirados en los juegos móviles casuales que jugamos en nuestra infancia, buscando maneras de aportar elementos diferentes.
@@ -808,13 +839,7 @@ Además, conseguimos añadir animaciones en las pantallas. Mantienen la estétic
 
 Esta experiencia nos ha enseñado la importancia de realizar pruebas tempranas para las interfaces. Nos habría permitido identificar problemas de resolución antes de avanzar con el apartado artístico. Por otro lado, reforzó la idea de que es necesario ser flexible y estar abiertos a cambios durante el desarrollo.
 
-## 9.3 Apartados Individuales
-### Laura
-En mi experiencia individual, las mayores dificultades se centraron en la adaptabilidad de las interfaces a los distintos sistemas, un aspecto que exigió revisiones constantes para asegurar una experiencia óptima en dispositivos de diferentes resoluciones y configuraciones. Esta tarea requirió no solo cambios en el diseño inicial, sino también el ajuste de elementos visuales y de escalabilidad, lo cual nos enseñó la importancia de realizar pruebas tempranas para prever estos desafíos.
-
-Por otro lado, lo más gratificante ha sido la ilusión compartida por el proyecto. Ver cómo cada miembro del equipo aportaba su creatividad y esfuerzo con entusiasmo nos mantuvo motivados a lo largo del desarrollo. Esta energía colectiva fue esencial para superar los obstáculos y seguir avanzando hacia nuestro objetivo común.
-
-## 9.4 Conclusión
+## 9.3 Conclusión
 En conclusión, el desarrollo de este juego fue una experiencia de aprendizaje enriquecedora que nos permitió abordar tanto los éxitos como los desafíos.
 
 Por un lado, establecimos una dirección creativa clara desde el principio, lo que facilitó la cohesión del diseño y permitió que el equipo mantuviera una visión unificada. La creación de personajes y la estética visual resultaron clave para atraer y conectar con los jugadores, mejorando también las oportunidades de marketing y personalización. La elección de herramientas familiares optimizó nuestro tiempo y recursos, mientras que una comunicación efectiva entre los miembros del equipo fomentó la colaboración y la resolución rápida de problemas.
