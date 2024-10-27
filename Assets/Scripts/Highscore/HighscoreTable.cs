@@ -89,10 +89,10 @@ public class HighscoreTable : MonoBehaviour
         transformList.Add(entryTransform);
     }
 
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("Inicio");
-    }
+    //public void MainMenu()
+    //{
+    //    SceneManager.LoadScene("Inicio");
+    //}
 
     [System.Serializable]
     private class Highscores
