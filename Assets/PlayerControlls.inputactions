@@ -68,7 +68,7 @@
                 {
                     "name": "",
                     "id": "f976ef9c-da43-445c-9433-ddaf32bcb76d",
-                    "path": "<Keyboard>/#(S)",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -112,7 +112,7 @@
                 {
                     "name": "",
                     "id": "ebf02bb8-d86b-41a7-ab47-0af1560f7199",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
