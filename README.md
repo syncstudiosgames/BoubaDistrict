@@ -699,7 +699,14 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 ## 7.1 Diseños básicos de los menús
 Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmitir la atmósfera urbana del nivel principal.
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="600">
+</p>
+
 ## 7.2 Diagramas de flujo
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/DiagramaFlujo.PNG" width="600">
+</p>
 
 # 8. Hoja de ruta del desarrollo
 ## 8.1 Hito 1 - Diseño conceptual y prototipo básico (2 meses).
