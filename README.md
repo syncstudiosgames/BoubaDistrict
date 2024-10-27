@@ -1,4 +1,4 @@
-<h1 align="center">GDD Alfa</h1>
+<h1 align="center">Game Design Document Alfa</h1>
 <h2 align="center">Bouba District</h2>
 
 <p align="center">
