@@ -546,7 +546,7 @@ Las mecánicas principales de Bouba District se centran en la combinación de ac
 Los controles de Bouba District están diseñados para ser accesibles, simples y precisos.
 
 - **En dispositivos móviles y tablets:** el jugador cuenta con cuatro botones, dos a ambos lados de la pantalla con los que ejecutar las secuencias de notas.
-- En PC: se controlará por teclado, o con ratón, si se desea experimentar un mayor reto. Las teclas asignadas serán A, S, D y E.
+- En PC: se controlará por teclado, o con ratón, si se desea experimentar un mayor reto. Las teclas asignadas serán A, W, S y D.
 
 ## 4.4 Niveles y misiones
 El juego contará con varios niveles que se irán actualizando cada 3 meses. Todos con estéticas diferentes y con mejoras y accesorios para el personaje, además de los Boubas característicos de cada temporada. También introducirán nuevos temas musicales y presentarán mayor dificultad, generando enemigos más complicados de matar y aumentando la velocidad de las canciones.
