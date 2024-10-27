@@ -423,15 +423,6 @@ Interacción continua en redes sociales, foros y plataformas de streaming para m
 **¿Cuánto aporta cada fuente de ingresos a los ingresos generales?**
 - El pase de batalla genera ingresos constantes, mientras que las microtransacciones para el contenido adicional genera picos ocasionales dependiendo de los eventos disponibles dentro del juego.
 
-#### Lienzo - Modelo de Negocio Esquemático
-FOTO DE LIENZOS
-
-
-#### Lienzo - Modelo de Negocio Visual
-<p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/LienzoEsquema.PNG" width="600">
-</p>
-
 # 2. Monetización
 En cuanto a la monetización, se ha escogido el modelo freemium. Existirá la posibilidad de desbloquear contenido adicional comprando a través del juego. Se implementará una moneda virtual que permitirá a los usuarios comprar mejoras estéticas, desbloquear niveles estacionales, y retos. Estas mejora no afectarán a la jugabilidad.
 
