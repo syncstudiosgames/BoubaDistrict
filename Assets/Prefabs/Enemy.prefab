@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 7251590403582480685}
+  scaleMultiplier: 3
 --- !u!54 &2344857285261633146
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -218,7 +219,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 1.8}
-  m_SizeDelta: {x: 1.6, y: 0.7}
+  m_SizeDelta: {x: 3.2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7251590403582480685
 Canvas:
