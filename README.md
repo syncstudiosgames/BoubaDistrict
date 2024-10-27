@@ -1,6 +1,9 @@
 <h1 align="center">GDD Alfa</h1>
 <h2 align="center">Bouba District</h2>
-<h3 align="center">Sync Studios</h3>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Logo.png" width="200">
+</p>
 
 ---
 
