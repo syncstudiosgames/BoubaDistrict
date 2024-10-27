@@ -4,9 +4,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
-    [SerializeField] private NoteManager noteManager; // Mantener esto serializable para asignar en el Inspector
+    [SerializeField] private NoteManager noteManager; 
     [SerializeField] private float punchDuration = 0.2f;
     private bool isPunching = false;
+
+    [SerializeField] private ParticleSystem slashEffect;
 
     void Start()
     {
@@ -14,13 +16,11 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("IsDancing", true);
 
-        // Intentar asignar el NoteManager si no está asignado desde el Inspector
         if (noteManager == null)
         {
             noteManager = FindObjectOfType<NoteManager>();
         }
 
-        // Verificar si el NoteManager está correctamente asignado
         if (noteManager != null)
         {
             noteManager.OnNoteLogged += HandleNoteLogged;
@@ -28,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             Debug.LogError("NoteManager no asignado en PlayerMovement");
+        }
+
+        if (slashEffect != null)
+        {
+            slashEffect.Stop();
         }
     }
 
@@ -45,6 +50,13 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("IsDancing", false);
         animator.SetBool("IsPunching", true);
 
+        // Activar el sistema de partículas del slash
+        if (slashEffect != null)
+        {
+
+            slashEffect.Play();
+        }
+
         StartCoroutine(ReturnToDance());
     }
 
@@ -55,6 +67,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("IsPunching", false);
         animator.SetBool("IsDancing", true);
         isPunching = false;
+
+        if (slashEffect != null)
+        {
+            slashEffect.Stop();
+        }
     }
 
     public void Die()
@@ -68,6 +85,11 @@ public class PlayerMovement : MonoBehaviour
         if (noteManager != null)
         {
             noteManager.OnNoteLogged -= HandleNoteLogged;
+        }
+
+        if (slashEffect != null)
+        {
+            slashEffect.Stop();
         }
     }
 
