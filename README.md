@@ -445,6 +445,8 @@ Las **métricas en un modelo de negocio** son indicadores clave que permiten med
 - **Participación en eventos y retos:** porcentaje de usuarios que participan en las actividades especiales
 
 ### MÉTRICAS DE ÉXITO - POP IT!
+<div align="center">
+ 
 | | Pesimista | Normal| Optimista|
 |---|---|---|---|
 |Usuarios activos mensuales|1.000|5.000|20.000|
@@ -454,6 +456,8 @@ Las **métricas en un modelo de negocio** son indicadores clave que permiten med
 |Ingresos por usuario|1€/mes|3€/mes|5€/mes|
 |Número de ventas del pase de batalla (cada tres meses|100|350|350|
 |Participación en eventos y retos|20%|50%|70%|
+
+</div>
 
 <h1 align="center">BOUBA DISTRICT</h1>
 <h2 align="center">Sync Studios</h2>
@@ -479,12 +483,16 @@ El modelo de negocio escogido para Bouba District es un sistema **freemium**, qu
 Bouba District ofrecerá un **pase de batalla** temporal con niveles adicionales y mejoras estéticas temáticos. También se podrá comprar una **moneda virtual** para obtener estos elementos de manera individual. 
 
 ## 2.2 Tablas de productos y precios
-| | Pesimista | Normal|
+<div align="center">
+ 
+| |Precio|Descripción|
 |---|---|---|
 |Pase de batalla|4,99€|Desbloquea acceso a niveles temporales y accesorios temáticos
 |Moneda virtual (paquete pequeño)|0,99€|Paquete que contiene 100 monedas virtuales|
 |Moneda virtual (paquete mediano)|2,99€|Paquete que contiene 350 monedas virtuales|
 |Moneda virtual (paquete grande)|4,99€|Paquete que contiene 600 monedas virtuales|
+
+</div>
 
 # 3. Planificación y costes
 ## 3.1. 3.1 Equipo humano
