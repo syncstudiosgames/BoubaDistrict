@@ -7,6 +7,10 @@
 
 ---
 
+<p align="center">
+https://linktr.ee/syncstudiosgames
+</p>
+
 Ana Ordóñez Gragera
 
 Laura García Martín
