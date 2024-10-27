@@ -55,8 +55,12 @@ Los Boubas retrocederán al pasado mostrando un aspecto algo ochentero y disco p
 - Cosméticos (Ochenteros con toque espacial).
 - 3 nuevas canciones (Género disco).
 - 1 Mapa (Nave espacial).
-  
-![Temporada Enero](https://github.com/syncstudiosgames/BoubaDistrict/blob/mraboso2019-patch-1/Assets/GDDImages/TemporadaEnero.PNG?raw=true)
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA3.png" width="150">
+</p>
 
 ##### *Abril - Temporada 2 (Fairy garden)*
 En esa temporada, los jugadores explorarán un bosque tomado por los Boubas, los cuales han adoptado un aspecto algo feérico (alas, flores, etc.), y cantan al son. Los usuarios tendrán que enfrentarse a un nuevo Bouba, el Fairy Bouba, el cual presentará unas alas de hada y un nuevo modificador: polvos de hada. El jugador sufrirá una neblina temporal en la pantalla que dificultará la visión de las secuencias a pulsar. Esta temporada añadirá un nuevo personaje, el Fairy Catcher, que, junto a una nueva habilidad especial (Desactivador de Modificadores), podrá capturar a todos los Boubas sin miedo al poder del nuevo enemigo.
