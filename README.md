@@ -153,8 +153,8 @@ Los Boubas mostrarán su lado más rebelde y provocarán la revolución de los B
 - 3 nuevas canciones
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRO2.png" width="150">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRO1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRO2.png" width="150">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRO3.png" width="150">
 </p>
 
@@ -191,7 +191,7 @@ Sus personas más cercanas son sociables y disfrutan de la conversación de tema
 Nuestro usuario atiende a diferentes contextos sociales: universidad, amigos, ambiente de trabajo, pareja… Como es natural busca integrarse en su entorno y encontrar aficiones en común con la gente que le rodea, por lo general tiene gustos flexibles y está dispuesto a probar un producto si se lo recomiendan. Disfruta de compartir hobbies y temas de conversación con su grupo.
 
 ### ¿Qué dice y qué hace?
-Teniendo como base un usuario social, integral (con aficiones y aspiraciones) y que busca pequeñas ventanas de entretenimiento, podemos extrapolar una rutina diaria donde atiende a sus obligaciones, comparte tiempo de calidad con personas de su entorno y disfruta en su tiempo libre de nuestro producto u otros –dedicándole de media entre una y dos horas. 
+Teniendo como base un usuario social, integral (con aficiones y aspiraciones) y que busca pequeñas ventanas de entretenimiento, podemos extrapolar una rutina diaria donde atiende a sus obligaciones, comparte tiempo de calidad con personas de su entorno y disfruta en su tiempo libre de nuestro producto u otros dedicándole de media entre una y dos horas. 
 
 Debido a que establece conversaciones rutinariamente con las personas cercanas a él, en ocasiones surge el tema de nuestro producto: si la otra persona no conoce el juego, como ambos comparten gustos similares es posible que surja una recomendación, si ambos ya conocen el juego, comentan nuevo contenido, nuevos récords o tal vez juegan una partida juntos.
 
@@ -203,8 +203,11 @@ El equilibrio entre frustración-motivación se mantiene a través de un cuidado
 ### Resultados.
 El cliente considera un éxito el rendimiento de nuestro producto cuando es capaz de integrarlo en su rutina diaria sin que se convierta también en un elemento tedioso ni repetitivo. Idealmente la sensación de novedad, de reto y estímulo se mantiene el máximo tiempo posible. El éxito se sucede cuando se logra preservar ese efecto de “pico de serotonina” y sana competitividad consigo mismo.
 
-## 1.4 Caja de herramientas
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/MapaEmpatia.PNG" width="1000">
+</p>
 
+## 1.4 Caja de herramientas
 
 #### 1. Creadores de contenido
 - **De Sync Studios a los Creadores de contenido:** Sync Studios proporciona su producto a creadores de contenido de manera anticipada para que lo utilicen en sus plataformas, para hacer reseñas y streams. Además les proporciona dinero como pago por sus promociones.
@@ -231,8 +234,16 @@ El cliente considera un éxito el rendimiento de nuestro producto cuando es capa
 
 - **De Inversores a Sync Studios:** Los inversores proporcionan crédito financiero a Sync Studios, necesario para desarrollar nuevos videojuegos, mejorar los actuales o expandir la infraestructura de la empresa.
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CajaHerramientas.PNG" width="600">
+</p>
+
 ## 1.5 Modelo de lienzo
 Supone una representación gráfica en una plantilla de la infraestructura, oferta, tipo de clientes y finanzas de la empresa a estudio. Posee 9 bloques que se encuentran en categorías que desarrollaremos a continuación. Aportamos además una representación esquemática del contenido, y otra más visual.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/LienzoModelo.PNG" width="600">
+</p>
 
 #### Socios Clave
 **¿Quiénes son nuestros socios clave?**
@@ -409,7 +420,9 @@ FOTO DE LIENZOS
 
 
 #### Lienzo - Modelo de Negocio Visual
-FOTO DE LIENZOS
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/LienzoEsquema.PNG" width="600">
+</p>
 
 # 2. Monetización
 En cuanto a la monetización, se ha escogido el modelo freemium. Existirá la posibilidad de desbloquear contenido adicional comprando a través del juego. Se implementará una moneda virtual que permitirá a los usuarios comprar mejoras estéticas, desbloquear niveles estacionales, y retos. Estas mejora no afectarán a la jugabilidad.
