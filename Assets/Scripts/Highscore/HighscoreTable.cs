@@ -66,9 +66,9 @@ public class HighscoreTable : MonoBehaviour
         // Cambiar el color del texto del puntaje
         if (isMostRecent)
         {
-            entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = Color.yellow;
-            entryTransform.Find("NombreEntrada").GetComponent<Text>().color = Color.yellow;
-            entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = Color.yellow;
+            entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = new Color(1f, 0.47f, 0.42f); // Color rojo salmón
+            entryTransform.Find("NombreEntrada").GetComponent<Text>().color = new Color(1f, 0.47f, 0.42f);
+            entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = new Color(1f, 0.47f, 0.42f);
 
             // Añadir un borde negro alrededor del texto solo si es el más reciente
             Outline outline1 = entryTransform.Find("PuntuaciónEntrada").gameObject.AddComponent<Outline>();
