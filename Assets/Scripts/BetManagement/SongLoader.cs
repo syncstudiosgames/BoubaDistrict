@@ -8,7 +8,7 @@ public class SongLoader : MonoBehaviour
     [SerializeField] int _bpm;
     [SerializeField] float _errorThreshold;
 
-    private void Start()
+    private void Awake()
     {
         var _audioSource = gameObject.AddComponent<AudioSource>();
         _audioSource.clip = _audioClip;

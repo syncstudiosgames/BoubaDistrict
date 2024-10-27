@@ -57,7 +57,7 @@ public class BeatManager : MonoBehaviour
 
     private void Start()
     {
-        if (!_waitForTutorial) { _audioSource.Play(); }
+        if (!_waitForTutorial) { StartPlaying(); }
     }
     void FixedUpdate()
     {
