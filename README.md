@@ -540,7 +540,7 @@ Las mecánicas principales de Bouba District se centran en la combinación de ac
 
 - **Ritmo y secuencia de teclas:** el jugador deberá pulsar las teclas correctas o tocar los botones en pantalla en sintonía con la música. Las secuencias variarán en dificultad según el nivel.
 - **Defensa:** el pulsar las teclas correctas provocará que los enemigos se unan al jugador y le darán más vida. El jugador tendrá que aguantar el mayor tiempo posible, consiguiendo la mayor puntuación o hasta que termine la canción, si se trata de un nivel de duración determinada (en el caso de canciones conocidas).
-- **Puntuación:** cuantas más teclas correctas consecutivas se consigan pulsar, se acumularán potenciadores que aumentarán la puntuación obtenida. También se tendrá en cuenta la vida final del jugador o el tiempo total que ha sobrevivido (dependiendo del tipo de nivel). Esta puntuación se llevará a un ranking global para fomentar el aspecto competitivo y la rejugabilidad.
+- **Puntuación:** la puntuación incrementa cuando se curan Boubas. Cuantas más teclas correctas consecutivas se consigan pulsar, más puntos sumarás. También se tendrá en cuenta la vida final del jugador o el tiempo total que ha sobrevivido (dependiendo del tipo de nivel). Esta puntuación se llevará a un ranking global para fomentar el aspecto competitivo y la rejugabilidad.
 
 ## 4.3 Controles
 Los controles de Bouba District están diseñados para ser accesibles, simples y precisos.
