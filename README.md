@@ -23,7 +23,7 @@ A continuación explicaremos cómo se generarán ingresos a partir del videojueg
 ## 1.1 RoadMap - 2 años vista
 El RoadMap nos permitirá visualizar el camino hacia el crecimiento y éxito del negocio, ayudando a alinear a todos los equipos y stakeholders en torno a las prioridades y estrategias principales. A continuación, detallaremos la planificación que conseguirá mantener a nuestro videojuego vivo, mínimo durante 2 años.
 
-### Lanzamiento (17 - 18 diciembre )
+### Lanzamiento (17 diciembre )
 La reserva del videojuego proporcionará un pack de trajes fundadores y algunas monedas de pago, buscando facilitar y minimizar la primera inversión que realice el jugador en el videojuego.
 
 ### Temporadas
