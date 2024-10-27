@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
-using UnityEngine.SceneManagement;
 
 public class HighscoreTable : MonoBehaviour
 {
@@ -19,27 +17,20 @@ public class HighscoreTable : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
-        // Cargar datos desde el archivo JSON
-        string filePath = Application.dataPath + "/Scripts/Highscore/ScoreData.json";
-        highscoreEntryList = new List<HighscoreEntry>();
-
-        if (File.Exists(filePath))
+        // Inicializamos la lista de puntuaciones ficticias
+        highscoreEntryList = new List<HighscoreEntry>
         {
-            string jsonString = File.ReadAllText(filePath);
-            Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
+            new HighscoreEntry { score = 67 },
+            new HighscoreEntry { score = 89 },
+            new HighscoreEntry { score = 112 },
+            new HighscoreEntry { score = 34 },
+            new HighscoreEntry { score = 87 }
+        };
 
-            // Convertir cada puntaje en `Scores` a un `HighscoreEntry`
-            foreach (int score in highscores.Scores)
-            {
-                highscoreEntryList.Add(new HighscoreEntry { score = score });
-            }
-        }
-        else
-        {
-            Debug.LogError("El archivo JSON no se encontró en " + filePath);
-        }
+        // Agregar el puntuaje de la partida actual desde FinalScore
+        highscoreEntryList.Add(new HighscoreEntry { score = FinalScore.currentScore });
 
-        // Marcar el último elemento añadido como el "más reciente"
+        // Marcar el último elemento añadido como el más reciente
         HighscoreEntry mostRecentEntry = highscoreEntryList[highscoreEntryList.Count - 1];
 
         // Ordenar la lista de puntuaciones
@@ -48,7 +39,7 @@ public class HighscoreTable : MonoBehaviour
         highscoreEntryTransformList = new List<Transform>();
         foreach (HighscoreEntry highscoreEntry in highscoreEntryList)
         {
-            // Enviar un indicador si el elemento es el "más reciente"
+            // Comprobar cual es el más reciente para cambiar su color
             CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList, highscoreEntry == mostRecentEntry);
         }
     }
@@ -69,7 +60,7 @@ public class HighscoreTable : MonoBehaviour
         int score = highscoreEntry.score;
         entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().text = score.ToString();
 
-        string name = "AAA";
+        string name = "AAA"; // Nombre 
         entryTransform.Find("NombreEntrada").GetComponent<Text>().text = name;
 
         // Cambiar el color del texto del puntaje
@@ -87,17 +78,6 @@ public class HighscoreTable : MonoBehaviour
         }
 
         transformList.Add(entryTransform);
-    }
-
-    //public void MainMenu()
-    //{
-    //    SceneManager.LoadScene("Inicio");
-    //}
-
-    [System.Serializable]
-    private class Highscores
-    {
-        public List<int> Scores;
     }
 
     [System.Serializable]
