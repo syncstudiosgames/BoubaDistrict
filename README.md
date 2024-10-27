@@ -5,11 +5,12 @@
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Logo.png" width="200">
 </p>
 
----
+<div align="center">
 
-<p align="center">
-https://linktr.ee/syncstudiosgames
-</p>
+Redes Sociales:  https://linktr.ee/syncstudiosgames
+</div>
+
+---
 
 Ana Ordóñez Gragera
 
