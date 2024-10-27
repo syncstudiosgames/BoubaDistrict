@@ -241,8 +241,6 @@ El cliente considera un éxito el rendimiento de nuestro producto cuando es capa
 ## 1.5 Modelo de lienzo
 Supone una representación gráfica en una plantilla de la infraestructura, oferta, tipo de clientes y finanzas de la empresa a estudio. Posee 9 bloques que se encuentran en categorías que desarrollaremos a continuación. Aportamos además una representación esquemática del contenido, y otra más visual.
 
-#### Lienzo - Modelo de Negocio Visual
-
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/LienzoModelo.PNG" width="600">
 </p>
@@ -418,7 +416,10 @@ Interacción continua en redes sociales, foros y plataformas de streaming para m
 - El pase de batalla genera ingresos constantes, mientras que las microtransacciones para el contenido adicional genera picos ocasionales dependiendo de los eventos disponibles dentro del juego.
 
 #### Lienzo - Modelo de Negocio Esquemático
+FOTO DE LIENZOS
 
+
+#### Lienzo - Modelo de Negocio Visual
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/LienzoEsquema.PNG" width="600">
 </p>
@@ -463,6 +464,10 @@ Las **métricas en un modelo de negocio** son indicadores clave que permiten med
 
 #  1. Introducción
 Bouba District es un juego competitivo musical que combina mecánicas que mezclan **acción y ritmo**. El jugador deberá enfrentarse a hordas de criaturas adorables pero peligrosas, que se acercan en masa para atacarlo. La **clave** para defenderse será seguir el ritmo de la **música** e ingresar secuencias de **teclas** correctas dentro del tiempo indicado. 
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Banner.PNG" width="600">
+</p>
 
 ## 1.1 Concepto 
 El estilo principal principal del juego es una combinación de **tower defense** y **juegos** de ritmo. El jugador debe evitar ser invadido por las criaturas siguiendo secuencias de teclas que aparecen en pantalla, ajustándose al ritmo de la música. 
@@ -523,11 +528,15 @@ Además de los salarios del equipo, existen otros costes asociados:
 ## 4.1 Descripción detallada del concepto de juego
 Bouba District es un juego **casual competitivo** donde el jugador se enfrenta a oleadas de enemigos conocidos como “Boubas”. Estos intentarán invadir el territorio del jugador. El objetivo principal es defenderse siguiendo las secuencias de teclas que presentan los Boubas, ajustándose al ritmo de la música.
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Gameplay.PNG" width="600">
+</p>
+
 ## 4.2 Descripción detallada de las mecánicas de juego
 Las mecánicas principales de Bouba District se centran en la combinación de acción y ritmo.
 
 - **Ritmo y secuencia de teclas:** el jugador deberá pulsar las teclas correctas o tocar los botones en pantalla en sintonía con la música. Las secuencias variarán en dificultad según el nivel.
-- **Defensa:** el pulsar las teclas correctas provocará que los enemigos mueran. El jugador tendrá que aguantar el mayor tiempo posible, consiguiendo la mayor puntuación o hasta que termine la canción, si se trata de un nivel de duración determinada (en el caso de canciones conocidas).
+- **Defensa:** el pulsar las teclas correctas provocará que los enemigos se unan al jugador y le darán más vida. El jugador tendrá que aguantar el mayor tiempo posible, consiguiendo la mayor puntuación o hasta que termine la canción, si se trata de un nivel de duración determinada (en el caso de canciones conocidas).
 - **Puntuación:** cuantas más teclas correctas consecutivas se consigan pulsar, se acumularán potenciadores que aumentarán la puntuación obtenida. También se tendrá en cuenta la vida final del jugador o el tiempo total que ha sobrevivido (dependiendo del tipo de nivel). Esta puntuación se llevará a un ranking global para fomentar el aspecto competitivo y la rejugabilidad.
 
 ## 4.3 Controles
@@ -538,6 +547,11 @@ Los controles de Bouba District están diseñados para ser accesibles, simples y
 
 ## 4.4 Niveles y misiones
 El juego contará con varios niveles que se irán actualizando cada 3 meses. Todos con estéticas diferentes y con mejoras y accesorios para el personaje, además de los Boubas característicos de cada temporada. También introducirán nuevos temas musicales y presentarán mayor dificultad, generando enemigos más complicados de matar y aumentando la velocidad de las canciones.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/EscenarioTop.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="600">
+</p>
 
 A lo largo del juego, se asignarán misiones secundarias como completar un nivel sin fallar ninguna secuencia, derrotar a un número específico de Boubas en un tiempo limitado o superar un nivel utilizando solo tres de los botones.
 
@@ -561,15 +575,27 @@ Kiki es un joven talentoso que ha pasado toda su vida perfeccionando su habilida
 - **Descripción física:** Kiki lleva una camiseta de tirantes blanca con el logo de un rayo rojo brillante, pantalones anchos que le permiten moverse con agilidad, y siempre tiene su micrófono a mano. Su estilo rebelde y despreocupado refleja su naturaleza enérgica y espontánea.
 - **Habilidad especial:** Como vocalista, Kiki puede usar su voz para realizar ataques sónicos que desorientan a los Boubas y sincronizarse con ellos para calmarlos.
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki.PNG" width="600">
+</p>
+
 ### 5.2.2 Kike - Guitarrista
 Kike es el corazón de la banda y su guitarra es su arma principal en la lucha contra los Boubas. Con su melena larga y rubia, y su camiseta de tirantes con el símbolo de la paz, Kike proyecta una vibra relajada y optimista, pero su música es potente. Sus acordes son capaces de desorientar a los Boubas y aturdirlos, lo que le da a la banda una ventaja crucial en la batalla. A pesar de su apariencia tranquila, Kike tiene una habilidad natural para improvisar y liderar con sus riffs devastadores.
 
 - **Descripción física:** Pelo largo y rubio, con una camiseta de tirantes que lleva el símbolo de la paz. Es el miembro más tranquilo de la banda, pero su música habla con una intensidad feroz.
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kike.PNG" width="600">
+</p>
+
 ### 5.2.3 Kiko - Batería
 Kiko es el motor rítmico de la banda, el encargado de mantener el tempo tanto en los conciertos como en las batallas. Con su camiseta rockera y su cabello negro rizado y despeinado, Kiko es una presencia caótica y rebelde, pero sus habilidades en la batería son impecables. Su naturaleza inquieta lo convierte en el miembro más impredecible, pero su ritmo es inquebrantable.
 
 - **Descripción física:** Kiko lleva una camiseta con un diseño rockero y su cabello negro rizado siempre está despeinado, reflejando su actitud despreocupada y libre.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiko.PNG" width="600">
+</p>
 
 ### 5.2.4 Boubas
 Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, estos pequeños son de colores llamativos y diferentes permitiendo una diferenciación rápida entre ellos. También presentan siluetas variadas que facilitan su reconocimiento, aunque estas diferencias físicas también pueden repercutir en las habilidades que presentan.
