@@ -10,6 +10,7 @@ public class NoteDisplay : MonoBehaviour
     [SerializeField] float _imageWidth;
     [SerializeField] float _imageHeight;
 
+    [SerializeField] Sprite _missedSprite;
 
     private void Start()
     {
@@ -28,7 +29,15 @@ public class NoteDisplay : MonoBehaviour
 
         // Create image and assign sprite:
         var image = noteGO.AddComponent<Image>();
-        image.sprite = note.Sprite;
+        if(onBeat) 
+        {
+            image.sprite = note.Sprite;
+        }
+        else
+        {
+            image.sprite = _missedSprite;
+        }
+        
 
         // Animation:
         rectTransform.LeanMoveLocal(new Vector2(rectTransform.localPosition.x, rectTransform.localPosition.y + 100), 0.2f).setEaseInOutQuart(); // Animate position.
