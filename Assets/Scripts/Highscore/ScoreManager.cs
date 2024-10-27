@@ -7,13 +7,15 @@ public class ScoreManager : MonoBehaviour
 {
     [SerializeField] EnemyManager _enemyManager;
     [SerializeField] NoteManager _noteManager;
+    [SerializeField] bool _waitForTutorial;
+
+    int _score = 0;
 
     int numEnemiesHealed = 0;
 
     int combo = 0;
-    int totalCombo = 0;
 
-    public int Score { get { return numEnemiesHealed + totalCombo; } }
+    public int Score { get { return _score; } set { _score = value; _onScoreChanged?.Invoke(); } }
     public int Combo { get { return combo; } }
 
     event Action _onScoreChanged;
@@ -22,28 +24,42 @@ public class ScoreManager : MonoBehaviour
     event Action _onComboChanged;
     public event Action OnComboChanged { add {  _onComboChanged += value; } remove { _onComboChanged -= value; } }
 
-
-    private void Start()
+    public void StartGame()
     {
         _enemyManager.OnEnemyCured += (int complexity) =>
         {
             numEnemiesHealed++;
-            _onScoreChanged?.Invoke();
+            Score += 5 * (int) Math.Pow(complexity,2);
         };
 
         _noteManager.OnNoteLogged += (Note n) =>
         {
             combo++;
+            Score += combo;
             _onComboChanged?.Invoke();
         };
 
         _noteManager.OnEmptyBeat += () =>
         {
-            totalCombo += combo;
             combo = 0;
             _onComboChanged?.Invoke();
-            _onScoreChanged?.Invoke();
         };
+
+        StartCoroutine(ScorePointEachSecond());
+    }
+
+    private void Start()
+    {
+        if(!_waitForTutorial) { StartGame(); }
+    }
+
+    IEnumerator ScorePointEachSecond()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            Score += 1;
+        }
     }
 
 

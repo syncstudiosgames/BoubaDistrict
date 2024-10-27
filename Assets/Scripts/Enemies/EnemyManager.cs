@@ -44,8 +44,8 @@ public class EnemyManager : MonoBehaviour
     const float MOVE_SPEED_ACELERATION = 0.5f;
     const float MAX_MOVE_SPEED = 30f;
 
-    float[] _complexityChance = {3f, 8f, 5f, 2f}; // Chances for 1,2,3... complexity.
-    readonly float[] COMPLEXITY_ACELERATION = { 0.1f, 0.2f, 0.4f, 0.6f };
+    float[] _complexityChance = {3f, 8f, 1f, 0f}; // Chances for 1,2,3... complexity.
+    readonly float[] COMPLEXITY_ACELERATION = { 0.05f, 0.1f, 0.3f, 0.2f };
 
     #endregion
 
