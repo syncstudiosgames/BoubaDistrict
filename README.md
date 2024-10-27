@@ -808,6 +808,12 @@ Además, conseguimos añadir animaciones en las pantallas. Mantienen la estétic
 
 Esta experiencia nos ha enseñado la importancia de realizar pruebas tempranas para las interfaces. Nos habría permitido identificar problemas de resolución antes de avanzar con el apartado artístico. Por otro lado, reforzó la idea de que es necesario ser flexible y estar abiertos a cambios durante el desarrollo.
 
+## 9.3 Apartados Individuales
+### Laura
+En mi experiencia individual, las mayores dificultades se centraron en la adaptabilidad de las interfaces a los distintos sistemas, un aspecto que exigió revisiones constantes para asegurar una experiencia óptima en dispositivos de diferentes resoluciones y configuraciones. Esta tarea requirió no solo cambios en el diseño inicial, sino también el ajuste de elementos visuales y de escalabilidad, lo cual nos enseñó la importancia de realizar pruebas tempranas para prever estos desafíos.
+
+Por otro lado, lo más gratificante ha sido la ilusión compartida por el proyecto. Ver cómo cada miembro del equipo aportaba su creatividad y esfuerzo con entusiasmo nos mantuvo motivados a lo largo del desarrollo. Esta energía colectiva fue esencial para superar los obstáculos y seguir avanzando hacia nuestro objetivo común.
+
 ## 9.3 Conclusión
 En conclusión, el desarrollo de este juego fue una experiencia de aprendizaje enriquecedora que nos permitió abordar tanto los éxitos como los desafíos.
 
