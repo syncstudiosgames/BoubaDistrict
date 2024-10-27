@@ -649,6 +649,10 @@ Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, q
 ## 5.3 Entornos y lugares
 La ciudad de Harmonia es una ciudad urbana típica. La vida cotidiana es acelerada y está llena de movimiento. Está repleta de edificios y barrios densamente habitados. La vida en Harmonia cambia por completo cuando es invadida por los Boubas. Las calles, antes llenas de actividad, se convierten en lugares peligrosos, forzando a los vecinos a refugiarse en sus casas y dejando el centro prácticamente desierto.
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario2.PNG" width="600">
+</p>
+
 # 6. Arte
 ## 6.1 Estética general del juego
 El juego busca evocar una mezcla de **alegría y tensión**, creando una atmósfera divertida pero emocionante, combinando **ritmo y acción**. La jugabilidad será fluida y adictiva, mezclando la defensa contra enemigos con la necesidad de mantener el ritmo, lo que mantendrá al jugador en constante movimiento y alerta.
@@ -660,9 +664,22 @@ Los entornos y personajes están modelados en 3D, con un diseño artístico **ca
 
 - **Entorno:** Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida.
 
-- **Personajes:** Los personajes enemigos serán adorables criaturas, con formas inspiradas en slimes o criaturas fantásticas. Serán coloridos, y aunque sean "enemigos", su aspecto visual será entrañable.
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario.PNG" width="600">
+</p>
+
+- **Personajes:** Los personajes siguenen la línea cartoon, con formas redondas y extremidades largas. Los enemigos serán adorables criaturas, con formas inspiradas en slimes o criaturas fantásticas. Serán coloridos, y aunque sean "enemigos", su aspecto visual será entrañable.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki3D.PNG" width="600">
+</p>
 
 - **Efectos visuales:** Al conseguir apaciguar a las criaturas y ser derrotadas, se verán efectos visuales llamativos que darán un toque al videojuego.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Efectos.PNG" width="600">
+</p>
+
 
 ## 6.3 Música
 La música será un elemento fundamental que impulse la jugabilidad. Se caracterizará por:
