@@ -241,6 +241,8 @@ El cliente considera un éxito el rendimiento de nuestro producto cuando es capa
 ## 1.5 Modelo de lienzo
 Supone una representación gráfica en una plantilla de la infraestructura, oferta, tipo de clientes y finanzas de la empresa a estudio. Posee 9 bloques que se encuentran en categorías que desarrollaremos a continuación. Aportamos además una representación esquemática del contenido, y otra más visual.
 
+#### Lienzo - Modelo de Negocio Visual
+
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/LienzoModelo.PNG" width="600">
 </p>
@@ -416,10 +418,7 @@ Interacción continua en redes sociales, foros y plataformas de streaming para m
 - El pase de batalla genera ingresos constantes, mientras que las microtransacciones para el contenido adicional genera picos ocasionales dependiendo de los eventos disponibles dentro del juego.
 
 #### Lienzo - Modelo de Negocio Esquemático
-FOTO DE LIENZOS
 
-
-#### Lienzo - Modelo de Negocio Visual
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/LienzoEsquema.PNG" width="600">
 </p>
@@ -535,7 +534,7 @@ Las mecánicas principales de Bouba District se centran en la combinación de ac
 Los controles de Bouba District están diseñados para ser accesibles, simples y precisos.
 
 - **En dispositivos móviles y tablets:** el jugador cuenta con cuatro botones, dos a ambos lados de la pantalla con los que ejecutar las secuencias de notas.
-- En PC: se controlará por teclado. Las teclas asignadas serán A, S, D y E.
+- En PC: se controlará por teclado, o con ratón, si se desea experimentar un mayor reto. Las teclas asignadas serán A, S, D y E.
 
 ## 4.4 Niveles y misiones
 El juego contará con varios niveles que se irán actualizando cada 3 meses. Todos con estéticas diferentes y con mejoras y accesorios para el personaje, además de los Boubas característicos de cada temporada. También introducirán nuevos temas musicales y presentarán mayor dificultad, generando enemigos más complicados de matar y aumentando la velocidad de las canciones.
