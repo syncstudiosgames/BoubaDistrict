@@ -70,7 +70,11 @@ En esa temporada, los jugadores explorarán un bosque tomado por los Boubas, los
 - Nuevo enemigo (Fairy Bouba).
 - Nuevo personaje (Fairy Catcher).
 
-![Temporada Abril](https://github.com/syncstudiosgames/BoubaDistrict/blob/mraboso2019-patch-1/Assets/GDDImages/TemporadaAbril.PNG?raw=true)
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAF1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAF2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAF3.png" width="150">
+</p>
 
 ##### *Julio - Temporada 3 (Boubas at the pool!)*
 Temporada en la que los pequeños slimes presentarán un aspecto semejante al agua, y tomarán una personalidad desenfadada y pacífica. Esta temporada traerá nuevas canciones con un género musical nunca antes visto por los Boubas, “Reggae”, que los animará a presentar unos accesorios de estilo “Hippie”, para así llevar con ellos un gran movimiento “pacifista”.
@@ -79,8 +83,11 @@ Temporada en la que los pequeños slimes presentarán un aspecto semejante al ag
 - Cosméticos (“Hippie”)
 - Nuevo género musical (“Reggae”)
 - 3 nuevas canciones
-
-![Temporada Julio](https://github.com/syncstudiosgames/BoubaDistrict/blob/mraboso2019-patch-1/Assets/GDDImages/TemporadaJulio.PNG?raw=true)
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRJ1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRJ2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRJ3.png" width="150">
+</p>
 
 ##### *Octubre - Temporada 4 (Bumpin' to the Jazz Beat)*
 Con esta temporada, los Boubas sacarán sus mejores galas, adoptando nuevos y elegantes accesorios (sombreros, boas,...), adaptándose a la moda de los años 20. Al transcurrir en el mismo periodo de tiempo que la festividad “Halloween”, se hará un evento exclusivo con una ambientación oscura y siniestra pero divertida. También, en esta temporada llegarán un nuevo enemigo, Jazzoo Bouba, que, podrá alterar el ritmo del juego, cuando aparezca en el escenario, las secuencias de los enemigos aparecidos por pantalla, cambiarán aleatoriamente, haciendo que el jugador siempre se mantenga alerta. Y un nuevo personaje, The Maestro, un personaje algo elegante que traerá consigo una nueva habilidad, (Ralentización del ritmo), con la que podrá ralentizar la velocidad con la que deberá pulsar las secuencias de botones.
@@ -89,7 +96,11 @@ Con esta temporada, los Boubas sacarán sus mejores galas, adoptando nuevos y el
 
 - Nuevo enemigo (Jazoo Bouba) y nuevo personaje (The Maestro).
 
-![Temporada Octubre](https://github.com/syncstudiosgames/BoubaDistrict/blob/mraboso2019-patch-1/Assets/GDDImages/TemporadaOctubre.PNG?raw=true)
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/THO1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/THO2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/THO3.png" width="150">
+</p>
 
 ##### *Enero - Temporada 5 (Rave Remix!)*
 Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado más “techno” y futurista de los Boubas. Estas criaturas, presentarán una apariencia algo tecnológica y electrónica, mientras que bailaran al son de las canciones más jugadas por la comunidad, pero con un toque muy electrónico. Se harán diferentes “remix” techno de las canciones más aclamadas por los jugadores, para que puedan volver a jugarlas como el primer día. En esta temporada se celebrará el aniversario del videojuego con un evento de 3 semanas que por cada una de ellas presentará un nuevo “remix”.
@@ -99,9 +110,13 @@ Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado m�
 - Evento (Aniversario)
 - Nuevo género (“Techno”)
 - Nuevo mapa (Escenario frenético, rodeado de neón y láseres que iluminan el escenario)
+- 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE3.png" width="150">
+</p>
 
-![Temporada Enero](https://github.com/syncstudiosgames/BoubaDistrict/blob/mraboso2019-patch-1/Assets/GDDImages/TemporadaEnero2.PNG?raw=true)
-![Temporada Enero](https://github.com/syncstudiosgames/BoubaDistrict/blob/mraboso2019-patch-1/Assets/GDDImages/TemporadaEnero3.PNG?raw=true)
 
 ##### *Abril - Temporada 6 (Rodeo Showdown)(Country)*
 Los Boubas viajarán al viejo oeste y se harán unos auténticos vaqueros. Los  cosméticos que se ofrecerán en este pase serán dignos de un verdadero vaquero (sombreros, látigos, botas,...).
@@ -110,7 +125,11 @@ Los Boubas viajarán al viejo oeste y se harán unos auténticos vaqueros. Los  
 - Cosméticos(Sombreros, látigos, elementos de  “vaquero”)
 - Evento (Colaboración), evento de una semana en la que se espera añadir cosméticos inspirados en un artista cuyo género principal sea el “country”, y que a su vez, se pueda incluir una de sus canciones en el juego.
 
-![Temporada Abril](https://github.com/syncstudiosgames/BoubaDistrict/blob/mraboso2019-patch-1/Assets/GDDImages/TemporadaAbril2.PNG?raw=true)
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAC1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAC2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAC3.png" width="150">
+</p>
 
 ##### *Julio - Temporada 7 (Wild Boubas)*
 En esta temporada se les ofrecerá a los jugadores una experiencia diferente mediante unos ritmos tribales, centrándose en la naturaleza y las tradiciones tribales. Los Boubas podrán adornarse con diferentes accesorios (collares con cuentas, plumas, hojas, flores,...). Se añadirá un nuevo enemigo, Shaman Boubas, el cual tendrá “2 vidas”, aparecerá por pantalla con una secuencia y aspecto de Boubas común, al pulsar su secuencia, aparecerá con su aspecto verdadero en la misma posición y con otra secuencia, ante la que el jugador tendrá que responder rápidamente, y un nuevo personaje, Tribal Huntress, cuya habilidad especial le permitirá predecir los movimientos de los siguientes 3 Boubas, dándole al jugador un mayor margen de preparación para pulsar los botones correctos.
@@ -119,7 +138,11 @@ En esta temporada se les ofrecerá a los jugadores una experiencia diferente med
 - Cosméticos (Naturaleza, hojas, flores,..)
 - Nuevo enemigo (Shaman Boubas) y nuevo personaje (Tribal Huntress)
 
-![Temporada Julio](https://github.com/syncstudiosgames/BoubaDistrict/blob/mraboso2019-patch-1/Assets/GDDImages/TemporadaJulio2.PNG?raw=true)
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJJ1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJJ2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJJ3.png" width="150">
+</p>
 
 ##### *Octubre - Temporada 8 (Bouba'n Roll!)*
 Los Boubas mostrarán su lado más rebelde y provocarán la revolución de los Boubas con ritmos agresivos basados en el “Rock and Roll”. Tomarán un aspecto algo rebelde, con pinturas o “marcas” en sus cuerpos, accesorios metálicos, algunas cadenas, … . Junto a estos cosméticos, “Pop it!”, obtendrá un nuevo género musical “Rock and Roll” junto a 3 nuevas canciones que destacarán por su dificultad y que animarán a los jugadores a conseguir la mejor puntuación posible.
