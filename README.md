@@ -703,6 +703,10 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmiten la atmósfera urbana del nivel principal.
 
 <p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/MenuInicio.PNG" width="700">
+</p>
+
+<p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="700">
 </p>
 
