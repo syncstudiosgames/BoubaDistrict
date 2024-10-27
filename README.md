@@ -814,7 +814,7 @@ En mi experiencia individual, las mayores dificultades se centraron en la adapta
 
 Por otro lado, lo más gratificante ha sido la ilusión compartida por el proyecto. Ver cómo cada miembro del equipo aportaba su creatividad y esfuerzo con entusiasmo nos mantuvo motivados a lo largo del desarrollo. Esta energía colectiva fue esencial para superar los obstáculos y seguir avanzando hacia nuestro objetivo común.
 
-## 9.3 Conclusión
+## 9.4 Conclusión
 En conclusión, el desarrollo de este juego fue una experiencia de aprendizaje enriquecedora que nos permitió abordar tanto los éxitos como los desafíos.
 
 Por un lado, establecimos una dirección creativa clara desde el principio, lo que facilitó la cohesión del diseño y permitió que el equipo mantuviera una visión unificada. La creación de personajes y la estética visual resultaron clave para atraer y conectar con los jugadores, mejorando también las oportunidades de marketing y personalización. La elección de herramientas familiares optimizó nuestro tiempo y recursos, mientras que una comunicación efectiva entre los miembros del equipo fomentó la colaboración y la resolución rápida de problemas.
