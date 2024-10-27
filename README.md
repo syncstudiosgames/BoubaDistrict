@@ -153,7 +153,7 @@ En esta temporada se les ofrecerá a los jugadores una experiencia diferente med
 </p>
 
 ##### *Octubre - Temporada 8 (Bouba'n Roll!)*
-Los Boubas mostrarán su lado más rebelde y provocarán la revolución de los Boubas con ritmos agresivos basados en el “Rock and Roll”. Tomarán un aspecto algo rebelde, con pinturas o “marcas” en sus cuerpos, accesorios metálicos, algunas cadenas, … . Junto a estos cosméticos, “Pop it!”, obtendrá un nuevo género musical “Rock and Roll” junto a 3 nuevas canciones que destacarán por su dificultad y que animarán a los jugadores a conseguir la mejor puntuación posible.
+Los Boubas mostrarán su lado más rebelde y provocarán la revolución de los Boubas con ritmos agresivos basados en el “Rock and Roll”. Tomarán un aspecto algo rebelde, con pinturas o “marcas” en sus cuerpos, accesorios metálicos, algunas cadenas, … . Junto a estos cosméticos, “Bouba Distric!”, obtendrá un nuevo género musical “Rock and Roll” junto a 3 nuevas canciones que destacarán por su dificultad y que animarán a los jugadores a conseguir la mejor puntuación posible.
 
 **Contenido:**
 - Cosméticos(Metal, cadenas, marcas “rebeldes”)
@@ -443,7 +443,7 @@ Las **métricas en un modelo de negocio** son indicadores clave que permiten med
 - **Número de ventas del pase de batalla:** compras totales del pase completo cada tres meses
 - **Participación en eventos y retos:** porcentaje de usuarios que participan en las actividades especiales
 
-### MÉTRICAS DE ÉXITO - POP IT!
+### MÉTRICAS DE ÉXITO - BOUBA DISTRIC!
 <div align="center">
  
 | | Pesimista | Normal| Optimista|
