@@ -113,7 +113,7 @@ Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado m�
 - Evento (Aniversario)
 - Nuevo género (“Techno”)
 - Nuevo mapa (Escenario frenético, rodeado de neón y láseres que iluminan el escenario)
-- 
+  
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE1.png" width="150">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE2.png" width="150">
@@ -473,7 +473,7 @@ Bouba District es un juego competitivo musical que combina mecánicas que mezcla
 </p>
 
 ## 1.1 Concepto 
-El estilo principal principal del juego es una combinación de **tower defense** y **juegos** de ritmo. El jugador debe evitar ser invadido por las criaturas siguiendo secuencias de teclas que aparecen en pantalla, ajustándose al ritmo de la música. 
+El estilo principal del juego es una combinación de **tower defense** y **juegos** de ritmo. El jugador debe evitar ser invadido por las criaturas siguiendo secuencias de teclas que aparecen en pantalla, ajustándose al ritmo de la música. 
 
 ## 1.2 Historia y personajes (breve)
 Un experimento fallido ha provocado que unas criaturas mucosas, los “Boubas” se hayan escapado y quieran conquistar todo aquello con lo que se cruzan. Estas criaturas, atraídas por el sonido, han comenzado a invadir la ciudad, sembrando el caos y el desorden. Kiki un joven prodigio de la música es el único que puede detener esta invasión.  Utilizando sus dotes innatos para seguir el ritmo, deberá enfrentarse a estos mutantes e intentar restaurar el orden de la ciudad.
@@ -588,7 +588,7 @@ Kike es el corazón de la banda y su guitarra es su arma principal en la lucha c
 - **Descripción física:** Pelo largo y rubio, con una camiseta de tirantes que lleva el símbolo de la paz. Es el miembro más tranquilo de la banda, pero su música habla con una intensidad feroz.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kike.PNG" width="500">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiko.PNG" width="500">
 </p>
 
 ### 5.2.3 Kiko - Batería
@@ -597,7 +597,7 @@ Kiko es el motor rítmico de la banda, el encargado de mantener el tempo tanto e
 - **Descripción física:** Kiko lleva una camiseta con un diseño rockero y su cabello negro rizado siempre está despeinado, reflejando su actitud despreocupada y libre.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiko.PNG" width="500">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kike.PNG" width="500">
 </p>
 
 ### 5.2.4 Boubas
@@ -671,7 +671,7 @@ Los entornos y personajes están modelados en 3D, con un diseño artístico **ca
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario.PNG" width="700">
 </p>
 
-- **Personajes:** Los personajes siguenen la línea cartoon, con formas redondas y extremidades largas. Los enemigos serán adorables criaturas, con formas inspiradas en slimes o criaturas fantásticas. Serán coloridos, y aunque sean "enemigos", su aspecto visual será entrañable.
+- **Personajes:** Los personajes siguen en la línea cartoon, con formas redondas y extremidades largas. Los enemigos serán adorables criaturas, con formas inspiradas en slimes o criaturas fantásticas. Serán coloridos, y aunque sean "enemigos", su aspecto visual será entrañable.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki3D.PNG" width="250">
@@ -694,7 +694,7 @@ La música será un elemento fundamental que impulse la jugabilidad. Se caracter
 - **Motivos:** Kiki y los Boubas realizarán motivos musicales que se repiten a lo largo del juego para crear continuidad y familiaridad entre escenarios.
 
 ## 6.4 Ambiente sonoro
-El ambiente complementará la experiencia del juego. Los efectos de sonido serán variados, desde los sonidos que emiten los integrantes con sus altavoces hasta los ruidos de los Boubas al ser derrotados. Cada acción de Kiki, Kike y Keko tendrá un efecto de sonido que hará que el juego sea más dinámico y rico.
+El ambiente complementará la experiencia del juego. Los efectos de sonido serán variados, desde los sonidos que emiten los integrantes con sus altavoces hasta los ruidos de los Boubas al ser derrotados. Cada acción de Kiki, Kike y Kiko tendrá un efecto de sonido que hará que el juego sea más dinámico y rico.
 
 Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el sonido que hacen los Boubas al avanzar hacia el jugador. Esto fomentará la inmersión del usuario en el mundo. Se implementarán también señales auditivas a modo de retroalimentación, para indicar cómo hay que mantener el ritmo, cuándo ha recibido daño o cuándo realiza una acción correcta y calma a los Boubas
 
@@ -716,22 +716,22 @@ Las interfaces están integradas dentro del escenario. Cuentan con botones estil
 </p>
 
 # 8. Hoja de ruta del desarrollo
-## 8.1 Hito 1 - Diseño conceptual y prototipo básico (2 meses).
+## 8.1 Hito 1 - Diseño conceptual y prototipo básico (2 semanas).
 **Duración estimada:  2 Semanas**
 
 Definir el concepto, estética, y estilo del videojuego. Crear un documento del videojuego (GDD) que contenga bocetos de personajes y escenarios e incluso explicaciones acerca de las mecánicas. Tiene como objetivo definir las necesidades del proyecto para así poder planificar correctamente su desarrollo y crear un prototipo inicial que muestre los conceptos fundamentales del videojuego.
 
-## 8.2 Hito 2 - Implementación de mecánicas de juego (4 meses)
+## 8.2 Hito 2 - Implementación de mecánicas de juego (2 meses)
 **Duración estimada: 2 Meses**
 
 Tras definir textualmente todos los apartados y aspectos importantes del videojuego, se empiezan a implementar más mecánicas aparte de las fundamentales. Implementación de todos los aspectos del videojuego desde la interacción del jugador con el videojuego hasta el sistema de ritmo.
 
-## 8.3 Hito 3 - Desarrollo de niveles y personajes (6 meses).
+## 8.3 Hito 3 - Desarrollo de niveles y personajes (2 meses).
 **Duración estimada: 2 Meses**
 
 Una vez definido el estilo artístico del videojuego y los personajes y escenarios que lo componen así como, la banda sonora, se deben realizar diferentes diseños para cada aspecto del videojuego. Una vez diseñado todo, se debe realizar un modelado 3D seguido de sus correspondientes animaciones de aquellos componentes del videojuego que lo requieran (Personajes, Boubas, Escenarios). Diseño de todas las interfaces del videojuego (Menú Inicio, Ajustes, Créditos, Pantalla final,...). Finalmente, implementar los elementos visuales en el videojuego y adecuarlos a las mecánicas y el mundo del videojuego.
 
-## 8.4 Hito 4 - Pruebas y ajustes finales (7 meses).
+## 8.4 Hito 4 - Pruebas y ajustes finales (2 semanas).
 **Duración estimada: 2 Semanas**
 
 Se realizarán pruebas en todos los niveles para encontrar errores o aspectos que necesiten ajustes. Se revisarán las mecánicas y se ajustará la dificultad, para balancear la experiencia de juego y cambiar los últimos detalles antes de su lanzamiento.
