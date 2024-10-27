@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    private float delay = 0.25f; // Duración del delay en segundos
+    private float delay = 0.2f; // Duración del delay en segundos
 
     public void Jugar()
     {
