@@ -471,7 +471,7 @@ Bouba District es un juego competitivo musical que combina mecánicas que mezcla
 ## 1.1 Concepto 
 El estilo principal del juego es una combinación de **tower defense** y **juegos** de ritmo. El jugador debe evitar ser invadido por las criaturas siguiendo secuencias de teclas que aparecen en pantalla, ajustándose al ritmo de la música. 
 
-## 1.2 Historia y personajes (breve)
+## 1.2 Historia y personajes
 Un experimento fallido ha provocado que unas criaturas mucosas, los “Boubas” se hayan escapado y quieran conquistar todo aquello con lo que se cruzan. Estas criaturas, atraídas por el sonido, han comenzado a invadir la ciudad, sembrando el caos y el desorden. Kiki un joven prodigio de la música es el único que puede detener esta invasión.  Utilizando sus dotes innatos para seguir el ritmo, deberá enfrentarse a estos mutantes e intentar restaurar el orden de la ciudad.
 
 ## 1.3 Propósito, público objetivo y plataformas
