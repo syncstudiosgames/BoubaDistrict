@@ -35,7 +35,7 @@ public class BeatInteractor : MonoBehaviour
         else
         {
             _noteManager.InputNote(context.action, false);
-            Debug.Log("Not on beat!");
+            //Debug.Log("Not on beat!");
         }
        
 

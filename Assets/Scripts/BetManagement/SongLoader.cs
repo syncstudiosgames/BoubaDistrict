@@ -12,6 +12,7 @@ public class SongLoader : MonoBehaviour
     {
         var _audioSource = gameObject.AddComponent<AudioSource>();
         _audioSource.clip = _audioClip;
+        _audioSource.loop = true;
 
         var _beatManager = GetComponent<BeatManager>();
         _beatManager.LoadInfo(_bpm, _audioSource, _errorThreshold);

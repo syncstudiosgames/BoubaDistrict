@@ -26,7 +26,9 @@ public class EnemyDisplay : MonoBehaviour
         if (mainCamera != null)
         {
             Canvas.transform.LookAt(mainCamera.transform);
-            Canvas.transform.rotation = Quaternion.LookRotation(mainCamera.transform.position - Canvas.transform.position);
+            var newRotation = Quaternion.LookRotation(mainCamera.transform.position - Canvas.transform.position);
+            newRotation.y = 0;
+            Canvas.transform.rotation = newRotation;
         }
     }
 

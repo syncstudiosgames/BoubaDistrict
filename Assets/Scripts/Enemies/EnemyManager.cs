@@ -18,9 +18,17 @@ public class EnemyManager : MonoBehaviour
 
     [SerializeField] bool _waitForTutorial;
 
+    int _currentNumOfEnemies = 0;
+    event Action _currentNumEnemiesOnValueChange;
+    public int CurrentNumOfEnemies { get { return _currentNumOfEnemies; } private set { _currentNumOfEnemies = value; _currentNumEnemiesOnValueChange?.Invoke(); } }
+    public event Action CurrentNumEnemiesOnChangeValue { add { _currentNumEnemiesOnValueChange += value; } remove { _currentNumEnemiesOnValueChange -= value; } }
+
+    // Events:
+    event Action _onEnemySpawned;
     event Action<int> _onEnemyHit;
     event Action<int> _onEnemyCured;
 
+    public event Action OnEnemySpawned {  add { _onEnemySpawned += value;} remove { _onEnemySpawned -= value; } }
     public void EnemyHit(int damage) { _onEnemyHit?.Invoke(damage); }
     public event Action<int> OnEnemyHit { add { _onEnemyHit += value; } remove { _onEnemyHit -= value; } }
 
@@ -53,6 +61,12 @@ public class EnemyManager : MonoBehaviour
 
     private void Start()
     {
+        OnEnemySpawned += () => { CurrentNumOfEnemies += 1; };
+        OnEnemyHit += (int damage) => { CurrentNumOfEnemies -= 1; };
+        OnEnemyCured += (int healthPoints) => { CurrentNumOfEnemies -= 1; };
+        CurrentNumEnemiesOnChangeValue += () => { CheckFor0Enemies(); };
+
+
         if(!_waitForTutorial) { StartSpawning(); }
     }
     void StartSpawning()
@@ -64,7 +78,7 @@ public class EnemyManager : MonoBehaviour
     {
         while(true)
         {
-            SpawnEnemyAtRandom(RandomCompexity(), _enemyMoveSpeed);
+            SpawnEnemyRandom();
             yield return new WaitForSeconds(_spawningInterval);
             UpdateSpawningParameters();
         }
@@ -77,18 +91,25 @@ public class EnemyManager : MonoBehaviour
         _complexityChance = SumFloatArrays(_complexityChance, COMPLEXITY_ACELERATION);
     }
     
-    GameObject SpawnEnemyAtRandom(int complexity, float moveSpeed)
+    GameObject SpawnEnemyRandom()
     {
-        return SpawnEnemy(GetRandomPositionAtSpawn(), complexity, moveSpeed);
+        return SpawnEnemy(GetRandomPositionAtSpawn(), RandomCompexity(), _enemyMoveSpeed);
     }
     GameObject SpawnEnemy(Vector3 pos, int complexity, float moveSpeed)
     {
         var enemyGO = Instantiate(_enemyPrefab, pos, Quaternion.identity);
         enemyGO.GetComponent<Enemy>().SetUp(complexity, _noteManager, this);
         enemyGO.GetComponent<EnemyController>().SetUp(moveSpeed);
+        _onEnemySpawned?.Invoke();
         return enemyGO;
     }
 
+    void CheckFor0Enemies()
+    {
+        if (_currentNumOfEnemies == 0) SpawnEnemyRandom();
+    }
+
+    // Aux functions:
     int RandomCompexity()
     {
         // Segment ballot.
@@ -108,7 +129,6 @@ public class EnemyManager : MonoBehaviour
 
         return 1; // Never reached.
     }
-
     Vector3 GetRandomPositionAtSpawn()
     {
         var pos = _enemySpawner.transform.position;
@@ -118,10 +138,9 @@ public class EnemyManager : MonoBehaviour
         var y = pos.y;
         var z = pos.z;
 
-        return new Vector3 (x, y, z);
+        return new Vector3(x, y, z);
     }
 
-    // Aux functions:
     void PrintSpawningParameters()
     {
         string complexityChance = "";
