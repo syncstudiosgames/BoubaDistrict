@@ -608,42 +608,42 @@ Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, est
 Este bouba es una criatura gelatinosa de apariencia adorable, pero no te dejes engañar por su aspecto blando. Su cuerpo rosado y brillante lo hace parecer inofensivo. Su apariencia chiclosa engaña, es altamente tóxico y mortal al tacto para el que intente derrotarlo.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba1.PNG" width="250">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba1.PNG" width="200">
 </p>
 
 #### 5.2.4.2 Bouba 2
 Este Bouba es una criatura gelatinosa de un vibrante verde esmeralda. Su cuerpo, blando y brillante, da la impresión de ser inofensivo, pero no te dejes engañar. Aunque aparenta ser lento y despreocupado, tiene la sorprendente habilidad de deslizarse ágilmente por el terreno.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba2.PNG" width="250">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba2.PNG" width="200">
 </p>
 
 #### 5.2.4.3 Bouba 3
 Este Bouba azul es una criatura tímida y extremadamente asustadiza, con una forma alargada que evoca una vulnerabilidad innata. La combinación de su apariencia frágil y su eficaz método de defensa hace que el Bouba azul sea una criatura impredecible y peligrosa.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba3.PNG" width="250">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba3.PNG" width="200">
 </p>
 
 #### 5.2.4.4 Bouba 4
 Este Bouba amarillo, con su apariencia simple y ojos desorientados, es conocido por su torpeza y falta de inteligencia. Aunque no es el más astuto del grupo, el Bouba amarillo demuestra que incluso la simplicidad puede convertirse en una formidable defensa.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba4.PNG" width="250">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba4.PNG" width="200">
 </p>
 
 #### 5.2.4.5 Bouba 5
 Este Bouba azul es una criatura amorfa y altamente volátil, cuya forma es tan variable como su temperamento. Su combinación de movilidad impredecible y potencial eléctrico lo establece como una amenaza intrigante, capaz de convertir cualquier enfrentamiento en un espectáculo electrizante.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba5.PNG" width="250">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba5.PNG" width="200">
 </p>
 
 #### 5.2.4.6 Bouba 6
 Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, que contrasta sorprendentemente con su cuerpo gelatinoso. Sus dientes, que sobresalen de su cara amarilla, son su principal arma, utilizados tanto para morder a sus oponentes como para defenderse de cualquier amenaza. 
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba6.PNG" width="250">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba6.PNG" width="200">
 </p>
 
 ## 5.3 Entornos y lugares
@@ -674,7 +674,7 @@ Los entornos y personajes están modelados en 3D, con un diseño artístico **ca
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki3D.PNG" width="250">
 </p>
 
-- **Efectos visuales:** Al conseguir apaciguar a las criaturas y ser derrotadas, se verán efectos visuales llamativos que darán un toque al videojuego.
+- **Efectos visuales:** Los Boubas contarán con efectos visuales dependiendo del tipo que sean. También, al conseguir apaciguar a las criaturas, se verán efectos visuales llamativos que darán un toque al videojuego y servirán  como retroalimentación al jugador.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Efectos.PNG" width="250">
@@ -697,7 +697,7 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 
 # 7. Interfaz
 ## 7.1 Diseños básicos de los menús
-Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmitir la atmósfera urbana del nivel principal.
+Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmiten la atmósfera urbana del nivel principal.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="700">
