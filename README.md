@@ -152,7 +152,11 @@ Los Boubas mostrarán su lado más rebelde y provocarán la revolución de los B
 - Nuevo género musical (Rock and Roll)
 - 3 nuevas canciones
 
-![Temporada Octubre](https://github.com/syncstudiosgames/BoubaDistrict/blob/mraboso2019-patch-1/Assets/GDDImages/TemporadaOctubre2.PNG?raw=true)
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRO2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRO1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRO3.png" width="150">
+</p>
 
 A su vez, durante todas las temporadas, el equipo de soporte se encargará de balancear y actualizar aquellos aspectos del juego que necesiten un ajuste.
 
