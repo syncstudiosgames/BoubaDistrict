@@ -549,8 +549,8 @@ Los controles de Bouba District están diseñados para ser accesibles, simples y
 El juego contará con varios niveles que se irán actualizando cada 3 meses. Todos con estéticas diferentes y con mejoras y accesorios para el personaje, además de los Boubas característicos de cada temporada. También introducirán nuevos temas musicales y presentarán mayor dificultad, generando enemigos más complicados de matar y aumentando la velocidad de las canciones.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/EscenarioTop.PNG" width="600">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/EscenarioTop.PNG" width="400">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="400">
 </p>
 
 A lo largo del juego, se asignarán misiones secundarias como completar un nivel sin fallar ninguna secuencia, derrotar a un número específico de Boubas en un tiempo limitado o superar un nivel utilizando solo tres de los botones.
@@ -576,7 +576,7 @@ Kiki es un joven talentoso que ha pasado toda su vida perfeccionando su habilida
 - **Habilidad especial:** Como vocalista, Kiki puede usar su voz para realizar ataques sónicos que desorientan a los Boubas y sincronizarse con ellos para calmarlos.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki.PNG" width="500">
 </p>
 
 ### 5.2.2 Kike - Guitarrista
@@ -585,7 +585,7 @@ Kike es el corazón de la banda y su guitarra es su arma principal en la lucha c
 - **Descripción física:** Pelo largo y rubio, con una camiseta de tirantes que lleva el símbolo de la paz. Es el miembro más tranquilo de la banda, pero su música habla con una intensidad feroz.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kike.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kike.PNG" width="500">
 </p>
 
 ### 5.2.3 Kiko - Batería
@@ -594,63 +594,63 @@ Kiko es el motor rítmico de la banda, el encargado de mantener el tempo tanto e
 - **Descripción física:** Kiko lleva una camiseta con un diseño rockero y su cabello negro rizado siempre está despeinado, reflejando su actitud despreocupada y libre.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiko.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiko.PNG" width="500">
 </p>
 
 ### 5.2.4 Boubas
 Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, estos pequeños son de colores llamativos y diferentes permitiendo una diferenciación rápida entre ellos. También presentan siluetas variadas que facilitan su reconocimiento, aunque estas diferencias físicas también pueden repercutir en las habilidades que presentan.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Boubas.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Boubas.PNG" width="400">
 </p>
 
 #### 5.2.4.1 Bouba 1
 Este bouba es una criatura gelatinosa de apariencia adorable, pero no te dejes engañar por su aspecto blando. Su cuerpo rosado y brillante lo hace parecer inofensivo. Su apariencia chiclosa engaña, es altamente tóxico y mortal al tacto para el que intente derrotarlo.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba1.PNG" width="200">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba1.PNG" width="250">
 </p>
 
 #### 5.2.4.2 Bouba 2
 Este Bouba es una criatura gelatinosa de un vibrante verde esmeralda. Su cuerpo, blando y brillante, da la impresión de ser inofensivo, pero no te dejes engañar. Aunque aparenta ser lento y despreocupado, tiene la sorprendente habilidad de deslizarse ágilmente por el terreno.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba2.PNG" width="200">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba2.PNG" width="250">
 </p>
 
 #### 5.2.4.3 Bouba 3
 Este Bouba azul es una criatura tímida y extremadamente asustadiza, con una forma alargada que evoca una vulnerabilidad innata. La combinación de su apariencia frágil y su eficaz método de defensa hace que el Bouba azul sea una criatura impredecible y peligrosa.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba3.PNG" width="200">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba3.PNG" width="250">
 </p>
 
 #### 5.2.4.4 Bouba 4
 Este Bouba amarillo, con su apariencia simple y ojos desorientados, es conocido por su torpeza y falta de inteligencia. Aunque no es el más astuto del grupo, el Bouba amarillo demuestra que incluso la simplicidad puede convertirse en una formidable defensa.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba4.PNG" width="200">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba4.PNG" width="250">
 </p>
 
 #### 5.2.4.5 Bouba 5
 Este Bouba azul es una criatura amorfa y altamente volátil, cuya forma es tan variable como su temperamento. Su combinación de movilidad impredecible y potencial eléctrico lo establece como una amenaza intrigante, capaz de convertir cualquier enfrentamiento en un espectáculo electrizante.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba5.PNG" width="200">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba5.PNG" width="250">
 </p>
 
 #### 5.2.4.6 Bouba 6
 Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, que contrasta sorprendentemente con su cuerpo gelatinoso. Sus dientes, que sobresalen de su cara amarilla, son su principal arma, utilizados tanto para morder a sus oponentes como para defenderse de cualquier amenaza. 
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba6.PNG" width="200">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba6.PNG" width="250">
 </p>
 
 ## 5.3 Entornos y lugares
 La ciudad de Harmonia es una ciudad urbana típica. La vida cotidiana es acelerada y está llena de movimiento. Está repleta de edificios y barrios densamente habitados. La vida en Harmonia cambia por completo cuando es invadida por los Boubas. Las calles, antes llenas de actividad, se convierten en lugares peligrosos, forzando a los vecinos a refugiarse en sus casas y dejando el centro prácticamente desierto.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario2.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario2.PNG" width="700">
 </p>
 
 # 6. Arte
@@ -665,19 +665,19 @@ Los entornos y personajes están modelados en 3D, con un diseño artístico **ca
 - **Entorno:** Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario.PNG" width="700">
 </p>
 
 - **Personajes:** Los personajes siguenen la línea cartoon, con formas redondas y extremidades largas. Los enemigos serán adorables criaturas, con formas inspiradas en slimes o criaturas fantásticas. Serán coloridos, y aunque sean "enemigos", su aspecto visual será entrañable.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki3D.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki3D.PNG" width="250">
 </p>
 
 - **Efectos visuales:** Al conseguir apaciguar a las criaturas y ser derrotadas, se verán efectos visuales llamativos que darán un toque al videojuego.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Efectos.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Efectos.PNG" width="250">
 </p>
 
 
@@ -700,12 +700,12 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmitir la atmósfera urbana del nivel principal.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="700">
 </p>
 
 ## 7.2 Diagramas de flujo
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/DiagramaFlujo.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/DiagramaFlujo.PNG" width="700">
 </p>
 
 # 8. Hoja de ruta del desarrollo
