@@ -777,12 +777,8 @@ El equipo estableció una visión creativa clara desde el comienzo. Esto facilit
 
 Por otro lado, se mantuvo el enfoque en la experiencia del usuario. El juego debía poder ser jugado tanto en PC como en dispositivos táctiles, por lo que desarrollamos el prototipo teniendo en cuenta los controles desde el principio. La simplicidad de estos ha incrementado su accesibilidad y no ha causado problemas en su implementación. 
 
-### 9.1.2 La llegada de los héroes
-Una vez planteadas las mecánicas principales, el juego carecía de un contexto en el que incluirlas. Barajamos varias opciones que dieran un sentido al juego: diferentes escenarios, maneras de matar o eliminar a los Boubas… Hasta que finalmente nos decantamos por incluir a un personaje que luchara contra las criaturas.
-
-Esta decisión nos ha permitido transmitir mejor la atmósfera que buscábamos y mejorar el branding de Bouba District. Los personajes permiten que el usuario pueda identificarse con ellos, que la historia se sienta más personal y que haya mayor conexión emocina. Conseguimos explorar una trama más compleja y desarrollar una narrativa más interesante.
-
-Los Boubas, aunque entrañables, no irradiaban tanta identidad como lo hacen los personajes. Más adelante, podrán tener habilidades diferenciadoras que enriquezcan la jugabilidad. Además, son otra herramienta de personalización que se utilizará para monetizar el juego. La creación de personajes nos ha abierto un espacio en el que poder explorar la expansión del universo de Bouba District.
+### 9.1.2 Buen manejo de expectativas
+Los requerimientos iniciales del juego se adaptaron a las posibilidades y conocimientos del equipo. La decisión de centrarnos en desarrollar las mecánicas clave y trabajar para crear sistemas responsivos nos aportó una buena base sobre la que trabajar en futuras entregas. Gracias a buenas estimaciones nos ajustamos perfectamente al tiempo de desarrollo.
 
 ### 9.1.3 Apartado artístico
 Decidimos aprovechar el hecho de que uno de los puntos fuertes del equipo es el diseño 2D y 3D. Desde el comienzo tuvimos claro el tono que buscábamos. La realización de moodboards, bocetos y la búsqueda de referencias nos facilitó enormemente la implementación de elementos que no chocaran visualmente.
@@ -839,11 +835,15 @@ Además, conseguimos añadir animaciones en las pantallas. Mantienen la estétic
 
 Esta experiencia nos ha enseñado la importancia de realizar pruebas tempranas para las interfaces. Nos habría permitido identificar problemas de resolución antes de avanzar con el apartado artístico. Por otro lado, reforzó la idea de que es necesario ser flexible y estar abiertos a cambios durante el desarrollo.
 
+### 9.2.4 Interfaces
+No conseguimos llegar al jugador: Finalmente, el mayor problema que nos hemos encontrado con el prototipo es que el jugador no nos entiende. No hemos sido capaces de explicar la mecánica principal del juego, a pesar de haber una pequeña pantalla de tutorial. Los botones deben pulsarse a un determinado ritmo para dar como válida la secuencia, el jugador NO ha entendido este proceso; el indicador de ritmo, los props que se mueven al bit, la música y la pantalla de explicación no han sido suficientes. Al principio pensábamos que se debía a la poca experiencia de nuestros testers en videojuegos de ritmo, pero llegamos a la conclusión de que era un problema generalizado, por nuestra parte y responsabilidad al 100%. Para la beta debemos mejorar estos indicadores, desarrollar una fuerte pantalla tutorial que guíe al jugador en cada paso, y explotar la retroalimentación (visual, auditiva…) todo lo posible. Nuestro foco para la beta es solucionar este problema con máxima prioridad.
+
+
 ## 9.3 Conclusión
 En conclusión, el desarrollo de este juego fue una experiencia de aprendizaje enriquecedora que nos permitió abordar tanto los éxitos como los desafíos.
 
 Por un lado, establecimos una dirección creativa clara desde el principio, lo que facilitó la cohesión del diseño y permitió que el equipo mantuviera una visión unificada. La creación de personajes y la estética visual resultaron clave para atraer y conectar con los jugadores, mejorando también las oportunidades de marketing y personalización. La elección de herramientas familiares optimizó nuestro tiempo y recursos, mientras que una comunicación efectiva entre los miembros del equipo fomentó la colaboración y la resolución rápida de problemas.
 
-Por otro lado, enfrentamos dificultades, como la sincronización de los beats, que resaltaron la necesidad de adquirir conocimientos técnicos específicos para juegos de ritmo. También experimentamos el impacto de no tener una narrativa clara desde el inicio, lo que ralentizó el flujo de trabajo y generó frustración. Además, la adaptación de interfaces a diferentes dispositivos requirió cambios importantes que podrían haberse anticipado con pruebas tempranas.
+Por otro lado, enfrentamos dificultades, como la sincronización de los beats, que resaltaron la necesidad de adquirir conocimientos técnicos específicos para juegos de ritmo. También experimentamos el impacto de no tener una narrativa clara desde el inicio, lo que ralentizó el flujo de trabajo y generó frustración. Además, la adaptación de interfaces a diferentes dispositivos requirió cambios importantes que podrían haberse anticipado con pruebas tempranas, y finalmente, saber llegar al jugador.
 
 Este post-mortem nos deja lecciones valiosas: la importancia de una planificación sólida, la necesidad de flexibilidad en el diseño, y el valor de pruebas tempranas y comunicación constante para superar obstáculos y mejorar la eficiencia en futuros proyectos.
