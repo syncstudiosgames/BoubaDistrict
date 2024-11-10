@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
 public class HighscoreTable : MonoBehaviour
 {
     private Transform entryContainer;
     private Transform entryTemplate;
-    private List<HighscoreEntry> highscoreEntryList;
     private List<Transform> highscoreEntryTransformList;
+
+    //Servidor público en Glitch!!!
+    private const string serverUrl = "https://highscore-server.glitch.me/api"; 
 
     private void Awake()
     {
@@ -17,34 +20,11 @@ public class HighscoreTable : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
-        // Inicializamos la lista de puntuaciones ficticias
-        highscoreEntryList = new List<HighscoreEntry>
-        {
-            new HighscoreEntry { score = 67 },
-            new HighscoreEntry { score = 89 },
-            new HighscoreEntry { score = 112 },
-            new HighscoreEntry { score = 34 },
-            new HighscoreEntry { score = 87 }
-        };
-
-        // Agregar el puntuaje de la partida actual desde FinalScore
-        highscoreEntryList.Add(new HighscoreEntry { score = FinalScore.currentScore });
-
-        // Marcar el último elemento añadido como el más reciente
-        HighscoreEntry mostRecentEntry = highscoreEntryList[highscoreEntryList.Count - 1];
-
-        // Ordenar la lista de puntuaciones
-        highscoreEntryList.Sort((x, y) => y.score.CompareTo(x.score));
-
-        highscoreEntryTransformList = new List<Transform>();
-        foreach (HighscoreEntry highscoreEntry in highscoreEntryList)
-        {
-            // Comprobar cual es el más reciente para cambiar su color
-            CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList, highscoreEntry == mostRecentEntry);
-        }
+        // Obtener el ranking desde el servidor al cargar la escena
+        StartCoroutine(GetHighscoresFromServer());
     }
 
-    private void CreateHighscoreEntryTransform(HighscoreEntry highscoreEntry, Transform container, List<Transform> transformList, bool isMostRecent)
+    private void CreateHighscoreEntryTransform(string name, int score, int rank, Transform container, List<Transform> transformList, bool isMostRecent)
     {
         float templateHeight = 40f;
 
@@ -53,25 +33,19 @@ public class HighscoreTable : MonoBehaviour
         entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
         entryTransform.gameObject.SetActive(true);
 
-        int rank = transformList.Count + 1;
         string rankString = rank + "º";
         entryTransform.Find("PuestoEntrada").GetComponent<Text>().text = rankString;
-
-        int score = highscoreEntry.score;
         entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().text = score.ToString();
-
-        string name = "AAA"; // Nombre 
         entryTransform.Find("NombreEntrada").GetComponent<Text>().text = name;
 
-        // Cambiar el color del texto del puntaje
+        // --------------DAR UNA VUELTA A ESTO --------------------
         if (isMostRecent)
         {
-            entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f); // Color amarillo
+            entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f); // Amarillo
             entryTransform.Find("NombreEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f);
             entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f);
 
-
-            // Añadir un borde negro alrededor del texto solo si es el más reciente
+            // Borde negro al texto 
             Outline outline1 = entryTransform.Find("PuntuaciónEntrada").gameObject.AddComponent<Outline>();
             outline1.effectColor = Color.black;
             outline1.effectDistance = new Vector2(2, -2);
@@ -91,13 +65,59 @@ public class HighscoreTable : MonoBehaviour
             entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = Color.black;
         }
 
-
         transformList.Add(entryTransform);
+    }
+
+    // Obtener el ranking desde el servidor
+    private IEnumerator GetHighscoresFromServer()
+    {
+        using (UnityWebRequest request = UnityWebRequest.Get($"{serverUrl}/get-scores"))
+        {
+            yield return request.SendWebRequest();
+
+            if (request.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log("Ranking recibido: " + request.downloadHandler.text);
+
+                // Convertir el JSON a una lista de objetos HighscoreEntry
+                HighscoreEntry[] highscores = JsonHelper.FromJson<HighscoreEntry>(request.downloadHandler.text);
+
+                // Crear la visualización de cada entrada del ranking
+                highscoreEntryTransformList = new List<Transform>();
+                for (int i = 0; i < highscores.Length; i++)
+                {
+                    bool isMostRecent = i == highscores.Length - 1; // Suponemos que el último añadido es el más reciente.
+                    CreateHighscoreEntryTransform(highscores[i].name, highscores[i].score, i + 1, entryContainer, highscoreEntryTransformList, isMostRecent);
+                }
+            }
+            else
+            {
+                Debug.LogError($"Error al obtener el ranking: {request.error}");
+            }
+        }
     }
 
     [System.Serializable]
     private class HighscoreEntry
     {
+        public string name;
         public int score;
+    }
+
+    // Clase auxiliar para deserializar arrays de JSON
+    public static class JsonHelper
+    {
+        public static T[] FromJson<T>(string json)
+        {
+            string newJson = "{ \"array\": " + json + "}";
+            Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(newJson);
+            return wrapper.array;
+        }
+
+        [System.Serializable]
+        private class Wrapper<T>
+        {
+            public T[] array;
+        }
     }
 }
