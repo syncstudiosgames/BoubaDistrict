@@ -10,8 +10,8 @@ public class HighscoreTable : MonoBehaviour
     private Transform entryTemplate;
     private List<Transform> highscoreEntryTransformList;
 
-    //Servidor público en Glitch!!!
-    private const string serverUrl = "https://highscore-server.glitch.me/api"; 
+    // Servidor público en Glitch
+    private const string serverUrl = "https://highscore-server.glitch.me/api";
 
     private void Awake()
     {
@@ -38,14 +38,15 @@ public class HighscoreTable : MonoBehaviour
         entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().text = score.ToString();
         entryTransform.Find("NombreEntrada").GetComponent<Text>().text = name;
 
-        // --------------DAR UNA VUELTA A ESTO --------------------
+        // Verifica si el id del jugador coincide con el id del servidor para resaltar su entrada**
         if (isMostRecent)
         {
+            // Resaltar con color amarillo
             entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f); // Amarillo
             entryTransform.Find("NombreEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f);
             entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f);
 
-            // Borde negro al texto 
+            // Añadir borde negro al texto
             Outline outline1 = entryTransform.Find("PuntuaciónEntrada").gameObject.AddComponent<Outline>();
             outline1.effectColor = Color.black;
             outline1.effectDistance = new Vector2(2, -2);
@@ -86,7 +87,9 @@ public class HighscoreTable : MonoBehaviour
                 highscoreEntryTransformList = new List<Transform>();
                 for (int i = 0; i < highscores.Length; i++)
                 {
-                    bool isMostRecent = i == highscores.Length - 1; // Suponemos que el último añadido es el más reciente.
+                    // Verificar si el ID del jugador coincide con el del ranking
+                    bool isMostRecent = highscores[i].id == FinalScore.playerId; 
+
                     CreateHighscoreEntryTransform(highscores[i].name, highscores[i].score, i + 1, entryContainer, highscoreEntryTransformList, isMostRecent);
                 }
             }
@@ -97,14 +100,16 @@ public class HighscoreTable : MonoBehaviour
         }
     }
 
+
     [System.Serializable]
     private class HighscoreEntry
     {
         public string name;
         public int score;
+        public string id;  
     }
 
-    // Clase auxiliar para deserializar arrays de JSON
+    // para deserializar arrays de JSON
     public static class JsonHelper
     {
         public static T[] FromJson<T>(string json)
