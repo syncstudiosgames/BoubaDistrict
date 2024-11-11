@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float punchDuration = 0.2f;
     private bool isPunching = false;
 
-    [SerializeField] private ParticleSystem slashEffect;
+    [SerializeField] public ParticleSystem slashEffect;
 
     void Start()
     {

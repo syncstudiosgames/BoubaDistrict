@@ -4883,7 +4883,7 @@ GameObject:
   - component: {fileID: 2629628210209888467}
   - component: {fileID: 9159431108497599183}
   m_Layer: 0
-  m_Name: Snow slash
+  m_Name: Slash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -8,6 +8,9 @@ public class PlayerNameInput : MonoBehaviour
 
     private void Start()
     {
+        PlayerPrefs.DeleteAll();
+        Debug.Log("Todos los datos de PlayerPrefs han sido eliminados.");
+
         // Asegurarse de que el campo de entrada esté vacío al inicio
         nameInputField.text = "";
     }
