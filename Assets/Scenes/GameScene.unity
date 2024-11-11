@@ -5493,7 +5493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de76e019d48efbb4ba4e43209d1e7b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyManger: {fileID: 1431879111}
+  _enemyManager: {fileID: 1431879111}
   _maxHealthPoints: 20
 --- !u!4 &1131489208
 Transform:

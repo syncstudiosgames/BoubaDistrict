@@ -8,13 +8,13 @@ public class FinalScore : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private ScoreManager score;
     public static int currentScore;
-    public static string playerId;  // Campo para almacenar el ID del jugador
+    public static string playerId;  // ID del jugador
 
     void Start()
     {
         if (player != null)
         {
-            player.OnGameOver += HighscoreScene;  
+            player.OnGameOver += HighscoreScene;
         }
         else
         {
@@ -24,10 +24,9 @@ public class FinalScore : MonoBehaviour
 
     private void HighscoreScene()
     {
-        currentScore = score.Score;  
-
-        string playerName = "Pepe";  //player.GetPlayerName() ---IMPLEMENTAR
-        StartCoroutine(SendScoreAndLoadHighscore(playerName, currentScore));  
+        currentScore = score.Score;
+        string playerName = player.GetPlayerName();
+        StartCoroutine(SendScoreAndLoadHighscore(playerName, currentScore));
     }
 
     private IEnumerator SendScoreAndLoadHighscore(string playerName, int score)
@@ -62,12 +61,12 @@ public class FinalScore : MonoBehaviour
             {
                 Debug.Log("Puntuación enviada correctamente.");
 
-                // Recuperar el ID generado para este jugado desde la respuesta del servidor
+                // Recuperar el ID generado para este jugador desde la respuesta del servidor
                 string responseBody = request.downloadHandler.text;
                 PlayerIdResponse response = JsonUtility.FromJson<PlayerIdResponse>(responseBody);  // Deserializar el JSON
                 playerId = response.id;  // Guardar el ID recibido del servidor
 
-                Debug.Log("ID del jugador recibido: " + playerId);  
+                Debug.Log("ID del jugador recibido: " + playerId);
             }
             else
             {
