@@ -15,5 +15,5 @@ MonoBehaviour:
   noteName: S
   actions: {fileID: -944628639613478452, guid: 09a6c07672575e54591ef6baa2f07817, type: 3}
   _sprite: {fileID: 21300000, guid: cc59e8a8b0dff83439400a80d8c5e143, type: 3}
-  _highlightSpirte: {fileID: 21300000, guid: 57965cdca62d0b14fabf2a7962f0c81e, type: 3}
+  _highlightSpirte: {fileID: 21300000, guid: 7ca090dd730daf04bab453c1d6da35c0, type: 3}
   actionIndex: 1
