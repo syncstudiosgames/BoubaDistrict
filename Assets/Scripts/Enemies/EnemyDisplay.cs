@@ -95,6 +95,8 @@ public class EnemyDisplay : MonoBehaviour
 
         int lastIndexFound = -1;    // Index of the last deathSequence element that was found in the buffer.
 
+        UnHighlightNotes();         // Unhighlight notes first to reset sprites.
+
         for (int deathSequencePointer = 0; deathSequencePointer < deathSequence.Count; deathSequencePointer++) // For each note in deathSequence:
         {
             // Note buffer pointer will travel throught the note buffer till the end, comparing each element for each note in deathSequence.
