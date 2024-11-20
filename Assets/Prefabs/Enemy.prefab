@@ -83,9 +83,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a0ebca87eb57c04096dd11536afa366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDisplay: {fileID: 126708870483694212}
+  _enemyDisplay: {fileID: 126708870483694212}
   _modelHolder: {fileID: 15043435684243626}
-  healing: {fileID: 2548145624421096867}
+  _healingEffect: {fileID: 2548145624421096867}
 --- !u!114 &466754705404082054
 MonoBehaviour:
   m_ObjectHideFlags: 0

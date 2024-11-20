@@ -28,8 +28,11 @@ public class NoteManager : MonoBehaviour
     event Action<Note> _onNoteLogged;
     public event Action<Note> OnNoteLogged { add { _onNoteLogged += value; } remove { _onNoteLogged -= value; } }
 
-    public IReadOnlyList<Note> Notes {  get { return notes.AsReadOnly(); } }
-    public IReadOnlyList<Note> NoteBuffer { get { return noteBuffer.AsReadOnly(); } }
+    event Action _onBufferReseted;
+    public event Action OnBufferReseted { add { _onBufferReseted += value; } remove { _onBufferReseted -= value; } }
+
+    public List<Note> Notes {  get { return notes; } }
+    public List<Note> NoteBuffer { get { return noteBuffer; } }
     #endregion
 
     #region Public Methods
@@ -62,6 +65,7 @@ public class NoteManager : MonoBehaviour
     public void ResetBuffer()
     {
         noteBuffer.Clear();
+        _onBufferReseted?.Invoke();
     }
 
     public void PrintNoteBuffer()

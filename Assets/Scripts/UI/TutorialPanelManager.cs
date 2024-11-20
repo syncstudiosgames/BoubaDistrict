@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TutorialManager : MonoBehaviour
+public class TutorialPanelManager : MonoBehaviour
 {
     [SerializeField] UnityEvent _onTutorialFinish;
     [SerializeField] GameObject _startButton;

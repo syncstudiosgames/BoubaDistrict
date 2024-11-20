@@ -11,9 +11,9 @@ public class Enemy : MonoBehaviour
     List<Note> _deathSequence = new List<Note>();
     int _complexity;
 
-    [SerializeField] private EnemyDisplay enemyDisplay;
+    [SerializeField] private EnemyDisplay _enemyDisplay;
     [SerializeField] GameObject _modelHolder;
-    [SerializeField] public GameObject healing; 
+    [SerializeField] public GameObject _healingEffect; 
 
     public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager)
     {
@@ -24,18 +24,19 @@ public class Enemy : MonoBehaviour
         CreateSequence();
         _noteManager.OnNoteLogged += CheckSequence;
 
-        if (enemyDisplay != null)
+
+        if (_enemyDisplay != null)
         {
-            enemyDisplay.SetSequence(_deathSequence);
+            _enemyDisplay.SetUp(_deathSequence, _noteManager);
         }
         else
         {
             Debug.LogError("No asignado");
         }
 
-        if (healing != null)
+        if (_healingEffect != null)
         {
-            healing.SetActive(false);
+            _healingEffect.SetActive(false);
         }
     }
 
@@ -66,9 +67,10 @@ public class Enemy : MonoBehaviour
     {
         var noteBuffer = _noteManager.NoteBuffer;
 
+
         if (noteBuffer.Count < _complexity) return;
 
-        for (int myNote = _complexity - 1, bufferNote = noteBuffer.Count - _complexity; myNote >= 0; myNote--, bufferNote++)
+        for (int myNote = 0, bufferNote = noteBuffer.Count - _complexity; myNote < _deathSequence.Count; myNote++, bufferNote++)
         {
             if (_deathSequence[myNote] != noteBuffer[bufferNote]) return;
         }
@@ -86,9 +88,9 @@ public class Enemy : MonoBehaviour
 
     void Restore()
     {
-        if (healing != null)
+        if (_healingEffect != null)
         {
-            healing.SetActive(true);
+            _healingEffect.SetActive(true);
 
             LeanTween.value(gameObject, 1f, 0f, 1f).setOnUpdate((float value) =>                                                                      // Animate alpha.
             {
