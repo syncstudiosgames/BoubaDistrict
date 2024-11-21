@@ -25,7 +25,7 @@ public class PlayerNameInput : MonoBehaviour
         // Mostrar un mensaje de confirmación
         if (displayText != null)
         {
-            displayText.text = "Bienvenido, " + playerName + "! Nombre guardado.";
+            displayText.text = "Nice to see you, " + playerName + "! Let's play!";
         }
     }
 
