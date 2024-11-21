@@ -1,4 +1,4 @@
-<h1 align="center">Game Design Document Alfa</h1>
+<h1 align="center">Game Design Document Beta</h1>
 <h2 align="center">Bouba District</h2>
 
 <p align="center">
@@ -568,6 +568,7 @@ En medio del caos, surge una oportunidad inesperada: la música. Kiki, Kike, y K
 Aunque Kiki, el vocalista, es el líder predeterminado y principal del grupo, Kike el guitarrista, y Kiko el baterista también juegan un papel crucial en esta lucha musical. Los jugadores pueden elegir jugar como cualquiera de los tres, aprovechando sus habilidades específicas para derrotar a los Boubas en batallas de ritmo intensas.
 
 ## 5.2 Personajes
+<h3 align="center">Echo Squad</h1>
 ### 5.2.1 Kiki - Vocalista
 Kiki es un joven talentoso que ha pasado toda su vida perfeccionando su habilidad para conectarse con los ritmos del mundo. A través de su voz, puede sincronizarse con los Boubas y calmarlos. Aunque puede parecer despreocupado y algo irresponsable, su amor por la música y su deseo de proteger la ciudad lo impulsan a ser un verdadero héroe.
 
@@ -596,49 +597,58 @@ Kiko es el motor rítmico de la banda, el encargado de mantener el tempo tanto e
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kike.PNG" width="500">
 </p>
 
-### 5.2.4 Boubas
+<h3 align="center">Las Tukus</h1>
+
+### 5.2.4 Kika - Vocalista
+Kika es una joven carismática con una voz capaz de cautivar a cualquiera que la escuche. Su estilo único fusiona el pop futurista con melodías tradicionales. Kika no solo destaca por su rango vocal, sino también por su capacidad de conectar emocionalmente con la audiencia. Es una líder nata, llena de energía.
+
+- **Descripción física:** Kika viste con un look llamativo y moderno. Tiene el pelo corto rosa y un maquillaje rebelde que conjunta con su personalidad.
+
+### 5.2.5 Keka - Pianista
+
+### 5.2.6 Boubas
 Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, estos pequeños son de colores llamativos y diferentes permitiendo una diferenciación rápida entre ellos. También presentan siluetas variadas que facilitan su reconocimiento, aunque estas diferencias físicas también pueden repercutir en las habilidades que presentan.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Boubas.PNG" width="400">
 </p>
 
-#### 5.2.4.1 Bouba 1
+#### 5.2.6.1 Bouba 1
 Este bouba es una criatura gelatinosa de apariencia adorable, pero no te dejes engañar por su aspecto blando. Su cuerpo rosado y brillante lo hace parecer inofensivo. Su apariencia chiclosa engaña, es altamente tóxico y mortal al tacto para el que intente derrotarlo.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba1.PNG" width="200">
 </p>
 
-#### 5.2.4.2 Bouba 2
+#### 5.2.6.2 Bouba 2
 Este Bouba es una criatura gelatinosa de un vibrante verde esmeralda. Su cuerpo, blando y brillante, da la impresión de ser inofensivo, pero no te dejes engañar. Aunque aparenta ser lento y despreocupado, tiene la sorprendente habilidad de deslizarse ágilmente por el terreno.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba2.PNG" width="200">
 </p>
 
-#### 5.2.4.3 Bouba 3
+#### 5.2.6.3 Bouba 3
 Este Bouba azul es una criatura tímida y extremadamente asustadiza, con una forma alargada que evoca una vulnerabilidad innata. La combinación de su apariencia frágil y su eficaz método de defensa hace que el Bouba azul sea una criatura impredecible y peligrosa.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba3.PNG" width="200">
 </p>
 
-#### 5.2.4.4 Bouba 4
+#### 5.2.6.4 Bouba 4
 Este Bouba amarillo, con su apariencia simple y ojos desorientados, es conocido por su torpeza y falta de inteligencia. Aunque no es el más astuto del grupo, el Bouba amarillo demuestra que incluso la simplicidad puede convertirse en una formidable defensa.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba4.PNG" width="200">
 </p>
 
-#### 5.2.4.5 Bouba 5
+#### 5.2.6.5 Bouba 5
 Este Bouba azul es una criatura amorfa y altamente volátil, cuya forma es tan variable como su temperamento. Su combinación de movilidad impredecible y potencial eléctrico lo establece como una amenaza intrigante, capaz de convertir cualquier enfrentamiento en un espectáculo electrizante.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba5.PNG" width="200">
 </p>
 
-#### 5.2.4.6 Bouba 6
+#### 5.2.6.6 Bouba 6
 Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, que contrasta sorprendentemente con su cuerpo gelatinoso. Sus dientes, que sobresalen de su cara amarilla, son su principal arma, utilizados tanto para morder a sus oponentes como para defenderse de cualquier amenaza. 
 
 <p align="center">
