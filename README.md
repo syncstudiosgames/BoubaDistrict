@@ -751,109 +751,23 @@ Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático
 ## Trabajo individual
 
 ### Laura
-En mi experiencia individual, las mayores dificultades se centraron en la adaptabilidad de las interfaces a los distintos sistemas, un aspecto que exigió revisiones constantes para asegurar una experiencia óptima en dispositivos de diferentes resoluciones y configuraciones. Esta tarea requirió no solo cambios en el diseño inicial, sino también el ajuste de elementos visuales y de escalabilidad, lo cual nos enseñó la importancia de realizar pruebas tempranas para prever estos desafíos.
 
-Por otro lado, lo más gratificante ha sido la ilusión compartida por el proyecto. Ver cómo cada miembro del equipo aportaba su creatividad y esfuerzo con entusiasmo nos mantuvo motivados a lo largo del desarrollo. Esta energía colectiva fue esencial para superar los obstáculos y seguir avanzando hacia nuestro objetivo común.
 
 ### Marta 
-El mayor reto con el que me he encontrado en este proyecto ha sido la redacción del Game Design Document. Encontré que era fácil perderme en los detalles o dedicar demasiado tiempo a perfeccionar ciertas secciones. Este trabajo me ha permitido entender la importancia de tener una guía clara y detallada desde el incio del desarrollo y analizar muchos aspectos que no nos habíamos planteado sobre el juego y la empresa. 
 
-Al encargarme de los escenarios he mejorado mis habilidades en la construcción de atmósferas y apreciar los elementos visuales y contextuales.  Aún así, he tenido que reducir mis ideas iniciales por la falta de tiempo.
-
-Gestionar las redes sociales del proyecto me enseñó sobre la importancia de comunicar adecuadamente la visión y el tono del juego. Fue difícil mantener la frecuencia de publicaciones y, a la vez, asegurar que cada contenido tuviera un impacto significativo. Además, el tiempo destinado a redes sociales a veces afectaba mi enfoque en tareas creativas como los escenarios, por lo que aprender a equilibrar ambas actividades fue un reto
 
 ### Francisco
 
-Mi mayor desafío fue el modelado de personajes redondos en estilo cartoon con pocos polígonos, lo que requería capturar una apariencia expresiva sin sobrecargar el rendimiento del juego. Tras varias intentos, logré optimizar el número de polígonos, manteniendo la estética deseada y la eficiencia técnica. En la programación de la escena de puntuaciones, optimicé la interfaz para que mostrara la puntuación de forma clara , cuidando cada elemento visual para mejorar la entendimiento del usuario ante la tabla de puntuaciones.
 
 ### Ana
-En mi experiencia individual, he asumido la responsabilidad del diseño de personajes, la integración de sus animaciones en Unity, la gestión de los estados de los personajes y la organización del rendering de notas. A lo largo de esta tarea, uno de los principales desafíos ha sido asegurar la coherencia visual y funcional de los personajes, lo que requería una coordinación estrecha entre el diseño artístico y los aspectos técnicos del juego. La integración de las animaciones en Unity fue un proceso complejo, especialmente al adaptar los estados de los personajes para que respondieran adecuadamente en el entorno de juego y reflejaran las acciones de manera fluida.
 
-Esta experiencia me ha enseñado la importancia de realizar pruebas tempranas en las interfaces, ya que habría sido beneficioso para identificar problemas de resolución desde el inicio. De esta forma, podríamos haber optimizado el flujo de trabajo en el apartado artístico sin enfrentar retrasos derivados de problemas técnicos. Además, el proceso reforzó la necesidad de mantener flexibilidad y apertura ante cambios durante el desarrollo, ya que las adaptaciones y ajustes resultaron esenciales para alcanzar un resultado satisfactorio.
-
-Lo más gratificante fue ver cómo la personalidad de los personajes cobraba vida en el juego y cómo cada detalle aportaba a la experiencia inmersiva del usuario. Esta satisfacción, combinada con el esfuerzo compartido del equipo, fue clave para mantener la motivación y el enfoque en superar cualquier obstáculo.
 
 ### Lucía
-Para esta parte inicial del desarrollo el equipo se organizó eficientemente. Cada uno se especializó en aquello en lo que más destacaba dentro de las habilidades generales que todos compartimos. Ser un grupo multidisciplinar nos permitió distribuir la carga de trabajo y evitar dependencias. En mi caso, que me centré en la programación de sistemas "core" de jugabilidad, desde el principio experimenté un desarrollo ordenado. Gracias a una buena limpieza y estructura de código mis compañeras pudieron implementar sus funcionalidades de forma que se integraban a la perfección en el código fuente general del proyecto. La comunicación fue buena y aceleró el proceso.
 
-Los tiempos y los esfuerzos han sido bien calculados por el equipo y hemos conseguido nuestros objetivos en el tiempo justo. Como contras o problemáticas que hemos podido experimentar señalaría la inconsistencia artística inicial, ya que la identidad visual del proyecto se fue configurando a medida que avanzaba este; sin embargo, su buena escalabilidad daba espacio a esta evolución y no supuso demasiados problemas.
 
 ## Trabajo grupal
 ## 9.1 Lo que salió bien
-### 9.1.1 Dirección creativa
-Al ser un equipo con mucha experiencia como consumidores de videojuegos, teníamos claro qué objetivos queríamos cumplir y a qué estándares se nos exigía que realizáramos el juego. Dirigimos nuestras elecciones inspirados en los juegos móviles casuales que jugamos en nuestra infancia, buscando maneras de aportar elementos diferentes.
-
-El equipo estableció una visión creativa clara desde el comienzo. Esto facilitó el desarrollo de todos los apartados. La realización de conceptos visuales también evitó desvíos o diferencias entre estilos y mantuvo el proyecto en una dirección constante, unificando el tono de la aplicación. 
-
-Por otro lado, se mantuvo el enfoque en la experiencia del usuario. El juego debía poder ser jugado tanto en PC como en dispositivos táctiles, por lo que desarrollamos el prototipo teniendo en cuenta los controles desde el principio. La simplicidad de estos ha incrementado su accesibilidad y no ha causado problemas en su implementación. 
-
-### 9.1.2 Buen manejo de expectativas
-Los requerimientos iniciales del juego se adaptaron a las posibilidades y conocimientos del equipo. La decisión de centrarnos en desarrollar las mecánicas clave y trabajar para crear sistemas responsivos nos aportó una buena base sobre la que trabajar en futuras entregas. Gracias a buenas estimaciones nos ajustamos perfectamente al tiempo de desarrollo.
-
-### 9.1.3 Apartado artístico
-Decidimos aprovechar el hecho de que uno de los puntos fuertes del equipo es el diseño 2D y 3D. Desde el comienzo tuvimos claro el tono que buscábamos. La realización de moodboards, bocetos y la búsqueda de referencias nos facilitó enormemente la implementación de elementos que no chocaran visualmente.
-
-Al predominar unos controles tan sencillos, quisimos darle peso al arte y estética general del juego, sin perder calidad en la jugabilidad. Tratamos de buscar un estilo visual llamativo y característico y elevar el nivel de producción.
-
-Las animaciones y la integración de las interfaces en el escenario han sido otro elemento diferenciador. Consiguen que el mundo se sienta más vivo y dinámico, y favorecen la inmersión. Ayudan a comunicar la personalidad de los personajes, y los Boubas y props proporcionan un feedback visual claro.
-
-Un apartado visual interesante siempre atrae la atención de nuevos jugadores. Muchas veces puede ser el factor decisivo para que alguien se anime a probar el juego. Ha facilitado el marketing del juego enormemente, y nos ha dado un montón de contenido para publicitarnos en redes sociales.
-
-Al igual que con los personajes, al construir un universo atractivo, el juego tiene mayor potencial de expansiones y posibilidad de indagar en diferentes estéticas a lo largo de su desarrollo, sin perder su estilo animado.
-
-### 9.1.4 Herramientas
-Durante el desarrollo del proyecto optamos por usar herramientas con las que ya teníamos experiencia. Esta decisión nos permitió trabajar con eficiencia y reducir el tiempo necesario para alcanzar un dominio de ellas. Pudimos prestar atención a más aspectos del juego que invertir tiempo en aprender el software con el que trabajamos.
-
-También mejoró la calidad del trabajo colaborativo. Al tener un conocimiento común de los recursos, los miembros del equipo pudimos ayudarnos a resolver conflictos y corregir errores.
-
-En resumen, la decisión de elegir programas familiares y con extensa documentación resultó clave para optimizar nuestro tiempo y recursos y centrarnos en otros detalles para darle vida al juego.
-
-### 9.1.5 Comunicación
-Uno de los aspectos más destacados del desarrollo ha sido la comunicación entre los miembros del equipo. Priorizamos mantener un flujo de información claro y constante. Esto ha sido clave para llevar a cabo las tareas, resolver problemas y tomar decisiones sobre el juego.
-
-Todos hemos estado al tanto de los cambios, favoreciendo un avance hacia nuestros objetivos. La retroalimentación ha sido fundamental. Nuestra capacidad para tanto dar opiniones como recibirlas nos ha permitido descartar ideas dispares rápidamente y resolver obstáculos antes de que se convirtieran en problemas mayores.
-
-Conseguimos generar un sentido de compromiso que nos ha llevado a esforzarnos de manera colectiva.  Impulsamos la creatividad y motivación de cada persona y nos aseguramos de que cada área contara con el apoyo necesario para realizar sus tareas.
-
-La comunicación favoreció la eficiencia de nuestro trabajo y nos ha fortalecido moralmente. En conclusión, hemos sido capaces de adaptarnos a los cambios y mantener un ritmo constante de trabajo gracias a ella.
 
 ## 9.2 Lo que salió mal
-### 9.2.1 Juego de ritmo arrítmico
-El principal reto que enfrentamos en el desarrollo de nuestro juego fue la sincronización de los beats con la pista de audio. El equipo no contaba con experiencia diseñando este tipo de juegos. Aunque en la etapa inicial parecía sencillo implementar un temporizador que enviara una señal de beat cada segundo, a la hora de llevarlo a la sincronización con la música experimentamos varios problemas.
-
-La necesidad de calcular el tiempo de cada beat en función de la tasa de muestreo y la duración de la pista llevó a un aumento en la complejidad del código, lo que resultó en errores adicionales y desincronización. Esto era grave, ya que la mecánica principal del juego se basa en seguir los tiempos de la música.
-
-Finalmente conseguimos integrar la canción del nivel principal a base de pruebas e investigar cómo implementar lo que buscábamos. Ahora disponemos del conocimiento para crear nuevos niveles con otra música. 
-
-### 9.2.2 Sin historia
-Otro de los desafíos que enfrentamos durante el desarrollo fue la falta de una narrativa clara desde el inicio del proyecto. Esto afectó algunos aspectos del desarrollo y en retrospectiva podemos identificar consecuencias asociadas.
-
-Sin una historia y un contexto, los jugadores no podrían comprender la motivación de las acciones del juego. Empleamos mucho tiempo en decidir cómo encajar las mecánicas sin que se sintieran forzadas. Si hubiéramos elegido la temática desde un principio  podríamos haber empezado con el desarrollo antes.
-
-Esto también generó algo de frustración en el equipo, ya que cada vez que se proponían ideas no se llegaba a ninguna conclusión. Se barajaron varias propuestas, con otros escenarios y otras maneras de afectar a los Boubas pero tuvimos que comenzar el desarrollo debido a la brevedad del plazo de entrega. No fue hasta la elección de la arena que nos decantamos por el nivel actual.
-
-De cara al futuro buscaremos un enfoque más equilibrado a la hora de diseñar un videojuego para evitar este cuello de botella en el flujo de trabajo.
-
-### 9.2.3 Interfaces
-En las etapas iniciales pretendíamos crear interfaces 2D que se alinearan con el estilo visual y temática del juego. Creamos todas las pantallas para que fueran incluidas, pero, a medida que avanzamos y comenzamos a trabajar en la resolución del juego nos encontramos con varios problemas.
-
-Nos dimos cuenta de que las interfaces 2D no se adaptaban bien al modo retrato en dispositivos móviles y tablets. Nuestros diseños se recortaban y los botones no escalaban correctamente.
-
-Finalmente decidimos rehacerlas y aprovechar vistas del escenario que habíamos diseñado que no se apreciaban durante el juego. Resultó ser una decisión beneficiosa ya que las nuevas se integran mucho mejor. Al utilizar elementos tridimensionales, pudimos asegurar que la interfaz se mantuviera consistente y clara, sin importar la configuración del dispositivo.
-
-Además, conseguimos añadir animaciones en las pantallas. Mantienen la estética del escenario y mejoran la inmersión. Pudimos ajustar mucho mejor los botones y que la transición de menú a partida fuera más agradable.
-
-Esta experiencia nos ha enseñado la importancia de realizar pruebas tempranas para las interfaces. Nos habría permitido identificar problemas de resolución antes de avanzar con el apartado artístico. Por otro lado, reforzó la idea de que es necesario ser flexible y estar abiertos a cambios durante el desarrollo.
-
-### 9.2.4 No conseguimos llegar al jugador
-Finalmente, el mayor problema que nos hemos encontrado con el prototipo es que el jugador no nos entiende. No hemos sido capaces de explicar la mecánica principal del juego, a pesar de haber una pequeña pantalla de tutorial. Los botones deben pulsarse a un determinado ritmo para dar como válida la secuencia, el jugador NO ha entendido este proceso; el indicador de ritmo, los props que se mueven al bit, la música y la pantalla de explicación no han sido suficientes. Al principio pensábamos que se debía a la poca experiencia de nuestros testers en videojuegos de ritmo, pero llegamos a la conclusión de que era un problema generalizado, por nuestra parte y responsabilidad al 100%. Para la beta debemos mejorar estos indicadores, desarrollar una fuerte pantalla tutorial que guíe al jugador en cada paso, y explotar la retroalimentación (visual, auditiva…) todo lo posible. Nuestro foco para la beta es solucionar este problema con máxima prioridad.
-
 
 ## 9.3 Conclusión
-En conclusión, el desarrollo de este juego fue una experiencia de aprendizaje enriquecedora que nos permitió abordar tanto los éxitos como los desafíos.
-
-Por un lado, establecimos una dirección creativa clara desde el principio, lo que facilitó la cohesión del diseño y permitió que el equipo mantuviera una visión unificada. La creación de personajes y la estética visual resultaron clave para atraer y conectar con los jugadores, mejorando también las oportunidades de marketing y personalización. La elección de herramientas familiares optimizó nuestro tiempo y recursos, mientras que una comunicación efectiva entre los miembros del equipo fomentó la colaboración y la resolución rápida de problemas.
-
-Por otro lado, enfrentamos dificultades, como la sincronización de los beats, que resaltaron la necesidad de adquirir conocimientos técnicos específicos para juegos de ritmo. También experimentamos el impacto de no tener una narrativa clara desde el inicio, lo que ralentizó el flujo de trabajo y generó frustración. Además, la adaptación de interfaces a diferentes dispositivos requirió cambios importantes que podrían haberse anticipado con pruebas tempranas, y finalmente, saber llegar al jugador.
-
-Este post-mortem nos deja lecciones valiosas: la importancia de una planificación sólida, la necesidad de flexibilidad en el diseño, y el valor de pruebas tempranas y comunicación constante para superar obstáculos y mejorar la eficiencia en futuros proyectos.
