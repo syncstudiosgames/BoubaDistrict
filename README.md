@@ -721,31 +721,60 @@ Las interfaces están integradas dentro del escenario. Cuentan con botones estil
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/DiagramaFlujo.PNG" width="700">
 </p>
 
-# 8. Hoja de ruta del desarrollo
-## 8.1 Hito 1 - Diseño conceptual y prototipo básico (2 semanas).
+# 8. Estéticas, dinámicas y mecánicas
+## 8.1 Estéticas
+En Bouba District, las experiencias emocionales y los tipos de diversión que se pretenden transmitir están directamente relacionados con las mecánicas y la combinación de ritmo y acción. A continuación se describen las estéticas más relevantes del juego.
+
+- **Sensación:** los efectos visuales y vibrantes combinados con las acciones del jugador generan una respuesta satisfactoria al ejecutar correctamente las secuencias musicales.
+
+- **Competición:** la integración del ranking y la comparación de puntuaciones fomentan la rivalidad entre jugadores y la motivación por demostrar habilidades.
+
+- **Desafío:** las secuencias con dificultad incremental, proporcionan un reto constante. Generan una sensación de superación personal y tensión que generan orgullo al lograr altas puntuaciones.
+
+## 8.2. Dinámicas
+En este juego, las dinámicas están diseñadas con la intención de crear las estéticas anteriormente descritas.
+
+- **Sensación:** al alinear las acciones del jugador con la música y los efectos visuales se busca evocar satisfacción. Cada secuencia ejecutada correctamente genera efectos visuales llamativos, que impulsan esta sensación.
+
+- **Competición:** el registro de las puntuaciones y comparación directa con otros jugadores busca provocar un sentido de la competitividad y fomentar el deseo de superarlos.
+
+- **Desafío:** el cometer errores y ver cómo los Boubas se van acercando lentamente mantienen al jugador en un estado de tensión. Las secuencias con dificultad incremental están diseñadas para mantener el sentimiento de querer mejorar la ejecución de las partidas anteriores.
+
+## 8.3 Mecánicas
+Las mecánicas de Bouba District han sido hechas para sustentar las dinámicas del juego, impulsando la experiencia desafiante y competitiva. Buscan equilibrar la diversión y competitividad sin perder la tensión y motivación del jugador.
+
+El objetivo del juego es aguantar el máximo tiempo posible con vida. Se deberán pulsar las teclas correctas en el momento adecuado para completar la secuencia del Bouba al que se quiere eliminar. Si el Bouba llega al jugador, perderá parte de la vida.
+
+Si el jugador ejecuta una secuencia correctamente, obtendrá puntuación adicional y activará efectos visuales que curarán a la criatura. Conseguir cadenas consecutivas de notas correctas otorga mayor puntuación. Perder el ritmo reinicia el contador, lo cual incentiva la concentración.
+
+Los jugadores pueden elegir entre una variedad de personajes y customizarlos. Al tener la opción de controlar al personaje con el que más conecten, se consigue generar una conexión mayor. Cada personaje cuenta con instrumentos diferentes y accesorios distintivos y coleccionables.
+
+
+# 9. Hoja de ruta del desarrollo
+## 9.1 Hito 1 - Diseño conceptual y prototipo básico (2 semanas).
 **Duración estimada:  2 Semanas**
 
 Definir el concepto, estética, y estilo del videojuego. Crear un documento del videojuego (GDD) que contenga bocetos de personajes y escenarios e incluso explicaciones acerca de las mecánicas. Tiene como objetivo definir las necesidades del proyecto para así poder planificar correctamente su desarrollo y crear un prototipo inicial que muestre los conceptos fundamentales del videojuego.
 
-## 8.2 Hito 2 - Implementación de mecánicas de juego (2 meses)
+## 9.2 Hito 2 - Implementación de mecánicas de juego (2 meses)
 **Duración estimada: 2 Meses**
 
 Tras definir textualmente todos los apartados y aspectos importantes del videojuego, se empiezan a implementar más mecánicas aparte de las fundamentales. Implementación de todos los aspectos del videojuego desde la interacción del jugador con el videojuego hasta el sistema de ritmo.
 
-## 8.3 Hito 3 - Desarrollo de niveles y personajes (2 meses).
+## 9.3 Hito 3 - Desarrollo de niveles y personajes (2 meses).
 **Duración estimada: 2 Meses**
 
 Una vez definido el estilo artístico del videojuego y los personajes y escenarios que lo componen así como, la banda sonora, se deben realizar diferentes diseños para cada aspecto del videojuego. Una vez diseñado todo, se debe realizar un modelado 3D seguido de sus correspondientes animaciones de aquellos componentes del videojuego que lo requieran (Personajes, Boubas, Escenarios). Diseño de todas las interfaces del videojuego (Menú Inicio, Ajustes, Créditos, Pantalla final,...). Finalmente, implementar los elementos visuales en el videojuego y adecuarlos a las mecánicas y el mundo del videojuego.
 
-## 8.4 Hito 4 - Pruebas y ajustes finales (2 semanas).
+## 9.4 Hito 4 - Pruebas y ajustes finales (2 semanas).
 **Duración estimada: 2 Semanas**
 
 Se realizarán pruebas en todos los niveles para encontrar errores o aspectos que necesiten ajustes. Se revisarán las mecánicas y se ajustará la dificultad, para balancear la experiencia de juego y cambiar los últimos detalles antes de su lanzamiento.
 
-## 8.5 Fecha de lanzamiento
+## 9.5 Fecha de lanzamiento
 El juego se publicará oficialmente el **17 diciembre.**
 
-# 9. Post-Mortem
+# 10. Post-Mortem
 Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático de manera profesional. Buscamos crear una experiencia divertida que pudiera ser comercializada y aprender a solucionar los conflictos que fueran surgiendo a lo largo del desarrollo.
 
 ## Trabajo individual
@@ -766,8 +795,8 @@ Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático
 
 
 ## Trabajo grupal
-## 9.1 Lo que salió bien
+## 10.1 Lo que salió bien
 
-## 9.2 Lo que salió mal
+## 10.2 Lo que salió mal
 
-## 9.3 Conclusión
+## 10.3 Conclusión
