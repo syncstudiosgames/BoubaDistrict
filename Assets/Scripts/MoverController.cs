@@ -23,7 +23,8 @@ public class MoverController : MonoBehaviour
 
     public void MoveTo(Transform transform)
     {
-        MoveTo(transform.position, 1f);
+        LeanTween.move(gameObject, transform.position, 1f);
+        LeanTween.rotate(gameObject, transform.eulerAngles, 1f);
     }
 }
 

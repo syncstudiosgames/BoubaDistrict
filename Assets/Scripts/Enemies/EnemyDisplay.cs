@@ -29,7 +29,7 @@ public class EnemyDisplay : MonoBehaviour
         }
     }
 
-    public void SetUp(List<Note> deathSequence, NoteManager noteManager)
+    public void SetUp(List<Note> deathSequence, NoteManager noteManager, bool renderSequence = true)
     {
         _deathSequence = deathSequence;
         _noteManager = noteManager;
@@ -37,7 +37,11 @@ public class EnemyDisplay : MonoBehaviour
         _noteManager.OnNoteLogged += HighlightNotes;
         _noteManager.OnBufferReseted += UnHighlightNotes;
 
-        _noteImages = RenderNoteSequence(deathSequence);
+        if (renderSequence)
+        {
+            _noteImages = RenderNoteSequence(deathSequence);
+        }
+        
     }
 
     Image[] RenderNoteSequence(List<Note> deathSequence)

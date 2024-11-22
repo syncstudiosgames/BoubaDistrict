@@ -95,13 +95,17 @@ public class EnemyManager : MonoBehaviour
     {
         return SpawnEnemy(GetRandomPositionAtSpawn(), RandomCompexity(), _enemyMoveSpeed);
     }
-    GameObject SpawnEnemy(Vector3 pos, int complexity, float moveSpeed)
+    GameObject SpawnEnemy(Vector3 pos, int complexity, float moveSpeed, bool renderSequence = true)
     {
         var enemyGO = Instantiate(_enemyPrefab, pos, Quaternion.identity);
-        enemyGO.GetComponent<Enemy>().SetUp(complexity, _noteManager, this);
+        enemyGO.GetComponent<Enemy>().SetUp(complexity, _noteManager, this, renderSequence);
         enemyGO.GetComponent<EnemyController>().SetUp(moveSpeed);
         _onEnemySpawned?.Invoke();
         return enemyGO;
+    }
+    public void SpawnSimpleEnemy()
+    {
+        SpawnEnemy(GetRandomPositionAtSpawn(), 1, _enemyMoveSpeed, false);
     }
 
     void CheckFor0Enemies()

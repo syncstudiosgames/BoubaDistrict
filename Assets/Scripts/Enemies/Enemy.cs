@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject _modelHolder;
     [SerializeField] public GameObject _healingEffect; 
 
-    public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager)
+    public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager, bool renderSequence = true)
     {
         _noteManager = noteManager;
         _enemyManager = enemyManager;
@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
 
         if (_enemyDisplay != null)
         {
-            _enemyDisplay.SetUp(_deathSequence, _noteManager);
+            _enemyDisplay.SetUp(_deathSequence, _noteManager, renderSequence);
         }
         else
         {
