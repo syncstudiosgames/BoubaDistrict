@@ -568,7 +568,7 @@ En medio del caos, surge una oportunidad inesperada: la música. Kiki, Kike, y K
 Aunque Kiki, el vocalista, es el líder predeterminado y principal del grupo, Kike el guitarrista, y Kiko el baterista también juegan un papel crucial en esta lucha musical. Los jugadores pueden elegir jugar como cualquiera de los tres, aprovechando sus habilidades específicas para derrotar a los Boubas en batallas de ritmo intensas.
 
 ## 5.2 Personajes
-<h3 align="center">Echo Squad</h1>
+### Echo Squad
 ### 5.2.1 Kiki - Vocalista
 Kiki es un joven talentoso que ha pasado toda su vida perfeccionando su habilidad para conectarse con los ritmos del mundo. A través de su voz, puede sincronizarse con los Boubas y calmarlos. Aunque puede parecer despreocupado y algo irresponsable, su amor por la música y su deseo de proteger la ciudad lo impulsan a ser un verdadero héroe.
 
@@ -576,7 +576,7 @@ Kiki es un joven talentoso que ha pasado toda su vida perfeccionando su habilida
 - **Habilidad especial:** Como vocalista, Kiki puede usar su voz para realizar ataques sónicos que desorientan a los Boubas y sincronizarse con ellos para calmarlos.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki.PNG" width="500">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kiki.PNG" width="300">
 </p>
 
 ### 5.2.2 Kike - Guitarrista
@@ -585,7 +585,7 @@ Kike es el corazón de la banda y su guitarra es su arma principal en la lucha c
 - **Descripción física:** Pelo largo y rubio, con una camiseta de tirantes que lleva el símbolo de la paz. Es el miembro más tranquilo de la banda, pero su música habla con una intensidad feroz.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiko.PNG" width="500">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kiko.PNG" width="300">
 </p>
 
 ### 5.2.3 Kiko - Batería
@@ -594,17 +594,28 @@ Kiko es el motor rítmico de la banda, el encargado de mantener el tempo tanto e
 - **Descripción física:** Kiko lleva una camiseta con un diseño rockero y su cabello negro rizado siempre está despeinado, reflejando su actitud despreocupada y libre.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kike.PNG" width="500">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kike.PNG" width="300">
 </p>
 
-<h3 align="center">Las Tukus</h1>
+### Las Tukus
 
-### 5.2.4 Kika - Vocalista
+### 5.2.4 Kuki - Vocalista
+Kuki es el alma del equipo, está llena de energía. Su presencia es magnética, es el equilibrio perfecto entre pasión y técnica. Kuki no tiene miedo a tomar la delantera, aunque a veces actúa de manera impulsiva.
+
+- **Descripción física:** lleva un look futurista que combina lo extravagante con lo funcional. Su cabello es largo y rosa neón, tan llamativo como su personalidad.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kuki.PNG" width="300">
+</p>
+
+### 5.2.5 Kika - Vocalista
 Kika es una joven carismática con una voz capaz de cautivar a cualquiera que la escuche. Su estilo único fusiona el pop futurista con melodías tradicionales. Kika no solo destaca por su rango vocal, sino también por su capacidad de conectar emocionalmente con la audiencia. Es una líder nata, llena de energía.
 
 - **Descripción física:** Kika viste con un look llamativo y moderno. Tiene el pelo corto rosa y un maquillaje rebelde que conjunta con su personalidad.
 
-### 5.2.5 Keka - Pianista
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kika.PNG" width="300">
+</p>
 
 ### 5.2.6 Boubas
 Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, estos pequeños son de colores llamativos y diferentes permitiendo una diferenciación rápida entre ellos. También presentan siluetas variadas que facilitan su reconocimiento, aunque estas diferencias físicas también pueden repercutir en las habilidades que presentan.
