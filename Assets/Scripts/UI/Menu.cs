@@ -5,7 +5,17 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     private float delay = 0.2f; // Duración del delay en segundos
-
+    public void OnSettingsButton()
+    {
+        if (SettingsManager.Instance != null)
+        {
+            SettingsManager.Instance.OpenSettings(); // Usar el Singleton para abrir el menú de ajustes
+        }
+        else
+        {
+            Debug.LogError("No se encontró una instancia válida de SettingsManager.");
+        }
+    }
     public void Jugar()
     {
         StartCoroutine(LoadSceneWithDelay("Character Selection"));
