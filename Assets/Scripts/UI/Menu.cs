@@ -21,6 +21,16 @@ public class Menu : MonoBehaviour
         StartCoroutine(LoadSceneWithDelay("Character Selection"));
     }
 
+    public void Tutorial()
+    {
+        StartCoroutine(LoadSceneWithDelay("Tutorial"));
+    }
+
+    public void Game()
+    {
+        StartCoroutine(LoadSceneWithDelay("GameScene"));
+    }
+
     public void Logo()
     {
         StartCoroutine(LoadSceneWithDelay("MenuInicio"));
