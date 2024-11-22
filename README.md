@@ -56,18 +56,19 @@ El "Battle Pass" constará de 50 niveles y estará compuesto por un total de 60 
 - 2 Aspectos legendarios para los botones (Con diferentes efectos)
 
 #### Temáticas de las temporadas
-##### *Enero - Temporada 1 (Into the groove)*
-Los Boubas retrocederán al pasado mostrando un aspecto algo ochentero y disco pero con un toque espacial. En esta temporada, se añadirán nuevas canciones en las que los usuarios podrán probar sus nuevos cosméticos.
+##### *Enero - Temporada 1 (Rave Remix!)*
+Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado más “techno” y futurista de los Boubas. Estas criaturas, presentarán una apariencia algo tecnológica y electrónica, mientras que bailaran al son de las canciones más jugadas por la comunidad, pero con un toque muy electrónico. Se harán diferentes “remix” techno de las canciones más aclamadas por los jugadores, para que puedan volver a jugarlas como el primer día. En esta temporada se celebrará el aniversario del videojuego con un evento de 3 semanas que por cada una de ellas presentará un nuevo “remix”.
 
 **Contenido:**
-- Cosméticos (Ochenteros con toque espacial).
-- 3 nuevas canciones (Género disco).
-- 1 Mapa (Nave espacial).
-
+- Cosméticos(Robóticos, accesorios “tecnológicos”)
+- Evento (Aniversario)
+- Nuevo género (“Techno”)
+- Nuevo mapa (Escenario frenético, rodeado de neón y láseres que iluminan el escenario)
+  
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA1.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA2.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA3.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE3.png" width="150">
 </p>
 
 ##### *Abril - Temporada 2 (Fairy garden)*
@@ -110,21 +111,19 @@ Con esta temporada, los Boubas sacarán sus mejores galas, adoptando nuevos y el
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/THO3.png" width="150">
 </p>
 
-##### *Enero - Temporada 5 (Rave Remix!)*
-Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado más “techno” y futurista de los Boubas. Estas criaturas, presentarán una apariencia algo tecnológica y electrónica, mientras que bailaran al son de las canciones más jugadas por la comunidad, pero con un toque muy electrónico. Se harán diferentes “remix” techno de las canciones más aclamadas por los jugadores, para que puedan volver a jugarlas como el primer día. En esta temporada se celebrará el aniversario del videojuego con un evento de 3 semanas que por cada una de ellas presentará un nuevo “remix”.
+##### *Enero - Temporada 5 (Into the groove)*
+Los Boubas retrocederán al pasado mostrando un aspecto algo ochentero y disco pero con un toque espacial. En esta temporada, se añadirán nuevas canciones en las que los usuarios podrán probar sus nuevos cosméticos.
 
 **Contenido:**
-- Cosméticos(Robóticos, accesorios “tecnológicos”)
-- Evento (Aniversario)
-- Nuevo género (“Techno”)
-- Nuevo mapa (Escenario frenético, rodeado de neón y láseres que iluminan el escenario)
-  
-<p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE1.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE2.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE3.png" width="150">
-</p>
+- Cosméticos (Ochenteros con toque espacial).
+- 3 nuevas canciones (Género disco).
+- 1 Mapa (Nave espacial).
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA3.png" width="150">
+</p>
 
 ##### *Abril - Temporada 6 (Rodeo Showdown)(Country)*
 Los Boubas viajarán al viejo oeste y se harán unos auténticos vaqueros. Los  cosméticos que se ofrecerán en este pase serán dignos de un verdadero vaquero (sombreros, látigos, botas,...).
