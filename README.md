@@ -807,7 +807,47 @@ Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático
 
 ## Trabajo grupal
 ## 10.1 Lo que salió bien
+### 10.1.1 La apariencia sí importa
+El apartado visual fue uno de los puntos más destacados del juego, El diseño logró capturar la esencia vibrante de Harmonia y tuvo una muy buena recepción. Conseguimos hilar los diferentes elementos para que se mantuviera una cohesión visual entre las interfaces y el gameplay.
+
+El equipo ha conseguido crear un estilo propio y característico. Uno de los principales retos del desarrollo era poder extrapolar esa personalidad a diferentes estéticas y no perder la esencia. 
+
+La introducción de un nuevo escenario y personajes ha enriquecido la experiencia y conseguido conectar con los jugadores. La estética cyberpunk aporta un toque novedoso y contrasta con el primer escenario. Con él hemos podido mostrar la base de nuestro modelo de negocio, la cual se centra en ir ampliando el contenido cada cierto tiempo.
+
+### 10.1.2 
+La efectiva división del trabajo ha sido clave para el proyecto. A pesar de ser un equipo multidisciplinar, conseguimos repartir las responsabilidades de manera que cada miembro pudiera profundizar en lo que mejor se le da.
+
+Al asignar tareas específicas a cada uno, se ha logrado que cada área recibiera la atención necesaria. Esto nos ha permitido seguir desarrollando el juego con un enfoque detallista. De esta manera, conseguimos mantener el estándar de calidad que esperábamos cumplir y acercarnos lo máximo posible a un juego profesional. 
+
+La especialización de tareas nos permitió identificar y corregir posibles debilidades. Este enfoque proactivo redujo el riesgo de errores acumulativos y permitió invertir más tiempo en pulir aspectos clave del juego,
+
+### 10.1.3 
+El hecho de haber conseguido adaptar el juego a dispositivos móviles ha sido muy importante a la hora de maximizar nuestro alcance y así conseguir el mayor feedback posible.
+
+Ha sido muy sencillo compartir el juego, ya que todo el mundo tiene un teléfono móvil a su alcance inmediato. Al no tener la misma disponibilidad que con un ordenador, sabemos que mucha gente no lo habría probado por falta de comodidad o por olvidarse al tener que esperarse a tener acceso a uno.
+
+Los móviles van ligados a la experiencia breve y casual que es Bouba District. Optamos por controles y navegación intuitiva, para que se pudiera disfrutar con facilidad y reducir cualquier tipo de sensación abrumadora provocada por controles complejos. Logramos crear un juego accesible, y llegar a una mayor audiencia de manera directa.
 
 ## 10.2 Lo que salió mal
+### 10.2.1
+Uno de los contras de ser un equipo con experiencia como consumidores de videojuegos, es que asumimos ciertos códigos o maneras de comportarnos ante estos.
+
+A pesar de contar con controles sencillos, observamos que los jugadores no se paraban a leer las instrucciones, o estas no quedaban lo suficientemente claras. Para evitar la confusión, implementamos un tutorial de práctica para entender las mecánicas de Bouba District.
+
+Finalmente, conseguimos introducir las mecánicas de manera práctica, lo cual lo hace más memorable y entretenido que simplemente leer un texto. Aprendimos que es necesario conocer el punto de vista de gente externa al desarrollo y experimentar con jugadores no tan acostumbrados, y aún más si es una parte de nuestro público objetivo.
+
+### 10.2.2 
+Uno de los elementos que queríamos incorporar a Bouba District para mejorar la narrativa y la experiencia inmersiva del jugador fue una cinemática introductoria que explicara el contexto del juego. Esta implementación presentó varios problemas técnicos que nos causaron complicaciones durante el desarrollo.
+
+El problema ocurrió cuando, al intentar guardar y cargar el proyecto, la escena de la cinemática no se guardó correctamente. Aunque habíamos trabajado en la animación y la integración de la secuencia dentro del juego, algo salió mal en el proceso de guardado y la escena se perdió. Esto resultó en la necesidad de rehacerla desde cero, lo que retrasó parte de la producción.
+
+Aunque esta situación fue frustrante, también nos permitió mejorar ciertos aspectos de la cinemática. Una vez solucionado el problema, la cinemática se integró correctamente en el juego, y el proceso de desarrollo continuó con más seguridad en que este tipo de problemas no se repetirían.
+
+### 10.2.3
+Uno de los problemas que observamos al ver a la gente probando, Bouba District fue un desajuste en el balance de la dificultad. Una vez comprendían los controles, el juego resultaba demasiado fácil. No había suficiente variación en la dificultad y no se perdía la necesidad de superarse a uno mismo.
+
+Explicar cómo hemos hecho el juego más difícil.
+
+Tras realizar estos ajustes, el juego adquirió una curva de dificultad mucho más equilibrada. Los jugadores comenzaron a sentir que estaban avanzando y mejorando sus habilidades, lo que aumentó su motivación y les dio un sentido de logro.
 
 ## 10.3 Conclusión
