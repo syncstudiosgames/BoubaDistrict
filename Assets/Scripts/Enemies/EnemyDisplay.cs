@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 //using UnityEngine.UIElements;
@@ -90,6 +91,7 @@ public class EnemyDisplay : MonoBehaviour
         List<Note> deathSequence = _deathSequence;          // The enemy's death sequence.
 
         if(noteBuffer.Count <= 0) return; // If the note buffer is empty return.
+        if (_noteImages == null || _noteImages.Length == 0) return;
 
         // The note buffer pointer points to the note in the note buffer that is currently being examined.
         // It starts deathSequence.Count positions before the last element in the buffer, but not less than 0:
@@ -125,6 +127,7 @@ public class EnemyDisplay : MonoBehaviour
 
     public void UnHighlightNotes()
     {
+        if (_noteImages == null || _noteImages.Length == 0) return;
         for(int i = 0; i < _deathSequence.Count; i++)
         {
             _noteImages[i].sprite = _deathSequence[i].Sprite;
