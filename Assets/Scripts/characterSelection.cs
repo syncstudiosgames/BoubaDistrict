@@ -44,4 +44,6 @@ public class CharacterSelection : MonoBehaviour
         // Cargar la escena del juego
         SceneManager.LoadScene("Loading");
     }
+
+   
 }

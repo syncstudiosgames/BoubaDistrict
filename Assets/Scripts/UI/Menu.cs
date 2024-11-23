@@ -40,7 +40,10 @@ public class Menu : MonoBehaviour
     {
         StartCoroutine(LoadSceneWithDelay("Credits"));
     }
-
+    public void Cinematica()
+    {
+        StartCoroutine(LoadSceneWithDelay("Cinematica"));
+    }
     public void Salir()
     {
         Debug.Log("Exit Game");
