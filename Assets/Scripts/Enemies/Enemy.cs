@@ -86,7 +86,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Restore()
+    public virtual void Restore()
     {
         if (_healingEffect != null)
         {
