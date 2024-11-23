@@ -12,12 +12,13 @@ public class PlayerDisplay : MonoBehaviour
 
     float _lastMaxHealth;
 
-    private void Start()
+    private void Awake()
     {
         _player.OnHealthValueChange += UpdateDisplayData;
 
         _lastMaxHealth = _player.MaxHealthPoints;
 
+        UpdateDisplayData();
     }
 
     void UpdateDisplayData()

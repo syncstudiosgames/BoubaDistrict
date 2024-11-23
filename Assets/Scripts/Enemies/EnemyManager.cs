@@ -18,6 +18,10 @@ public class EnemyManager : MonoBehaviour
 
     [SerializeField] bool _waitForTutorial;
 
+    [SerializeField] bool _allowCeroEnemies;
+
+    public void AllowCeroEnemies(bool allowCeroEnemies) { _allowCeroEnemies = allowCeroEnemies; }
+
     int _currentNumOfEnemies = 0;
     event Action _currentNumEnemiesOnValueChange;
     public int CurrentNumOfEnemies { get { return _currentNumOfEnemies; } private set { _currentNumOfEnemies = value; _currentNumEnemiesOnValueChange?.Invoke(); } }
@@ -53,7 +57,12 @@ public class EnemyManager : MonoBehaviour
 
     public void StartGame()
     {
-        Invoke("StartSpawning", 5f);
+        Invoke("StartSpawning", 0);
+    }
+
+    public void StartGAmeWithDelay(float delay)
+    {
+        Invoke("StartSpawning", delay);
     }
     #endregion
 
@@ -105,11 +114,16 @@ public class EnemyManager : MonoBehaviour
     }
     public void SpawnSimpleEnemy()
     {
-        SpawnEnemy(GetRandomPositionAtSpawn(), 1, _enemyMoveSpeed, false);
+        SpawnEnemy(GetRandomPositionAtSpawn(), 1, 10, false);
+    }
+    public void SpawnEnemyWithComplexity(int complexity)
+    {
+        SpawnEnemy(GetRandomPositionAtSpawn(), complexity, 10);
     }
 
     void CheckFor0Enemies()
     {
+        if (_allowCeroEnemies) return;
         if (_currentNumOfEnemies == 0) SpawnEnemyRandom();
     }
 

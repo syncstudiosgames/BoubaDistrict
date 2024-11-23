@@ -4288,7 +4288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyManager: {fileID: 1431879111}
   _noteManager: {fileID: 726460152}
-  _waitForTutorial: 1
+  _waitForTutorial: 0
 --- !u!4 &1124231277
 Transform:
   m_ObjectHideFlags: 0
@@ -5898,6 +5898,7 @@ MonoBehaviour:
   _noteManager: {fileID: 726460152}
   _enemySpawner: {fileID: 236771641}
   _waitForTutorial: 0
+  _allowCeroEnemies: 0
 --- !u!4 &1431879112
 Transform:
   m_ObjectHideFlags: 0
