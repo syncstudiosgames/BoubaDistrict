@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
-using TMPro.EditorUtilities;
+//using TMPro.EditorUtilities;
 using TMPro;
 
 public class HighscoreTable : MonoBehaviour

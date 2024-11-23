@@ -506,6 +506,7 @@ GameObject:
   - component: {fileID: 4571231474140664172}
   - component: {fileID: 4651965012066641117}
   - component: {fileID: 4520580887578596567}
+  - component: {fileID: 2131508349828181051}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -522,7 +523,7 @@ RectTransform:
   m_GameObject: {fileID: 4812988456141469908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.98232, y: 0.98232, z: 0.98232}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6946892018382278090}
@@ -554,14 +555,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.09411766, g: 0.427451, b: 0.9686275, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 82e7341f701c076488981c911475c9eb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 55564df7e986f194093581e631132774, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -627,6 +628,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &2131508349828181051
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812988456141469908}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86d5e96ead0c0a84a95f9e9258c2a1e8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6899913015472017649
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,8 +716,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0193d80c1a9ebfa49a9b9df2811fedfb, type: 2}
-  m_sharedMaterial: {fileID: 8483234313143127090, guid: 0193d80c1a9ebfa49a9b9df2811fedfb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 78ecf713d1a313b42a32ebbd21ddbefb, type: 2}
+  m_sharedMaterial: {fileID: 5436568458548905918, guid: 78ecf713d1a313b42a32ebbd21ddbefb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -731,7 +753,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 52.28
+  m_lineSpacing: 10.2
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -755,7 +777,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -12.132721, y: 0, z: 0, w: 27.253576}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
