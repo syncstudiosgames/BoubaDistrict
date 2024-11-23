@@ -33,7 +33,7 @@ public class HighscoreTable : MonoBehaviour
         entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
         entryTransform.gameObject.SetActive(true);
 
-        string rankString = rank + "º";
+        string rankString = "#" + rank ;
         entryTransform.Find("PuestoEntrada").GetComponent<Text>().text = rankString;
         entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().text = score.ToString();
         entryTransform.Find("NombreEntrada").GetComponent<Text>().text = name;
