@@ -11,7 +11,7 @@ public class EnemyManager : MonoBehaviour
 {
     #region Variables & Properties
 
-    [SerializeField] GameObject _enemyPrefab;
+    [SerializeField] List<GameObject> _enemiesPrefabs;
     [SerializeField] NoteManager _noteManager;
 
     [SerializeField] GameObject _enemySpawner;
@@ -51,6 +51,8 @@ public class EnemyManager : MonoBehaviour
     float[] _complexityChance = {3f, 8f, 1f, 0f}; // Chances for 1,2,3... complexity.
     readonly float[] COMPLEXITY_ACELERATION = { 0.05f, 0.1f, 0.3f, 0.2f };
 
+    float[] _typeOfEnemyChanche = { 10f, 3f };
+
     #endregion
 
     #region Public Methods
@@ -80,7 +82,6 @@ public class EnemyManager : MonoBehaviour
     }
     void StartSpawning()
     {
-
         StartCoroutine(SpawningCoroutine());
     }
     IEnumerator SpawningCoroutine()
@@ -102,11 +103,12 @@ public class EnemyManager : MonoBehaviour
     
     GameObject SpawnEnemyRandom()
     {
-        return SpawnEnemy(GetRandomPositionAtSpawn(), RandomCompexity(), _enemyMoveSpeed);
+        var enemyPrefab = _enemiesPrefabs[GetRandomIndexByChance(_typeOfEnemyChanche)];
+        return SpawnEnemy(enemyPrefab, GetRandomPositionAtSpawn(), RandomComplexity(), _enemyMoveSpeed);
     }
-    GameObject SpawnEnemy(Vector3 pos, int complexity, float moveSpeed, bool renderSequence = true)
+    GameObject SpawnEnemy(GameObject prefab, Vector3 pos, int complexity, float moveSpeed, bool renderSequence = true)
     {
-        var enemyGO = Instantiate(_enemyPrefab, pos, Quaternion.identity);
+        var enemyGO = Instantiate(prefab, pos, Quaternion.identity);
         enemyGO.GetComponent<Enemy>().SetUp(complexity, _noteManager, this, renderSequence);
         enemyGO.GetComponent<EnemyController>().SetUp(moveSpeed);
         _onEnemySpawned?.Invoke();
@@ -114,11 +116,11 @@ public class EnemyManager : MonoBehaviour
     }
     public void SpawnSimpleEnemy()
     {
-        SpawnEnemy(GetRandomPositionAtSpawn(), 1, 10, false);
+        SpawnEnemy(_enemiesPrefabs[0], GetRandomPositionAtSpawn(), 1, 10, false);
     }
     public void SpawnEnemyWithComplexity(int complexity)
     {
-        SpawnEnemy(GetRandomPositionAtSpawn(), complexity, 10);
+        SpawnEnemy(_enemiesPrefabs[0], GetRandomPositionAtSpawn(), complexity, 10);
     }
 
     void CheckFor0Enemies()
@@ -127,21 +129,25 @@ public class EnemyManager : MonoBehaviour
         if (_currentNumOfEnemies == 0) SpawnEnemyRandom();
     }
 
-    // Aux functions:
-    int RandomCompexity()
+    int RandomComplexity()
+    {
+        return GetRandomIndexByChance(_complexityChance) + 1;
+    }
+
+    int GetRandomIndexByChance(float[] chances)
     {
         // Segment ballot.
-        float chanceSum = _complexityChance.Sum();
+        float chanceSum = chances.Sum();
         float pointer = UnityEngine.Random.Range(0, chanceSum);
 
         float range = 0;
-        for (int i = 0; i < _complexityChance.Length; i++)
+        for (int i = 0; i < chances.Length; i++)
         {
-            range += _complexityChance[i];
+            range += chances[i];
 
             if (pointer < range)
             {
-                return i + 1;
+                return i;
             }
         }
 
