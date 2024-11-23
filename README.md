@@ -546,10 +546,17 @@ Los controles de Bouba District están diseñados para ser accesibles, simples y
 ## 4.4 Niveles y misiones
 El juego contará con varios niveles que se irán actualizando cada 3 meses. Todos con estéticas diferentes y con mejoras y accesorios para el personaje, además de los Boubas característicos de cada temporada. También introducirán nuevos temas musicales y presentarán mayor dificultad, generando enemigos más complicados de matar y aumentando la velocidad de las canciones.
 
+### 4.4.1 Nivel 1 - Harmonia
+El nivel principal de Bouba District transcurre en un entorno urbano inspirado en una ciudad activa y colorida. Los edificios, de diferentes colores, están adornados con ventanas y ladrillos. Las calles, tienen elementos como farolas, árboles, cajas y basuras para aportar ambientación al escenario.
+
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/EscenarioTop.PNG" width="400">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="400">
 </p>
+
+### 4.4.2 Nivel 2 - Synthesia
+El segundo nivel transporta al jugador a un entorno futurista. La escena se desarrolla en una ciudad nocturna, iluminada por los neones cian, morado y rosas, que contrastan con el gris del asfalto y las paredes. Los edificios están llenos de carteles y elementos luminosos. La basura y las vallas rellenan las calles y añaden ambiente al nivel. 
+
 
 A lo largo del juego, se asignarán misiones secundarias como completar un nivel sin fallar ninguna secuencia, derrotar a un número específico de Boubas en un tiempo limitado o superar un nivel utilizando solo tres de los botones.
 
@@ -672,6 +679,8 @@ La ciudad de Harmonia es una ciudad urbana típica. La vida cotidiana es acelera
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario2.PNG" width="700">
 </p>
 
+Synthesia es la ciudad vecina de Harmonia, donde la modernidad y la decadencia urbana se fusionan. Los cuadrados edificios iluminan la noche. Las tiendas y escaparates tratan de atraer a los viandantes con sus brillantes carteles. Su diseño resalta lo sintético y mezcla la cultura callejera con el avance tecnológico.
+
 # 6. Arte
 ## 6.1 Estética general del juego
 El juego busca evocar una mezcla de **alegría y tensión**, creando una atmósfera divertida pero emocionante, combinando **ritmo y acción**. La jugabilidad será fluida y adictiva, mezclando la defensa contra enemigos con la necesidad de mantener el ritmo, lo que mantendrá al jugador en constante movimiento y alerta.
@@ -681,7 +690,7 @@ Se desarrollará en **3D**, con **vista picada**, pero se utilizarán elementos 
 
 Los entornos y personajes están modelados en 3D, con un diseño artístico **caricaturesco y colorido**, inspirado en juegos casuales que transmiten un tono **alegre, divertido y desenfadado**, a pesar de las mecánicas de "ataque y defensa". Los enemigos serán criaturas pequeñas y amables.
 
-- **Entorno:** Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida.
+- **Entorno:**  Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida. El secundario será uno oscuro con estética moderna y futurista e iluminado con neones y texturas emisivas.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario.PNG" width="700">
@@ -793,13 +802,17 @@ Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático
 
 
 ### Marta 
+En esta ocasión mi trabajo ha estado enfocado en diseñar el escenario secundario de Bouba District. Mi mayor reto ha sido aprender a utilizar texturas emisivas y generar lightmaps, ya que Unity no permite calcular este tipo de iluminación en el tiempo de ejecución. Aunque al principio retrasó mi trabajo, una vez aprendí a manejar estas herramientas no supuso mayor problema. Gracias a esto, he adquirido un mayor aprecio al uso del color y la iluminación. Creo que he conseguido crear un entorno no muy distante del primer nivel en cuanto a estilo, pero, pero inspirando en otra estética completamente diferente.
 
+También me he encargado de actualizar el Game Design Document y añadir todas las actualizaciones que ha realizado el equipo desde la última entrega. Además, me he encargado de las publicaciones en redes sociales y la promoción del juego. Me habría gustado dedicarle más tiempo al márketing, ya que mi trabajo se enfocó en las otras tareas. Aún tenemos mucho contenido por compartir, pero es crucial como estudio si queremos vender el juego también centrarse en darnos a conocer.
 
 ### Francisco
 
 
 ### Ana
+En esta práctica, uno de los principales desafíos fue gestionar el comportamiento del servidor alojado en Glitch, el cual entra en modo inactivo tras un periodo de inactividad. Para resolver este problema, se implementó una pantalla de carga que realiza solicitudes al servidor para despertarlo antes de iniciar el juego, garantizando además un tiempo mínimo de espera de 4 segundos para ofrecer una transición fluida y profesional.
 
+Otro reto fue desarrollar una pantalla de ajustes que permitiera modificar el volumen de todos los sonidos del juego y garantizar que estos ajustes fueran persistentes entre escenas. Esto se logró utilizando un prefab para la pantalla de ajustes y un SettingsManager, que se encarga de instanciarla en la escena inicial y ajustar el volumen global del juego mediante un slider, aplicando los cambios dinámicamente a través de AudioListener.volume.
 
 ### Lucía
 
