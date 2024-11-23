@@ -9,6 +9,7 @@ public class HighscoreTable : MonoBehaviour
     private Transform entryContainer;
     private Transform entryTemplate;
     private List<Transform> highscoreEntryTransformList;
+    private ScrollRect scrollRect;
 
     // Servidor público en Glitch
     private const string serverUrl = "https://highscore-server.glitch.me/api";
@@ -19,6 +20,8 @@ public class HighscoreTable : MonoBehaviour
         entryTemplate = entryContainer.Find("highscoreEntryTemplate");
 
         entryTemplate.gameObject.SetActive(false);
+        // Obtener el componente ScrollRect del ScrollView
+        scrollRect = GetComponentInParent<ScrollRect>();
 
         // Obtener el ranking desde el servidor al cargar la escena
         StartCoroutine(GetHighscoresFromServer());
@@ -26,7 +29,7 @@ public class HighscoreTable : MonoBehaviour
 
     private void CreateHighscoreEntryTransform(string name, int score, int rank, Transform container, List<Transform> transformList, bool isMostRecent)
     {
-        float templateHeight = 40f;
+        float templateHeight = 80f;
 
         Transform entryTransform = Instantiate(entryTemplate, container);
         RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
@@ -61,9 +64,9 @@ public class HighscoreTable : MonoBehaviour
         }
         else
         {
-            entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = Color.black;
-            entryTransform.Find("NombreEntrada").GetComponent<Text>().color = Color.black;
-            entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = Color.black;
+            entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = Color.white;
+            entryTransform.Find("NombreEntrada").GetComponent<Text>().color = Color.white;
+            entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = Color.white;
         }
 
         transformList.Add(entryTransform);
@@ -85,12 +88,26 @@ public class HighscoreTable : MonoBehaviour
 
                 // Crear la visualización de cada entrada del ranking
                 highscoreEntryTransformList = new List<Transform>();
+
+                // Identificar la puntuación más reciente por alguna lógica (por ejemplo, el último ID)
+                int mostRecentIndex = -1;
                 for (int i = 0; i < highscores.Length; i++)
                 {
-                    // Verificar si el ID del jugador coincide con el del ranking
-                    bool isMostRecent = highscores[i].id == FinalScore.playerId; 
+                    if (highscores[i].id == FinalScore.playerId)
+                    {
+                        mostRecentIndex = i;
+                    }
+                }
 
+                // Crear las entradas del ranking
+                for (int i = 0; i < highscores.Length; i++)
+                {
+                    bool isMostRecent = i == mostRecentIndex; // Solo resaltar la más reciente
                     CreateHighscoreEntryTransform(highscores[i].name, highscores[i].score, i + 1, entryContainer, highscoreEntryTransformList, isMostRecent);
+                }
+                if (mostRecentIndex != -1)
+                {
+                    ScrollToIndex(mostRecentIndex);
                 }
             }
             else
@@ -98,6 +115,24 @@ public class HighscoreTable : MonoBehaviour
                 Debug.LogError($"Error al obtener el ranking: {request.error}");
             }
         }
+    }
+
+    private void ScrollToIndex(int index)
+    {
+        // Asegurarse de que el ScrollRect esté configurado
+        if (scrollRect == null) return;
+
+        // Obtener el tamaño del contenedor y el template
+        RectTransform containerRect = entryContainer.GetComponent<RectTransform>();
+        RectTransform entryRect = entryTemplate.GetComponent<RectTransform>();
+
+        // Calcular la altura total y la posición objetivo
+        float contentHeight = containerRect.rect.height;
+        float entryHeight = entryRect.rect.height;
+        float targetPosition = Mathf.Clamp01(1f - ((index * entryHeight) / contentHeight));
+
+        // Ajustar la posición del ScrollRect
+        scrollRect.verticalNormalizedPosition = targetPosition;
     }
 
 
