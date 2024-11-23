@@ -1563,7 +1563,7 @@ RectTransform:
   m_GameObject: {fileID: 302014408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 14.054892, y: 5.809176, z: 5.598666}
+  m_LocalScale: {x: 6.2301116, y: 2.5750334, z: 2.4817207}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1567970615}
@@ -1572,7 +1572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 69, y: 349}
+  m_AnchoredPosition: {x: -6.000038, y: 202}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302014410
@@ -2454,10 +2454,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3201,7 +3201,7 @@ RectTransform:
   m_GameObject: {fileID: 732667310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 14.054892, y: 5.809176, z: 5.598666}
+  m_LocalScale: {x: 6.2301116, y: 2.5750334, z: 2.4817207}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1302032943}
@@ -3210,7 +3210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 69, y: 349}
+  m_AnchoredPosition: {x: -6, y: 202}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &732667312
@@ -5254,15 +5254,15 @@ RectTransform:
   m_GameObject: {fileID: 1156389774}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4667058, y: 0.5799208, z: 1.4667058}
+  m_LocalScale: {x: 0.8314315, y: 0.3287397, z: 0.8314315}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 741006266}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -54.94287}
-  m_SizeDelta: {x: 3740, y: 2160}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -104.94287}
+  m_SizeDelta: {x: 3840, y: 2160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1156389776
 MonoBehaviour:
@@ -7118,7 +7118,7 @@ RectTransform:
   m_GameObject: {fileID: 1571440545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.5511, y: 9.935398, z: 6.5511}
+  m_LocalScale: {x: 2.9616213, y: 4.491595, z: 2.9616213}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1289831764}
@@ -7126,7 +7126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -253}
+  m_AnchoredPosition: {x: 0, y: -173.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1571440547
@@ -8406,7 +8406,7 @@ RectTransform:
   m_GameObject: {fileID: 1857458908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.5511, y: 9.935398, z: 6.5511}
+  m_LocalScale: {x: 2.9616213, y: 4.491595, z: 2.9616213}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1820573260}
@@ -8414,7 +8414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 93}
+  m_AnchoredPosition: {x: 0, y: -17.276}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1857458910
@@ -8463,7 +8463,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 528022749}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Game
+        m_MethodName: CharacterSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

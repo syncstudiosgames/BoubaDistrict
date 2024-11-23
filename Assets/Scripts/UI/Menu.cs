@@ -44,6 +44,11 @@ public class Menu : MonoBehaviour
     {
         StartCoroutine(LoadSceneWithDelay("Cinematica"));
     }
+
+    public void CharacterSelection()
+    {
+        StartCoroutine(LoadSceneWithDelay("Character Selection"));
+    }
     public void Salir()
     {
         Debug.Log("Exit Game");
@@ -55,7 +60,11 @@ public class Menu : MonoBehaviour
         Debug.Log("Inicio");
         StartCoroutine(LoadSceneWithDelay("Inicio"));
     }
-
+    public void RankingUlt()
+    {
+        Debug.Log("going to ranking");
+        StartCoroutine(LoadSceneWithDelay("RankingUlt"));
+    }
     // Corutina para esperar un delay antes de cambiar de escena
     private IEnumerator LoadSceneWithDelay(string sceneName)
     {
