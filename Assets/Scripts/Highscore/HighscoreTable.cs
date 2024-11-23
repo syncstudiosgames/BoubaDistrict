@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using TMPro.EditorUtilities;
+using TMPro;
 
 public class HighscoreTable : MonoBehaviour
 {
@@ -10,6 +12,10 @@ public class HighscoreTable : MonoBehaviour
     private Transform entryTemplate;
     private List<Transform> highscoreEntryTransformList;
     private ScrollRect scrollRect;
+
+    public TMP_Text Nombre1;
+    public TMP_Text Nombre2;
+    public TMP_Text Nombre3;
 
     // Servidor público en Glitch
     private const string serverUrl = "https://highscore-server.glitch.me/api";
@@ -89,6 +95,9 @@ public class HighscoreTable : MonoBehaviour
                 // Crear la visualización de cada entrada del ranking
                 highscoreEntryTransformList = new List<Transform>();
 
+                // Actualizar los nombres de los tres primeros jugadores
+                UpdateTopThreeNames(highscores);
+
                 // Identificar la puntuación más reciente por alguna lógica (por ejemplo, el último ID)
                 int mostRecentIndex = -1;
                 for (int i = 0; i < highscores.Length; i++)
@@ -105,6 +114,7 @@ public class HighscoreTable : MonoBehaviour
                     bool isMostRecent = i == mostRecentIndex; // Solo resaltar la más reciente
                     CreateHighscoreEntryTransform(highscores[i].name, highscores[i].score, i + 1, entryContainer, highscoreEntryTransformList, isMostRecent);
                 }
+
                 if (mostRecentIndex != -1)
                 {
                     ScrollToIndex(mostRecentIndex);
@@ -116,7 +126,6 @@ public class HighscoreTable : MonoBehaviour
             }
         }
     }
-
     private void ScrollToIndex(int index)
     {
         // Asegurarse de que el ScrollRect esté configurado
@@ -133,6 +142,15 @@ public class HighscoreTable : MonoBehaviour
 
         // Ajustar la posición del ScrollRect
         scrollRect.verticalNormalizedPosition = targetPosition;
+    }
+    private void UpdateTopThreeNames(HighscoreEntry[] highscores)
+    {
+        if (highscores.Length > 0)
+            Nombre1.text = highscores[0].name;
+        if (highscores.Length > 1)
+            Nombre2.text = highscores[1].name;
+        if (highscores.Length > 2)
+            Nombre3.text = highscores[2].name;
     }
 
 
