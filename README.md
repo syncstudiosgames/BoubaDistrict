@@ -551,12 +551,14 @@ El nivel principal de Bouba District transcurre en un entorno urbano inspirado e
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/EscenarioTop.PNG" width="400">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="400">
 </p>
 
 ### 4.4.2 Nivel 2 - Synthesia
 El segundo nivel transporta al jugador a un entorno futurista. La escena se desarrolla en una ciudad nocturna, iluminada por los neones cian, morado y rosas, que contrastan con el gris del asfalto y las paredes. Los edificios están llenos de carteles y elementos luminosos. La basura y las vallas rellenan las calles y añaden ambiente al nivel. 
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberPunk.PNG" width="400">
+</p>
 
 A lo largo del juego, se asignarán misiones secundarias como completar un nivel sin fallar ninguna secuencia, derrotar a un número específico de Boubas en un tiempo limitado o superar un nivel utilizando solo tres de los botones.
 
@@ -676,10 +678,22 @@ Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, q
 La ciudad de Harmonia es una ciudad urbana típica. La vida cotidiana es acelerada y está llena de movimiento. Está repleta de edificios y barrios densamente habitados. La vida en Harmonia cambia por completo cuando es invadida por los Boubas. Las calles, antes llenas de actividad, se convierten en lugares peligrosos, forzando a los vecinos a refugiarse en sus casas y dejando el centro prácticamente desierto.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario2.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Harmonia1.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Harmonia2.PNG" width="700">
 </p>
 
 Synthesia es la ciudad vecina de Harmonia, donde la modernidad y la decadencia urbana se fusionan. Los cuadrados edificios iluminan la noche. Las tiendas y escaparates tratan de atraer a los viandantes con sus brillantes carteles. Su diseño resalta lo sintético y mezcla la cultura callejera con el avance tecnológico.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Synthesia1.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Synthesia2.PNG" width="700">
+</p>
 
 # 6. Arte
 ## 6.1 Estética general del juego
