@@ -754,6 +754,10 @@ Las interfaces están integradas dentro del escenario. Cuentan con botones estil
 </p>
 
 <p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Gameplay.PNG" width="700">
+</p>
+
+<p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/CharacterSelection.PNG" width="700">
 </p>
 
