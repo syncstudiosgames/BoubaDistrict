@@ -904,7 +904,7 @@ En esta práctica, uno de los principales desafíos fue gestionar el comportamie
 Otro reto fue desarrollar una pantalla de ajustes que permitiera modificar el volumen de todos los sonidos del juego y garantizar que estos ajustes fueran persistentes entre escenas. Esto se logró utilizando un prefab para la pantalla de ajustes y un SettingsManager, que se encarga de instanciarla en la escena inicial y ajustar el volumen global del juego mediante un slider, aplicando los cambios dinámicamente a través de AudioListener.volume.
 
 ### Lucía
-
+Para esta fase del desarrollo se presentaron nuevos retos especialmente en lo que respecta a la programación. A medida que el código crecía en complejidad y se debían implementar funciones más sofisticadas la dificultad aumentó en general. Además personalmente tuve que enfrentarme problemas que nunca antes había resuelto como la estructuración e implementación del tutorial. Creo que la manera de afrontar el problema no fue la ideal y me dio problemas más adelante, en un futuro podría reimplementarse con los conocimientos nuevos que he aprendido. Por lo general la buena estructuración y versatilidad del código agilizó el proceso
 
 ## Trabajo grupal
 ## 10.1 Lo que salió bien
