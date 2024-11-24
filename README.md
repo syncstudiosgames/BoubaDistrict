@@ -888,7 +888,9 @@ Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático
 ## Trabajo individual
 
 ### Laura
+Mi mayor reto ha sido la elaboración de la cinemática de Bouba District. Creíamos que era importante una breve introducción para situar al jugador. Gracias a ello he podido progundizar en mi comprensión del diseño visual y narrativo, aunque fuera una escena breve.
 
+También me encargué del diseño de las nuevas interfaces y de su incorporación. Aunque a veces fue complicado ajustarlas, conseguí crear nuevas pantallas que siguiera  el estilo del juego y aportaran la información que nos faltaba para implementar el aspecto competitivo del juego.
 
 ### Marta 
 En esta ocasión mi trabajo ha estado enfocado en diseñar el escenario secundario de Bouba District. Mi mayor reto ha sido aprender a utilizar texturas emisivas y generar lightmaps, ya que Unity no permite calcular este tipo de iluminación en el tiempo de ejecución. Aunque al principio retrasó mi trabajo, una vez aprendí a manejar estas herramientas no supuso mayor problema. Gracias a esto, he adquirido un mayor aprecio al uso del color y la iluminación. Creo que he conseguido crear un entorno no muy distante del primer nivel en cuanto a estilo, pero, pero inspirando en otra estética completamente diferente.
@@ -904,7 +906,7 @@ En esta práctica, uno de los principales desafíos fue gestionar el comportamie
 Otro reto fue desarrollar una pantalla de ajustes que permitiera modificar el volumen de todos los sonidos del juego y garantizar que estos ajustes fueran persistentes entre escenas. Esto se logró utilizando un prefab para la pantalla de ajustes y un SettingsManager, que se encarga de instanciarla en la escena inicial y ajustar el volumen global del juego mediante un slider, aplicando los cambios dinámicamente a través de AudioListener.volume.
 
 ### Lucía
-Para esta fase del desarrollo se presentaron nuevos retos especialmente en lo que respecta a la programación. A medida que el código crecía en complejidad y se debían implementar funciones más sofisticadas la dificultad aumentó en general. Además personalmente tuve que enfrentarme problemas que nunca antes había resuelto como la estructuración e implementación del tutorial. Creo que la manera de afrontar el problema no fue la ideal y me dio problemas más adelante, en un futuro podría reimplementarse con los conocimientos nuevos que he aprendido. Por lo general la buena estructuración y versatilidad del código agilizó el proceso
+Para esta fase del desarrollo se presentaron nuevos retos especialmente en lo que respecta a la programación. A medida que el código crecía en complejidad y se debían implementar funciones más sofisticadas la dificultad aumentó en general. Además personalmente tuve que enfrentarme problemas que nunca antes había resuelto como la estructuración e implementación del tutorial. Creo que la manera de afrontar el problema no fue la ideal y me dio problemas más adelante, en un futuro podría reimplementarse con los conocimientos nuevos que he aprendido. Por lo general la buena estructuración y versatilidad del código agilizó el proceso.
 
 ## Trabajo grupal
 ## 10.1 Lo que salió bien
