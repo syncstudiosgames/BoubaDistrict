@@ -746,33 +746,56 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmiten la atmósfera urbana del nivel principal.
 
 <p align="center">
+  <em>PANTALLA DE INICIO</em></p>
+<p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/PantallaInicio.PNG" width="700">
 </p>
 
+<p align="center">
+  <em>CINEMÁTICA</em></p>
+<p align="center">
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Cinematica.PNG" width="700">
 </p>
 
 <p align="center">
+  <em>TUTORIAL</em></p>
+<p align="center">
+<p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Tutorial.PNG" width="700">
 </p>
 
+<p align="center">
+  <em>SELECCIÓN DE PERSONAJE</em></p>
+<p align="center">
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="700">
 </p>
 
 <p align="center">
+  <em>GAMEPLAY</em></p>
+<p align="center">
+<p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Gameplay.PNG" width="700">
 </p>
 
+<p align="center">
+  <em>PANTALLA DE DERROTA</em></p>
+<p align="center">
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/PantallaDerrota.PNG" width="700">
 </p>
 
 <p align="center">
+  <em>RANKING</em></p>
+<p align="center">
+<p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Ranking.PNG" width="700">
 </p>
 
+<p align="center">
+  <em>CRÉDITOS</em></p>
+<p align="center">
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/PantallaCreditos.PNG" width="700">
 </p>
