@@ -908,6 +908,11 @@ Otro reto fue desarrollar una pantalla de ajustes que permitiera modificar el vo
 ### Lucía
 Para esta fase del desarrollo se presentaron nuevos retos especialmente en lo que respecta a la programación. A medida que el código crecía en complejidad y se debían implementar funciones más sofisticadas la dificultad aumentó en general. Además personalmente tuve que enfrentarme problemas que nunca antes había resuelto como la estructuración e implementación del tutorial. Creo que la manera de afrontar el problema no fue la ideal y me dio problemas más adelante, en un futuro podría reimplementarse con los conocimientos nuevos que he aprendido. Por lo general la buena estructuración y versatilidad del código agilizó el proceso.
 
+### Laura
+En esta fase del desarrollo, mi mayor desafío ha sido aprender a construir una cinemática desde cero. Esta tarea implicó incorporar una gran cantidad de elementos dinámicos que enriquecen la escena, como coches de policía en movimiento, luces intermitentes, animaciones de personajes y diálogos sincronizados. Este proceso no solo requirió mucho tiempo, sino también una constante experimentación para lograr el nivel de detalle deseado.
+
+Además, enfrenté dificultades relacionadas con el proceso de guardado en Unity. Mi desconocimiento sobre cómo funciona el sistema de escenas me llevó a perder todo el trabajo realizado en una cinemática, a pesar de haber realizado varios commits en GitHub. Aprendí que Unity únicamente guarda objetos y scripts en el repositorio en forma de archivos, pero no cambios como tal en la escena, lo que provoca la pérdida de cambios realizados. Este error me obligó a rehacer la escena, pero también me sirvió como aprendizaje valioso para evitar problemas similares en el futuro. También me sirvió a aprender cómo recuperar archivos temporales de las escenas en Unity, tristemente sólo son accesibles si no has vuelto a abrir Unity, una vez reinicias, se pierden.
+
 ## Trabajo grupal
 ## 10.1 Lo que salió bien
 ### 10.1.1 La apariencia sí importa
