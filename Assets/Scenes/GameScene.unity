@@ -1080,6 +1080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 236771643}
   - component: {fileID: 236771642}
+  - component: {fileID: 236771644}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -1105,11 +1106,32 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.3, y: 0.5, z: 8.31}
-  m_LocalScale: {x: 5.3117, y: 1, z: 1}
+  m_LocalScale: {x: 14.691948, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &236771644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236771641}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &241461349
 GameObject:
   m_ObjectHideFlags: 0
@@ -6175,6 +6197,7 @@ MonoBehaviour:
   _enemySpawner: {fileID: 236771641}
   _waitForTutorial: 0
   _allowCeroEnemies: 0
+  _notSpawnningBracketLenth: 5
 --- !u!4 &1431879112
 Transform:
   m_ObjectHideFlags: 0

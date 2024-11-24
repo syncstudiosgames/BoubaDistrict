@@ -22,6 +22,9 @@ public class EnemyManager : MonoBehaviour
 
     public void AllowCeroEnemies(bool allowCeroEnemies) { _allowCeroEnemies = allowCeroEnemies; }
 
+    Vector3 _lastSpawnningPosition;
+    [SerializeField] float _notSpawnningBracketLenth = 7;
+
     int _currentNumOfEnemies = 0;
     event Action _currentNumEnemiesOnValueChange;
     public int CurrentNumOfEnemies { get { return _currentNumOfEnemies; } private set { _currentNumOfEnemies = value; _currentNumEnemiesOnValueChange?.Invoke(); } }
@@ -52,6 +55,8 @@ public class EnemyManager : MonoBehaviour
     readonly float[] COMPLEXITY_ACELERATION = { 0.05f, 0.1f, 0.3f, 0.2f };
 
     float[] _typeOfEnemyChanche = { 10f, 3f };
+
+    float _dificultyStep = 0;
 
     #endregion
 
@@ -84,6 +89,7 @@ public class EnemyManager : MonoBehaviour
     {
         StartCoroutine(SpawningCoroutine());
     }
+
     IEnumerator SpawningCoroutine()
     {
         while(true)
@@ -99,6 +105,7 @@ public class EnemyManager : MonoBehaviour
         _spawningInterval = ClampLower(_spawningInterval -= SPAWNING_INTERVAL_ACELERATION, MIN_SPAWNING_INTERVAL);
         _enemyMoveSpeed = ClampUpper(_enemyMoveSpeed += MOVE_SPEED_ACELERATION, MAX_MOVE_SPEED);
         _complexityChance = SumFloatArrays(_complexityChance, COMPLEXITY_ACELERATION);
+        
     }
     
     GameObject SpawnEnemyRandom()
@@ -155,14 +162,47 @@ public class EnemyManager : MonoBehaviour
     }
     Vector3 GetRandomPositionAtSpawn()
     {
-        var pos = _enemySpawner.transform.position;
-        var scale = _enemySpawner.transform.localScale;
+        var spawnerPos = _enemySpawner.transform.position;
+        var spawnerScale = _enemySpawner.transform.localScale;
 
-        var x = UnityEngine.Random.Range(pos.x - scale.x / 2, pos.x + scale.x / 2);
-        var y = pos.y;
-        var z = pos.z;
 
-        return new Vector3(x, y, z);
+        var leftBound = spawnerPos.x - spawnerScale.x / 2;
+        var rightBound = spawnerPos.x + spawnerScale.x / 2;
+
+        float x;
+
+        if(_lastSpawnningPosition == null)
+        {
+            x = UnityEngine.Random.Range(leftBound, rightBound);
+        }
+        else
+        {
+            bool pickLeft = false;
+            bool sidePicked = false;
+
+            var lastSpawningX = _lastSpawnningPosition.x;
+
+            var leftX = lastSpawningX - _notSpawnningBracketLenth / 2;
+            if(leftX < leftBound) { pickLeft = false; sidePicked = true; }
+
+            var rightX = lastSpawningX + _notSpawnningBracketLenth / 2;
+            if (rightX > rightBound) { pickLeft = true; sidePicked = true; }
+
+            if(!sidePicked) pickLeft = UnityEngine.Random.value < 0.5f;
+
+            x = pickLeft? 
+                UnityEngine.Random.Range(spawnerPos.x - spawnerScale.x / 2, leftX)
+                : 
+                UnityEngine.Random.Range(rightX, spawnerPos.x + spawnerScale.x / 2);
+
+            Debug.Log($"lastSpawnningX = {lastSpawningX}" +
+                $", leftBracket = ({spawnerPos.x - spawnerScale.x / 2},{leftX})" +
+                $", rightBracket = ({rightX}, {spawnerPos.x + spawnerScale.x / 2})");
+        }
+
+        _lastSpawnningPosition = new Vector3(x, spawnerPos.y, spawnerPos.z);
+
+        return _lastSpawnningPosition;
     }
 
     void PrintSpawningParameters()
