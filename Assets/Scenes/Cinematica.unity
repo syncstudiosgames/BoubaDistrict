@@ -3317,6 +3317,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 898563870351146485, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
+      propertyPath: m_text
+      value: Kike
+      objectReference: {fileID: 0}
+    - target: {fileID: 898563870351146485, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
+      propertyPath: m_margin.z
+      value: -9.816895
+      objectReference: {fileID: 0}
     - target: {fileID: 931712890987881861, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3369,6 +3377,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6540529524938794531, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0a785400faa8f14884dcb0bdabe3157, type: 3}
     - target: {fileID: 6549714601243239838, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_text
       value: 'Wow! This is getting out of hand!
