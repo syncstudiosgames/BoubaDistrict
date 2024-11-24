@@ -1,4 +1,4 @@
-<h1 align="center">Game Design Document Alfa</h1>
+<h1 align="center">Game Design Document Beta</h1>
 <h2 align="center">Bouba District</h2>
 
 <p align="center">
@@ -56,18 +56,19 @@ El "Battle Pass" constará de 50 niveles y estará compuesto por un total de 60 
 - 2 Aspectos legendarios para los botones (Con diferentes efectos)
 
 #### Temáticas de las temporadas
-##### *Enero - Temporada 1 (Into the groove)*
-Los Boubas retrocederán al pasado mostrando un aspecto algo ochentero y disco pero con un toque espacial. En esta temporada, se añadirán nuevas canciones en las que los usuarios podrán probar sus nuevos cosméticos.
+##### *Enero - Temporada 1 (Rave Remix!)*
+Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado más “techno” y futurista de los Boubas. Estas criaturas, presentarán una apariencia algo tecnológica y electrónica, mientras que bailaran al son de las canciones más jugadas por la comunidad, pero con un toque muy electrónico. Se harán diferentes “remix” techno de las canciones más aclamadas por los jugadores, para que puedan volver a jugarlas como el primer día. En esta temporada se celebrará el aniversario del videojuego con un evento de 3 semanas que por cada una de ellas presentará un nuevo “remix”.
 
 **Contenido:**
-- Cosméticos (Ochenteros con toque espacial).
-- 3 nuevas canciones (Género disco).
-- 1 Mapa (Nave espacial).
-
+- Cosméticos(Robóticos, accesorios “tecnológicos”)
+- Evento (Aniversario)
+- Nuevo género (“Techno”)
+- Nuevo mapa (Escenario frenético, rodeado de neón y láseres que iluminan el escenario)
+  
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA1.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA2.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA3.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE3.png" width="150">
 </p>
 
 ##### *Abril - Temporada 2 (Fairy garden)*
@@ -110,21 +111,19 @@ Con esta temporada, los Boubas sacarán sus mejores galas, adoptando nuevos y el
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/THO3.png" width="150">
 </p>
 
-##### *Enero - Temporada 5 (Rave Remix!)*
-Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado más “techno” y futurista de los Boubas. Estas criaturas, presentarán una apariencia algo tecnológica y electrónica, mientras que bailaran al son de las canciones más jugadas por la comunidad, pero con un toque muy electrónico. Se harán diferentes “remix” techno de las canciones más aclamadas por los jugadores, para que puedan volver a jugarlas como el primer día. En esta temporada se celebrará el aniversario del videojuego con un evento de 3 semanas que por cada una de ellas presentará un nuevo “remix”.
+##### *Enero - Temporada 5 (Into the groove)*
+Los Boubas retrocederán al pasado mostrando un aspecto algo ochentero y disco pero con un toque espacial. En esta temporada, se añadirán nuevas canciones en las que los usuarios podrán probar sus nuevos cosméticos.
 
 **Contenido:**
-- Cosméticos(Robóticos, accesorios “tecnológicos”)
-- Evento (Aniversario)
-- Nuevo género (“Techno”)
-- Nuevo mapa (Escenario frenético, rodeado de neón y láseres que iluminan el escenario)
-  
-<p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE1.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE2.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE3.png" width="150">
-</p>
+- Cosméticos (Ochenteros con toque espacial).
+- 3 nuevas canciones (Género disco).
+- 1 Mapa (Nave espacial).
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TJA3.png" width="150">
+</p>
 
 ##### *Abril - Temporada 6 (Rodeo Showdown)(Country)*
 Los Boubas viajarán al viejo oeste y se harán unos auténticos vaqueros. Los  cosméticos que se ofrecerán en este pase serán dignos de un verdadero vaquero (sombreros, látigos, botas,...).
@@ -528,7 +527,7 @@ Además de los salarios del equipo, existen otros costes asociados:
 Bouba District es un juego **casual competitivo** donde el jugador se enfrenta a oleadas de enemigos conocidos como “Boubas”. Estos intentarán invadir el territorio del jugador. El objetivo principal es defenderse siguiendo las secuencias de teclas que presentan los Boubas, ajustándose al ritmo de la música.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Gameplay.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Gameplay.PNG" width="600">
 </p>
 
 ## 4.2 Descripción detallada de las mecánicas de juego
@@ -547,9 +546,18 @@ Los controles de Bouba District están diseñados para ser accesibles, simples y
 ## 4.4 Niveles y misiones
 El juego contará con varios niveles que se irán actualizando cada 3 meses. Todos con estéticas diferentes y con mejoras y accesorios para el personaje, además de los Boubas característicos de cada temporada. También introducirán nuevos temas musicales y presentarán mayor dificultad, generando enemigos más complicados de matar y aumentando la velocidad de las canciones.
 
+### 4.4.1 Nivel 1 - Harmonia
+El nivel principal de Bouba District transcurre en un entorno urbano inspirado en una ciudad activa y colorida. Los edificios, de diferentes colores, están adornados con ventanas y ladrillos. Las calles, tienen elementos como farolas, árboles, cajas y basuras para aportar ambientación al escenario.
+
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/EscenarioTop.PNG" width="400">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="400">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/EscenarioTop.PNG" width="600">
+</p>
+
+### 4.4.2 Nivel 2 - Synthesia
+El segundo nivel transporta al jugador a un entorno futurista. La escena se desarrolla en una ciudad nocturna, iluminada por los neones cian, morado y rosas, que contrastan con el gris del asfalto y las paredes. Los edificios están llenos de carteles y elementos luminosos. La basura y las vallas rellenan las calles y añaden ambiente al nivel. 
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/NivelCyberpunk.PNG" width="600">
 </p>
 
 A lo largo del juego, se asignarán misiones secundarias como completar un nivel sin fallar ninguna secuencia, derrotar a un número específico de Boubas en un tiempo limitado o superar un nivel utilizando solo tres de los botones.
@@ -568,6 +576,7 @@ En medio del caos, surge una oportunidad inesperada: la música. Kiki, Kike, y K
 Aunque Kiki, el vocalista, es el líder predeterminado y principal del grupo, Kike el guitarrista, y Kiko el baterista también juegan un papel crucial en esta lucha musical. Los jugadores pueden elegir jugar como cualquiera de los tres, aprovechando sus habilidades específicas para derrotar a los Boubas en batallas de ritmo intensas.
 
 ## 5.2 Personajes
+### Echo Squad
 ### 5.2.1 Kiki - Vocalista
 Kiki es un joven talentoso que ha pasado toda su vida perfeccionando su habilidad para conectarse con los ritmos del mundo. A través de su voz, puede sincronizarse con los Boubas y calmarlos. Aunque puede parecer despreocupado y algo irresponsable, su amor por la música y su deseo de proteger la ciudad lo impulsan a ser un verdadero héroe.
 
@@ -575,7 +584,7 @@ Kiki es un joven talentoso que ha pasado toda su vida perfeccionando su habilida
 - **Habilidad especial:** Como vocalista, Kiki puede usar su voz para realizar ataques sónicos que desorientan a los Boubas y sincronizarse con ellos para calmarlos.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki.PNG" width="500">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kiki.PNG" width="300">
 </p>
 
 ### 5.2.2 Kike - Guitarrista
@@ -584,7 +593,7 @@ Kike es el corazón de la banda y su guitarra es su arma principal en la lucha c
 - **Descripción física:** Pelo largo y rubio, con una camiseta de tirantes que lleva el símbolo de la paz. Es el miembro más tranquilo de la banda, pero su música habla con una intensidad feroz.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiko.PNG" width="500">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kiko.PNG" width="300">
 </p>
 
 ### 5.2.3 Kiko - Batería
@@ -593,52 +602,72 @@ Kiko es el motor rítmico de la banda, el encargado de mantener el tempo tanto e
 - **Descripción física:** Kiko lleva una camiseta con un diseño rockero y su cabello negro rizado siempre está despeinado, reflejando su actitud despreocupada y libre.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kike.PNG" width="500">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kike.PNG" width="300">
 </p>
 
-### 5.2.4 Boubas
+### Las Tukus
+
+### 5.2.4 Kuki - Vocalista
+Kuki es el alma del equipo, está llena de energía. Su presencia es magnética, es el equilibrio perfecto entre pasión y técnica. Kuki no tiene miedo a tomar la delantera, aunque a veces actúa de manera impulsiva.
+
+- **Descripción física:** lleva un look futurista que combina lo extravagante con lo funcional. Su cabello es largo y rosa neón, tan llamativo como su personalidad.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kuki.PNG" width="300">
+</p>
+
+### 5.2.5 Kika - Vocalista
+Kika es una joven carismática con una voz capaz de cautivar a cualquiera que la escuche. Su estilo único fusiona el pop futurista con melodías tradicionales. Kika no solo destaca por su rango vocal, sino también por su capacidad de conectar emocionalmente con la audiencia. Es una líder nata, llena de energía.
+
+- **Descripción física:** Kika viste con un look llamativo y moderno. Tiene el pelo corto rosa y un maquillaje rebelde que conjunta con su personalidad.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kika.PNG" width="300">
+</p>
+
+### 5.2.6 Boubas
 Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, estos pequeños son de colores llamativos y diferentes permitiendo una diferenciación rápida entre ellos. También presentan siluetas variadas que facilitan su reconocimiento, aunque estas diferencias físicas también pueden repercutir en las habilidades que presentan.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Boubas.PNG" width="400">
 </p>
 
-#### 5.2.4.1 Bouba 1
+#### 5.2.6.1 Bouba 1
 Este bouba es una criatura gelatinosa de apariencia adorable, pero no te dejes engañar por su aspecto blando. Su cuerpo rosado y brillante lo hace parecer inofensivo. Su apariencia chiclosa engaña, es altamente tóxico y mortal al tacto para el que intente derrotarlo.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba1.PNG" width="200">
 </p>
 
-#### 5.2.4.2 Bouba 2
+#### 5.2.6.2 Bouba 2
 Este Bouba es una criatura gelatinosa de un vibrante verde esmeralda. Su cuerpo, blando y brillante, da la impresión de ser inofensivo, pero no te dejes engañar. Aunque aparenta ser lento y despreocupado, tiene la sorprendente habilidad de deslizarse ágilmente por el terreno.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba2.PNG" width="200">
 </p>
 
-#### 5.2.4.3 Bouba 3
+#### 5.2.6.3 Bouba 3
 Este Bouba azul es una criatura tímida y extremadamente asustadiza, con una forma alargada que evoca una vulnerabilidad innata. La combinación de su apariencia frágil y su eficaz método de defensa hace que el Bouba azul sea una criatura impredecible y peligrosa.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba3.PNG" width="200">
 </p>
 
-#### 5.2.4.4 Bouba 4
+#### 5.2.6.4 Bouba 4
 Este Bouba amarillo, con su apariencia simple y ojos desorientados, es conocido por su torpeza y falta de inteligencia. Aunque no es el más astuto del grupo, el Bouba amarillo demuestra que incluso la simplicidad puede convertirse en una formidable defensa.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba4.PNG" width="200">
 </p>
 
-#### 5.2.4.5 Bouba 5
+#### 5.2.6.5 Bouba 5
 Este Bouba azul es una criatura amorfa y altamente volátil, cuya forma es tan variable como su temperamento. Su combinación de movilidad impredecible y potencial eléctrico lo establece como una amenaza intrigante, capaz de convertir cualquier enfrentamiento en un espectáculo electrizante.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba5.PNG" width="200">
 </p>
 
-#### 5.2.4.6 Bouba 6
+#### 5.2.6.6 Bouba 6
 Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, que contrasta sorprendentemente con su cuerpo gelatinoso. Sus dientes, que sobresalen de su cara amarilla, son su principal arma, utilizados tanto para morder a sus oponentes como para defenderse de cualquier amenaza. 
 
 <p align="center">
@@ -649,7 +678,21 @@ Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, q
 La ciudad de Harmonia es una ciudad urbana típica. La vida cotidiana es acelerada y está llena de movimiento. Está repleta de edificios y barrios densamente habitados. La vida en Harmonia cambia por completo cuando es invadida por los Boubas. Las calles, antes llenas de actividad, se convierten en lugares peligrosos, forzando a los vecinos a refugiarse en sus casas y dejando el centro prácticamente desierto.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario2.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Harmonia1.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Harmonia2.PNG" width="700">
+</p>
+
+Synthesia es la ciudad vecina de Harmonia, donde la modernidad y la decadencia urbana se fusionan. Los cuadrados edificios iluminan la noche. Las tiendas y escaparates tratan de atraer a los viandantes con sus brillantes carteles. Su diseño resalta lo sintético y mezcla la cultura callejera con el avance tecnológico.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Synthesia1.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Synthesia2.PNG" width="700">
 </p>
 
 # 6. Arte
@@ -661,10 +704,14 @@ Se desarrollará en **3D**, con **vista picada**, pero se utilizarán elementos 
 
 Los entornos y personajes están modelados en 3D, con un diseño artístico **caricaturesco y colorido**, inspirado en juegos casuales que transmiten un tono **alegre, divertido y desenfadado**, a pesar de las mecánicas de "ataque y defensa". Los enemigos serán criaturas pequeñas y amables.
 
-- **Entorno:** Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida.
+- **Entorno:**  Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida. El secundario será uno oscuro con estética moderna y futurista e iluminado con neones y texturas emisivas.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Escenario.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Escenario2.PNG" width="700">
 </p>
 
 - **Personajes:** Los personajes siguen en la línea cartoon, con formas redondas y extremidades largas. Los enemigos serán adorables criaturas, con formas inspiradas en slimes o criaturas fantásticas. Serán coloridos, y aunque sean "enemigos", su aspecto visual será entrañable.
@@ -699,11 +746,31 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmiten la atmósfera urbana del nivel principal.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/MenuInicio.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/PantallaInicio.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Cinematica.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Gameplay.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/CharacterSelection.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/PantallaDerrota.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Ranking.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/PantallaCreditos.PNG" width="700">
 </p>
 
 ## 7.2 Diagramas de flujo
@@ -711,139 +778,131 @@ Las interfaces están integradas dentro del escenario. Cuentan con botones estil
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/DiagramaFlujo.PNG" width="700">
 </p>
 
-# 8. Hoja de ruta del desarrollo
-## 8.1 Hito 1 - Diseño conceptual y prototipo básico (2 semanas).
+# 8. Estéticas, dinámicas y mecánicas
+## 8.1 Estéticas
+En Bouba District, las experiencias emocionales y los tipos de diversión que se pretenden transmitir están directamente relacionados con las mecánicas y la combinación de ritmo y acción. A continuación se describen las estéticas más relevantes del juego.
+
+- **Sensación:** los efectos visuales y vibrantes combinados con las acciones del jugador generan una respuesta satisfactoria al ejecutar correctamente las secuencias musicales.
+
+- **Competición:** la integración del ranking y la comparación de puntuaciones fomentan la rivalidad entre jugadores y la motivación por demostrar habilidades.
+
+- **Desafío:** las secuencias con dificultad incremental, proporcionan un reto constante. Generan una sensación de superación personal y tensión que generan orgullo al lograr altas puntuaciones.
+
+## 8.2. Dinámicas
+En este juego, las dinámicas están diseñadas con la intención de crear las estéticas anteriormente descritas.
+
+- **Sensación:** al alinear las acciones del jugador con la música y los efectos visuales se busca evocar satisfacción. Cada secuencia ejecutada correctamente genera efectos visuales llamativos, que impulsan esta sensación.
+
+- **Competición:** el registro de las puntuaciones y comparación directa con otros jugadores busca provocar un sentido de la competitividad y fomentar el deseo de superarlos.
+
+- **Desafío:** el cometer errores y ver cómo los Boubas se van acercando lentamente mantienen al jugador en un estado de tensión. Las secuencias con dificultad incremental están diseñadas para mantener el sentimiento de querer mejorar la ejecución de las partidas anteriores.
+
+## 8.3 Mecánicas
+Las mecánicas de Bouba District han sido hechas para sustentar las dinámicas del juego, impulsando la experiencia desafiante y competitiva. Buscan equilibrar la diversión y competitividad sin perder la tensión y motivación del jugador.
+
+El objetivo del juego es aguantar el máximo tiempo posible con vida. Se deberán pulsar las teclas correctas en el momento adecuado para completar la secuencia del Bouba al que se quiere eliminar. Si el Bouba llega al jugador, perderá parte de la vida.
+
+Si el jugador ejecuta una secuencia correctamente, obtendrá puntuación adicional y activará efectos visuales que curarán a la criatura. Conseguir cadenas consecutivas de notas correctas otorga mayor puntuación. Perder el ritmo reinicia el contador, lo cual incentiva la concentración.
+
+Los jugadores pueden elegir entre una variedad de personajes y customizarlos. Al tener la opción de controlar al personaje con el que más conecten, se consigue generar una conexión mayor. Cada personaje cuenta con instrumentos diferentes y accesorios distintivos y coleccionables.
+
+
+# 9. Hoja de ruta del desarrollo
+## 9.1 Hito 1 - Diseño conceptual y prototipo básico (2 semanas).
 **Duración estimada:  2 Semanas**
 
 Definir el concepto, estética, y estilo del videojuego. Crear un documento del videojuego (GDD) que contenga bocetos de personajes y escenarios e incluso explicaciones acerca de las mecánicas. Tiene como objetivo definir las necesidades del proyecto para así poder planificar correctamente su desarrollo y crear un prototipo inicial que muestre los conceptos fundamentales del videojuego.
 
-## 8.2 Hito 2 - Implementación de mecánicas de juego (2 meses)
+## 9.2 Hito 2 - Implementación de mecánicas de juego (2 meses)
 **Duración estimada: 2 Meses**
 
 Tras definir textualmente todos los apartados y aspectos importantes del videojuego, se empiezan a implementar más mecánicas aparte de las fundamentales. Implementación de todos los aspectos del videojuego desde la interacción del jugador con el videojuego hasta el sistema de ritmo.
 
-## 8.3 Hito 3 - Desarrollo de niveles y personajes (2 meses).
+## 9.3 Hito 3 - Desarrollo de niveles y personajes (2 meses).
 **Duración estimada: 2 Meses**
 
 Una vez definido el estilo artístico del videojuego y los personajes y escenarios que lo componen así como, la banda sonora, se deben realizar diferentes diseños para cada aspecto del videojuego. Una vez diseñado todo, se debe realizar un modelado 3D seguido de sus correspondientes animaciones de aquellos componentes del videojuego que lo requieran (Personajes, Boubas, Escenarios). Diseño de todas las interfaces del videojuego (Menú Inicio, Ajustes, Créditos, Pantalla final,...). Finalmente, implementar los elementos visuales en el videojuego y adecuarlos a las mecánicas y el mundo del videojuego.
 
-## 8.4 Hito 4 - Pruebas y ajustes finales (2 semanas).
+## 9.4 Hito 4 - Pruebas y ajustes finales (2 semanas).
 **Duración estimada: 2 Semanas**
 
 Se realizarán pruebas en todos los niveles para encontrar errores o aspectos que necesiten ajustes. Se revisarán las mecánicas y se ajustará la dificultad, para balancear la experiencia de juego y cambiar los últimos detalles antes de su lanzamiento.
 
-## 8.5 Fecha de lanzamiento
+## 9.5 Fecha de lanzamiento
 El juego se publicará oficialmente el **17 diciembre.**
 
-# 9. Post-Mortem
+# 10. Post-Mortem
 Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático de manera profesional. Buscamos crear una experiencia divertida que pudiera ser comercializada y aprender a solucionar los conflictos que fueran surgiendo a lo largo del desarrollo.
 
 ## Trabajo individual
 
 ### Laura
-En mi experiencia individual, las mayores dificultades se centraron en la adaptabilidad de las interfaces a los distintos sistemas, un aspecto que exigió revisiones constantes para asegurar una experiencia óptima en dispositivos de diferentes resoluciones y configuraciones. Esta tarea requirió no solo cambios en el diseño inicial, sino también el ajuste de elementos visuales y de escalabilidad, lo cual nos enseñó la importancia de realizar pruebas tempranas para prever estos desafíos.
 
-Por otro lado, lo más gratificante ha sido la ilusión compartida por el proyecto. Ver cómo cada miembro del equipo aportaba su creatividad y esfuerzo con entusiasmo nos mantuvo motivados a lo largo del desarrollo. Esta energía colectiva fue esencial para superar los obstáculos y seguir avanzando hacia nuestro objetivo común.
 
 ### Marta 
-El mayor reto con el que me he encontrado en este proyecto ha sido la redacción del Game Design Document. Encontré que era fácil perderme en los detalles o dedicar demasiado tiempo a perfeccionar ciertas secciones. Este trabajo me ha permitido entender la importancia de tener una guía clara y detallada desde el incio del desarrollo y analizar muchos aspectos que no nos habíamos planteado sobre el juego y la empresa. 
+En esta ocasión mi trabajo ha estado enfocado en diseñar el escenario secundario de Bouba District. Mi mayor reto ha sido aprender a utilizar texturas emisivas y generar lightmaps, ya que Unity no permite calcular este tipo de iluminación en el tiempo de ejecución. Aunque al principio retrasó mi trabajo, una vez aprendí a manejar estas herramientas no supuso mayor problema. Gracias a esto, he adquirido un mayor aprecio al uso del color y la iluminación. Creo que he conseguido crear un entorno no muy distante del primer nivel en cuanto a estilo, pero, pero inspirando en otra estética completamente diferente.
 
-Al encargarme de los escenarios he mejorado mis habilidades en la construcción de atmósferas y apreciar los elementos visuales y contextuales.  Aún así, he tenido que reducir mis ideas iniciales por la falta de tiempo.
-
-Gestionar las redes sociales del proyecto me enseñó sobre la importancia de comunicar adecuadamente la visión y el tono del juego. Fue difícil mantener la frecuencia de publicaciones y, a la vez, asegurar que cada contenido tuviera un impacto significativo. Además, el tiempo destinado a redes sociales a veces afectaba mi enfoque en tareas creativas como los escenarios, por lo que aprender a equilibrar ambas actividades fue un reto
+También me he encargado de actualizar el Game Design Document y añadir todas las actualizaciones que ha realizado el equipo desde la última entrega. Además, me he encargado de las publicaciones en redes sociales y la promoción del juego. Me habría gustado dedicarle más tiempo al márketing, ya que mi trabajo se enfocó en las otras tareas. Aún tenemos mucho contenido por compartir, pero es crucial como estudio si queremos vender el juego también centrarse en darnos a conocer.
 
 ### Francisco
-
-Mi mayor desafío fue el modelado de personajes redondos en estilo cartoon con pocos polígonos, lo que requería capturar una apariencia expresiva sin sobrecargar el rendimiento del juego. Tras varias intentos, logré optimizar el número de polígonos, manteniendo la estética deseada y la eficiencia técnica. En la programación de la escena de puntuaciones, optimicé la interfaz para que mostrara la puntuación de forma clara , cuidando cada elemento visual para mejorar la entendimiento del usuario ante la tabla de puntuaciones.
+Mi mayor desafío fue el modelado de personajes no simétricos, ya que requerían capturar formas únicas y expresivas sin comprometer el rendimiento del juego. Ajustar las proporciones y mantener una topología adecuada fue especialmente complicado, pero logré encontrar un equilibrio entre detalle y optimización. Por otro lado, investigué sobre animaciones de explosiones con pocas partículas, experimentando con diferentes patrones y dinámicas para crear un efecto visual atractivo y eficiente para dispositivos móviles.
 
 ### Ana
-En mi experiencia individual, he asumido la responsabilidad del diseño de personajes, la integración de sus animaciones en Unity, la gestión de los estados de los personajes y la organización del rendering de notas. A lo largo de esta tarea, uno de los principales desafíos ha sido asegurar la coherencia visual y funcional de los personajes, lo que requería una coordinación estrecha entre el diseño artístico y los aspectos técnicos del juego. La integración de las animaciones en Unity fue un proceso complejo, especialmente al adaptar los estados de los personajes para que respondieran adecuadamente en el entorno de juego y reflejaran las acciones de manera fluida.
+En esta práctica, uno de los principales desafíos fue gestionar el comportamiento del servidor alojado en Glitch, el cual entra en modo inactivo tras un periodo de inactividad. Para resolver este problema, se implementó una pantalla de carga que realiza solicitudes al servidor para despertarlo antes de iniciar el juego, garantizando además un tiempo mínimo de espera de 4 segundos para ofrecer una transición fluida y profesional.
 
-Esta experiencia me ha enseñado la importancia de realizar pruebas tempranas en las interfaces, ya que habría sido beneficioso para identificar problemas de resolución desde el inicio. De esta forma, podríamos haber optimizado el flujo de trabajo en el apartado artístico sin enfrentar retrasos derivados de problemas técnicos. Además, el proceso reforzó la necesidad de mantener flexibilidad y apertura ante cambios durante el desarrollo, ya que las adaptaciones y ajustes resultaron esenciales para alcanzar un resultado satisfactorio.
-
-Lo más gratificante fue ver cómo la personalidad de los personajes cobraba vida en el juego y cómo cada detalle aportaba a la experiencia inmersiva del usuario. Esta satisfacción, combinada con el esfuerzo compartido del equipo, fue clave para mantener la motivación y el enfoque en superar cualquier obstáculo.
+Otro reto fue desarrollar una pantalla de ajustes que permitiera modificar el volumen de todos los sonidos del juego y garantizar que estos ajustes fueran persistentes entre escenas. Esto se logró utilizando un prefab para la pantalla de ajustes y un SettingsManager, que se encarga de instanciarla en la escena inicial y ajustar el volumen global del juego mediante un slider, aplicando los cambios dinámicamente a través de AudioListener.volume.
 
 ### Lucía
-Para esta parte inicial del desarrollo el equipo se organizó eficientemente. Cada uno se especializó en aquello en lo que más destacaba dentro de las habilidades generales que todos compartimos. Ser un grupo multidisciplinar nos permitió distribuir la carga de trabajo y evitar dependencias. En mi caso, que me centré en la programación de sistemas "core" de jugabilidad, desde el principio experimenté un desarrollo ordenado. Gracias a una buena limpieza y estructura de código mis compañeras pudieron implementar sus funcionalidades de forma que se integraban a la perfección en el código fuente general del proyecto. La comunicación fue buena y aceleró el proceso.
 
-Los tiempos y los esfuerzos han sido bien calculados por el equipo y hemos conseguido nuestros objetivos en el tiempo justo. Como contras o problemáticas que hemos podido experimentar señalaría la inconsistencia artística inicial, ya que la identidad visual del proyecto se fue configurando a medida que avanzaba este; sin embargo, su buena escalabilidad daba espacio a esta evolución y no supuso demasiados problemas.
 
 ## Trabajo grupal
-## 9.1 Lo que salió bien
-### 9.1.1 Dirección creativa
-Al ser un equipo con mucha experiencia como consumidores de videojuegos, teníamos claro qué objetivos queríamos cumplir y a qué estándares se nos exigía que realizáramos el juego. Dirigimos nuestras elecciones inspirados en los juegos móviles casuales que jugamos en nuestra infancia, buscando maneras de aportar elementos diferentes.
+## 10.1 Lo que salió bien
+### 10.1.1 La apariencia sí importa
+El apartado visual fue uno de los puntos más destacados del juego, El diseño logró capturar la esencia vibrante de Harmonia y tuvo una muy buena recepción. Conseguimos hilar los diferentes elementos para que se mantuviera una cohesión visual entre las interfaces y el gameplay.
 
-El equipo estableció una visión creativa clara desde el comienzo. Esto facilitó el desarrollo de todos los apartados. La realización de conceptos visuales también evitó desvíos o diferencias entre estilos y mantuvo el proyecto en una dirección constante, unificando el tono de la aplicación. 
+El equipo ha conseguido crear un estilo propio y característico. Uno de los principales retos del desarrollo era poder extrapolar esa personalidad a diferentes estéticas y no perder la esencia. 
 
-Por otro lado, se mantuvo el enfoque en la experiencia del usuario. El juego debía poder ser jugado tanto en PC como en dispositivos táctiles, por lo que desarrollamos el prototipo teniendo en cuenta los controles desde el principio. La simplicidad de estos ha incrementado su accesibilidad y no ha causado problemas en su implementación. 
+La introducción de un nuevo escenario y personajes ha enriquecido la experiencia y conseguido conectar con los jugadores. La estética cyberpunk aporta un toque novedoso y contrasta con el primer escenario. Con él hemos podido mostrar la base de nuestro modelo de negocio, la cual se centra en ir ampliando el contenido cada cierto tiempo.
 
-### 9.1.2 Buen manejo de expectativas
-Los requerimientos iniciales del juego se adaptaron a las posibilidades y conocimientos del equipo. La decisión de centrarnos en desarrollar las mecánicas clave y trabajar para crear sistemas responsivos nos aportó una buena base sobre la que trabajar en futuras entregas. Gracias a buenas estimaciones nos ajustamos perfectamente al tiempo de desarrollo.
+### 10.1.2 Divide y vencerás
+La efectiva división del trabajo ha sido clave para el proyecto. A pesar de ser un equipo multidisciplinar, conseguimos repartir las responsabilidades de manera que cada miembro pudiera profundizar en lo que mejor se le da.
 
-### 9.1.3 Apartado artístico
-Decidimos aprovechar el hecho de que uno de los puntos fuertes del equipo es el diseño 2D y 3D. Desde el comienzo tuvimos claro el tono que buscábamos. La realización de moodboards, bocetos y la búsqueda de referencias nos facilitó enormemente la implementación de elementos que no chocaran visualmente.
+Al asignar tareas específicas a cada uno, se ha logrado que cada área recibiera la atención necesaria. Esto nos ha permitido seguir desarrollando el juego con un enfoque detallista. De esta manera, conseguimos mantener el estándar de calidad que esperábamos cumplir y acercarnos lo máximo posible a un juego profesional. 
 
-Al predominar unos controles tan sencillos, quisimos darle peso al arte y estética general del juego, sin perder calidad en la jugabilidad. Tratamos de buscar un estilo visual llamativo y característico y elevar el nivel de producción.
+La especialización de tareas nos permitió identificar y corregir posibles debilidades. Este enfoque proactivo redujo el riesgo de errores acumulativos y permitió invertir más tiempo en pulir aspectos clave del juego,
 
-Las animaciones y la integración de las interfaces en el escenario han sido otro elemento diferenciador. Consiguen que el mundo se sienta más vivo y dinámico, y favorecen la inmersión. Ayudan a comunicar la personalidad de los personajes, y los Boubas y props proporcionan un feedback visual claro.
+### 10.1.3 Un juego para todos
+El hecho de haber conseguido adaptar el juego a dispositivos móviles ha sido muy importante a la hora de maximizar nuestro alcance y así conseguir el mayor feedback posible.
 
-Un apartado visual interesante siempre atrae la atención de nuevos jugadores. Muchas veces puede ser el factor decisivo para que alguien se anime a probar el juego. Ha facilitado el marketing del juego enormemente, y nos ha dado un montón de contenido para publicitarnos en redes sociales.
+Ha sido muy sencillo compartir el juego, ya que todo el mundo tiene un teléfono móvil a su alcance inmediato. Al no tener la misma disponibilidad que con un ordenador, sabemos que mucha gente no lo habría probado por falta de comodidad o por olvidarse al tener que esperarse a tener acceso a uno.
 
-Al igual que con los personajes, al construir un universo atractivo, el juego tiene mayor potencial de expansiones y posibilidad de indagar en diferentes estéticas a lo largo de su desarrollo, sin perder su estilo animado.
+Los móviles van ligados a la experiencia breve y casual que es Bouba District. Optamos por controles y navegación intuitiva, para que se pudiera disfrutar con facilidad y reducir cualquier tipo de sensación abrumadora provocada por controles complejos. Logramos crear un juego accesible, y llegar a una mayor audiencia de manera directa.
 
-### 9.1.4 Herramientas
-Durante el desarrollo del proyecto optamos por usar herramientas con las que ya teníamos experiencia. Esta decisión nos permitió trabajar con eficiencia y reducir el tiempo necesario para alcanzar un dominio de ellas. Pudimos prestar atención a más aspectos del juego que invertir tiempo en aprender el software con el que trabajamos.
+## 10.2 Lo que salió mal
+### 10.2.1 Pero, ¿cómo se juega?
+Uno de los contras de ser un equipo con experiencia como consumidores de videojuegos, es que asumimos ciertos códigos o maneras de comportarnos ante estos.
 
-También mejoró la calidad del trabajo colaborativo. Al tener un conocimiento común de los recursos, los miembros del equipo pudimos ayudarnos a resolver conflictos y corregir errores.
+A pesar de contar con controles sencillos, observamos que los jugadores no se paraban a leer las instrucciones, o estas no quedaban lo suficientemente claras. Para evitar la confusión, implementamos un tutorial de práctica para entender las mecánicas de Bouba District.
 
-En resumen, la decisión de elegir programas familiares y con extensa documentación resultó clave para optimizar nuestro tiempo y recursos y centrarnos en otros detalles para darle vida al juego.
+Finalmente, conseguimos introducir las mecánicas de manera práctica, lo cual lo hace más memorable y entretenido que simplemente leer un texto. Aprendimos que es necesario conocer el punto de vista de gente externa al desarrollo y experimentar con jugadores no tan acostumbrados, y aún más si es una parte de nuestro público objetivo.
 
-### 9.1.5 Comunicación
-Uno de los aspectos más destacados del desarrollo ha sido la comunicación entre los miembros del equipo. Priorizamos mantener un flujo de información claro y constante. Esto ha sido clave para llevar a cabo las tareas, resolver problemas y tomar decisiones sobre el juego.
+### 10.2.2 Un giro de guión inesperado
+Uno de los elementos que queríamos incorporar a Bouba District para mejorar la narrativa y la experiencia inmersiva del jugador fue una cinemática introductoria que explicara el contexto del juego. Esta implementación presentó varios problemas técnicos que nos causaron complicaciones durante el desarrollo.
 
-Todos hemos estado al tanto de los cambios, favoreciendo un avance hacia nuestros objetivos. La retroalimentación ha sido fundamental. Nuestra capacidad para tanto dar opiniones como recibirlas nos ha permitido descartar ideas dispares rápidamente y resolver obstáculos antes de que se convirtieran en problemas mayores.
+El problema ocurrió cuando, al intentar guardar y cargar el proyecto, la escena de la cinemática no se guardó correctamente. Aunque habíamos trabajado en la animación y la integración de la secuencia dentro del juego, algo salió mal en el proceso de guardado y la escena se perdió. Esto resultó en la necesidad de rehacerla desde cero, lo que retrasó parte de la producción.
 
-Conseguimos generar un sentido de compromiso que nos ha llevado a esforzarnos de manera colectiva.  Impulsamos la creatividad y motivación de cada persona y nos aseguramos de que cada área contara con el apoyo necesario para realizar sus tareas.
+Aunque esta situación fue frustrante, también nos permitió mejorar ciertos aspectos de la cinemática. Una vez solucionado el problema, la cinemática se integró correctamente en el juego, y el proceso de desarrollo continuó con más seguridad en que este tipo de problemas no se repetirían.
 
-La comunicación favoreció la eficiencia de nuestro trabajo y nos ha fortalecido moralmente. En conclusión, hemos sido capaces de adaptarnos a los cambios y mantener un ritmo constante de trabajo gracias a ella.
+### 10.2.3 Demasiado fácil
+Uno de los problemas que observamos al ver a la gente probando, Bouba District fue un desajuste en el balance de la dificultad. Una vez comprendían los controles, el juego resultaba demasiado fácil. No había suficiente variación en la dificultad y no se perdía la necesidad de superarse a uno mismo.
 
-## 9.2 Lo que salió mal
-### 9.2.1 Juego de ritmo arrítmico
-El principal reto que enfrentamos en el desarrollo de nuestro juego fue la sincronización de los beats con la pista de audio. El equipo no contaba con experiencia diseñando este tipo de juegos. Aunque en la etapa inicial parecía sencillo implementar un temporizador que enviara una señal de beat cada segundo, a la hora de llevarlo a la sincronización con la música experimentamos varios problemas.
+Para darle complicar un poco el juego, se ajustaron varios parámetros de los Boubas. Por ejemplo, tiempo de aparición, velocidad con la que se acercan al jugador y complejidad de llas secuencias. Se implementó una progresión similar a una logarítmica. Esto quiere decir que la dificultad incrementa rápidamente al comienzo y se va aplanando cuanto más aguantas con vida.
 
-La necesidad de calcular el tiempo de cada beat en función de la tasa de muestreo y la duración de la pista llevó a un aumento en la complejidad del código, lo que resultó en errores adicionales y desincronización. Esto era grave, ya que la mecánica principal del juego se basa en seguir los tiempos de la música.
+Tras realizar estos ajustes, el juego adquirió una curva de dificultad mucho más equilibrada. Los jugadores comenzaron a sentir que estaban avanzando y mejorando sus habilidades, lo que aumentó su motivación y les dio un sentido de logro.
 
-Finalmente conseguimos integrar la canción del nivel principal a base de pruebas e investigar cómo implementar lo que buscábamos. Ahora disponemos del conocimiento para crear nuevos niveles con otra música. 
+## 10.3 Conclusión
+En esta etapa del desarrollo de Bouba District hemos aprendido varias lecciones. Es fundamental pedir opiniones externas y observar cómo se comportan los jugadores sin experiencia previa en el juego, ya que sus reacciones pueden revelar puntos ciegos que no habíamos considerado. Así conseguiremos seguir con el desarrollo de manera más intuitiva e inmersiva y generar experiencias disfrutables.
 
-### 9.2.2 Sin historia
-Otro de los desafíos que enfrentamos durante el desarrollo fue la falta de una narrativa clara desde el inicio del proyecto. Esto afectó algunos aspectos del desarrollo y en retrospectiva podemos identificar consecuencias asociadas.
+Además, es importante tener en cuenta que pueden surgir problemas técnicos imprevistos que retrasen el proyecto, como los que experimentamos con la cinemática y el balance de dificultad. Estos contratiempos nos recordaron la importancia de prever posibles obstáculos y mantener la flexibilidad para adaptarnos.
 
-Sin una historia y un contexto, los jugadores no podrían comprender la motivación de las acciones del juego. Empleamos mucho tiempo en decidir cómo encajar las mecánicas sin que se sintieran forzadas. Si hubiéramos elegido la temática desde un principio  podríamos haber empezado con el desarrollo antes.
-
-Esto también generó algo de frustración en el equipo, ya que cada vez que se proponían ideas no se llegaba a ninguna conclusión. Se barajaron varias propuestas, con otros escenarios y otras maneras de afectar a los Boubas pero tuvimos que comenzar el desarrollo debido a la brevedad del plazo de entrega. No fue hasta la elección de la arena que nos decantamos por el nivel actual.
-
-De cara al futuro buscaremos un enfoque más equilibrado a la hora de diseñar un videojuego para evitar este cuello de botella en el flujo de trabajo.
-
-### 9.2.3 Interfaces
-En las etapas iniciales pretendíamos crear interfaces 2D que se alinearan con el estilo visual y temática del juego. Creamos todas las pantallas para que fueran incluidas, pero, a medida que avanzamos y comenzamos a trabajar en la resolución del juego nos encontramos con varios problemas.
-
-Nos dimos cuenta de que las interfaces 2D no se adaptaban bien al modo retrato en dispositivos móviles y tablets. Nuestros diseños se recortaban y los botones no escalaban correctamente.
-
-Finalmente decidimos rehacerlas y aprovechar vistas del escenario que habíamos diseñado que no se apreciaban durante el juego. Resultó ser una decisión beneficiosa ya que las nuevas se integran mucho mejor. Al utilizar elementos tridimensionales, pudimos asegurar que la interfaz se mantuviera consistente y clara, sin importar la configuración del dispositivo.
-
-Además, conseguimos añadir animaciones en las pantallas. Mantienen la estética del escenario y mejoran la inmersión. Pudimos ajustar mucho mejor los botones y que la transición de menú a partida fuera más agradable.
-
-Esta experiencia nos ha enseñado la importancia de realizar pruebas tempranas para las interfaces. Nos habría permitido identificar problemas de resolución antes de avanzar con el apartado artístico. Por otro lado, reforzó la idea de que es necesario ser flexible y estar abiertos a cambios durante el desarrollo.
-
-### 9.2.4 No conseguimos llegar al jugador
-Finalmente, el mayor problema que nos hemos encontrado con el prototipo es que el jugador no nos entiende. No hemos sido capaces de explicar la mecánica principal del juego, a pesar de haber una pequeña pantalla de tutorial. Los botones deben pulsarse a un determinado ritmo para dar como válida la secuencia, el jugador NO ha entendido este proceso; el indicador de ritmo, los props que se mueven al bit, la música y la pantalla de explicación no han sido suficientes. Al principio pensábamos que se debía a la poca experiencia de nuestros testers en videojuegos de ritmo, pero llegamos a la conclusión de que era un problema generalizado, por nuestra parte y responsabilidad al 100%. Para la beta debemos mejorar estos indicadores, desarrollar una fuerte pantalla tutorial que guíe al jugador en cada paso, y explotar la retroalimentación (visual, auditiva…) todo lo posible. Nuestro foco para la beta es solucionar este problema con máxima prioridad.
-
-
-## 9.3 Conclusión
-En conclusión, el desarrollo de este juego fue una experiencia de aprendizaje enriquecedora que nos permitió abordar tanto los éxitos como los desafíos.
-
-Por un lado, establecimos una dirección creativa clara desde el principio, lo que facilitó la cohesión del diseño y permitió que el equipo mantuviera una visión unificada. La creación de personajes y la estética visual resultaron clave para atraer y conectar con los jugadores, mejorando también las oportunidades de marketing y personalización. La elección de herramientas familiares optimizó nuestro tiempo y recursos, mientras que una comunicación efectiva entre los miembros del equipo fomentó la colaboración y la resolución rápida de problemas.
-
-Por otro lado, enfrentamos dificultades, como la sincronización de los beats, que resaltaron la necesidad de adquirir conocimientos técnicos específicos para juegos de ritmo. También experimentamos el impacto de no tener una narrativa clara desde el inicio, lo que ralentizó el flujo de trabajo y generó frustración. Además, la adaptación de interfaces a diferentes dispositivos requirió cambios importantes que podrían haberse anticipado con pruebas tempranas, y finalmente, saber llegar al jugador.
-
-Este post-mortem nos deja lecciones valiosas: la importancia de una planificación sólida, la necesidad de flexibilidad en el diseño, y el valor de pruebas tempranas y comunicación constante para superar obstáculos y mejorar la eficiencia en futuros proyectos.
+A pesar de los desafíos, la división efectiva del trabajo y la dedicación a tareas específicas nos permitieron centrarnos en los detalles y mantener la calidad de Bouba District. Al haber completado la mayoría del trabajo técnico en la versión anterior, pudimos dedicar el tiempo necesario a afinar aspectos importantes, como la jugabilidad, la estética y la narrativa. Todo esto c
