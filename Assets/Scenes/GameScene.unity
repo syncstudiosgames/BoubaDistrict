@@ -2493,7 +2493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3501d159f70374897c214dcfe3a9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waitForTutorial: 0
+  _waitForTutorial: 1
   _intervals:
   - _numBeats: 1
     _trigger:
@@ -4093,7 +4093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1010859567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4145,13 +4145,13 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1431879111}
         m_TargetAssemblyTypeName: EnemyManager, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
+        m_MethodName: StartGAmeWithDelay
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -4578,7 +4578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyManager: {fileID: 1431879111}
   _noteManager: {fileID: 726460152}
-  _waitForTutorial: 0
+  _waitForTutorial: 1
 --- !u!4 &1124231277
 Transform:
   m_ObjectHideFlags: 0
@@ -6298,7 +6298,7 @@ MonoBehaviour:
   - {fileID: 3971569818686494927, guid: d082561a2d6563642bc05c70639a4865, type: 3}
   _noteManager: {fileID: 726460152}
   _enemySpawner: {fileID: 236771641}
-  _waitForTutorial: 0
+  _waitForTutorial: 1
   _allowCeroEnemies: 0
   _notSpawnningBracketLenth: 5
 --- !u!4 &1431879112
@@ -8556,9 +8556,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 526279951}
   - {fileID: 1431879112}
+  - {fileID: 1124231277}
   - {fileID: 726460153}
   - {fileID: 1131489208}
-  - {fileID: 1124231277}
   - {fileID: 1721709965}
   - {fileID: 427988712}
   - {fileID: 1585041046}
