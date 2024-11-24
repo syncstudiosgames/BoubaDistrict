@@ -825,7 +825,7 @@ En esta ocasión mi trabajo ha estado enfocado en diseñar el escenario secundar
 También me he encargado de actualizar el Game Design Document y añadir todas las actualizaciones que ha realizado el equipo desde la última entrega. Además, me he encargado de las publicaciones en redes sociales y la promoción del juego. Me habría gustado dedicarle más tiempo al márketing, ya que mi trabajo se enfocó en las otras tareas. Aún tenemos mucho contenido por compartir, pero es crucial como estudio si queremos vender el juego también centrarse en darnos a conocer.
 
 ### Francisco
-
+Mi mayor desafío fue el modelado de personajes no simétricos, ya que requerían capturar formas únicas y expresivas sin comprometer el rendimiento del juego. Ajustar las proporciones y mantener una topología adecuada fue especialmente complicado, pero logré encontrar un equilibrio entre detalle y optimización. Por otro lado, investigué sobre animaciones de explosiones con pocas partículas, experimentando con diferentes patrones y dinámicas para crear un efecto visual atractivo y eficiente para dispositivos móviles.
 
 ### Ana
 En esta práctica, uno de los principales desafíos fue gestionar el comportamiento del servidor alojado en Glitch, el cual entra en modo inactivo tras un periodo de inactividad. Para resolver este problema, se implementó una pantalla de carga que realiza solicitudes al servidor para despertarlo antes de iniciar el juego, garantizando además un tiempo mínimo de espera de 4 segundos para ofrecer una transición fluida y profesional.
@@ -876,7 +876,7 @@ Aunque esta situación fue frustrante, también nos permitió mejorar ciertos as
 ### 10.2.3 Demasiado fácil
 Uno de los problemas que observamos al ver a la gente probando, Bouba District fue un desajuste en el balance de la dificultad. Una vez comprendían los controles, el juego resultaba demasiado fácil. No había suficiente variación en la dificultad y no se perdía la necesidad de superarse a uno mismo.
 
-Explicar cómo hemos hecho el juego más difícil.
+Para darle complicar un poco el juego, se ajustaron varios parámetros de los Boubas. Por ejemplo, tiempo de aparición, velocidad con la que se acercan al jugador y complejidad de llas secuencias. Se implementó una progresión similar a una logarítmica. Esto quiere decir que la dificultad incrementa rápidamente al comienzo y se va aplanando cuanto más aguantas con vida.
 
 Tras realizar estos ajustes, el juego adquirió una curva de dificultad mucho más equilibrada. Los jugadores comenzaron a sentir que estaban avanzando y mejorando sus habilidades, lo que aumentó su motivación y les dio un sentido de logro.
 
