@@ -527,7 +527,7 @@ Además de los salarios del equipo, existen otros costes asociados:
 Bouba District es un juego **casual competitivo** donde el jugador se enfrenta a oleadas de enemigos conocidos como “Boubas”. Estos intentarán invadir el territorio del jugador. El objetivo principal es defenderse siguiendo las secuencias de teclas que presentan los Boubas, ajustándose al ritmo de la música.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Gameplay.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Gameplay.PNG" width="600">
 </p>
 
 ## 4.2 Descripción detallada de las mecánicas de juego
@@ -550,14 +550,14 @@ El juego contará con varios niveles que se irán actualizando cada 3 meses. Tod
 El nivel principal de Bouba District transcurre en un entorno urbano inspirado en una ciudad activa y colorida. Los edificios, de diferentes colores, están adornados con ventanas y ladrillos. Las calles, tienen elementos como farolas, árboles, cajas y basuras para aportar ambientación al escenario.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/EscenarioTop.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/EscenarioTop.PNG" width="600">
 </p>
 
 ### 4.4.2 Nivel 2 - Synthesia
 El segundo nivel transporta al jugador a un entorno futurista. La escena se desarrolla en una ciudad nocturna, iluminada por los neones cian, morado y rosas, que contrastan con el gris del asfalto y las paredes. Los edificios están llenos de carteles y elementos luminosos. La basura y las vallas rellenan las calles y añaden ambiente al nivel. 
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/NivelCyberpunk.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="600">
 </p>
 
 A lo largo del juego, se asignarán misiones secundarias como completar un nivel sin fallar ninguna secuencia, derrotar a un número específico de Boubas en un tiempo limitado o superar un nivel utilizando solo tres de los botones.
@@ -584,7 +584,7 @@ Kiki es un joven talentoso que ha pasado toda su vida perfeccionando su habilida
 - **Habilidad especial:** Como vocalista, Kiki puede usar su voz para realizar ataques sónicos que desorientan a los Boubas y sincronizarse con ellos para calmarlos.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kiki.PNG" width="300">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki.PNG" width="300">
 </p>
 
 ### 5.2.2 Kike - Guitarrista
@@ -593,7 +593,7 @@ Kike es el corazón de la banda y su guitarra es su arma principal en la lucha c
 - **Descripción física:** Pelo largo y rubio, con una camiseta de tirantes que lleva el símbolo de la paz. Es el miembro más tranquilo de la banda, pero su música habla con una intensidad feroz.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kiko.PNG" width="300">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiko.PNG" width="300">
 </p>
 
 ### 5.2.3 Kiko - Batería
@@ -602,7 +602,7 @@ Kiko es el motor rítmico de la banda, el encargado de mantener el tempo tanto e
 - **Descripción física:** Kiko lleva una camiseta con un diseño rockero y su cabello negro rizado siempre está despeinado, reflejando su actitud despreocupada y libre.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kike.PNG" width="300">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kike.PNG" width="300">
 </p>
 
 ### Las Tukus
@@ -613,7 +613,7 @@ Kuki es el alma del equipo, está llena de energía. Su presencia es magnética,
 - **Descripción física:** lleva un look futurista que combina lo extravagante con lo funcional. Su cabello es largo y rosa neón, tan llamativo como su personalidad.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kuki.PNG" width="300">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kuki.PNG" width="300">
 </p>
 
 ### 5.2.5 Kika - Vocalista
@@ -622,7 +622,7 @@ Kika es una joven carismática con una voz capaz de cautivar a cualquiera que la
 - **Descripción física:** Kika viste con un look llamativo y moderno. Tiene el pelo corto rosa y un maquillaje rebelde que conjunta con su personalidad.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Kika.PNG" width="300">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kika.PNG" width="300">
 </p>
 
 ### 5.2.6 Boubas
@@ -678,21 +678,21 @@ Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, q
 La ciudad de Harmonia es una ciudad urbana típica. La vida cotidiana es acelerada y está llena de movimiento. Está repleta de edificios y barrios densamente habitados. La vida en Harmonia cambia por completo cuando es invadida por los Boubas. Las calles, antes llenas de actividad, se convierten en lugares peligrosos, forzando a los vecinos a refugiarse en sus casas y dejando el centro prácticamente desierto.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Harmonia1.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Harmonia1.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Harmonia2.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Harmonia2.PNG" width="700">
 </p>
 
 Synthesia es la ciudad vecina de Harmonia, donde la modernidad y la decadencia urbana se fusionan. Los cuadrados edificios iluminan la noche. Las tiendas y escaparates tratan de atraer a los viandantes con sus brillantes carteles. Su diseño resalta lo sintético y mezcla la cultura callejera con el avance tecnológico.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Synthesia1.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Synthesia1.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Synthesia2.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Synthesia2.PNG" width="700">
 </p>
 
 # 6. Arte
@@ -707,11 +707,11 @@ Los entornos y personajes están modelados en 3D, con un diseño artístico **ca
 - **Entorno:**  Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida. El secundario será uno oscuro con estética moderna y futurista e iluminado con neones y texturas emisivas.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Escenario.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Escenario2.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario2.PNG" width="700">
 </p>
 
 - **Personajes:** Los personajes siguen en la línea cartoon, con formas redondas y extremidades largas. Los enemigos serán adorables criaturas, con formas inspiradas en slimes o criaturas fantásticas. Serán coloridos, y aunque sean "enemigos", su aspecto visual será entrañable.
@@ -746,11 +746,11 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmiten la atmósfera urbana del nivel principal.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/PantallaInicio.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/PantallaInicio.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Cinematica.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Cinematica.PNG" width="700">
 </p>
 
 <p align="center">
@@ -758,23 +758,23 @@ Las interfaces están integradas dentro del escenario. Cuentan con botones estil
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/CharacterSelection.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Gameplay.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Gameplay.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/PantallaDerrota.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/PantallaDerrota.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Ranking.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Ranking.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/PantallaCreditos.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/PantallaCreditos.PNG" width="700">
 </p>
 
 ## 7.2 Diagramas de flujo
