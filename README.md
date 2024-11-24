@@ -527,7 +527,7 @@ Además de los salarios del equipo, existen otros costes asociados:
 Bouba District es un juego **casual competitivo** donde el jugador se enfrenta a oleadas de enemigos conocidos como “Boubas”. Estos intentarán invadir el territorio del jugador. El objetivo principal es defenderse siguiendo las secuencias de teclas que presentan los Boubas, ajustándose al ritmo de la música.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Gameplay.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Gameplay.PNG" width="600">
 </p>
 
 ## 4.2 Descripción detallada de las mecánicas de juego
@@ -707,7 +707,7 @@ Los entornos y personajes están modelados en 3D, con un diseño artístico **ca
 - **Entorno:**  Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida. El secundario será uno oscuro con estética moderna y futurista e iluminado con neones y texturas emisivas.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Escenario.PNG" width="700">
 </p>
 
 <p align="center">
@@ -746,11 +746,27 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmiten la atmósfera urbana del nivel principal.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/MenuInicio.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/PantallaInicio.PNG" width="700">
 </p>
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="700">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Cinematica.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/CharacterSelection.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/PantallaDerrota.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/Ranking.PNG" width="700">
+</p>
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/GDD/Assets/GDDImages/PantallaCreditos.PNG" width="700">
 </p>
 
 ## 7.2 Diagramas de flujo
