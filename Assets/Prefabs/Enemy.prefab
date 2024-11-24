@@ -119,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Canvas: {fileID: 7251590403582480685}
   scaleMultiplier: 3
+  isDead: 0
 --- !u!54 &2344857285261633146
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -314,7 +315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 279846245121325290, guid: b76e433805285fe4b97789598d84194d, type: 3}
       propertyPath: startDelay.scalar
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 279846245121325290, guid: b76e433805285fe4b97789598d84194d, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -477,7 +478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8320256995517309342, guid: e838695961ba5ed4aaf3cf51e1235160, type: 3}
       propertyPath: startDelay.scalar
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8320256995517309342, guid: e838695961ba5ed4aaf3cf51e1235160, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -596,7 +597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6608579197426368212, guid: d3b1ffcbce2c69d4f9df8fc7e5f38f1d, type: 3}
       propertyPath: startDelay.scalar
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6608579197426368212, guid: d3b1ffcbce2c69d4f9df8fc7e5f38f1d, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -647,7 +648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 506823910467875260, guid: 9d3e76841b92cdb4e9a3e93c6b04f272, type: 3}
       propertyPath: startDelay.scalar
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 506823910467875260, guid: 9d3e76841b92cdb4e9a3e93c6b04f272, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -836,7 +837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1795413199096497470, guid: 3157379b98ecc864bb880e26a24f3f65, type: 3}
       propertyPath: startDelay.scalar
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1795413199096497470, guid: 3157379b98ecc864bb880e26a24f3f65, type: 3}
       propertyPath: InitialModule.startSize.scalar

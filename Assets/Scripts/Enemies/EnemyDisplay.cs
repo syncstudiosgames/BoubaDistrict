@@ -46,6 +46,11 @@ public class EnemyDisplay : MonoBehaviour
         
     }
 
+    public void HideSequence()
+    {
+        Canvas.enabled = false;
+    }
+
     Image[] RenderNoteSequence(List<Note> deathSequence)
     {
         // Configure canvas:

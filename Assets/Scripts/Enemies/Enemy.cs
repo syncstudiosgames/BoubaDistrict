@@ -99,33 +99,28 @@ public class Enemy : MonoBehaviour
 
     public virtual void Restore()
     {
+        _enemyDisplay.isDead = true;
         if (_splashEffect != null)
         {
             _splashEffect.SetActive(true);
 
             LeanTween.value(gameObject, 1f, 0f, 1f).setOnUpdate((float value) =>                                                                      // Animate alpha.
             {
+                /*
                 var renderer = _modelHolder.GetComponentInChildren<MeshRenderer>();
                 Color color = renderer.material.color;
                 color.a = value;
                 renderer.material.color = color;
+                */
+                _modelHolder.SetActive(false);
+                _enemyDisplay.HideSequence();
 
             }).setOnComplete(() =>                                                                                                                  // Destroy GO when the animation is done.
             {
                 _enemyManager.EnemyCured(_complexity);
                 Destroy(gameObject);
             });
-
-            //StartCoroutine(PlayHealingAnimation());
         }
-    }
-
-    IEnumerator PlayHealingAnimation()
-    {
-        yield return new WaitForSeconds(1.0f); 
-
-        _enemyManager.EnemyCured(_complexity);
-        Destroy(gameObject);
     }
 
     void Die()
