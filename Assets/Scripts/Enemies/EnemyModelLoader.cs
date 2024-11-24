@@ -5,15 +5,18 @@ using UnityEngine;
 public class EnemyModelLoader : MonoBehaviour
 {
     [SerializeField] public GameObject[] enemyModels;
+    [SerializeField] public GameObject[] enemySplash;
+
 
     [SerializeField] private Transform modelHolder;
 
+    public GameObject splash;
+
     private void Start()
     {
-        AssignRandomModel();
     }
 
-    private void AssignRandomModel()
+    public void AssignRandomModel()
     {
         if (enemyModels.Length == 0)
         {
@@ -23,6 +26,8 @@ public class EnemyModelLoader : MonoBehaviour
 
         int randomIndex = UnityEngine.Random.Range(0, enemyModels.Length);
         GameObject randomModel = enemyModels[randomIndex];
+        splash = enemySplash[randomIndex];
+        Debug.Log(splash == null);
 
         if (modelHolder == null)
         {

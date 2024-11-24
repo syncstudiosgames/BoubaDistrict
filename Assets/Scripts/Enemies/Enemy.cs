@@ -8,18 +8,29 @@ public class Enemy : MonoBehaviour
 {
     NoteManager _noteManager;
     EnemyManager _enemyManager;
+    //EnemyModelLoader _enemyModelLoader;
     List<Note> _deathSequence = new List<Note>();
     int _complexity;
 
     [SerializeField] private EnemyDisplay _enemyDisplay;
+    [SerializeField] EnemyModelLoader _enemyModelLoader;
+
     [SerializeField] GameObject _modelHolder;
-    [SerializeField] public GameObject _healingEffect; 
+
+    [SerializeField] GameObject _splashEffect;
+
 
     public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager, bool renderSequence = true)
     {
         _noteManager = noteManager;
         _enemyManager = enemyManager;
         _complexity = Mathf.Clamp(complexity, 1, 4);
+        
+        if(_enemyModelLoader != null)
+        {
+            _enemyModelLoader.AssignRandomModel();
+            _splashEffect = _enemyModelLoader.splash;
+        }
 
         CreateSequence();
         _noteManager.OnNoteLogged += CheckSequence;
@@ -34,9 +45,9 @@ public class Enemy : MonoBehaviour
             Debug.LogError("No asignado");
         }
 
-        if (_healingEffect != null)
+        if (_splashEffect != null)
         {
-            _healingEffect.SetActive(false);
+            _splashEffect.SetActive(false);
         }
     }
 
@@ -88,9 +99,9 @@ public class Enemy : MonoBehaviour
 
     public virtual void Restore()
     {
-        if (_healingEffect != null)
+        if (_splashEffect != null)
         {
-            _healingEffect.SetActive(true);
+            _splashEffect.SetActive(true);
 
             LeanTween.value(gameObject, 1f, 0f, 1f).setOnUpdate((float value) =>                                                                      // Animate alpha.
             {
