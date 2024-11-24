@@ -43,20 +43,21 @@ public class EnemyManager : MonoBehaviour
     public event Action<int> OnEnemyCured { add { _onEnemyCured += value; } remove { _onEnemyCured -= value; } }
 
     // Spawning parameters:
-    float _spawningInterval = 5f;
-    const float SPAWNING_INTERVAL_ACELERATION = 0.05f;
+    float _dificultyStep = 0.01f;
+    float _dificultyStepAcceleration = 0.01f;
+
+    float _baseSpawningTime = 5f;
     const float MIN_SPAWNING_INTERVAL = 1f;
 
-    float _enemyMoveSpeed = 15;
-    const float MOVE_SPEED_ACELERATION = 0.5f;
+    float _baseMoveSpeed = 10;
     const float MAX_MOVE_SPEED = 30f;
 
-    float[] _complexityChance = {3f, 8f, 1f, 0f}; // Chances for 1,2,3... complexity.
-    readonly float[] COMPLEXITY_ACELERATION = { 0.05f, 0.1f, 0.3f, 0.2f };
+    float[] _baseComplexityChance = {3f, 8f, 1f, 0.01f}; // Chances for 1,2,3... complexity.
+    readonly float[] MAX_COMPLEXITY_CHANCES = { 1f, 3f, 5f, 6f };
 
-    float[] _typeOfEnemyChanche = { 10f, 3f };
+    float[] _typeOfEnemyChanche = { 10f, 1f };
 
-    float _dificultyStep = 0;
+    
 
     #endregion
 
@@ -94,24 +95,32 @@ public class EnemyManager : MonoBehaviour
     {
         while(true)
         {
-            SpawnEnemyRandom();
-            yield return new WaitForSeconds(_spawningInterval);
-            UpdateSpawningParameters();
-        }
-    }
+            SpawnEnemyRandom(); // SpawnEnemy.
 
-    void UpdateSpawningParameters()
-    {
-        _spawningInterval = ClampLower(_spawningInterval -= SPAWNING_INTERVAL_ACELERATION, MIN_SPAWNING_INTERVAL);
-        _enemyMoveSpeed = ClampUpper(_enemyMoveSpeed += MOVE_SPEED_ACELERATION, MAX_MOVE_SPEED);
-        _complexityChance = SumFloatArrays(_complexityChance, COMPLEXITY_ACELERATION);
-        
+            // Increment dificulty step. NOTE: Dificulty step is between 0 and 1.
+            _dificultyStep = (_dificultyStep + _dificultyStepAcceleration < 1) ? 
+                _dificultyStep + _dificultyStepAcceleration : 1;
+
+            // Calculate new time interval using logaritmic interpolation:
+            var spawningTime = interpolateValueLog(_dificultyStep, _baseSpawningTime, MIN_SPAWNING_INTERVAL);
+
+            yield return new WaitForSeconds(spawningTime);  // Wait said interval.
+        }
     }
     
     GameObject SpawnEnemyRandom()
     {
         var enemyPrefab = _enemiesPrefabs[GetRandomIndexByChance(_typeOfEnemyChanche)];
-        return SpawnEnemy(enemyPrefab, GetRandomPositionAtSpawn(), RandomComplexity(), _enemyMoveSpeed);
+
+        var position = GetRandomPositionAtSpawn();
+
+        //Debug.Log(string.Join(", ", InterpolateArrayLog(_dificultyStep, _baseComplexityChance, MAX_COMPLEXITY_CHANCES)));
+        var complexityChances = InterpolateArrayLog(_dificultyStep, _baseComplexityChance, MAX_COMPLEXITY_CHANCES);
+        var complexity = GetRandomIndexByChance(complexityChances) + 1;   // Complexity 1 is in index 0, 2 in 1, and so on...
+
+        var moveSpeed = interpolateValueLog(_dificultyStep, _baseMoveSpeed, MAX_MOVE_SPEED);
+
+        return SpawnEnemy(enemyPrefab, position, complexity, moveSpeed);
     }
     GameObject SpawnEnemy(GameObject prefab, Vector3 pos, int complexity, float moveSpeed, bool renderSequence = true)
     {
@@ -135,12 +144,6 @@ public class EnemyManager : MonoBehaviour
         if (_allowCeroEnemies) return;
         if (_currentNumOfEnemies == 0) SpawnEnemyRandom();
     }
-
-    int RandomComplexity()
-    {
-        return GetRandomIndexByChance(_complexityChance) + 1;
-    }
-
     int GetRandomIndexByChance(float[] chances)
     {
         // Segment ballot.
@@ -194,10 +197,6 @@ public class EnemyManager : MonoBehaviour
                 UnityEngine.Random.Range(spawnerPos.x - spawnerScale.x / 2, leftX)
                 : 
                 UnityEngine.Random.Range(rightX, spawnerPos.x + spawnerScale.x / 2);
-
-            Debug.Log($"lastSpawnningX = {lastSpawningX}" +
-                $", leftBracket = ({spawnerPos.x - spawnerScale.x / 2},{leftX})" +
-                $", rightBracket = ({rightX}, {spawnerPos.x + spawnerScale.x / 2})");
         }
 
         _lastSpawnningPosition = new Vector3(x, spawnerPos.y, spawnerPos.z);
@@ -208,11 +207,11 @@ public class EnemyManager : MonoBehaviour
     void PrintSpawningParameters()
     {
         string complexityChance = "";
-        foreach (float complexity in _complexityChance)
+        foreach (float complexity in _baseComplexityChance)
         {
             complexityChance += $"({complexity.ToString()}) ";
         }
-        Debug.Log($"Spawning Rate {_spawningInterval}, Enemy Movespeed: {_enemyMoveSpeed}, Complexity Chances: {complexityChance}.");
+        Debug.Log($"Spawning Rate {_baseSpawningTime}, Enemy Movespeed: {_baseMoveSpeed}, Complexity Chances: {complexityChance}.");
     }
     float ClampUpper(float value, float max) { return value > max ? max : value; }
     float ClampLower(float value, float min) { return value < min ? min : value; }
@@ -226,5 +225,37 @@ public class EnemyManager : MonoBehaviour
         }
         return result;
     }
+    float interpolateValueLog(float value, float min, float max)
+    {
+
+        // Validar los valores de entrada
+        if (value < 0.0f || value > 1.0f) throw new ArgumentOutOfRangeException("Value must be in [0, 1].");
+        if (min <= 0.0f || max <= 0.0f) throw new ArgumentOutOfRangeException("min / max must be > 0.");
+
+        // Calcular los logaritmos de min y max
+        float logMin = (float)Math.Log(min);
+        float logMax = (float)Math.Log(max);
+
+        // Interpolación lineal en el espacio logarítmico
+        float interpolatedLog = logMin + value * (logMax - logMin);
+
+        // Volver al espacio original exponenciando el valor interpolado
+        return (float)Math.Exp(interpolatedLog);
+    }
+    float[] InterpolateArrayLog(float value, float[] min, float[] max)
+    {
+        if (min.Length > max.Length)
+            throw new ArgumentOutOfRangeException("max.Length must be greater than or equal to min.Length.");
+
+        var interpolatedArray = new float[min.Length];
+
+        for(int i = 0; i < min.Length; i++)
+        {
+            interpolatedArray[i] = interpolateValueLog(value, min[i], max[i]);
+        }
+
+        return interpolatedArray;
+    }
+
     #endregion
 }

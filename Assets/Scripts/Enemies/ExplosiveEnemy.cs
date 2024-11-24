@@ -13,9 +13,6 @@ public class ExplosiveEnemy : Enemy
         if (!_restoring) { _restoring = true; }
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, _explosiveRadius);
-
-        Debug.Log(colliders.Length);
-
         foreach (Collider col in colliders)
         {
             Enemy enemy = col.GetComponent<Enemy>();
