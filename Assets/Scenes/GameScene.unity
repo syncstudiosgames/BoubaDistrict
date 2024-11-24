@@ -4638,7 +4638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyManager: {fileID: 1431879111}
-  _maxHealthPoints: 100
+  _maxHealthPoints: 20
 --- !u!4 &1131489208
 Transform:
   m_ObjectHideFlags: 0

@@ -3299,11 +3299,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 853035466075067939, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 466
+      value: 535
       objectReference: {fileID: 0}
     - target: {fileID: 853035466075067939, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 290
+      value: 177
       objectReference: {fileID: 0}
     - target: {fileID: 853035466075067939, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3319,7 +3319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 898563870351146485, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_text
-      value: Kike
+      value: Kiki
       objectReference: {fileID: 0}
     - target: {fileID: 898563870351146485, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_margin.z
@@ -10967,11 +10967,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 853035466075067939, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -471
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 853035466075067939, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -252
+      value: -201
       objectReference: {fileID: 0}
     - target: {fileID: 853035466075067939, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10984,6 +10984,14 @@ PrefabInstance:
     - target: {fileID: 853035466075067939, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 898563870351146485, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
+      propertyPath: m_text
+      value: Kike
+      objectReference: {fileID: 0}
+    - target: {fileID: 898563870351146485, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
+      propertyPath: m_margin.z
+      value: -14.556511
       objectReference: {fileID: 0}
     - target: {fileID: 931712890987881861, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_AnchorMax.y
