@@ -17,6 +17,7 @@ public class EnemyDisplay : MonoBehaviour
 
     Image[] _noteImages;
 
+    public bool isDead;
 
     void Update()
     {
@@ -114,6 +115,8 @@ public class EnemyDisplay : MonoBehaviour
                 if (_deathSequence[deathSequencePointer] == noteBuffer[noteBufferPointer])                              // If found:
                 {
                     _noteImages[deathSequencePointer].sprite = _deathSequence[deathSequencePointer].HighlightSprite;    // Highlight.
+                    AnimateHighlight(_noteImages[deathSequencePointer]);
+
                     lastIndexFound = deathSequencePointer;                                                              // Update last index found.
                 }
 
@@ -128,10 +131,24 @@ public class EnemyDisplay : MonoBehaviour
     public void UnHighlightNotes()
     {
         if (_noteImages == null || _noteImages.Length == 0) return;
+        if(isDead) return;
+
         for(int i = 0; i < _deathSequence.Count; i++)
         {
             _noteImages[i].sprite = _deathSequence[i].Sprite;
         }
+    }
+
+    void AnimateHighlight(Image noteImage)
+    {
+        Vector3 initialSize = noteImage.rectTransform.localScale;
+        Vector3 boingSize = initialSize * 1.25f;
+
+        LeanTween.scale(noteImage.rectTransform, boingSize, 0.2f).setEase(LeanTweenType.easeInOutQuad)
+        .setOnComplete(() =>
+        {
+            LeanTween.scale(noteImage.rectTransform, initialSize, 0.2f).setEase(LeanTweenType.easeInOutBounce);
+        });
     }
 
     private void OnDestroy()
