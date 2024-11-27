@@ -8,13 +8,15 @@ public class FinalScore : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private ScoreManager score;
     public static int currentScore;
-    public static string playerId;  // ID del jugador
+    public static string playerId; // ID del jugador
+    private bool scoreSent = false; // Evitar envíos múltiples
 
     void Start()
     {
         if (player != null)
         {
-            player.OnGameOver += HighscoreScene;
+            player.OnGameOver -= HighscoreScene; // Desuscribir cualquier suscripción previa
+            player.OnGameOver += HighscoreScene; // Suscribir el evento
         }
         else
         {
@@ -24,6 +26,9 @@ public class FinalScore : MonoBehaviour
 
     private void HighscoreScene()
     {
+        if (scoreSent) return; // Salir si ya se envió la puntuación
+        scoreSent = true; // Marcar como enviada
+
         currentScore = score.Score;
         string playerName = player.GetPlayerName();
         StartCoroutine(SendScoreAndLoadHighscore(playerName, currentScore));
@@ -36,7 +41,6 @@ public class FinalScore : MonoBehaviour
         SceneManager.LoadScene("Highscore");
     }
 
-    // Enviar la puntuación al servidor y recibir el ID generado
     private IEnumerator SendScoreToServer(string playerName, int score)
     {
         var playerScore = new HighscoreEntry
@@ -45,7 +49,6 @@ public class FinalScore : MonoBehaviour
             score = score
         };
 
-        // Convertir el objeto en JSON
         string jsonData = JsonUtility.ToJson(playerScore);
 
         using (UnityWebRequest request = new UnityWebRequest("https://highscore-server.glitch.me/api/submit-score", UnityWebRequest.kHttpVerbPOST))
@@ -60,12 +63,9 @@ public class FinalScore : MonoBehaviour
             if (request.result == UnityWebRequest.Result.Success)
             {
                 Debug.Log("Puntuación enviada correctamente.");
-
-                // Recuperar el ID generado para este jugador desde la respuesta del servidor
                 string responseBody = request.downloadHandler.text;
-                PlayerIdResponse response = JsonUtility.FromJson<PlayerIdResponse>(responseBody);  // Deserializar el JSON
-                playerId = response.id;  // Guardar el ID recibido del servidor
-
+                PlayerIdResponse response = JsonUtility.FromJson<PlayerIdResponse>(responseBody);
+                playerId = response.id;
                 Debug.Log("ID del jugador recibido: " + playerId);
             }
             else
@@ -85,6 +85,6 @@ public class FinalScore : MonoBehaviour
     [System.Serializable]
     private class PlayerIdResponse
     {
-        public string id;  // ID del jugador
+        public string id; // ID del jugador
     }
 }
