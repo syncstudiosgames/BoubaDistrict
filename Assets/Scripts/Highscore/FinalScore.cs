@@ -7,16 +7,18 @@ public class FinalScore : MonoBehaviour
 {
     [SerializeField] private Player player;
     [SerializeField] private ScoreManager score;
-    public static int currentScore;
+
+    public static int finalScore; // Ppuntuación final
     public static string playerId; // ID del jugador
-    private bool scoreSent = false; // Evitar envíos múltiples
+
+    private bool scoreSent = false; 
 
     void Start()
     {
         if (player != null)
         {
-            player.OnGameOver -= HighscoreScene; // Desuscribir cualquier suscripción previa
-            player.OnGameOver += HighscoreScene; // Suscribir el evento
+            player.OnGameOver -= HighscoreScene; 
+            player.OnGameOver += HighscoreScene; 
         }
         else
         {
@@ -26,12 +28,13 @@ public class FinalScore : MonoBehaviour
 
     private void HighscoreScene()
     {
-        if (scoreSent) return; // Salir si ya se envió la puntuación
-        scoreSent = true; // Marcar como enviada
+        if (scoreSent) return; 
+        scoreSent = true; 
 
-        currentScore = score.Score;
+        finalScore = score.Score; 
+
         string playerName = player.GetPlayerName();
-        StartCoroutine(SendScoreAndLoadHighscore(playerName, currentScore));
+        StartCoroutine(SendScoreAndLoadHighscore(playerName, finalScore));
     }
 
     private IEnumerator SendScoreAndLoadHighscore(string playerName, int score)
