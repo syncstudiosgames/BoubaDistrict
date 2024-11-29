@@ -7,15 +7,20 @@ public class PlayerNameInput : MonoBehaviour
     public TextMeshProUGUI displayText;
     private const int maxCharacters = 5;
 
+    private const string PlayerNameKey = "PlayerName"; 
+
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
-        Debug.Log("Todos los datos de PlayerPrefs han sido eliminados.");
+        if (PlayerPrefs.HasKey(PlayerNameKey))
+        {
+            PlayerPrefs.DeleteKey(PlayerNameKey);
+            Debug.Log($"PlayerPref '{PlayerNameKey}' ha sido eliminado.");
+        }
 
-        // Asegurarse de que el campo de entrada esté vacío al inicio
         nameInputField.text = "";
         nameInputField.onValueChanged.AddListener(OnNameInputChanged);
     }
+
     private void OnNameInputChanged(string currentText)
     {
         if (currentText.Length > maxCharacters)
@@ -23,18 +28,16 @@ public class PlayerNameInput : MonoBehaviour
             nameInputField.text = currentText.Substring(0, maxCharacters);
         }
     }
+
     public void OnNameEntered()
     {
-        // Guardar el nombre ingresado en PlayerPrefs para acceder a él en otras escenas
         string playerName = nameInputField.text;
-        PlayerPrefs.SetString("PlayerName", playerName);
+        PlayerPrefs.SetString(PlayerNameKey, playerName);
         PlayerPrefs.Save();
 
-        // Mostrar un mensaje de confirmación
         if (displayText != null)
         {
             displayText.text = "Nice to see you, " + playerName + "! Let's play!";
         }
     }
-
 }
