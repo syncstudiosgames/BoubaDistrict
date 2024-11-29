@@ -13,12 +13,43 @@ public class Player : MonoBehaviour
     public int HealthPoints { get { return _healthPoints; } }
     public event Action OnHealthValueChange { add { _onHealthValueChange += value; } remove { _onHealthValueChange -= value; } }
 
-    public string Name { get; private set; }  // nombre del jugador
+    public string Name { get; private set; }  // Nombre del jugador
+    public int SkinIndex { get; private set; }  // Índice de la skin seleccionada
+
     public string GetPlayerName()
     {
         return Name;
     }
 
+    public int GetSkinIndex()
+    {
+        if (CharacterSelectionManager.Instance != null)
+        {
+            GameObject selectedCharacter = CharacterSelectionManager.Instance.GetSelectedCharacter();
+            GameObject[] characters = CharacterSelectionManager.Instance.GetCharacters();
+            if (selectedCharacter != null && characters != null)
+            {
+                SkinIndex = Array.IndexOf(characters, selectedCharacter);
+                if (SkinIndex == -1)
+                {
+                    Debug.LogError("El personaje seleccionado no coincide con ningún prefab en el CharacterSelectionManager.");
+                    SkinIndex = 0; // Valor predeterminado
+                }
+            }
+            else
+            {
+                Debug.LogError("No se encontró ningún personaje seleccionado o el array de personajes está vacío.");
+                SkinIndex = 0; // Valor predeterminado
+            }
+        }
+        else
+        {
+            Debug.LogError("CharacterSelectionManager.Instance no está inicializado. Usando índice por defecto (0).");
+            SkinIndex = 0;
+        }
+
+        return SkinIndex;
+    }
 
     int score;
 
@@ -28,8 +59,12 @@ public class Player : MonoBehaviour
     private void Start()
     {
         // Recuperar el nombre del jugador desde PlayerPrefs
-        Name = PlayerPrefs.GetString("PlayerName", "Player");  // "Player", por defecto si no se ha definido un nombre
+        Name = PlayerPrefs.GetString("PlayerName", "Player");
 
+        // Inicializar el índice de la skin seleccionada
+        SkinIndex = GetSkinIndex();
+
+        // Inicializar los puntos de vida y eventos
         _healthPoints = _maxHealthPoints;
         _onHealthValueChange?.Invoke();
 

@@ -3,21 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
-//using TMPro.EditorUtilities;
 using TMPro;
 
 public class HighscoreTable : MonoBehaviour
 {
+    [Header("Posiciones del Podio")]
+    public Transform firstPlacePosition;  // Posición del primer lugar
+    public Transform secondPlacePosition; // Posición del segundo lugar
+    public Transform thirdPlacePosition;  // Posición del tercer lugar
+
+    [Header("Prefabs de Skins")]
+    public GameObject kikiPrefab;
+    public GameObject kiki2Prefab;
+    public GameObject kiki3Prefab;
+
+    [Header("Ranking UI")]
+    public TMP_Text Nombre1;
+    public TMP_Text Nombre2;
+    public TMP_Text Nombre3;
+
     private Transform entryContainer;
     private Transform entryTemplate;
     private List<Transform> highscoreEntryTransformList;
     private ScrollRect scrollRect;
 
-    public TMP_Text Nombre1;
-    public TMP_Text Nombre2;
-    public TMP_Text Nombre3;
-
-    // Servidor público en Glitch
     private const string serverUrl = "https://highscore-server.glitch.me/api";
 
     private void Awake()
@@ -26,11 +35,100 @@ public class HighscoreTable : MonoBehaviour
         entryTemplate = entryContainer.Find("highscoreEntryTemplate");
 
         entryTemplate.gameObject.SetActive(false);
-        // Obtener el componente ScrollRect del ScrollView
+
         scrollRect = GetComponentInParent<ScrollRect>();
 
-        // Obtener el ranking desde el servidor al cargar la escena
         StartCoroutine(GetHighscoresFromServer());
+    }
+
+    private IEnumerator GetHighscoresFromServer()
+    {
+        using (UnityWebRequest request = UnityWebRequest.Get($"{serverUrl}/get-scores"))
+        {
+            yield return request.SendWebRequest();
+
+            if (request.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log("Ranking recibido: " + request.downloadHandler.text);
+
+                HighscoreEntry[] highscores = JsonHelper.FromJson<HighscoreEntry>(request.downloadHandler.text);
+
+                highscoreEntryTransformList = new List<Transform>();
+
+                UpdateTopThreeNamesAndPodium(highscores);
+
+                int mostRecentIndex = -1;
+                for (int i = 0; i < highscores.Length; i++)
+                {
+                    if (highscores[i].id == FinalScore.playerId)
+                    {
+                        mostRecentIndex = i;
+                    }
+                }
+
+                for (int i = 0; i < highscores.Length; i++)
+                {
+                    bool isMostRecent = i == mostRecentIndex;
+                    CreateHighscoreEntryTransform(highscores[i].name, highscores[i].score, i + 1, entryContainer, highscoreEntryTransformList, isMostRecent);
+                }
+
+                if (mostRecentIndex != -1)
+                {
+                    ScrollToIndex(mostRecentIndex);
+                }
+            }
+            else
+            {
+                Debug.LogError($"Error al obtener el ranking: {request.error}");
+            }
+        }
+    }
+
+    private void UpdateTopThreeNamesAndPodium(HighscoreEntry[] highscores)
+    {
+        if (highscores.Length > 0)
+        {
+            Nombre1.text = highscores[0].name;
+            SpawnCharacterOnPodium(firstPlacePosition, highscores[0].characterIndex);
+        }
+        if (highscores.Length > 1)
+        {
+            Nombre2.text = highscores[1].name;
+            SpawnCharacterOnPodium(secondPlacePosition, highscores[1].characterIndex);
+        }
+        if (highscores.Length > 2)
+        {
+            Nombre3.text = highscores[2].name;
+            SpawnCharacterOnPodium(thirdPlacePosition, highscores[2].characterIndex);
+        }
+    }
+
+    private void SpawnCharacterOnPodium(Transform podiumPosition, int characterIndex)
+    {
+        // Eliminar cualquier objeto hijo previo del podio
+        foreach (Transform child in podiumPosition)
+        {
+            Destroy(child.gameObject);
+        }
+
+        GameObject characterPrefab = GetCharacterPrefab(characterIndex);
+        if (characterPrefab != null && podiumPosition != null)
+        {
+            Instantiate(characterPrefab, podiumPosition.position, podiumPosition.rotation, podiumPosition);
+        }
+    }
+
+    private GameObject GetCharacterPrefab(int characterIndex)
+    {
+        switch (characterIndex)
+        {
+            case 0: return kikiPrefab;
+            case 1: return kiki2Prefab;
+            case 2: return kiki3Prefab;
+            default:
+                Debug.LogError($"Índice de personaje no válido: {characterIndex}");
+                return null;
+        }
     }
 
     private void CreateHighscoreEntryTransform(string name, int score, int rank, Transform container, List<Transform> transformList, bool isMostRecent)
@@ -42,20 +140,17 @@ public class HighscoreTable : MonoBehaviour
         entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
         entryTransform.gameObject.SetActive(true);
 
-        string rankString = "#" + rank ;
+        string rankString = "#" + rank;
         entryTransform.Find("PuestoEntrada").GetComponent<Text>().text = rankString;
         entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().text = score.ToString();
         entryTransform.Find("NombreEntrada").GetComponent<Text>().text = name;
 
-        // Verifica si el id del jugador coincide con el id del servidor para resaltar su entrada**
         if (isMostRecent)
         {
-            // Resaltar con color amarillo
             entryTransform.Find("PuntuaciónEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f); // Amarillo
             entryTransform.Find("NombreEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f);
             entryTransform.Find("PuestoEntrada").GetComponent<Text>().color = new Color(1f, 0.956f, 0f);
 
-            // Añadir borde negro al texto
             Outline outline1 = entryTransform.Find("PuntuaciónEntrada").gameObject.AddComponent<Outline>();
             outline1.effectColor = Color.black;
             outline1.effectDistance = new Vector2(2, -2);
@@ -78,91 +173,30 @@ public class HighscoreTable : MonoBehaviour
         transformList.Add(entryTransform);
     }
 
-    // Obtener el ranking desde el servidor
-    private IEnumerator GetHighscoresFromServer()
-    {
-        using (UnityWebRequest request = UnityWebRequest.Get($"{serverUrl}/get-scores"))
-        {
-            yield return request.SendWebRequest();
 
-            if (request.result == UnityWebRequest.Result.Success)
-            {
-                Debug.Log("Ranking recibido: " + request.downloadHandler.text);
-
-                // Convertir el JSON a una lista de objetos HighscoreEntry
-                HighscoreEntry[] highscores = JsonHelper.FromJson<HighscoreEntry>(request.downloadHandler.text);
-
-                // Crear la visualización de cada entrada del ranking
-                highscoreEntryTransformList = new List<Transform>();
-
-                // Actualizar los nombres de los tres primeros jugadores
-                UpdateTopThreeNames(highscores);
-
-                // Identificar la puntuación más reciente por alguna lógica (por ejemplo, el último ID)
-                int mostRecentIndex = -1;
-                for (int i = 0; i < highscores.Length; i++)
-                {
-                    if (highscores[i].id == FinalScore.playerId)
-                    {
-                        mostRecentIndex = i;
-                    }
-                }
-
-                // Crear las entradas del ranking
-                for (int i = 0; i < highscores.Length; i++)
-                {
-                    bool isMostRecent = i == mostRecentIndex; // Solo resaltar la más reciente
-                    CreateHighscoreEntryTransform(highscores[i].name, highscores[i].score, i + 1, entryContainer, highscoreEntryTransformList, isMostRecent);
-                }
-
-                if (mostRecentIndex != -1)
-                {
-                    ScrollToIndex(mostRecentIndex);
-                }
-            }
-            else
-            {
-                Debug.LogError($"Error al obtener el ranking: {request.error}");
-            }
-        }
-    }
     private void ScrollToIndex(int index)
     {
-        // Asegurarse de que el ScrollRect esté configurado
         if (scrollRect == null) return;
 
-        // Obtener el tamaño del contenedor y el template
         RectTransform containerRect = entryContainer.GetComponent<RectTransform>();
         RectTransform entryRect = entryTemplate.GetComponent<RectTransform>();
 
-        // Calcular la altura total y la posición objetivo
         float contentHeight = containerRect.rect.height;
         float entryHeight = entryRect.rect.height;
         float targetPosition = Mathf.Clamp01(1f - ((index * entryHeight) / contentHeight));
 
-        // Ajustar la posición del ScrollRect
         scrollRect.verticalNormalizedPosition = targetPosition;
     }
-    private void UpdateTopThreeNames(HighscoreEntry[] highscores)
-    {
-        if (highscores.Length > 0)
-            Nombre1.text = highscores[0].name;
-        if (highscores.Length > 1)
-            Nombre2.text = highscores[1].name;
-        if (highscores.Length > 2)
-            Nombre3.text = highscores[2].name;
-    }
-
 
     [System.Serializable]
     private class HighscoreEntry
     {
         public string name;
         public int score;
-        public string id;  
+        public string id;
+        public int characterIndex; 
     }
 
-    // para deserializar arrays de JSON
     public static class JsonHelper
     {
         public static T[] FromJson<T>(string json)

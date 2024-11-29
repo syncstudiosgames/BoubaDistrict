@@ -3,6 +3,8 @@ using UnityEngine;
 public class CharacterSelectionManager : MonoBehaviour
 {
     public static CharacterSelectionManager Instance;
+
+    [SerializeField] private GameObject[] characters; // Array de personajes disponibles
     private GameObject selectedCharacter;
 
     private void Awake()
@@ -16,6 +18,16 @@ public class CharacterSelectionManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void SetCharacters(GameObject[] characterArray)
+    {
+        characters = characterArray;
+    }
+
+    public GameObject[] GetCharacters()
+    {
+        return characters;
     }
 
     public void SelectCharacter(GameObject character)

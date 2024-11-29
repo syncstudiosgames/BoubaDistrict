@@ -8,17 +8,17 @@ public class FinalScore : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private ScoreManager score;
 
-    public static int finalScore; // Ppuntuación final
+    public static int finalScore; // Puntuación final
     public static string playerId; // ID del jugador
 
-    private bool scoreSent = false; 
+    private bool scoreSent = false;
 
     void Start()
     {
         if (player != null)
         {
-            player.OnGameOver -= HighscoreScene; 
-            player.OnGameOver += HighscoreScene; 
+            player.OnGameOver -= HighscoreScene;
+            player.OnGameOver += HighscoreScene;
         }
         else
         {
@@ -28,31 +28,36 @@ public class FinalScore : MonoBehaviour
 
     private void HighscoreScene()
     {
-        if (scoreSent) return; 
-        scoreSent = true; 
+        if (scoreSent) return;
+        scoreSent = true;
 
-        finalScore = score.Score; 
+        finalScore = score.Score;
 
         string playerName = player.GetPlayerName();
-        StartCoroutine(SendScoreAndLoadHighscore(playerName, finalScore));
+        int skinIndex = player.GetSkinIndex(); 
+
+        StartCoroutine(SendScoreAndLoadHighscore(playerName, finalScore, skinIndex));
     }
 
-    private IEnumerator SendScoreAndLoadHighscore(string playerName, int score)
+    private IEnumerator SendScoreAndLoadHighscore(string playerName, int score, int skinIndex)
     {
-        yield return StartCoroutine(SendScoreToServer(playerName, score));
+        yield return StartCoroutine(SendScoreToServer(playerName, score, skinIndex));
 
         SceneManager.LoadScene("Highscore");
     }
 
-    private IEnumerator SendScoreToServer(string playerName, int score)
+    private IEnumerator SendScoreToServer(string playerName, int score, int skinIndex)
     {
         var playerScore = new HighscoreEntry
         {
             name = playerName,
-            score = score
+            score = score,
+            characterIndex = skinIndex 
         };
 
         string jsonData = JsonUtility.ToJson(playerScore);
+
+        Debug.Log("JSON enviado al servidor: " + jsonData); 
 
         using (UnityWebRequest request = new UnityWebRequest("https://highscore-server.glitch.me/api/submit-score", UnityWebRequest.kHttpVerbPOST))
         {
@@ -83,11 +88,12 @@ public class FinalScore : MonoBehaviour
     {
         public string name;
         public int score;
+        public int characterIndex; 
     }
 
     [System.Serializable]
     private class PlayerIdResponse
     {
-        public string id; // ID del jugador
+        public string id;
     }
 }

@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class CharacterSelection : MonoBehaviour
 {
@@ -11,6 +9,12 @@ public class CharacterSelection : MonoBehaviour
 
     private void Start()
     {
+        // Registrar el array de personajes en el CharacterSelectionManager
+        if (CharacterSelectionManager.Instance != null)
+        {
+            CharacterSelectionManager.Instance.SetCharacters(characters);
+        }
+
         foreach (Transform child in charactersParent.transform)
         {
             child.gameObject.SetActive(false);
@@ -44,6 +48,4 @@ public class CharacterSelection : MonoBehaviour
         // Cargar la escena del juego
         SceneManager.LoadScene("Loading2");
     }
-
-   
 }
