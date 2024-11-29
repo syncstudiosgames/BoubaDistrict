@@ -5,6 +5,7 @@ public class PlayerNameInput : MonoBehaviour
 {
     public TMP_InputField nameInputField;
     public TextMeshProUGUI displayText;
+    private const int maxCharacters = 5;
 
     private void Start()
     {
@@ -13,8 +14,15 @@ public class PlayerNameInput : MonoBehaviour
 
         // Asegurarse de que el campo de entrada esté vacío al inicio
         nameInputField.text = "";
+        nameInputField.onValueChanged.AddListener(OnNameInputChanged);
     }
-
+    private void OnNameInputChanged(string currentText)
+    {
+        if (currentText.Length > maxCharacters)
+        {
+            nameInputField.text = currentText.Substring(0, maxCharacters);
+        }
+    }
     public void OnNameEntered()
     {
         // Guardar el nombre ingresado en PlayerPrefs para acceder a él en otras escenas
