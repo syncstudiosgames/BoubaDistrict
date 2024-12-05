@@ -18,6 +18,7 @@ public class HighscoreTable : MonoBehaviour
     public GameObject kiki3Prefab;
     public GameObject kikePrefab;
     public GameObject kikoPrefab;
+    public GameObject kikaPrefab;
 
 
     [Header("Ranking UI")]
@@ -130,6 +131,8 @@ public class HighscoreTable : MonoBehaviour
             case 2: return kiki3Prefab;
             case 3: return kikePrefab;
             case 4: return kikoPrefab;
+            case 5: return kikaPrefab;
+
             default:
                 Debug.LogError($"Índice de personaje no válido: {characterIndex}");
                 return null;

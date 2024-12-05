@@ -7925,7 +7925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00002670288, y: 733.06323}
+  m_AnchoredPosition: {x: -0.00002670288, y: 733.0629}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1001 &863897523
@@ -13743,7 +13743,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 384945579}
   m_HandleRect: {fileID: 384945578}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -18139,6 +18139,7 @@ MonoBehaviour:
   kiki3Prefab: {fileID: 4758057533692183058, guid: 1969f31fa1d48b448a626e7d0ffc254f, type: 3}
   kikePrefab: {fileID: 727509728393491676, guid: 31c300506ff734941bfd30a38fc3448a, type: 3}
   kikoPrefab: {fileID: 1759223759889848402, guid: 3fe8843b98a67a44582f70d979a01c87, type: 3}
+  kikaPrefab: {fileID: 2229719514789075164, guid: 22225ff1a9182e3488844914865e57aa, type: 3}
   Nombre1: {fileID: 959746046}
   Nombre2: {fileID: 1270203040}
   Nombre3: {fileID: 1058150686}
@@ -20573,8 +20574,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 628602992}
   m_HandleRect: {fileID: 628602991}
   m_Direction: 2
-  m_Value: -0.0000015819504
-  m_Size: 0.19976488
+  m_Value: -0.0000012905384
+  m_Size: 0.1997657
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
