@@ -1,13 +1,15 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class PlayerNameInput : MonoBehaviour
 {
     public TMP_InputField nameInputField;
     public TextMeshProUGUI displayText;
+    public Button acceptButton;
     private const int maxCharacters = 5;
 
-    private const string PlayerNameKey = "PlayerName"; 
+    private const string PlayerNameKey = "PlayerName";
 
     private void Start()
     {
@@ -19,6 +21,8 @@ public class PlayerNameInput : MonoBehaviour
 
         nameInputField.text = "";
         nameInputField.onValueChanged.AddListener(OnNameInputChanged);
+
+        acceptButton.interactable = false;
     }
 
     private void OnNameInputChanged(string currentText)
@@ -27,6 +31,8 @@ public class PlayerNameInput : MonoBehaviour
         {
             nameInputField.text = currentText.Substring(0, maxCharacters);
         }
+
+        acceptButton.interactable = !string.IsNullOrEmpty(currentText);
     }
 
     public void OnNameEntered()
