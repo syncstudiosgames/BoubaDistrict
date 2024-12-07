@@ -16,18 +16,23 @@ public class Enemy : MonoBehaviour
     int _currrentLivePointer = 0;
 
     [SerializeField] private EnemyDisplay _enemyDisplay;
+    [SerializeField] EnemyController _enemyController;
     [SerializeField] EnemyModelLoader _enemyModelLoader;
 
     [SerializeField] GameObject _modelHolder;
 
     [SerializeField] GameObject _splashEffect;
+    [SerializeField] GameObject _boostEffect;
 
 
-    public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager, int lives = 1, bool renderSequence = true)
+    public void SetUp(int complexity, float moveSpeed, NoteManager noteManager, EnemyManager enemyManager, int lives = 1, bool renderSequence = true)
     {
         _noteManager = noteManager;
         _enemyManager = enemyManager;
+
         _complexity = Mathf.Clamp(complexity, 1, 4);
+        _enemyController.SetUp(moveSpeed);
+
         _lives = lives;
         
         if(_enemyModelLoader != null)
@@ -53,6 +58,17 @@ public class Enemy : MonoBehaviour
         {
             _splashEffect.SetActive(false);
         }
+    }
+
+    public void BoostSpeed(float speed)
+    {
+        _enemyController.IncreaseMovespeed(speed);
+        _boostEffect?.SetActive(true);
+    }
+    public void UnboostSpeed()
+    {
+        _enemyController.ResetMovespeed();
+        _boostEffect?.SetActive(false);
     }
 
     void CreateSequence(int lives)
@@ -97,11 +113,10 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            _enemyDisplay.DisplayNextDeathSequence();
+            _enemyController.Stun(3);
+            _enemyDisplay.DisplayNextDeathSequence(3);
             _currrentLivePointer++;
         }
-
-
         
     }
 

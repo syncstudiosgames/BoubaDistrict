@@ -2280,7 +2280,7 @@ GameObject:
   - component: {fileID: 491120450}
   - component: {fileID: 491120449}
   - component: {fileID: 491120448}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EnemyGoal
   m_TagString: EnemyGoal
   m_Icon: {fileID: 0}
