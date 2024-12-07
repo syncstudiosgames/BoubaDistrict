@@ -136,7 +136,7 @@ public class EnemyManager : MonoBehaviour
     GameObject SpawnEnemyBoss(int bossIndex = 0)
     {
         var pos = GetRandomPositionAtSpawn();
-        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 2, 10, 3);
+        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 4, 10, 3);
     }
     public void SpawnSimpleEnemy()
     {

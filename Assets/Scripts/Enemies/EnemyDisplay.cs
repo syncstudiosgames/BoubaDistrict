@@ -9,13 +9,18 @@ using UnityEngine.UI;
 public class EnemyDisplay : MonoBehaviour
 {
 
-    [SerializeField] public Canvas _canvas; 
+    [SerializeField] public Canvas _canvas;
+    [SerializeField] Canvas _livesDisplayCanvas;
+
+    [SerializeField] Sprite _liveSprite;
+
     [SerializeField] private float scaleMultiplier = 3f;
 
-    List<Note>[] _deathSequence;
+    List<Note>[] _deathSequences;
     NoteManager _noteManager;
 
     Image[] _noteImages;
+    Image[] _livesImages;
 
     public bool isDead;
 
@@ -30,12 +35,14 @@ public class EnemyDisplay : MonoBehaviour
             newRotation.y = 0;
             newRotation.z = 0;
             _canvas.transform.rotation = newRotation;
+
+            if(_livesDisplayCanvas != null ) _livesDisplayCanvas.transform.rotation = newRotation;
         }
     }
 
     public void SetUp(List<Note>[] deathSequence, NoteManager noteManager, bool renderSequence = true)
     {
-        _deathSequence = deathSequence;
+        _deathSequences = deathSequence;
         _noteManager = noteManager;
 
         _noteManager.OnNoteLogged += HighlightNotes;
@@ -45,17 +52,24 @@ public class EnemyDisplay : MonoBehaviour
         {
             _noteImages = RenderNoteSequence(deathSequence[0]);
         }
+
+        if(_livesDisplayCanvas != null)
+        {
+            _livesImages = RenderLives(_livesDisplayCanvas, _deathSequences.Length);
+        }
         
     }
 
     public void DisplayNextDeathSequence()
     {
-        if (_currentLivePointer == _deathSequence.Length - 1) return;
+        if (_currentLivePointer == _deathSequences.Length - 1) return;
 
         ClearCanvas(_canvas);
 
         _currentLivePointer++;
-        _noteImages = RenderNoteSequence(_deathSequence[_currentLivePointer]);
+        _noteImages = RenderNoteSequence(_deathSequences[_currentLivePointer]);
+
+        _livesImages[_currentLivePointer].gameObject.SetActive(false);
     }
 
     public void HideSequence()
@@ -108,13 +122,48 @@ public class EnemyDisplay : MonoBehaviour
         return images;
     }
 
+    Image[] RenderLives(Canvas livesDisplayCanvas, int lives)
+    {
+        // Configure canvas:
+        RectTransform canvasRect = livesDisplayCanvas.GetComponent<RectTransform>();
+        float canvasWidth = canvasRect.rect.width;
+        float canvasHeight = canvasRect.rect.height;
+
+        float noteSize = Mathf.Min(canvasWidth / lives, canvasHeight / 2) * scaleMultiplier;
+
+        Image[] images = new Image[lives];
+
+        for (int i = 0; i < lives; i++)
+        {
+            GameObject noteImageObject = new GameObject("LiveImage");
+            noteImageObject.transform.SetParent(livesDisplayCanvas.transform);
+            noteImageObject.transform.localScale = Vector3.one;
+
+            images[i] = noteImageObject.AddComponent<Image>();
+            images[i].sprite = _liveSprite;
+
+            RectTransform rectTransform = images[i].GetComponent<RectTransform>();
+            rectTransform.sizeDelta = new Vector2(noteSize, noteSize);
+
+            float xPosition = -((canvasWidth / (lives + 1)) * (i + 1) - (canvasWidth / 2));
+            float yPosition = 0;
+
+            rectTransform.anchoredPosition = new Vector2(xPosition, yPosition);
+            rectTransform.localPosition = new Vector3(rectTransform.localPosition.x, rectTransform.localPosition.y, 0);
+
+            rectTransform.localScale = new Vector3(-1, 1, 1);
+        }
+
+        return images;
+    }
+
     public void HighlightNotes(Note inputNote)
     {
         // Input note is received only to conform to delegate OnNoteLogged, IT'S NOT USED.
 
         // Two lists will be used:
         List<Note> noteBuffer = _noteManager.NoteBuffer;    // Notes input by the player.
-        List<Note> deathSequence = _deathSequence[_currentLivePointer];          // The enemy's death sequence.
+        List<Note> deathSequence = _deathSequences[_currentLivePointer];          // The enemy's death sequence.
 
         if(noteBuffer.Count <= 0) return; // If the note buffer is empty return.
         if (_noteImages == null || _noteImages.Length == 0) return;
@@ -158,9 +207,9 @@ public class EnemyDisplay : MonoBehaviour
         if (_noteImages == null || _noteImages.Length == 0) return;
         if(isDead) return;
 
-        for(int i = 0; i < _deathSequence[_currentLivePointer].Count; i++)
+        for(int i = 0; i < _deathSequences[_currentLivePointer].Count; i++)
         {
-            _noteImages[i].sprite = _deathSequence[_currentLivePointer][i].Sprite;
+            _noteImages[i].sprite = _deathSequences[_currentLivePointer][i].Sprite;
         }
     }
 

@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class EnemyBoss : Enemy
 {
-    
+    [SerializeField] Canvas _healthDisplay;
+
+
 }
