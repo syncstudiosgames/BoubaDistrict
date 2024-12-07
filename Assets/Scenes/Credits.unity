@@ -421,7 +421,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 586181077}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: Logo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12968522, g: 0.16037738, b: 0.10666609, a: 1}
+  m_Color: {r: 0, g: 0.2349643, b: 0.3886792, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1304,7 +1304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.30980393, g: 0.3882353, b: 0.2509804, a: 1}
+  m_Color: {r: 0.10588236, g: 0.5294118, b: 0.80392164, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -1112,7 +1112,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1870475060}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: Logo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8312,10 +8312,12 @@ MonoBehaviour:
   _enemiesPrefabs:
   - {fileID: 3971569818686494927, guid: 0026da0c63e507247b4ea1ee7819ba03, type: 3}
   - {fileID: 3971569818686494927, guid: d082561a2d6563642bc05c70639a4865, type: 3}
+  _enemyBossesPrefabs: []
   _noteManager: {fileID: 1237714507}
   _enemySpawner: {fileID: 1032032963}
   _waitForTutorial: 1
   _allowCeroEnemies: 1
+  _notSpawnningBracketLenth: 7
 --- !u!4 &1913901264
 Transform:
   m_ObjectHideFlags: 0

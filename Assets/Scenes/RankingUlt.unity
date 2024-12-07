@@ -7925,7 +7925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00002670288, y: 733.06256}
+  m_AnchoredPosition: {x: -0.00002670288, y: 733.0627}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1001 &863897523
@@ -13743,7 +13743,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 384945579}
   m_HandleRect: {fileID: 384945578}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -17518,7 +17518,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1986250351}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: Logo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20575,8 +20575,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 628602992}
   m_HandleRect: {fileID: 628602991}
   m_Direction: 2
-  m_Value: -0.0000005828239
-  m_Size: 0.19976811
+  m_Value: -0.00000074934496
+  m_Size: 0.19975932
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
