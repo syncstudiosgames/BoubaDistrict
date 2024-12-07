@@ -2493,7 +2493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3501d159f70374897c214dcfe3a9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waitForTutorial: 1
+  _waitForTutorial: 0
   _intervals:
   - _numBeats: 1
     _trigger:
@@ -4093,7 +4093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1010859567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4578,7 +4578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyManager: {fileID: 1431879111}
   _noteManager: {fileID: 726460152}
-  _waitForTutorial: 1
+  _waitForTutorial: 0
 --- !u!4 &1124231277
 Transform:
   m_ObjectHideFlags: 0
@@ -6298,7 +6298,7 @@ MonoBehaviour:
   - {fileID: 3971569818686494927, guid: d082561a2d6563642bc05c70639a4865, type: 3}
   _noteManager: {fileID: 726460152}
   _enemySpawner: {fileID: 236771641}
-  _waitForTutorial: 1
+  _waitForTutorial: 0
   _allowCeroEnemies: 0
   _notSpawnningBracketLenth: 5
 --- !u!4 &1431879112
