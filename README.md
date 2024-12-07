@@ -60,7 +60,7 @@ El "Battle Pass" constará de 50 niveles y estará compuesto por un total de 60 
 Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado más “techno” y futurista de los Boubas. Estas criaturas, presentarán una apariencia algo tecnológica y electrónica, mientras que bailaran al son de las canciones más jugadas por la comunidad, pero con un toque muy electrónico. Se harán diferentes “remix” techno de las canciones más aclamadas por los jugadores, para que puedan volver a jugarlas como el primer día. En esta temporada se celebrará el aniversario del videojuego con un evento de 3 semanas que por cada una de ellas presentará un nuevo “remix”.
 
 **Contenido:**
-- Cosméticos(Robóticos, accesorios “tecnológicos”)
+- Cosméticos (Robóticos, accesorios “tecnológicos”)
 - Evento (Aniversario)
 - Nuevo género (“Techno”)
 - Nuevo mapa (Escenario frenético, rodeado de neón y láseres que iluminan el escenario)
@@ -72,7 +72,7 @@ Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado m�
 </p>
 
 ##### *Abril - Temporada 2 (Bumpin' to the Jazz Beat)*
-Con esta temporada, los Boubas sacarán sus mejores galas, adoptando nuevos y elegantes accesorios (sombreros, boas,...), adaptándose a la moda de los años 20. Al transcurrir en el mismo periodo de tiempo que la festividad “Halloween”, se hará un evento exclusivo con una ambientación oscura y siniestra pero divertida. También, en esta temporada llegarán un nuevo enemigo, Jazzoo Bouba, que, podrá alterar el ritmo del juego, cuando aparezca en el escenario, las secuencias de los enemigos aparecidos por pantalla, cambiarán aleatoriamente, haciendo que el jugador siempre se mantenga alerta. Y un nuevo personaje, The Maestro, un personaje algo elegante que traerá consigo una nueva habilidad, (Ralentización del ritmo), con la que podrá ralentizar la velocidad con la que deberá pulsar las secuencias de botones.
+Con esta temporada, los Boubas sacarán sus mejores galas, adoptando nuevos y elegantes accesorios (sombreros, boas...), adaptándose a la moda de los años 20. Al transcurrir en el mismo periodo de tiempo que la festividad “Halloween”, se hará un evento exclusivo con una ambientación oscura y siniestra pero divertida. También, en esta temporada llegarán un nuevo enemigo, Jazzoo Bouba, que, podrá alterar el ritmo del juego, cuando aparezca en el escenario, las secuencias de los enemigos aparecidos por pantalla, cambiarán aleatoriamente, haciendo que el jugador siempre se mantenga alerta. Y un nuevo personaje, The Maestro, un personaje algo elegante que traerá consigo una nueva habilidad, (Ralentización del ritmo), con la que podrá ralentizar la velocidad con la que deberá pulsar las secuencias de botones.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TOJ1.png" width="150">
