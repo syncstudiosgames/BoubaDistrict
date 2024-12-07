@@ -71,18 +71,13 @@ Tras un año del lanzamiento del videojuego, esta temporada mostrará el lado m�
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TCE3.png" width="150">
 </p>
 
-##### *Abril - Temporada 2 (Fairy garden)*
-En esa temporada, los jugadores explorarán un bosque tomado por los Boubas, los cuales han adoptado un aspecto algo feérico (alas, flores, etc.), y cantan al son. Los usuarios tendrán que enfrentarse a un nuevo Bouba, el Fairy Bouba, el cual presentará unas alas de hada y un nuevo modificador: polvos de hada. El jugador sufrirá una neblina temporal en la pantalla que dificultará la visión de las secuencias a pulsar. Esta temporada añadirá un nuevo personaje, el Fairy Catcher, que, junto a una nueva habilidad especial (Desactivador de Modificadores), podrá capturar a todos los Boubas sin miedo al poder del nuevo enemigo.
-
-**Contenido:**
-- Cosméticos (Feéricos con toques de naturaleza).
-- Nuevo enemigo (Fairy Bouba).
-- Nuevo personaje (Fairy Catcher).
+##### *Abril - Temporada 2 (Bumpin' to the Jazz Beat)*
+Con esta temporada, los Boubas sacarán sus mejores galas, adoptando nuevos y elegantes accesorios (sombreros, boas,...), adaptándose a la moda de los años 20. Al transcurrir en el mismo periodo de tiempo que la festividad “Halloween”, se hará un evento exclusivo con una ambientación oscura y siniestra pero divertida. También, en esta temporada llegarán un nuevo enemigo, Jazzoo Bouba, que, podrá alterar el ritmo del juego, cuando aparezca en el escenario, las secuencias de los enemigos aparecidos por pantalla, cambiarán aleatoriamente, haciendo que el jugador siempre se mantenga alerta. Y un nuevo personaje, The Maestro, un personaje algo elegante que traerá consigo una nueva habilidad, (Ralentización del ritmo), con la que podrá ralentizar la velocidad con la que deberá pulsar las secuencias de botones.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAF1.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAF2.png" width="150">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAF3.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TOJ1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TOJ2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TOJ3.png" width="150">
 </p>
 
 ##### *Julio - Temporada 3 (Boubas at the pool!)*
@@ -98,10 +93,22 @@ Temporada en la que los pequeños slimes presentarán un aspecto semejante al ag
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TRJ3.png" width="150">
 </p>
 
-##### *Octubre - Temporada 4 (Bumpin' to the Jazz Beat)*
-Con esta temporada, los Boubas sacarán sus mejores galas, adoptando nuevos y elegantes accesorios (sombreros, boas,...), adaptándose a la moda de los años 20. Al transcurrir en el mismo periodo de tiempo que la festividad “Halloween”, se hará un evento exclusivo con una ambientación oscura y siniestra pero divertida. También, en esta temporada llegarán un nuevo enemigo, Jazzoo Bouba, que, podrá alterar el ritmo del juego, cuando aparezca en el escenario, las secuencias de los enemigos aparecidos por pantalla, cambiarán aleatoriamente, haciendo que el jugador siempre se mantenga alerta. Y un nuevo personaje, The Maestro, un personaje algo elegante que traerá consigo una nueva habilidad, (Ralentización del ritmo), con la que podrá ralentizar la velocidad con la que deberá pulsar las secuencias de botones.
+##### *Octubre - Temporada 4 (Fairy garden)*
+En esa temporada, los jugadores explorarán un bosque tomado por los Boubas, los cuales han adoptado un aspecto algo feérico (alas, flores, etc.), y cantan al son. Los usuarios tendrán que enfrentarse a un nuevo Bouba, el Fairy Bouba, el cual presentará unas alas de hada y un nuevo modificador: polvos de hada. El jugador sufrirá una neblina temporal en la pantalla que dificultará la visión de las secuencias a pulsar. Esta temporada añadirá un nuevo personaje, el Fairy Catcher, que, junto a una nueva habilidad especial (Desactivador de Modificadores), podrá capturar a todos los Boubas sin miedo al poder del nuevo enemigo.
 
-**Evento (Halloween)**: Para celebrar esta festividad, se iniciará un evento de 1 semana, en el que alguno de los mapas clásicos cambiará de aspecto para tomar uno más tenebroso. Además, se le propondrán a los jugadores 5 misiones especiales, que al completarlas, se les recompensará con diferentes cosméticos (dos accesorios para los Boubas y un icono de jugador) exclusivos del evento.
+**Contenido:**
+- Cosméticos (Feéricos con toques de naturaleza).
+- Nuevo enemigo (Fairy Bouba).
+- Nuevo personaje (Fairy Catcher).
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAF1.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAF2.png" width="150">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/TAF3.png" width="150">
+</p>
+
+###### **Evento (Halloween)**
+ Para celebrar esta festividad, se iniciará un evento de 1 semana, en el que alguno de los mapas clásicos cambiará de aspecto para tomar uno más tenebroso. Además, se le propondrán a los jugadores 5 misiones especiales, que al completarlas, se les recompensará con diferentes cosméticos (dos accesorios para los Boubas y un icono de jugador) exclusivos del evento.
 
 - Nuevo enemigo (Jazoo Bouba) y nuevo personaje (The Maestro).
 
@@ -940,48 +947,41 @@ Además, enfrenté dificultades relacionadas con el proceso de guardado en Unity
 
 ## Trabajo grupal
 ## 10.1 Lo que salió bien
-### 10.1.1 La apariencia sí importa
-El apartado visual fue uno de los puntos más destacados del juego, El diseño logró capturar la esencia vibrante de Harmonia y tuvo una muy buena recepción. Conseguimos hilar los diferentes elementos para que se mantuviera una cohesión visual entre las interfaces y el gameplay.
+### 10.1.2 Expansión del universo
+La fase de beta testing fue uno de los puntos clave en esta última fase del desarrollo del proyecto. Nos permitió identificar una gran cantidad de bugs y recibir sugerencias valiosas sobre diferentes aspectos del diseño y la jugabilidad. Esto nos proporcionó una visión clara de las áreas que requerían mayor atención antes del lanzamiento.
 
-El equipo ha conseguido crear un estilo propio y característico. Uno de los principales retos del desarrollo era poder extrapolar esa personalidad a diferentes estéticas y no perder la esencia. 
+Gracias al feedback recopilado durante la beta, pudimos establecer objetivos específicos y prioritarios antes de continuar con el desarrollo. Esto incluyó ajustar la dificultad de algunos niveles, y la vida del jugador, y revisar algunas interfaces y mejorar la UX. Tener estos objetivos bien definidos desde temprano nos ayudó a optimizar los recursos y trabajar de manera más eficiente.
 
-La introducción de un nuevo escenario y personajes ha enriquecido la experiencia y conseguido conectar con los jugadores. La estética cyberpunk aporta un toque novedoso y contrasta con el primer escenario. Con él hemos podido mostrar la base de nuestro modelo de negocio, la cual se centra en ir ampliando el contenido cada cierto tiempo.
+Después de las pruebas, continuamos recibiendo comentarios de que nos permitió realizar ajustes adicionales y garantizar que la experiencia final estuviera alineada con las expectativas de los jugadores.
 
-### 10.1.2 Divide y vencerás
-La efectiva división del trabajo ha sido clave para el proyecto. A pesar de ser un equipo multidisciplinar, conseguimos repartir las responsabilidades de manera que cada miembro pudiera profundizar en lo que mejor se le da.
+Esta fase no solo reforzó la calidad técnica del producto. Al final, la fase de beta testing no fue solo una etapa de prueba, sino una oportunidad paraconocer las opiniones de gente con experiencia como consumidores de videojuegos y pulir el proyecto. 
 
-Al asignar tareas específicas a cada uno, se ha logrado que cada área recibiera la atención necesaria. Esto nos ha permitido seguir desarrollando el juego con un enfoque detallista. De esta manera, conseguimos mantener el estándar de calidad que esperábamos cumplir y acercarnos lo máximo posible a un juego profesional. 
+### 10.1.2 Expansión del universo
+El apunte que más se repitió en las pruebas de beta-testing fue que el juego necesitaba la inclusión de más contenido, ya que se hacía corto y algo repetitivo. Los nuevos personajes y escenarios estaban diseñados y modelados pero no estaban implementados en el juego. Al haber elegido el modelo de negocio freemium, nos fue sencillo desarrollar nuevas temáticas y temporadas para generar más contenido para el jsuego.
 
-La especialización de tareas nos permitió identificar y corregir posibles debilidades. Este enfoque proactivo redujo el riesgo de errores acumulativos y permitió invertir más tiempo en pulir aspectos clave del juego,
+Logramos enriquecer significativamente la experiencia del jugador una vez integramos todo el contenido. Además desarrollamos otro escenario con temática Jazz y otros tres personajes diferentes. Esto no solo añadió variedad visual y narrativa, sino que también trajo consigo nuevas canciones y respondió a la falta de variedad en cuanto a la jugabilidad de Bouba District. 
 
-### 10.1.3 Un juego para todos
-El hecho de haber conseguido adaptar el juego a dispositivos móviles ha sido muy importante a la hora de maximizar nuestro alcance y así conseguir el mayor feedback posible.
+En retrospectiva, la decisión de priorizar esta integración fue clave para mejorar el proyecto final. Ahora, el juego no solo ofrece una experiencia más completa y entretenida, sino que también se alinea mejor con la visión creativa original del proyecto. Los nuevos personajes aportan diversidad y carisma, mientras que los escenarios adicionales enriquecen la jugabilidad y evitan que se sienta demasiado repetitivo..
 
-Ha sido muy sencillo compartir el juego, ya que todo el mundo tiene un teléfono móvil a su alcance inmediato. Al no tener la misma disponibilidad que con un ordenador, sabemos que mucha gente no lo habría probado por falta de comodidad o por olvidarse al tener que esperarse a tener acceso a uno.
-
-Los móviles van ligados a la experiencia breve y casual que es Bouba District. Optamos por controles y navegación intuitiva, para que se pudiera disfrutar con facilidad y reducir cualquier tipo de sensación abrumadora provocada por controles complejos. Logramos crear un juego accesible, y llegar a una mayor audiencia de manera directa.
 
 ## 10.2 Lo que salió mal
-### 10.2.1 Pero, ¿cómo se juega?
-Uno de los contras de ser un equipo con experiencia como consumidores de videojuegos, es que asumimos ciertos códigos o maneras de comportarnos ante estos.
+### 10.2.1 Rehacer interfaces y navegación
 
-A pesar de contar con controles sencillos, observamos que los jugadores no se paraban a leer las instrucciones, o estas no quedaban lo suficientemente claras. Para evitar la confusión, implementamos un tutorial de práctica para entender las mecánicas de Bouba District.
+Al añadir más niveles y personajes, nos dimos cuenta de que la interfaz de usuario, que inicialmente había sido diseñada para el primer nivel, no encajaba bien con el nuevo contenido. Las interfaces estaban integradas en el diseño de ese primer escenario, lo que causó inconsistencias visuales cuando las aplicamos a los nuevos niveles. Esto nos obligó a rehacer casi todas las interfaces de usuario para que se adaptaran al estilo general que escogimos para el juego y no solamente a un nivel.
 
-Finalmente, conseguimos introducir las mecánicas de manera práctica, lo cual lo hace más memorable y entretenido que simplemente leer un texto. Aprendimos que es necesario conocer el punto de vista de gente externa al desarrollo y experimentar con jugadores no tan acostumbrados, y aún más si es una parte de nuestro público objetivo.
+También tuvimos que modificar el flujo de pantallas del juego. La cinemática se reproducía cada vez que el jugador quería comenzar una partida. Esto nos obligó a replantearnos la navegación para asegurarnos de que la cinemática solo se mostrara una vez al principio. Lo mismo sucedía con la selección de personaje. El jugador debía seleccionar al personaje cada vez que quería jugar. Para solucionarlo añadimos un botón de personalización en el menú inicial, y así reducir el número de pantallas por las que tiene que pasar el usuario hasta empezar a jugar.
 
-### 10.2.2 Un giro de guión inesperado
-Uno de los elementos que queríamos incorporar a Bouba District para mejorar la narrativa y la experiencia inmersiva del jugador fue una cinemática introductoria que explicara el contexto del juego. Esta implementación presentó varios problemas técnicos que nos causaron complicaciones durante el desarrollo.
+Aunque estas modificaciones resultaron ser necesarias, representaron un reto significativo y requirió ajustes importantes tanto en el diseño de las interfaces como en la lógica de navegación del juego. Esto nos ha permitido aprender cómo estructurar mejor el flujo de trabajo y las interfaces en fases de expansión futura.
 
-El problema ocurrió cuando, al intentar guardar y cargar el proyecto, la escena de la cinemática no se guardó correctamente. Aunque habíamos trabajado en la animación y la integración de la secuencia dentro del juego, algo salió mal en el proceso de guardado y la escena se perdió. Esto resultó en la necesidad de rehacerla desde cero, lo que retrasó parte de la producción.
+10.2.2 
 
-Aunque esta situación fue frustrante, también nos permitió mejorar ciertos aspectos de la cinemática. Una vez solucionado el problema, la cinemática se integró correctamente en el juego, y el proceso de desarrollo continuó con más seguridad en que este tipo de problemas no se repetirían.
+### 10.2.3 Clear goals are great . . . when they're realistic
+A pesar de que teníamos objetivos claros desde el inicio del proyecto, uno de los mayores desafíos fue mantenernos enfocados en lo más importante. Queríamos  revisar cada aspecto del juego, influenciados por la gran cantidad de sugerencias recibidas. 
 
-### 10.2.3 Demasiado fácil
-Uno de los problemas que observamos al ver a la gente probando, Bouba District fue un desajuste en el balance de la dificultad. Una vez comprendían los controles, el juego resultaba demasiado fácil. No había suficiente variación en la dificultad y no se perdía la necesidad de superarse a uno mismo.
+En muchas ocasiones, perdimos tiempo en áreas que no aportaban un impacto directo a la calidad o a la experiencia del jugador. Esto, combinado con el tiempo limitado del que disponíamos, nos llevó a una sobrecarga de tareas que no se podían completar de manera óptima. En lugar de centrarnos en los arreglos más críticos y en las funciones esenciales para la jugabilidad, a veces nos enfocamos en pequeños detalles que no tenían el mismo nivel de prioridad.
 
-Para darle complicar un poco el juego, se ajustaron varios parámetros de los Boubas. Por ejemplo, tiempo de aparición, velocidad con la que se acercan al jugador y complejidad de llas secuencias. Se implementó una progresión similar a una logarítmica. Esto quiere decir que la dificultad incrementa rápidamente al comienzo y se va aplanando cuanto más aguantas con vida.
+Esta diferencia entre nuestras ambiciones y la realidad del tiempo disponible fue un factor limitante. Con el tiempo limitado, debíamos ser más selectivos con las mejoras y ajustes a implementar. Este es un aspecto en el que definitivamente necesitamos mejorar para futuros proyectos, aprendiendo a gestionar mejor nuestras prioridades sin dejar de lado la calidad, pero con un enfoque más realista sobre los plazos y recursos disponibles.
 
-Tras realizar estos ajustes, el juego adquirió una curva de dificultad mucho más equilibrada. Los jugadores comenzaron a sentir que estaban avanzando y mejorando sus habilidades, lo que aumentó su motivación y les dio un sentido de logro.
 
 ## 10.3 Conclusión
 En esta etapa del desarrollo de Bouba District hemos aprendido varias lecciones. Es fundamental pedir opiniones externas y observar cómo se comportan los jugadores sin experiencia previa en el juego, ya que sus reacciones pueden revelar puntos ciegos que no habíamos considerado. Así conseguiremos seguir con el desarrollo de manera más intuitiva e inmersiva y generar experiencias disfrutables.
