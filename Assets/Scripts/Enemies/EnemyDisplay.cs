@@ -9,29 +9,31 @@ using UnityEngine.UI;
 public class EnemyDisplay : MonoBehaviour
 {
 
-    [SerializeField] public Canvas Canvas; 
+    [SerializeField] public Canvas _canvas; 
     [SerializeField] private float scaleMultiplier = 3f;
 
-    List<Note> _deathSequence;
+    List<Note>[] _deathSequence;
     NoteManager _noteManager;
 
     Image[] _noteImages;
 
     public bool isDead;
 
+    int _currentLivePointer;
+
     void Update()
     {
         if (Camera.main != null)
         {
-            Canvas.transform.LookAt(Camera.main.transform);
-            var newRotation = Quaternion.LookRotation(Camera.main.transform.position - Canvas.transform.position);
+            _canvas.transform.LookAt(Camera.main.transform);
+            var newRotation = Quaternion.LookRotation(Camera.main.transform.position - _canvas.transform.position);
             newRotation.y = 0;
             newRotation.z = 0;
-            Canvas.transform.rotation = newRotation;
+            _canvas.transform.rotation = newRotation;
         }
     }
 
-    public void SetUp(List<Note> deathSequence, NoteManager noteManager, bool renderSequence = true)
+    public void SetUp(List<Note>[] deathSequence, NoteManager noteManager, bool renderSequence = true)
     {
         _deathSequence = deathSequence;
         _noteManager = noteManager;
@@ -41,20 +43,38 @@ public class EnemyDisplay : MonoBehaviour
 
         if (renderSequence)
         {
-            _noteImages = RenderNoteSequence(deathSequence);
+            _noteImages = RenderNoteSequence(deathSequence[0]);
         }
         
     }
 
+    public void DisplayNextDeathSequence()
+    {
+        if (_currentLivePointer == _deathSequence.Length - 1) return;
+
+        ClearCanvas(_canvas);
+
+        _currentLivePointer++;
+        _noteImages = RenderNoteSequence(_deathSequence[_currentLivePointer]);
+    }
+
     public void HideSequence()
     {
-        Canvas.enabled = false;
+        _canvas.enabled = false;
+    }
+
+    void ClearCanvas(Canvas canvas)
+    {
+        foreach (Transform child in canvas.transform)
+        {
+            Destroy(child.gameObject);
+        }
     }
 
     Image[] RenderNoteSequence(List<Note> deathSequence)
     {
         // Configure canvas:
-        RectTransform canvasRect = Canvas.GetComponent<RectTransform>();
+        RectTransform canvasRect = _canvas.GetComponent<RectTransform>();
         float canvasWidth = canvasRect.rect.width;
         float canvasHeight = canvasRect.rect.height;
 
@@ -67,7 +87,7 @@ public class EnemyDisplay : MonoBehaviour
             Note note = deathSequence[i];
 
             GameObject noteImageObject = new GameObject("NoteImage");
-            noteImageObject.transform.SetParent(Canvas.transform);
+            noteImageObject.transform.SetParent(_canvas.transform);
             noteImageObject.transform.localScale = Vector3.one;
 
             images[i] = noteImageObject.AddComponent<Image>();
@@ -94,7 +114,7 @@ public class EnemyDisplay : MonoBehaviour
 
         // Two lists will be used:
         List<Note> noteBuffer = _noteManager.NoteBuffer;    // Notes input by the player.
-        List<Note> deathSequence = _deathSequence;          // The enemy's death sequence.
+        List<Note> deathSequence = _deathSequence[_currentLivePointer];          // The enemy's death sequence.
 
         if(noteBuffer.Count <= 0) return; // If the note buffer is empty return.
         if (_noteImages == null || _noteImages.Length == 0) return;
@@ -117,9 +137,9 @@ public class EnemyDisplay : MonoBehaviour
 
             while (noteBufferPointer < noteBuffer.Count && deathSequencePointer == lastIndexFound+1)
             {
-                if (_deathSequence[deathSequencePointer] == noteBuffer[noteBufferPointer])                              // If found:
+                if (deathSequence[deathSequencePointer] == noteBuffer[noteBufferPointer])                              // If found:
                 {
-                    _noteImages[deathSequencePointer].sprite = _deathSequence[deathSequencePointer].HighlightSprite;    // Highlight.
+                    _noteImages[deathSequencePointer].sprite = deathSequence[deathSequencePointer].HighlightSprite;    // Highlight.
                     AnimateHighlight(_noteImages[deathSequencePointer]);
 
                     lastIndexFound = deathSequencePointer;                                                              // Update last index found.
@@ -138,9 +158,9 @@ public class EnemyDisplay : MonoBehaviour
         if (_noteImages == null || _noteImages.Length == 0) return;
         if(isDead) return;
 
-        for(int i = 0; i < _deathSequence.Count; i++)
+        for(int i = 0; i < _deathSequence[_currentLivePointer].Count; i++)
         {
-            _noteImages[i].sprite = _deathSequence[i].Sprite;
+            _noteImages[i].sprite = _deathSequence[_currentLivePointer][i].Sprite;
         }
     }
 

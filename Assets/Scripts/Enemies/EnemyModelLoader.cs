@@ -27,7 +27,6 @@ public class EnemyModelLoader : MonoBehaviour
         int randomIndex = UnityEngine.Random.Range(0, enemyModels.Length);
         GameObject randomModel = enemyModels[randomIndex];
         splash = enemySplash[randomIndex];
-        Debug.Log(splash == null);
 
         if (modelHolder == null)
         {

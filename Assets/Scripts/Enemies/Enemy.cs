@@ -8,9 +8,12 @@ public class Enemy : MonoBehaviour
 {
     NoteManager _noteManager;
     EnemyManager _enemyManager;
-    //EnemyModelLoader _enemyModelLoader;
-    List<Note> _deathSequence = new List<Note>();
+
+    List<Note>[] _deathSequences;
+
     int _complexity;
+    int _lives;
+    int _currrentLivePointer = 0;
 
     [SerializeField] private EnemyDisplay _enemyDisplay;
     [SerializeField] EnemyModelLoader _enemyModelLoader;
@@ -20,11 +23,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject _splashEffect;
 
 
-    public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager, bool renderSequence = true)
+    public void SetUp(int complexity, NoteManager noteManager, EnemyManager enemyManager, int lives = 1, bool renderSequence = true)
     {
         _noteManager = noteManager;
         _enemyManager = enemyManager;
         _complexity = Mathf.Clamp(complexity, 1, 4);
+        _lives = lives;
         
         if(_enemyModelLoader != null)
         {
@@ -32,13 +36,13 @@ public class Enemy : MonoBehaviour
             _splashEffect = _enemyModelLoader.splash;
         }
 
-        CreateSequence();
+        CreateSequence(lives);
         _noteManager.OnNoteLogged += CheckSequence;
 
 
         if (_enemyDisplay != null)
         {
-            _enemyDisplay.SetUp(_deathSequence, _noteManager, renderSequence);
+            _enemyDisplay.SetUp(_deathSequences, _noteManager, renderSequence);
         }
         else
         {
@@ -51,21 +55,19 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void Print()
+    void CreateSequence(int lives)
     {
-        Debug.Log($"Enemy. Complexity: {_complexity}, Death Sequence:");
-        foreach (Note note in _deathSequence)
-        {
-            Debug.Log(note);
-        }
-    }
+        _deathSequences = new List<Note>[lives];
 
-    void CreateSequence()
-    {
-        for (int i = 0; i < _complexity; i++)
+        for(int i = 0; i < lives; i++)
         {
-            _deathSequence.Add(GetRandomNote());
+            _deathSequences[i] = new List<Note>();
+            for (int j = 0; j < _complexity; j++)
+            {
+                _deathSequences[i].Add(GetRandomNote());
+            }
         }
+        
     }
 
     Note GetRandomNote()
@@ -78,15 +80,29 @@ public class Enemy : MonoBehaviour
     {
         var noteBuffer = _noteManager.NoteBuffer;
 
-
         if (noteBuffer.Count < _complexity) return;
 
-        for (int myNote = 0, bufferNote = noteBuffer.Count - _complexity; myNote < _deathSequence.Count; myNote++, bufferNote++)
+        List<Note> currentDeathSequence = _deathSequences[_currrentLivePointer];
+
+        for (int myNote = 0, bufferNote = noteBuffer.Count - _complexity; myNote < currentDeathSequence.Count; myNote++, bufferNote++)
         {
-            if (_deathSequence[myNote] != noteBuffer[bufferNote]) return;
+            if (currentDeathSequence[myNote] != noteBuffer[bufferNote]) return;
         }
 
-        Restore();
+        // If this part of the code is reached the death sequence was complete:
+
+        if(_currrentLivePointer >= _lives -1)
+        {
+            Restore();
+        }
+        else
+        {
+            _enemyDisplay.DisplayNextDeathSequence();
+            _currrentLivePointer++;
+        }
+
+
+        
     }
 
     void OnTriggerEnter(Collider other)

@@ -12,6 +12,8 @@ public class EnemyManager : MonoBehaviour
     #region Variables & Properties
 
     [SerializeField] List<GameObject> _enemiesPrefabs;
+    [SerializeField] List<GameObject> _enemyBossesPrefabs;
+
     [SerializeField] NoteManager _noteManager;
 
     [SerializeField] GameObject _enemySpawner;
@@ -88,6 +90,7 @@ public class EnemyManager : MonoBehaviour
     }
     void StartSpawning()
     {
+        SpawnEnemyBoss();
         StartCoroutine(SpawningCoroutine());
     }
 
@@ -122,17 +125,22 @@ public class EnemyManager : MonoBehaviour
 
         return SpawnEnemy(enemyPrefab, position, complexity, moveSpeed);
     }
-    GameObject SpawnEnemy(GameObject prefab, Vector3 pos, int complexity, float moveSpeed, bool renderSequence = true)
+    GameObject SpawnEnemy(GameObject prefab, Vector3 pos, int complexity, float moveSpeed, int lives = 1, bool renderSequence = true)
     {
         var enemyGO = Instantiate(prefab, pos, Quaternion.identity);
-        enemyGO.GetComponent<Enemy>().SetUp(complexity, _noteManager, this, renderSequence);
+        enemyGO.GetComponent<Enemy>().SetUp(complexity, _noteManager, this, lives, renderSequence);
         enemyGO.GetComponent<EnemyController>().SetUp(moveSpeed);
         _onEnemySpawned?.Invoke();
         return enemyGO;
     }
+    GameObject SpawnEnemyBoss(int bossIndex = 0)
+    {
+        var pos = GetRandomPositionAtSpawn();
+        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 2, 10, 3);
+    }
     public void SpawnSimpleEnemy()
     {
-        SpawnEnemy(_enemiesPrefabs[0], GetRandomPositionAtSpawn(), 1, 10, false);
+        SpawnEnemy(_enemiesPrefabs[0], GetRandomPositionAtSpawn(), 1, 10, 1, false);
     }
     public void SpawnEnemyWithComplexity(int complexity)
     {

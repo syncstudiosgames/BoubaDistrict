@@ -6296,6 +6296,8 @@ MonoBehaviour:
   _enemiesPrefabs:
   - {fileID: 3971569818686494927, guid: 0026da0c63e507247b4ea1ee7819ba03, type: 3}
   - {fileID: 3971569818686494927, guid: d082561a2d6563642bc05c70639a4865, type: 3}
+  _enemyBossesPrefabs:
+  - {fileID: 3971569818686494927, guid: 8675ca63dba68604b8a9be92a5b08a4b, type: 3}
   _noteManager: {fileID: 726460152}
   _enemySpawner: {fileID: 236771641}
   _waitForTutorial: 0
