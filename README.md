@@ -956,8 +956,8 @@ Después de las pruebas, continuamos recibiendo comentarios de que nos permitió
 
 Esta fase no solo reforzó la calidad técnica del producto. Al final, la fase de beta testing no fue solo una etapa de prueba, sino una oportunidad paraconocer las opiniones de gente con experiencia como consumidores de videojuegos y pulir el proyecto. 
 
-### 10.1.2 Expansión del universo
-El apunte que más se repitió en las pruebas de beta-testing fue que el juego necesitaba la inclusión de más contenido, ya que se hacía corto y algo repetitivo. Los nuevos personajes y escenarios estaban diseñados y modelados pero no estaban implementados en el juego. Al haber elegido el modelo de negocio freemium, nos fue sencillo desarrollar nuevas temáticas y temporadas para generar más contenido para el jsuego.
+### 10.1.2 BDCU (Bouba District  Cinematic Universe)
+El apunte que más se repitió en las pruebas de beta-testing fue que el juego necesitaba la inclusión de más contenido, ya que se hacía corto y algo repetitivo. Los nuevos personajes y escenarios estaban diseñados y modelados pero no estaban implementados en el juego. Al haber elegido el modelo de negocio freemium, con la posibilidad de optar a más contenido a través de pagos, nos fue sencillo integrar nuevas temáticas y temporadas.
 
 Logramos enriquecer significativamente la experiencia del jugador una vez integramos todo el contenido. Además desarrollamos otro escenario con temática Jazz y otros tres personajes diferentes. Esto no solo añadió variedad visual y narrativa, sino que también trajo consigo nuevas canciones y respondió a la falta de variedad en cuanto a la jugabilidad de Bouba District. 
 
@@ -965,8 +965,7 @@ En retrospectiva, la decisión de priorizar esta integración fue clave para mej
 
 
 ## 10.2 Lo que salió mal
-### 10.2.1 Rehacer interfaces y navegación
-
+### 10.2.1 
 Al añadir más niveles y personajes, nos dimos cuenta de que la interfaz de usuario, que inicialmente había sido diseñada para el primer nivel, no encajaba bien con el nuevo contenido. Las interfaces estaban integradas en el diseño de ese primer escenario, lo que causó inconsistencias visuales cuando las aplicamos a los nuevos niveles. Esto nos obligó a rehacer casi todas las interfaces de usuario para que se adaptaran al estilo general que escogimos para el juego y no solamente a un nivel.
 
 También tuvimos que modificar el flujo de pantallas del juego. La cinemática se reproducía cada vez que el jugador quería comenzar una partida. Esto nos obligó a replantearnos la navegación para asegurarnos de que la cinemática solo se mostrara una vez al principio. Lo mismo sucedía con la selección de personaje. El jugador debía seleccionar al personaje cada vez que quería jugar. Para solucionarlo añadimos un botón de personalización en el menú inicial, y así reducir el número de pantallas por las que tiene que pasar el usuario hasta empezar a jugar.
@@ -975,7 +974,7 @@ Aunque estas modificaciones resultaron ser necesarias, representaron un reto sig
 
 10.2.2 
 
-### 10.2.3 Clear goals are great . . . when they're realistic
+### 10.2.3 Los objetivos están bien... si son realistas
 A pesar de que teníamos objetivos claros desde el inicio del proyecto, uno de los mayores desafíos fue mantenernos enfocados en lo más importante. Queríamos  revisar cada aspecto del juego, influenciados por la gran cantidad de sugerencias recibidas. 
 
 En muchas ocasiones, perdimos tiempo en áreas que no aportaban un impacto directo a la calidad o a la experiencia del jugador. Esto, combinado con el tiempo limitado del que disponíamos, nos llevó a una sobrecarga de tareas que no se podían completar de manera óptima. En lugar de centrarnos en los arreglos más críticos y en las funciones esenciales para la jugabilidad, a veces nos enfocamos en pequeños detalles que no tenían el mismo nivel de prioridad.
@@ -984,8 +983,3 @@ Esta diferencia entre nuestras ambiciones y la realidad del tiempo disponible fu
 
 
 ## 10.3 Conclusión
-En esta etapa del desarrollo de Bouba District hemos aprendido varias lecciones. Es fundamental pedir opiniones externas y observar cómo se comportan los jugadores sin experiencia previa en el juego, ya que sus reacciones pueden revelar puntos ciegos que no habíamos considerado. Así conseguiremos seguir con el desarrollo de manera más intuitiva e inmersiva y generar experiencias disfrutables.
-
-Además, es importante tener en cuenta que pueden surgir problemas técnicos imprevistos que retrasen el proyecto, como los que experimentamos con la cinemática y el balance de dificultad. Estos contratiempos nos recordaron la importancia de prever posibles obstáculos y mantener la flexibilidad para adaptarnos.
-
-A pesar de los desafíos, la división efectiva del trabajo y la dedicación a tareas específicas nos permitieron centrarnos en los detalles y mantener la calidad de Bouba District. Al haber completado la mayoría del trabajo técnico en la versión anterior, pudimos dedicar el tiempo necesario a afinar aspectos importantes, como la jugabilidad, la estética y la narrativa. Todo esto c
