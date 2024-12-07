@@ -567,7 +567,7 @@ El segundo nivel transporta al jugador a un entorno futurista. La escena se desa
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="600">
 </p>
 
-### Nivel 3 - Soulwood
+### 4.4.3 Nivel 3 - Soulwood
 El tercer nivel de Bouba District lleva al jugador a un nostálgico barrio urbano inspirado en el mundo del jazz clásico. Está situado en una cálida ciudad, iluminada por luces doradas y blancas que provienen de los carteles, focos e iluminación interior de los edificios. Además de farolas, se encuentran vallas y paradas de autobús en sus aceras.
 
 <p align="center">
