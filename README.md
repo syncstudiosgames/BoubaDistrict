@@ -1,4 +1,4 @@
-<h1 align="center">Game Design Document Beta</h1>
+<h1 align="center">Game Design Document Gold Master</h1>
 <h2 align="center">Bouba District</h2>
 
 <p align="center">
