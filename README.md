@@ -641,10 +641,18 @@ Koko es una vocalista deslumbrante y llena de energía. Irradia carisma y pasió
 
 - **Descripción física:** Koko viste un vestido amarillo ajustado que destaca su figura y brilla bajo las luces del escenario. El cabello afro voluminoso es su rasgo más característico.
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Koko.PNG" width="300">
+</p>
+
 ### 5.2.7 Koke - Violonchelista
 Koke es un talentoso violonchelista cuyo talento y presencia en el escenario no dejan a nadie indiferente. Su energía es imponente, y su capacidad para mezclar la tradición con la innovación lo convierte en un artista excepcional.
 
 - **Descripción física:** Koke es un hombre alto, de complexión delgada. Su cabello corto y bien cuidado es de un negro azabache, y su camisa blanca, tirantes negros y elegantes pantalones de vestir le dan un aire sofisticado y profesional.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Koke.PNG" width="300">
+</p>
 
 ### 5.2.8 Kuko - Trompetista
 
@@ -652,6 +660,9 @@ Kuko es un trompetista de espíritu alegre y contagioso, cuya música refleja su
 
 - **Descripción física:** Kuko es bajito, con una figura algo robusta. Viste siempre con una camisa naranja estampada, acompañada de tirantes y unos pantalones de vestir marrón claro, logrando un look que mezcla lo retro y lo alegre. 
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kuko.PNG" width="300">
+</p>
 
 ### 5.2.6 Boubas
 Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, estos pequeños son de colores llamativos y diferentes permitiendo una diferenciación rápida entre ellos. También presentan siluetas variadas que facilitan su reconocimiento, aunque estas diferencias físicas también pueden repercutir en las habilidades que presentan.
