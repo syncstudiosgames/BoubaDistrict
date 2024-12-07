@@ -563,11 +563,15 @@ El nivel principal de Bouba District transcurre en un entorno urbano inspirado e
 ### 4.4.2 Nivel 2 - Synthesia
 El segundo nivel transporta al jugador a un entorno futurista. La escena se desarrolla en una ciudad nocturna, iluminada por los neones cian, morado y rosas, que contrastan con el gris del asfalto y las paredes. Los edificios están llenos de carteles y elementos luminosos. La basura y las vallas rellenan las calles y añaden ambiente al nivel. 
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="600">
+</p>
+
 ### Nivel 3 - Soulwood
 El tercer nivel de Bouba District lleva al jugador a un nostálgico barrio urbano inspirado en el mundo del jazz clásico. Está situado en una cálida ciudad, iluminada por luces doradas y blancas que provienen de los carteles, focos e iluminación interior de los edificios. Además de farolas, se encuentran vallas y paradas de autobús en sus aceras.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="600">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelJazz.PNG" width="600">
 </p>
 
 A lo largo del juego, se asignarán misiones secundarias como completar un nivel sin fallar ninguna secuencia, derrotar a un número específico de Boubas en un tiempo limitado o superar un nivel utilizando solo tres de los botones.
@@ -725,7 +729,13 @@ Synthesia es la ciudad vecina de Harmonia, donde la modernidad y la decadencia u
 
 Soulwood es una ciudad vibrante donde el jazz es el alma de la vida diaria. La música fluye en cada rincón. Sus calles adoquinadas, edificios de ladrillo marrón y balcones evocan una era nostálgica, mientras los clubes de música y luces doradas de neón iluminan las noches.
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Soulwood1.jpeg" width="700">
+</p>
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Soulwood2.jpeg" width="700">
+</p>
 
 # 6. Arte
 ## 6.1 Estética general del juego
