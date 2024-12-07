@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class CircleDrawer : MonoBehaviour
 {
-    [SerializeField] ExplosiveEnemy _explosiveEnemy;
     LineRenderer lineRenderer;
 
     public int subdivisions = 10;
 
-    private void Start()
+    public void DrawCircle(float radius)
     {
         lineRenderer = GetComponent<LineRenderer>();
 
@@ -20,7 +19,6 @@ public class CircleDrawer : MonoBehaviour
         }
 
         float angleStep = 2f * Mathf.PI / subdivisions;
-        float radius = _explosiveEnemy._explosiveRadius;
 
         lineRenderer.positionCount = subdivisions;
 

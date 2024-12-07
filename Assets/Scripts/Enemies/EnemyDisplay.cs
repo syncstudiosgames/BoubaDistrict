@@ -23,6 +23,7 @@ public class EnemyDisplay : MonoBehaviour
     Image[] _livesImages;
 
     public bool isDead;
+    bool _noDeathSequenceRendered;
 
     int _currentLivePointer;
 
@@ -60,17 +61,29 @@ public class EnemyDisplay : MonoBehaviour
         
     }
 
-    public void DisplayNextDeathSequence()
+
+    public void DisplayNextDeathSequence(float delay)
+    {
+        ClearCanvasAndUpdateLife();
+        Invoke("DisplayNextDeathSequence", delay);
+    }
+    void ClearCanvasAndUpdateLife()
+    {
+        ClearCanvas(_canvas);
+        _livesImages[_currentLivePointer].gameObject.SetActive(false);
+        _noDeathSequenceRendered = true;
+    }
+    void DisplayNextDeathSequence()
     {
         if (_currentLivePointer == _deathSequences.Length - 1) return;
-
-        ClearCanvas(_canvas);
 
         _currentLivePointer++;
         _noteImages = RenderNoteSequence(_deathSequences[_currentLivePointer]);
 
-        _livesImages[_currentLivePointer].gameObject.SetActive(false);
+        _noDeathSequenceRendered = false;
     }
+    
+    
 
     public void HideSequence()
     {
@@ -167,6 +180,7 @@ public class EnemyDisplay : MonoBehaviour
 
         if(noteBuffer.Count <= 0) return; // If the note buffer is empty return.
         if (_noteImages == null || _noteImages.Length == 0) return;
+        if(_noDeathSequenceRendered) return;
 
         // The note buffer pointer points to the note in the note buffer that is currently being examined.
         // It starts deathSequence.Count positions before the last element in the buffer, but not less than 0:
@@ -206,8 +220,9 @@ public class EnemyDisplay : MonoBehaviour
     {
         if (_noteImages == null || _noteImages.Length == 0) return;
         if(isDead) return;
+        if (_noDeathSequenceRendered) return;
 
-        for(int i = 0; i < _deathSequences[_currentLivePointer].Count; i++)
+        for (int i = 0; i < _deathSequences[_currentLivePointer].Count; i++)
         {
             _noteImages[i].sprite = _deathSequences[_currentLivePointer][i].Sprite;
         }

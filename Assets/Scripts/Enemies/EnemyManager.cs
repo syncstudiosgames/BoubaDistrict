@@ -128,15 +128,14 @@ public class EnemyManager : MonoBehaviour
     GameObject SpawnEnemy(GameObject prefab, Vector3 pos, int complexity, float moveSpeed, int lives = 1, bool renderSequence = true)
     {
         var enemyGO = Instantiate(prefab, pos, Quaternion.identity);
-        enemyGO.GetComponent<Enemy>().SetUp(complexity, _noteManager, this, lives, renderSequence);
-        enemyGO.GetComponent<EnemyController>().SetUp(moveSpeed);
+        enemyGO.GetComponent<Enemy>().SetUp(complexity, moveSpeed, _noteManager, this, lives, renderSequence);
         _onEnemySpawned?.Invoke();
         return enemyGO;
     }
     GameObject SpawnEnemyBoss(int bossIndex = 0)
     {
         var pos = GetRandomPositionAtSpawn();
-        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 4, 10, 3);
+        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 4, 5, 3);
     }
     public void SpawnSimpleEnemy()
     {

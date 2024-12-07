@@ -6,7 +6,14 @@ public class ExplosiveEnemy : Enemy
 {
     public float _explosiveRadius;
 
+    [SerializeField] CircleDrawer _circleDrawer;
+
     bool _restoring;
+
+    private void Start()
+    {
+        _circleDrawer.DrawCircle(_explosiveRadius);
+    }
 
     public void Explode()
     {
