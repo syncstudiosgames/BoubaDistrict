@@ -3496,54 +3496,6 @@ Transform:
   - {fileID: 241717826}
   m_Father: {fileID: 111710056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &923032124
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 923032126}
-  - component: {fileID: 923032125}
-  m_Layer: 0
-  m_Name: CharacterSelectionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &923032125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923032124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32d007c72864ac42b5e797eb0bd1fd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!4 &923032126
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923032124}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2055622, y: 1.5951189, z: 25.531528}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &923869882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4791,7 +4743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1135752385
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5153,7 +5105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1202533598
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5453,13 +5405,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1334791169}
+  - component: {fileID: 1334791170}
   m_Layer: 5
   m_Name: arrows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1334791169
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5483,6 +5436,21 @@ RectTransform:
   m_AnchoredPosition: {x: -0.012, y: 209}
   m_SizeDelta: {x: 1080, y: 453.8605}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1334791170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334791168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03de723b1cb09144db2abf2f0b17fe72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charactersParent: {fileID: 0}
+  characters: []
+  selectedCharacter: 0
 --- !u!1 &1361329544
 GameObject:
   m_ObjectHideFlags: 0
@@ -5624,6 +5592,7 @@ GameObject:
   - component: {fileID: 1374243882}
   - component: {fileID: 1374243881}
   - component: {fileID: 1374243885}
+  - component: {fileID: 1374243886}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5731,6 +5700,18 @@ MonoBehaviour:
   nameInputField: {fileID: 2066208172}
   displayText: {fileID: 2015827900}
   acceptButton: {fileID: 117929951}
+--- !u!114 &1374243886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374243880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d925e6fea5ddd6e4a8c1489dca2ee7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1449081383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9583,8 +9564,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1374243886}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: Logo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2092197860}
-        m_TargetAssemblyTypeName: characterSelection, Assembly-CSharp
+        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -9672,5 +9665,4 @@ SceneRoots:
   - {fileID: 2092197861}
   - {fileID: 1374243884}
   - {fileID: 455330008}
-  - {fileID: 923032126}
   - {fileID: 294701808}

@@ -65,6 +65,14 @@ public class Menu : MonoBehaviour
         Debug.Log("going to ranking");
         StartCoroutine(LoadSceneWithDelay("RankingUlt"));
     }
+
+    public void mapSelection()
+    {
+        Debug.Log("going to maps");
+        StartCoroutine(LoadSceneWithDelay("mapSelection"));
+    }
+
+
     // Corutina para esperar un delay antes de cambiar de escena
     private IEnumerator LoadSceneWithDelay(string sceneName)
     {

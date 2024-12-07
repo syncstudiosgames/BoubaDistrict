@@ -46,6 +46,6 @@ public class CharacterSelection : MonoBehaviour
         CharacterSelectionManager.Instance.SelectCharacter(characters[selectedCharacter]);
 
         // Cargar la escena del juego
-        SceneManager.LoadScene("Loading2");
+        //SceneManager.LoadScene("Loading2");
     }
 }

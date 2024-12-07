@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Cinematica.unity
+    guid: beecc0fa97b78eb4a834425204175614
+  - enabled: 1
     path: Assets/Scenes/Logo.unity
     guid: 56c26f76534ece9418321de5db555416
   - enabled: 1
@@ -27,9 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading.unity
     guid: a4a213500dc489243bad1ec27d4e66d2
   - enabled: 1
-    path: Assets/Scenes/Cinematica.unity
-    guid: beecc0fa97b78eb4a834425204175614
-  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 055bfead56d63a442b76d36c92063056
   - enabled: 1
@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuInicio.unity
     guid: 08d72e3dc1c39174a849cadebb6cb907
+  - enabled: 1
+    path: Assets/Scenes/mapSelection.unity
+    guid: e5cd9d9f1f426ff4bb5eacdea755c3e6
   m_configObjects: {}
