@@ -556,6 +556,9 @@ El nivel principal de Bouba District transcurre en un entorno urbano inspirado e
 ### 4.4.2 Nivel 2 - Synthesia
 El segundo nivel transporta al jugador a un entorno futurista. La escena se desarrolla en una ciudad nocturna, iluminada por los neones cian, morado y rosas, que contrastan con el gris del asfalto y las paredes. Los edificios están llenos de carteles y elementos luminosos. La basura y las vallas rellenan las calles y añaden ambiente al nivel. 
 
+### Nivel 3 - Soulwood
+El tercer nivel de Bouba District lleva al jugador a un nostálgico barrio urbano inspirado en el mundo del jazz clásico. Está situado en una cálida ciudad, iluminada por luces doradas y blancas que provienen de los carteles, focos e iluminación interior de los edificios. Además de farolas, se encuentran vallas y paradas de autobús en sus aceras.
+
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/NivelCyberpunk.PNG" width="600">
 </p>
@@ -624,6 +627,23 @@ Kika es una joven carismática con una voz capaz de cautivar a cualquiera que la
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kika.PNG" width="300">
 </p>
+
+### 5.2.5 Koke - violonchelista
+Koke es un talentoso violonchelista cuyo talento y presencia en el escenario no dejan a nadie indiferente. Su energía es imponente, y su capacidad para mezclar la tradición con la innovación lo convierte en un artista excepcional.
+
+- **Descripción física:** Koke es un hombre alto, de complexión delgada. Su cabello corto y bien cuidado es de un negro azabache, y su camisa blanca, tirantes negros y elegantes pantalones de vestir le dan un aire sofisticado y profesional.
+
+### 5.2.4 Koko - vocalista
+Koko es una vocalista deslumbrante y llena de energía. Irradia carisma y pasión. Su estilo musical combina ritmos vibrantes de soul y jazz. Con una voz potente y matizada, Koko sabe cómo convertirse en el alma de cada presentación.
+
+- **Descripción física:** Koko viste un vestido amarillo ajustado que destaca su figura y brilla bajo las luces del escenario. El cabello afro voluminoso es su rasgo más característico.
+
+### 5.2.4 Kuko - trompetista
+
+Kuko es un trompetista de espíritu alegre y contagioso, cuya música refleja su personalidad chispeante. Es el corazón del grupo, aportando siempre buen humor y un toque único en cada actuación.
+
+- **Descripción física:** Kuko es bajito, con una figura algo robusta. Viste siempre con una camisa naranja estampada, acompañada de tirantes y unos pantalones de vestir marrón claro, logrando un look que mezcla lo retro y lo alegre. 
+
 
 ### 5.2.6 Boubas
 Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, estos pequeños son de colores llamativos y diferentes permitiendo una diferenciación rápida entre ellos. También presentan siluetas variadas que facilitan su reconocimiento, aunque estas diferencias físicas también pueden repercutir en las habilidades que presentan.
@@ -694,6 +714,10 @@ Synthesia es la ciudad vecina de Harmonia, donde la modernidad y la decadencia u
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Synthesia2.PNG" width="700">
 </p>
+
+Soulwood es una ciudad vibrante donde el jazz es el alma de la vida diaria. La música fluye en cada rincón. Sus calles adoquinadas, edificios de ladrillo marrón y balcones evocan una era nostálgica, mientras los clubes de música y luces doradas de neón iluminan las noches.
+
+
 
 # 6. Arte
 ## 6.1 Estética general del juego
