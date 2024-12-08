@@ -25,7 +25,9 @@ public class EnemyManager : MonoBehaviour
     public void AllowCeroEnemies(bool allowCeroEnemies) { _allowCeroEnemies = allowCeroEnemies; }
 
     Vector3 _lastSpawnningPosition;
-    [SerializeField] float _notSpawnningBracketLenth = 7;
+    [SerializeField] float _notSpawningBracketLength = 7;
+
+    bool _bossSpawned;
 
     int _currentNumOfEnemies = 0;
     event Action _currentNumEnemiesOnValueChange;
@@ -43,6 +45,8 @@ public class EnemyManager : MonoBehaviour
 
     public void EnemyCured(int healthPoints) { _onEnemyCured?.Invoke(healthPoints); }
     public event Action<int> OnEnemyCured { add { _onEnemyCured += value; } remove { _onEnemyCured -= value; } }
+
+    public void BossGone() { _bossSpawned = false; }
 
     // Spawning parameters:
     float _dificultyStep = 0.01f;
@@ -115,7 +119,16 @@ public class EnemyManager : MonoBehaviour
     {
         var enemyPrefab = _enemiesPrefabs[GetRandomIndexByChance(_typeOfEnemyChanche)];
 
-        var position = GetRandomPositionAtSpawn();
+        Vector3 position;
+        if (!_bossSpawned)
+        {
+            position = GetRandomPositionAtSpawn();
+        }
+        else
+        {
+            position = GetRandomPositionAtSpawnSides();
+        }
+        
 
         //Debug.Log(string.Join(", ", InterpolateArrayLog(_dificultyStep, _baseComplexityChance, MAX_COMPLEXITY_CHANCES)));
         var complexityChances = InterpolateArrayLog(_dificultyStep, _baseComplexityChance, MAX_COMPLEXITY_CHANCES);
@@ -134,7 +147,9 @@ public class EnemyManager : MonoBehaviour
     }
     GameObject SpawnEnemyBoss(int bossIndex = 0)
     {
-        var pos = GetRandomPositionAtSpawn();
+        _bossSpawned = true;
+
+        var pos = GetCenterPosAtSpawn();
         return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 2, 5, 3);
     }
     public void SpawnSimpleEnemy()
@@ -151,6 +166,10 @@ public class EnemyManager : MonoBehaviour
         if (_allowCeroEnemies) return;
         if (_currentNumOfEnemies == 0) SpawnEnemyRandom();
     }
+
+    #endregion
+
+    #region Utility Methods
     int GetRandomIndexByChance(float[] chances)
     {
         // Segment ballot.
@@ -192,10 +211,10 @@ public class EnemyManager : MonoBehaviour
 
             var lastSpawningX = _lastSpawnningPosition.x;
 
-            var leftX = lastSpawningX - _notSpawnningBracketLenth / 2;
+            var leftX = lastSpawningX - _notSpawningBracketLength / 2;
             if(leftX < leftBound) { pickLeft = false; sidePicked = true; }
 
-            var rightX = lastSpawningX + _notSpawnningBracketLenth / 2;
+            var rightX = lastSpawningX + _notSpawningBracketLength / 2;
             if (rightX > rightBound) { pickLeft = true; sidePicked = true; }
 
             if(!sidePicked) pickLeft = UnityEngine.Random.value < 0.5f;
@@ -208,6 +227,36 @@ public class EnemyManager : MonoBehaviour
 
         _lastSpawnningPosition = new Vector3(x, spawnerPos.y, spawnerPos.z);
 
+        return _lastSpawnningPosition;
+    }
+    Vector3 GetCenterPosAtSpawn()
+    {
+        var spawnerPos = _enemySpawner.transform.position;
+        var spawnerScale = _enemySpawner.transform.localScale;
+
+        return spawnerPos;
+    }
+    Vector3 GetRandomPositionAtSpawnSides()
+    {
+        float x;
+
+        float spawningDistanceAllowFromSide = 2f;
+
+        var spawnerPos = _enemySpawner.transform.position;
+        var spawnerScale = _enemySpawner.transform.localScale;
+        var leftBound = spawnerPos.x - spawnerScale.x / 2;
+        var rightBound = spawnerPos.x + spawnerScale.x / 2;
+
+        var leftX = leftBound + spawningDistanceAllowFromSide;
+        var rightX = rightBound - spawningDistanceAllowFromSide;
+
+        var pickLeft = UnityEngine.Random.value < 0.5f;
+        x = pickLeft ?
+            UnityEngine.Random.Range(leftBound, leftX)
+            :
+            UnityEngine.Random.Range(rightX, rightBound);
+
+        _lastSpawnningPosition = new Vector3(x, spawnerPos.y, spawnerPos.z);
         return _lastSpawnningPosition;
     }
 
