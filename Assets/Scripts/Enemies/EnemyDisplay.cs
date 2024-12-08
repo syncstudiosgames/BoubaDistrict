@@ -127,7 +127,8 @@ public class EnemyDisplay : MonoBehaviour
             float yPosition = 0;
 
             rectTransform.anchoredPosition = new Vector2(xPosition, yPosition);
-            rectTransform.localPosition = new Vector3(rectTransform.localPosition.x, rectTransform.localPosition.y, 0); 
+            rectTransform.localPosition = new Vector3(rectTransform.localPosition.x, rectTransform.localPosition.y, 0);
+            rectTransform.rotation = _canvas.transform.rotation;
 
             rectTransform.localScale = new Vector3(-1, 1, 1);
         }
@@ -148,11 +149,11 @@ public class EnemyDisplay : MonoBehaviour
 
         for (int i = 0; i < lives; i++)
         {
-            GameObject noteImageObject = new GameObject("LiveImage");
-            noteImageObject.transform.SetParent(livesDisplayCanvas.transform);
-            noteImageObject.transform.localScale = Vector3.one;
+            GameObject liveImageObject = new GameObject("LiveImage");
+            liveImageObject.transform.SetParent(livesDisplayCanvas.transform);
+            liveImageObject.transform.localScale = Vector3.one;
 
-            images[i] = noteImageObject.AddComponent<Image>();
+            images[i] = liveImageObject.AddComponent<Image>();
             images[i].sprite = _liveSprite;
 
             RectTransform rectTransform = images[i].GetComponent<RectTransform>();
@@ -163,6 +164,7 @@ public class EnemyDisplay : MonoBehaviour
 
             rectTransform.anchoredPosition = new Vector2(xPosition, yPosition);
             rectTransform.localPosition = new Vector3(rectTransform.localPosition.x, rectTransform.localPosition.y, 0);
+            rectTransform.rotation = livesDisplayCanvas.transform.rotation;
 
             rectTransform.localScale = new Vector3(-1, 1, 1);
         }
