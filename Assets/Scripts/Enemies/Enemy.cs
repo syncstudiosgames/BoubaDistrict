@@ -110,11 +110,6 @@ public class Enemy : MonoBehaviour
         if(_currrentLivePointer >= _lives -1)
         {
             Restore();
-
-            if(_lives > 1)  // It was a boss.
-            {
-                _enemyManager.BossGone();
-            }
         }
         else
         {
@@ -142,12 +137,6 @@ public class Enemy : MonoBehaviour
 
             LeanTween.value(gameObject, 1f, 0f, 1f).setOnUpdate((float value) =>                                                                      // Animate alpha.
             {
-                /*
-                var renderer = _modelHolder.GetComponentInChildren<MeshRenderer>();
-                Color color = renderer.material.color;
-                color.a = value;
-                renderer.material.color = color;
-                */
                 _modelHolder.SetActive(false);
                 _enemyDisplay.HideSequence();
                 _enemyDisplay.HideLives();
@@ -169,5 +158,10 @@ public class Enemy : MonoBehaviour
     void OnDestroy()
     {
         _noteManager.OnNoteLogged -= CheckSequence;
+
+        if (_lives > 1)  // If it a was a boss notify enemy manager that is gone.
+        {
+            _enemyManager.BossGone();
+        }
     }
 }

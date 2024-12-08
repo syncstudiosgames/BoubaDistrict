@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 2344857285261633146}
+  _modelHolder: {fileID: 15043435684243626}
 --- !u!114 &126708870483694212
 MonoBehaviour:
   m_ObjectHideFlags: 0

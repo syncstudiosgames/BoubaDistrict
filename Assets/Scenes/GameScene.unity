@@ -1207,7 +1207,7 @@ Transform:
   m_GameObject: {fileID: 236771641}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.5, z: 8.31}
+  m_LocalPosition: {x: -0.02, y: 0.5, z: 8.31}
   m_LocalScale: {x: 11.57035, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6759,7 +6759,7 @@ MonoBehaviour:
   _enemySpawner: {fileID: 236771641}
   _waitForTutorial: 0
   _allowCeroEnemies: 0
-  _notSpawnningBracketLenth: 5
+  _notSpawningBracketLength: 7
 --- !u!4 &1431879112
 Transform:
   m_ObjectHideFlags: 0
