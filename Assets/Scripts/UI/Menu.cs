@@ -72,6 +72,12 @@ public class Menu : MonoBehaviour
         StartCoroutine(LoadSceneWithDelay("mapSelection"));
     }
 
+    public void Loading()
+    {
+        Debug.Log("going to loading");
+        StartCoroutine(LoadSceneWithDelay("Loading2"));
+    }
+
 
     // Corutina para esperar un delay antes de cambiar de escena
     private IEnumerator LoadSceneWithDelay(string sceneName)
