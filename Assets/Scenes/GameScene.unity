@@ -4871,6 +4871,9 @@ MonoBehaviour:
   _enemyManager: {fileID: 1431879111}
   _noteManager: {fileID: 726460152}
   _waitForTutorial: 0
+  _scoreIntervalForBoss: 700
+  _scoreBracketPercentageForBoss: 10
+  _scoreIntervarMultiplierForBoss: 4
 --- !u!4 &1124231277
 Transform:
   m_ObjectHideFlags: 0

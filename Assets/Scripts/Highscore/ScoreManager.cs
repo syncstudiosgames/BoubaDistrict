@@ -9,10 +9,14 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] NoteManager _noteManager;
     [SerializeField] bool _waitForTutorial;
 
+    int _bossSpawningScore;  // If said score is reached a boss will be spawned.
+
+    [SerializeField] int _scoreIntervalForBoss;         // Each said interval...
+    [SerializeField] int _scoreBracketPercentageForBoss;    // ... it will evaluate the score chosen for spawning a boss within the bracket.
+    [SerializeField] int _scoreIntervarMultiplierForBoss;
+
     int _score = 0;
-
     int numEnemiesHealed = 0;
-
     int combo = 0;
 
     public int Score { get { return _score; } set { _score = value; _onScoreChanged?.Invoke(); } }
@@ -26,6 +30,8 @@ public class ScoreManager : MonoBehaviour
 
     public void StartGame()
     {
+        _bossSpawningScore = GetNextBossScore(_score, _scoreIntervalForBoss, _scoreBracketPercentageForBoss);
+
         _enemyManager.OnEnemyCured += (int complexity) =>
         {
             numEnemiesHealed++;
@@ -45,6 +51,17 @@ public class ScoreManager : MonoBehaviour
             _onComboChanged?.Invoke();
         };
 
+        OnScoreChanged += () =>
+        {
+            if (_score >= _bossSpawningScore)
+            {
+                _enemyManager.SpawnEnemyBoss();
+
+                _scoreIntervalForBoss = _scoreIntervalForBoss * _scoreIntervarMultiplierForBoss;
+                _bossSpawningScore = GetNextBossScore(_score, _scoreIntervalForBoss, _scoreBracketPercentageForBoss);
+            }
+        };
+
         StartCoroutine(ScorePointEachSecond());
     }
 
@@ -60,6 +77,16 @@ public class ScoreManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             Score += 1;
         }
+    }
+
+    int GetNextBossScore(int currentScore, int scoreIntervalForBoss, int scoreBracketPercentageForBoss)
+    {
+        scoreBracketPercentageForBoss = Mathf.Clamp(scoreBracketPercentageForBoss, 0, 100);
+
+        int lowBracket = currentScore + scoreIntervalForBoss - (scoreIntervalForBoss * scoreBracketPercentageForBoss / 100);
+        int upperBracket = currentScore + scoreIntervalForBoss + (scoreIntervalForBoss * scoreBracketPercentageForBoss / 100);
+
+        return UnityEngine.Random.Range(lowBracket, upperBracket);
     }
 
 

@@ -144,7 +144,7 @@ public class EnemyManager : MonoBehaviour
         _onEnemySpawned?.Invoke();
         return enemyGO;
     }
-    GameObject SpawnEnemyBoss(int bossIndex = 0)
+    public GameObject SpawnEnemyBoss(int bossIndex = 0)
     {
         _bossSpawned = true;
 
