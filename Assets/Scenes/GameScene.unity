@@ -4722,9 +4722,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1184147250}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Logo
+      - m_Target: {fileID: 1184147251}
+        m_TargetAssemblyTypeName: PauseButton, Assembly-CSharp
+        m_MethodName: MenuInicio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7406,8 +7406,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1184147250}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+      - m_Target: {fileID: 1184147251}
+        m_TargetAssemblyTypeName: PauseButton, Assembly-CSharp
         m_MethodName: RankingUlt
         m_Mode: 1
         m_Arguments:
