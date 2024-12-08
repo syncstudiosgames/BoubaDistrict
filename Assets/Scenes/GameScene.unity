@@ -6759,6 +6759,7 @@ MonoBehaviour:
   _enemySpawner: {fileID: 236771641}
   _waitForTutorial: 0
   _allowCeroEnemies: 0
+  _renderEnemyUI: 1
   _notSpawningBracketLength: 7
 --- !u!4 &1431879112
 Transform:

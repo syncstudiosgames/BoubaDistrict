@@ -19,8 +19,8 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] GameObject _enemySpawner;
 
     [SerializeField] bool _waitForTutorial;
-
     [SerializeField] bool _allowCeroEnemies;
+    [SerializeField] bool _renderEnemyUI;
 
     public void AllowCeroEnemies(bool allowCeroEnemies) { _allowCeroEnemies = allowCeroEnemies; }
 
@@ -94,7 +94,6 @@ public class EnemyManager : MonoBehaviour
     }
     void StartSpawning()
     {
-        SpawnEnemyBoss();
         StartCoroutine(SpawningCoroutine());
     }
 
@@ -136,7 +135,7 @@ public class EnemyManager : MonoBehaviour
 
         var moveSpeed = interpolateValueLog(_dificultyStep, _baseMoveSpeed, MAX_MOVE_SPEED);
 
-        return SpawnEnemy(enemyPrefab, position, complexity, moveSpeed);
+        return SpawnEnemy(enemyPrefab, position, complexity, moveSpeed, 1, _renderEnemyUI);
     }
     GameObject SpawnEnemy(GameObject prefab, Vector3 pos, int complexity, float moveSpeed, int lives = 1, bool renderSequence = true)
     {
@@ -150,7 +149,7 @@ public class EnemyManager : MonoBehaviour
         _bossSpawned = true;
 
         var pos = GetCenterPosAtSpawn();
-        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 2, 5, 3);
+        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 2, 5, 3, _renderEnemyUI);
     }
     public void SpawnSimpleEnemy()
     {

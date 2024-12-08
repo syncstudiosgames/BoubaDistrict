@@ -52,11 +52,11 @@ public class EnemyDisplay : MonoBehaviour
         if (renderSequence)
         {
             _noteImages = RenderNoteSequence(deathSequence[0]);
-        }
 
-        if(_livesDisplayCanvas != null)
-        {
-            _livesImages = RenderLives(_livesDisplayCanvas, _deathSequences.Length);
+            if (_livesDisplayCanvas != null)
+            {
+                _livesImages = RenderLives(_livesDisplayCanvas, _deathSequences.Length);
+            }
         }
         
     }
