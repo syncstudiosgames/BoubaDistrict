@@ -65,6 +65,6 @@ public class ServerAwakeChecker : MonoBehaviour
             loadingBar.value = 1f;
         }
 
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("MenuInicio");
     }
 }
