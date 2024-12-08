@@ -32,4 +32,17 @@ public class AreaOfEffect : MonoBehaviour
             enemy.UnboostSpeed();
         }
     }
+
+    private void OnDestroy()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, _effectRadious);
+        foreach (Collider col in colliders)
+        {
+            Enemy enemy = col.GetComponent<Enemy>();
+            if (enemy != null && enemy != this)
+            {
+                enemy.UnboostSpeed();
+            }
+        }
+    }
 }
