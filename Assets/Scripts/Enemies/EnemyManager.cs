@@ -149,7 +149,7 @@ public class EnemyManager : MonoBehaviour
         _bossSpawned = true;
 
         var pos = GetCenterPosAtSpawn();
-        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 2, 5, 3, _renderEnemyUI);
+        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 4, 5, 3, _renderEnemyUI);
     }
     public void SpawnSimpleEnemy()
     {

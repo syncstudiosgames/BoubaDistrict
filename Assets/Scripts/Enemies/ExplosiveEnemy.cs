@@ -25,7 +25,7 @@ public class ExplosiveEnemy : Enemy
             Enemy enemy = col.GetComponent<Enemy>();
             if (enemy != null && enemy != this)
             {
-                enemy.Restore();
+                enemy.TakeDamage();
             }
         }
     }

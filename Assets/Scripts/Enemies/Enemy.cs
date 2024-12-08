@@ -107,7 +107,12 @@ public class Enemy : MonoBehaviour
 
         // If this part of the code is reached the death sequence was complete:
 
-        if(_currrentLivePointer >= _lives -1)
+        TakeDamage();
+    }
+
+    public void TakeDamage()
+    {
+        if (_currrentLivePointer >= _lives - 1)
         {
             Restore();
         }
@@ -117,7 +122,6 @@ public class Enemy : MonoBehaviour
             _enemyDisplay.DisplayNextDeathSequence(3);
             _currrentLivePointer++;
         }
-        
     }
 
     void OnTriggerEnter(Collider other)
