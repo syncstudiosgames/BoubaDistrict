@@ -930,34 +930,21 @@ Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático
 ## Trabajo individual
 
 ### Laura
-Mi mayor reto ha sido la elaboración de la cinemática de Bouba District. Creíamos que era importante una breve introducción para situar al jugador. Gracias a ello he podido progundizar en mi comprensión del diseño visual y narrativo, aunque fuera una escena breve.
-
-También me encargué del diseño de las nuevas interfaces y de su incorporación. Aunque a veces fue complicado ajustarlas, conseguí crear nuevas pantallas que siguiera  el estilo del juego y aportaran la información que nos faltaba para implementar el aspecto competitivo del juego.
 
 ### Marta 
-En esta ocasión mi trabajo ha estado enfocado en diseñar el escenario secundario de Bouba District. Mi mayor reto ha sido aprender a utilizar texturas emisivas y generar lightmaps, ya que Unity no permite calcular este tipo de iluminación en el tiempo de ejecución. Aunque al principio retrasó mi trabajo, una vez aprendí a manejar estas herramientas no supuso mayor problema. Gracias a esto, he adquirido un mayor aprecio al uso del color y la iluminación. Creo que he conseguido crear un entorno no muy distante del primer nivel en cuanto a estilo, pero, pero inspirando en otra estética completamente diferente.
-
-También me he encargado de actualizar el Game Design Document y añadir todas las actualizaciones que ha realizado el equipo desde la última entrega. Además, me he encargado de las publicaciones en redes sociales y la promoción del juego. Me habría gustado dedicarle más tiempo al márketing, ya que mi trabajo se enfocó en las otras tareas. Aún tenemos mucho contenido por compartir, pero es crucial como estudio si queremos vender el juego también centrarse en darnos a conocer.
 
 ### Francisco
-Mi mayor desafío fue el modelado de personajes no simétricos, ya que requerían capturar formas únicas y expresivas sin comprometer el rendimiento del juego. Ajustar las proporciones y mantener una topología adecuada fue especialmente complicado, pero logré encontrar un equilibrio entre detalle y optimización. Por otro lado, investigué sobre animaciones de explosiones con pocas partículas, experimentando con diferentes patrones y dinámicas para crear un efecto visual atractivo y eficiente para dispositivos móviles.
 
 ### Ana
-En esta práctica, uno de los principales desafíos fue gestionar el comportamiento del servidor alojado en Glitch, el cual entra en modo inactivo tras un periodo de inactividad. Para resolver este problema, se implementó una pantalla de carga que realiza solicitudes al servidor para despertarlo antes de iniciar el juego, garantizando además un tiempo mínimo de espera de 4 segundos para ofrecer una transición fluida y profesional.
-
-Otro reto fue desarrollar una pantalla de ajustes que permitiera modificar el volumen de todos los sonidos del juego y garantizar que estos ajustes fueran persistentes entre escenas. Esto se logró utilizando un prefab para la pantalla de ajustes y un SettingsManager, que se encarga de instanciarla en la escena inicial y ajustar el volumen global del juego mediante un slider, aplicando los cambios dinámicamente a través de AudioListener.volume.
 
 ### Lucía
-Para esta fase del desarrollo se presentaron nuevos retos especialmente en lo que respecta a la programación. A medida que el código crecía en complejidad y se debían implementar funciones más sofisticadas la dificultad aumentó en general. Además personalmente tuve que enfrentarme problemas que nunca antes había resuelto como la estructuración e implementación del tutorial. Creo que la manera de afrontar el problema no fue la ideal y me dio problemas más adelante, en un futuro podría reimplementarse con los conocimientos nuevos que he aprendido. Por lo general la buena estructuración y versatilidad del código agilizó el proceso.
 
-### Laura
-En esta fase del desarrollo, mi mayor desafío ha sido aprender a construir una cinemática desde cero. Esta tarea implicó incorporar una gran cantidad de elementos dinámicos que enriquecen la escena, como coches de policía en movimiento, luces intermitentes, animaciones de personajes y diálogos sincronizados. Este proceso no solo requirió mucho tiempo, sino también una constante experimentación para lograr el nivel de detalle deseado.
 
-Además, enfrenté dificultades relacionadas con el proceso de guardado en Unity. Mi desconocimiento sobre cómo funciona el sistema de escenas me llevó a perder todo el trabajo realizado en una cinemática, a pesar de haber realizado varios commits en GitHub. Aprendí que Unity únicamente guarda objetos y scripts en el repositorio en forma de archivos, pero no cambios como tal en la escena, lo que provoca la pérdida de cambios realizados. Este error me obligó a rehacer la escena, pero también me sirvió como aprendizaje valioso para evitar problemas similares en el futuro. También me sirvió a aprender cómo recuperar archivos temporales de las escenas en Unity, tristemente sólo son accesibles si no has vuelto a abrir Unity, una vez reinicias, se pierden.
+
 
 ## Trabajo grupal
 ## 10.1 Lo que salió bien
-### 10.1.2 Expansión del universo
+### 10.1.2 
 La fase de beta testing fue uno de los puntos clave en esta última fase del desarrollo del proyecto. Nos permitió identificar una gran cantidad de bugs y recibir sugerencias valiosas sobre diferentes aspectos del diseño y la jugabilidad. Esto nos proporcionó una visión clara de las áreas que requerían mayor atención antes del lanzamiento.
 
 Gracias al feedback recopilado durante la beta, pudimos establecer objetivos específicos y prioritarios antes de continuar con el desarrollo. Esto incluyó ajustar la dificultad de algunos niveles, y la vida del jugador, y revisar algunas interfaces y mejorar la UX. Tener estos objetivos bien definidos desde temprano nos ayudó a optimizar los recursos y trabajar de manera más eficiente.
@@ -971,7 +958,9 @@ El apunte que más se repitió en las pruebas de beta-testing fue que el juego n
 
 Logramos enriquecer significativamente la experiencia del jugador una vez integramos todo el contenido. Además desarrollamos otro escenario con temática Jazz y otros tres personajes diferentes. Esto no solo añadió variedad visual y narrativa, sino que también trajo consigo nuevas canciones y respondió a la falta de variedad en cuanto a la jugabilidad de Bouba District. 
 
-En retrospectiva, la decisión de priorizar esta integración fue clave para mejorar el proyecto final. Ahora, el juego no solo ofrece una experiencia más completa y entretenida, sino que también se alinea mejor con la visión creativa original del proyecto. Los nuevos personajes aportan diversidad y carisma, mientras que los escenarios adicionales enriquecen la jugabilidad y evitan que se sienta demasiado repetitivo..
+En retrospectiva, la decisión de priorizar esta integración fue clave para mejorar el proyecto final. Ahora, el juego no solo ofrece una experiencia más completa y entretenida, sino que también se alinea mejor con la visión creativa original del proyecto. Los nuevos personajes aportan diversidad y carisma, mientras que los escenarios adicionales enriquecen la jugabilidad y evitan que se sienta demasiado repetitivo.
+
+### 10.1.3
 
 
 ## 10.2 Lo que salió mal
@@ -982,7 +971,7 @@ También tuvimos que modificar el flujo de pantallas del juego. La cinemática s
 
 Aunque estas modificaciones resultaron ser necesarias, representaron un reto significativo y requirió ajustes importantes tanto en el diseño de las interfaces como en la lógica de navegación del juego. Esto nos ha permitido aprender cómo estructurar mejor el flujo de trabajo y las interfaces en fases de expansión futura.
 
-10.2.2 
+### 10.2.2
 
 ### 10.2.3 Los objetivos están bien... si son realistas
 A pesar de que teníamos objetivos claros desde el inicio del proyecto, uno de los mayores desafíos fue mantenernos enfocados en lo más importante. Queríamos  revisar cada aspecto del juego, influenciados por la gran cantidad de sugerencias recibidas. 
