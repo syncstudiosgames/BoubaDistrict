@@ -24,7 +24,6 @@ public class EnemyController : MonoBehaviour
     public void IncreaseMovespeed(float speedIncrement)
     {
         _moveSpeed += speedIncrement;
-        Debug.Log(_moveSpeed);
     }
     public void ResetMovespeed()
     {

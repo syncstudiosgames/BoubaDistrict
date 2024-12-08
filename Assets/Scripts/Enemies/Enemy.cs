@@ -110,6 +110,11 @@ public class Enemy : MonoBehaviour
         if(_currrentLivePointer >= _lives -1)
         {
             Restore();
+
+            if(_lives > 1)  // It was a boss.
+            {
+                _enemyManager.BossGone();
+            }
         }
         else
         {
