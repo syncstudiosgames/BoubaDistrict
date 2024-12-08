@@ -249,8 +249,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Developer Team
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 78ecf713d1a313b42a32ebbd21ddbefb, type: 2}
+  m_sharedMaterial: {fileID: 5436568458548905918, guid: 78ecf713d1a313b42a32ebbd21ddbefb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -352,7 +352,7 @@ RectTransform:
   m_GameObject: {fileID: 526969509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.427963, y: 0.6173131, z: 0.6173131}
+  m_LocalScale: {x: 2.5632756, y: 0.70813936, z: 0.46021926}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1179614548}
@@ -444,14 +444,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.2349643, b: 0.3886792, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 55564df7e986f194093581e631132774, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8071fac0c232c8c4381c03a3469d70e1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -731,7 +731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1179614548
 RectTransform:
   m_ObjectHideFlags: 0
@@ -908,13 +908,13 @@ MonoBehaviour:
   m_text: "Ana Ord\xF3\xF1ez Gragera\n\nLuc\xEDa S\xE1nchez Abril\nAna Ord\xF3\xF1ez
     Gragera\nLaura Garc\xEDa Mart\xEDn\nFrancisco Rodr\xEDguez Mart\xEDnez\n\nAna
     Ord\xF3\xF1ez Gragera\nLaura Garc\xEDa Mart\xEDn\n\nLuc\xEDa S\xE1nchez Abril\n\nFrancisco
-    Rodr\xEDguez Mart\xEDnez\nMarta Raboso G\xF3mez\n\nLaura Garc\xEDa Mart\xEDn\n\nAna
-    Ord\xF3\xF1ez Gragera\n\nMarta Raboso G\xF3mez\nLuc\xEDa S\xE1nchez Abril\nAna
-    Ord\xF3\xF1ez Gragera\nLaura Garc\xEDa Mart\xEDn\nFrancisco Rodr\xEDguez Mart\xEDnez\n\nOur
-    teachers\nBuba Community"
+    Rodr\xEDguez Mart\xEDnez\nMarta Raboso G\xF3mez\nAna Ord\xF3\xF1ez Gragera\n\nLaura
+    Garc\xEDa Mart\xEDn\n\nAna Ord\xF3\xF1ez Gragera\n\nMarta Raboso G\xF3mez\nLuc\xEDa
+    S\xE1nchez Abril\nAna Ord\xF3\xF1ez Gragera\nLaura Garc\xEDa Mart\xEDn\nFrancisco
+    Rodr\xEDguez Mart\xEDnez\n\nOur teachers\nBouba Community"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 78ecf713d1a313b42a32ebbd21ddbefb, type: 2}
+  m_sharedMaterial: {fileID: 5436568458548905918, guid: 78ecf713d1a313b42a32ebbd21ddbefb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1061,9 +1061,10 @@ MonoBehaviour:
     Level Design
 
 
-
     3D
     Artist
+
+
 
 
     UI Design
@@ -1085,8 +1086,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 78ecf713d1a313b42a32ebbd21ddbefb, type: 2}
+  m_sharedMaterial: {fileID: 5436568458548905918, guid: 78ecf713d1a313b42a32ebbd21ddbefb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
