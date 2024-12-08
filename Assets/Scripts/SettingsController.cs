@@ -111,7 +111,7 @@ public class SettingsController : MonoBehaviour
         Debug.Log($"Volumen de efectos ajustado a: {value}");
     }
 
-    private void OnAcceptButtonClicked()
+    public void OnAcceptButtonClicked()
     {
         SaveSettings();
         gameObject.SetActive(false); 
