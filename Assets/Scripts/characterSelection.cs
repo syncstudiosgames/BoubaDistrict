@@ -16,6 +16,7 @@ public class CharacterSelection : MonoBehaviour
         }
 
         foreach (Transform child in charactersParent.transform)
+
         {
             child.gameObject.SetActive(false);
         }
