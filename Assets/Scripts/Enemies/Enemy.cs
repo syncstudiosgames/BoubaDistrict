@@ -145,6 +145,7 @@ public class Enemy : MonoBehaviour
                 */
                 _modelHolder.SetActive(false);
                 _enemyDisplay.HideSequence();
+                _enemyDisplay.HideLives();
 
             }).setOnComplete(() =>                                                                                                                  // Destroy GO when the animation is done.
             {

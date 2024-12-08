@@ -89,6 +89,15 @@ public class EnemyDisplay : MonoBehaviour
     {
         _canvas.enabled = false;
     }
+    public void HideLives()
+    {
+        if(_livesDisplayCanvas != null)
+        {
+            _livesDisplayCanvas.enabled = false;
+        }
+        
+    }
+
 
     void ClearCanvas(Canvas canvas)
     {
@@ -143,7 +152,7 @@ public class EnemyDisplay : MonoBehaviour
         float canvasWidth = canvasRect.rect.width;
         float canvasHeight = canvasRect.rect.height;
 
-        float noteSize = Mathf.Min(canvasWidth / lives, canvasHeight / 2) * scaleMultiplier;
+        float liveSize = Mathf.Min(canvasWidth / lives, canvasHeight / 2) * scaleMultiplier/3;
 
         Image[] images = new Image[lives];
 
@@ -157,7 +166,7 @@ public class EnemyDisplay : MonoBehaviour
             images[i].sprite = _liveSprite;
 
             RectTransform rectTransform = images[i].GetComponent<RectTransform>();
-            rectTransform.sizeDelta = new Vector2(noteSize, noteSize);
+            rectTransform.sizeDelta = new Vector2(liveSize, liveSize);
 
             float xPosition = -((canvasWidth / (lives + 1)) * (i + 1) - (canvasWidth / 2));
             float yPosition = 0;

@@ -118,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvas: {fileID: 7251590403582480685}
   _livesDisplayCanvas: {fileID: 3777329038806006898}
-  _liveSprite: {fileID: 21300000, guid: d403e4f24e07fee4bb0fdff65740289a, type: 3}
+  _liveSprite: {fileID: 21300000, guid: ba2f16ec0ed0e304aaaa84a2fedddaec, type: 3}
   scaleMultiplier: 3
   isDead: 0
 --- !u!54 &2344857285261633146
