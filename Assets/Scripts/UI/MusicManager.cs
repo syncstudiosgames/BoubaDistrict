@@ -43,7 +43,7 @@ public class MusicManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // Verificar si la música debe detenerse en ciertas escenas
-        if (scene.name == "GameScene" || scene.name == "Jazz" || scene.name == "Cyberpunk" || scene.name == "RankingUlt")
+        if (scene.name == "GameScene" || scene.name == "Jazz" || scene.name == "Cyberpunk" || scene.name == "RankingUlt" || scene.name == "GameOver")
         {
             StopMusic();
         }
