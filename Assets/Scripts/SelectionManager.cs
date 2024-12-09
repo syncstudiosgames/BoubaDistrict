@@ -4,15 +4,16 @@ public class CharacterSelectionManager : MonoBehaviour
 {
     public static CharacterSelectionManager Instance;
 
-    [SerializeField] private GameObject[] characters; // Array de personajes disponibles
+    [SerializeField] private GameObject[] characters; 
     private GameObject selectedCharacter;
+    private int selectedCharacterIndex = 0; 
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // No destruir al cargar una nueva escena
+            DontDestroyOnLoad(gameObject); 
         }
         else
         {
@@ -30,13 +31,19 @@ public class CharacterSelectionManager : MonoBehaviour
         return characters;
     }
 
-    public void SelectCharacter(GameObject character)
+    public void SelectCharacter(GameObject character, int index)
     {
         selectedCharacter = character;
+        selectedCharacterIndex = index; 
     }
 
     public GameObject GetSelectedCharacter()
     {
         return selectedCharacter;
+    }
+
+    public int GetSelectedCharacterIndex()
+    {
+        return selectedCharacterIndex; 
     }
 }

@@ -44,6 +44,6 @@ public class CharacterSelection : MonoBehaviour
     public void StartGame()
     {
         // Seleccionar el personaje a través del CharacterSelectionManager
-        CharacterSelectionManager.Instance.SelectCharacter(characters[selectedCharacter]);
+        CharacterSelectionManager.Instance.SelectCharacter(characters[selectedCharacter], selectedCharacter);
     }
 }
