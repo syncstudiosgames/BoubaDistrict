@@ -42,22 +42,15 @@ public class MusicManager : MonoBehaviour
     // Método llamado cuando se carga una nueva escena
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Verificar si la escena es "GameScene"
-        if (scene.name == "GameScene")
+        // Verificar si la música debe detenerse en ciertas escenas
+        if (scene.name == "GameScene" || scene.name == "Jazz" || scene.name == "Cyberpunk" || scene.name == "RankingUlt" || scene.name == "GameOver")
         {
             StopMusic();
         }
-        if (scene.name == "Jazz")
+        else
         {
-            StopMusic();
-        }
-        if (scene.name == "Cyberpunk")
-        {
-            StopMusic();
-        }
-        if (scene.name == "RankingUlt")
-        {
-            StopMusic();
+            // Reproducir la música en otras escenas (por ejemplo, el menú principal)
+            PlayMusic();
         }
     }
 
@@ -67,6 +60,15 @@ public class MusicManager : MonoBehaviour
         if (audioSource.isPlaying)
         {
             audioSource.Stop();
+        }
+    }
+
+    // Método para reproducir la música
+    public void PlayMusic()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
         }
     }
 }
