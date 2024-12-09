@@ -45,4 +45,9 @@ public class PauseButton : MonoBehaviour
         SceneManager.LoadScene("RankingUlt");
     }
 
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+    }
+
 }

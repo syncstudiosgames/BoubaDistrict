@@ -26,7 +26,7 @@ public class FinalScore : MonoBehaviour
         }
     }
 
-    private void HighscoreScene()
+    public void HighscoreScene()
     {
         if (scoreSent) return;
         scoreSent = true;
