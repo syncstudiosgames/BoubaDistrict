@@ -55,6 +55,10 @@ public class MusicManager : MonoBehaviour
         {
             StopMusic();
         }
+        if (scene.name == "RankingUlt")
+        {
+            StopMusic();
+        }
     }
 
     // Método para detener la música
