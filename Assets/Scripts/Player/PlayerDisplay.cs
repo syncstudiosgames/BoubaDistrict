@@ -10,6 +10,8 @@ public class PlayerDisplay : MonoBehaviour
     [SerializeField] TextMeshProUGUI _healthDisplay;
     [SerializeField] Slider _healthSlider;
 
+    [SerializeField] int _maxHealthValueForIncreasingSlider;
+
     float _lastMaxHealth;
 
     private void Awake()
@@ -27,16 +29,19 @@ public class PlayerDisplay : MonoBehaviour
         _healthSlider.maxValue = _player.MaxHealthPoints;
         _healthSlider.value = _player.HealthPoints;
 
+        if (_player.MaxHealthPoints < _maxHealthValueForIncreasingSlider)
+        {
+            // Update slider size (scaling with maxHealth):
+            var rectTrans = _healthSlider.gameObject.GetComponent<RectTransform>();
+            var sizeDelta = rectTrans.sizeDelta;
 
-        // Update slider size (scaling with maxHealth):
-        var rectTrans = _healthSlider.gameObject.GetComponent<RectTransform>();
-        var sizeDelta = rectTrans.sizeDelta;
+            var newWidth = sizeDelta.x + (_player.MaxHealthPoints - _lastMaxHealth);
+            
+            sizeDelta = new Vector2(newWidth, sizeDelta.y);
+            rectTrans.sizeDelta = sizeDelta;
+        }
 
-        var newWidth = sizeDelta.x + (_player.MaxHealthPoints - _lastMaxHealth);
         _lastMaxHealth = _player.MaxHealthPoints;
-
-        sizeDelta = new Vector2(newWidth, sizeDelta.y);
-        rectTrans.sizeDelta = sizeDelta; 
 
         // Update text:
         string text = $"{_player.HealthPoints}/{_player.MaxHealthPoints}";
