@@ -43,7 +43,7 @@ public class FinalScore : MonoBehaviour
     {
         yield return StartCoroutine(SendScoreToServer(playerName, score, skinIndex));
 
-        SceneManager.LoadScene("Highscore");
+        SceneManager.LoadScene("GameOver");
     }
 
     private IEnumerator SendScoreToServer(string playerName, int score, int skinIndex)
