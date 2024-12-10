@@ -1074,6 +1074,8 @@ MonoBehaviour:
   transitionDuration: 7
   dayColor: {r: 1, g: 1, b: 1, a: 1}
   nightColor: {r: 0.050195802, g: 0.050195802, b: 0.0754717, a: 1}
+  dayRotation: {x: 50, y: 0, z: 0}
+  nightRotation: {x: -30, y: 0, z: 0}
 --- !u!4 &156266898
 Transform:
   m_ObjectHideFlags: 0
@@ -9709,6 +9711,18 @@ PrefabInstance:
       value: 92.9556
       objectReference: {fileID: 0}
     - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.252431
+      objectReference: {fileID: 0}
+    - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.252431
+      objectReference: {fileID: 0}
+    - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.252431
+      objectReference: {fileID: 0}
+    - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -9742,7 +9756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -163
+      value: -116.39
       objectReference: {fileID: 0}
     - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
