@@ -3288,7 +3288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameInputField: {fileID: 644895259}
   displayText: {fileID: 1855787539}
-  acceptButton: {fileID: 0}
+  acceptButton: {fileID: 1267829176}
 --- !u!1001 &536091098
 PrefabInstance:
   m_ObjectHideFlags: 0
