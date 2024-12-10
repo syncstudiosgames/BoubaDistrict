@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3256470371159552188}
+  - component: {fileID: 6745731976538272045}
   m_Layer: 0
   m_Name: ModelHolder
   m_TagString: Untagged
@@ -31,6 +32,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 45191044889853165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6745731976538272045
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15043435684243626}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3971569818686494927
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,19 +212,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyModels:
-  - {fileID: 919132149155446097, guid: de1f114bbb4d3bb4ba489d24b97ae93d, type: 3}
-  - {fileID: 919132149155446097, guid: cde1fdcd123602944a38c358ebbf038d, type: 3}
-  - {fileID: 919132149155446097, guid: 5265a19d0795f2f4aa5bd4c2f7e3ac58, type: 3}
-  - {fileID: 919132149155446097, guid: 655042a2a85dbb44282529518724c304, type: 3}
-  - {fileID: 919132149155446097, guid: 11065544e13b38242bd1d6c0ce9aaadb, type: 3}
+  - {fileID: 919132149155446097, guid: 6b6b51fde62ca244e8538f9140491b69, type: 3}
+  - {fileID: 919132149155446097, guid: 10b12e132926ad2459b18b98ff1a5c7c, type: 3}
+  - {fileID: 919132149155446097, guid: b3b4587f7a3cfef49a326ac861a15e1e, type: 3}
+  - {fileID: 919132149155446097, guid: c8eedd028e2535442a32b2319bdafa44, type: 3}
+  - {fileID: 919132149155446097, guid: 9eed6c06d870df8419c50e4b25c25241, type: 3}
   enemySplash:
   - {fileID: 7551788058016103264}
   - {fileID: 1982684693984804338}
   - {fileID: 1636629086917672171}
   - {fileID: 4385127958468264552}
   - {fileID: 2507468656621952150}
+  enemyAnimations:
+  - {fileID: 9100000, guid: 42d7140129efa2d488031e498a12dfe1, type: 2}
+  - {fileID: 9100000, guid: f336d55725f630e48a1b731f79e1a153, type: 2}
+  - {fileID: 9100000, guid: a52d899b76370bc4481744f46d86bac2, type: 2}
+  - {fileID: 9100000, guid: 31ad0369e9601104a88b0c74cea2bc18, type: 2}
+  - {fileID: 9100000, guid: 7fa6340afd3294b4495cd82f9fcc8566, type: 2}
   modelHolder: {fileID: 3256470371159552188}
   splash: {fileID: 0}
+  controller: {fileID: 0}
 --- !u!1 &7955744431689276520
 GameObject:
   m_ObjectHideFlags: 0

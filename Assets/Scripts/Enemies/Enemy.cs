@@ -25,6 +25,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject _splashEffect;
     [SerializeField] GameObject _boostEffect;
 
+    Transform modelHolderTransform;
+    Animator animator;
+
     event Action _onRestore;
     public event Action OnRestore { add { _onRestore += value; } remove { _onRestore -= value; } }
 
@@ -33,16 +36,48 @@ public class Enemy : MonoBehaviour
     {
         _noteManager = noteManager;
         _enemyManager = enemyManager;
-
         _complexity = Mathf.Clamp(complexity, 1, 4);
         _enemyController.SetUp(moveSpeed);
 
         _lives = lives;
-        
-        if(_enemyModelLoader != null)
+
+        modelHolderTransform = transform.Find("ModelHolder");
+
+
+
+        if (_enemyModelLoader != null)
         {
             _enemyModelLoader.AssignRandomModel();
             _splashEffect = _enemyModelLoader.splash;
+            if (modelHolderTransform != null)
+            {
+                // Obtener el primer hijo de "ModelHolder"
+                if (modelHolderTransform.childCount > 0)
+                {
+                    Transform targetChild = modelHolderTransform.GetChild(0); // Primer hijo
+
+                    // Asegurarse de que tiene el componente Animator, y si no, añadirlo
+                    Animator animator = targetChild.GetComponent<Animator>();
+                    if (animator == null)
+                    {
+                        animator = targetChild.gameObject.AddComponent<Animator>();
+                    }
+
+                    // Asignar el nuevo RuntimeAnimatorController
+                    if (_enemyModelLoader.controller != null)
+                    {
+                        animator.runtimeAnimatorController = _enemyModelLoader.controller;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Animator o RuntimeAnimatorController no asignado correctamente.");
+                    }
+                }
+                else
+                {
+                    Debug.LogError("No se encontró un GameObject hijo llamado 'ModelLoader'.");
+                }
+            }
         }
 
         CreateSequence(lives);
