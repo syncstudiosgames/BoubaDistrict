@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 392369233}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1045,14 +1045,14 @@ RectTransform:
   m_GameObject: {fileID: 352917750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7127064, y: 2.3110225, z: 1.1414999}
+  m_LocalScale: {x: 1.6292462, y: 2.9698215, z: 1.1414999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1870475064}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 163, y: -66}
+  m_AnchoredPosition: {x: 163, y: -80}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352917752
@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 93559c971526ba64b9b774f917b7d23d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8071fac0c232c8c4381c03a3469d70e1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2626,6 +2626,9 @@ MonoBehaviour:
   _enemyManager: {fileID: 1913901263}
   _noteManager: {fileID: 1237714507}
   _waitForTutorial: 1
+  _scoreIntervalForBoss: 0
+  _scoreBracketPercentageForBoss: 0
+  _scoreIntervarMultiplierForBoss: 0
 --- !u!114 &666577732
 MonoBehaviour:
   m_ObjectHideFlags: 0
