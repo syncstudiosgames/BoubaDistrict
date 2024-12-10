@@ -58,7 +58,7 @@ public class ScoreManager : MonoBehaviour
                 _enemyManager.SpawnEnemyBoss();
 
                 _scoreIntervalForBoss = _scoreIntervalForBoss * _scoreIntervarMultiplierForBoss;
-                _score = _scoreIntervalForBoss;
+                _bossSpawningScore = _scoreIntervalForBoss;
             }
         };
 

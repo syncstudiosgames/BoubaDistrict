@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -23,6 +24,9 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] GameObject _splashEffect;
     [SerializeField] GameObject _boostEffect;
+
+    event Action _onRestore;
+    public event Action OnRestore { add { _onRestore += value; } remove { _onRestore -= value; } }
 
 
     public void SetUp(int complexity, float moveSpeed, NoteManager noteManager, EnemyManager enemyManager, int lives = 1, bool renderSequence = true)
@@ -89,7 +93,7 @@ public class Enemy : MonoBehaviour
     Note GetRandomNote()
     {
         var notes = _noteManager.Notes;
-        return notes[Random.Range(0, notes.Count)];
+        return notes[UnityEngine.Random.Range(0, notes.Count)];
     }
 
     void CheckSequence(Note inputNote)
@@ -135,22 +139,21 @@ public class Enemy : MonoBehaviour
     public virtual void Restore()
     {
         _enemyDisplay.isDead = true;
-        if (_splashEffect != null)
+        if (_splashEffect != null) { _splashEffect.SetActive(true); }
+
+        _onRestore?.Invoke();
+
+        LeanTween.value(gameObject, 1f, 0f, 1f).setOnUpdate((float value) =>                                                                      // Animate alpha.
         {
-            _splashEffect.SetActive(true);
+            _modelHolder.SetActive(false);
+            _enemyDisplay.HideSequence();
+            _enemyDisplay.HideLives();
 
-            LeanTween.value(gameObject, 1f, 0f, 1f).setOnUpdate((float value) =>                                                                      // Animate alpha.
-            {
-                _modelHolder.SetActive(false);
-                _enemyDisplay.HideSequence();
-                _enemyDisplay.HideLives();
-
-            }).setOnComplete(() =>                                                                                                                  // Destroy GO when the animation is done.
-            {
-                _enemyManager.EnemyCured(_complexity);
-                Destroy(gameObject);
-            });
-        }
+        }).setOnComplete(() =>                                                                                                                  // Destroy GO when the animation is done.
+        {
+            _enemyManager.EnemyCured(_complexity);
+            Destroy(gameObject);
+        });
     }
 
     void Die()

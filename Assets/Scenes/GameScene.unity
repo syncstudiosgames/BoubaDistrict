@@ -5023,7 +5023,7 @@ MonoBehaviour:
   _waitForTutorial: 0
   _scoreIntervalForBoss: 700
   _scoreBracketPercentageForBoss: 10
-  _scoreIntervarMultiplierForBoss: 4
+  _scoreIntervarMultiplierForBoss: 3
 --- !u!4 &1124231277
 Transform:
   m_ObjectHideFlags: 0
