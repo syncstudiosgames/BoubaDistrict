@@ -31,6 +31,9 @@ public class Enemy : MonoBehaviour
     event Action _onRestore;
     public event Action OnRestore { add { _onRestore += value; } remove { _onRestore -= value; } }
 
+    event Action _onDie;
+    public event Action OnDie { add { _onDie += value; } remove { _onDie -= value; } }
+
 
     public void SetUp(int complexity, float moveSpeed, NoteManager noteManager, EnemyManager enemyManager, int lives = 1, bool renderSequence = true)
     {

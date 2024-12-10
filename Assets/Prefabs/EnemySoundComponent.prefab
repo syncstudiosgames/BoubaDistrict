@@ -46,12 +46,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playNoiseWhenAppeared: 1
+  _enemy: {fileID: 0}
   _boubaNoises:
   - {fileID: 8300000, guid: 64cdac967b90c7c4fa3e74836fc73328, type: 3}
   - {fileID: 8300000, guid: c8376e4d7a3e6ed40a1137dcacff38b9, type: 3}
   - {fileID: 8300000, guid: f469e0d00cc00794da3f9dc5bdfa9ac5, type: 3}
   - {fileID: 8300000, guid: 97ef8a118b36a06458ab7bb7b5e380fa, type: 3}
   - {fileID: 8300000, guid: 82fad48b757bad9448bf500e7784be2b, type: 3}
+  _boubasOnKilledSounds:
+  - {fileID: 8300000, guid: 4f042bee2f30f3546a1be89824125c48, type: 3}
+  - {fileID: 8300000, guid: 9bd202e8a9ef25546a6228a43f562f0b, type: 3}
+  - {fileID: 8300000, guid: 6401976045e121645abd81444aa9ca4a, type: 3}
   _boubasOnGoalReachedSounds:
   - {fileID: 8300000, guid: ecfee6c2a02cfd548a8288e5970242cb, type: 3}
   - {fileID: 8300000, guid: 4623a50769ead70448dbb03c72d9478b, type: 3}

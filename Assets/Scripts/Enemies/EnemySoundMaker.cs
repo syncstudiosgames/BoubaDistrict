@@ -5,9 +5,14 @@ using UnityEngine;
 
 public class EnemySoundMaker : MonoBehaviour
 {
-    [SerializeField] bool _playNoiseWhenAppeared;
-    [SerializeField] List<AudioClip> _boubaNoises;
 
+
+    [SerializeField] bool _playNoiseWhenAppeared;
+
+    [SerializeField] Enemy _enemy;
+
+    [SerializeField] List<AudioClip> _boubaNoises;
+    [SerializeField] List<AudioClip> _boubasOnKilledSounds;
     [SerializeField] List<AudioClip> _boubasOnGoalReachedSounds;
 
     AudioSource _audioSource;
@@ -16,13 +21,18 @@ public class EnemySoundMaker : MonoBehaviour
     {
         _audioSource = GetComponent<AudioSource>();
 
-        if (_playNoiseWhenAppeared) { PlayRandomSound(_audioSource); }
-        
+        if (_playNoiseWhenAppeared) { PlayRandomSound(_boubaNoises, _audioSource); }
+
+        _enemy.OnRestore += () =>
+        {
+            PlayRandomSound(_boubasOnKilledSounds, _audioSource);
+        };
+
     }
 
-    void PlayRandomSound(AudioSource audioSource)
+    void PlayRandomSound(List<AudioClip> _audios, AudioSource audioSource)
     {
-        audioSource.clip = _boubaNoises[UnityEngine.Random.Range(0, _boubaNoises.Count - 1)];
+        audioSource.clip = _audios[UnityEngine.Random.Range(0, _audios.Count)];
         audioSource.Play();
     }
 }
