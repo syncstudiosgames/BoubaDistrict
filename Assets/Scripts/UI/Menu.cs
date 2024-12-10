@@ -72,6 +72,19 @@ public class Menu : MonoBehaviour
         StartCoroutine(LoadSceneWithDelay("mapSelection"));
     }
 
+    public void JazzMap()
+    {
+        Debug.Log("going to jazz map");
+        StartCoroutine(LoadSceneWithDelay("Jazz"));
+    }
+
+    public void CyberpunkMap()
+    {
+        Debug.Log("going to cyberpunk map");
+        StartCoroutine(LoadSceneWithDelay("Cyberpunk"));
+    }
+
+
     public void Loading()
     {
         Debug.Log("going to loading");

@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuInicio.unity
     guid: e47406ad737f01242ba93d279e8cbdba
+  - enabled: 1
+    path: Assets/Scenes/Jazz.unity
+    guid: a80db5cad1710ef418ee9916acf37d17
+  - enabled: 1
+    path: Assets/Scenes/Cyberpunk.unity
+    guid: 85114f0a913b6644396fe6ea2db89698
   m_configObjects: {}
