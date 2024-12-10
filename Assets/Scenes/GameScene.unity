@@ -1070,8 +1070,8 @@ MonoBehaviour:
   - {fileID: 1483484005}
   - {fileID: 1536857381}
   - {fileID: 1395446692}
-  dayDuration: 15
-  transitionDuration: 7
+  dayDuration: 50
+  transitionDuration: 10
   dayColor: {r: 1, g: 1, b: 1, a: 1}
   nightColor: {r: 0.050195802, g: 0.050195802, b: 0.0754717, a: 1}
   dayRotation: {x: 50, y: 0, z: 0}
@@ -3268,7 +3268,7 @@ Transform:
   m_GameObject: {fileID: 679485343}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.89, y: 2.98, z: -1.46}
+  m_LocalPosition: {x: -8.89, y: 2.98, z: -4.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3286,8 +3286,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.92066044, b: 0.5424528, a: 1}
-  m_Intensity: 1.5
-  m_Range: 14
+  m_Intensity: 2.5
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -6836,7 +6836,7 @@ Transform:
   m_GameObject: {fileID: 1395446691}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.6, y: 2.98, z: 11.3}
+  m_LocalPosition: {x: -8.6, y: 2.98, z: 8.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7053,7 +7053,7 @@ Transform:
   m_GameObject: {fileID: 1483484003}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.94, y: 2.98, z: -1.46}
+  m_LocalPosition: {x: 8.94, y: 2.98, z: -4.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7291,7 +7291,7 @@ Transform:
   m_GameObject: {fileID: 1536857379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.94, y: 2.98, z: 11.3}
+  m_LocalPosition: {x: 8.94, y: 2.98, z: 9.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7309,7 +7309,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.92066044, b: 0.5424528, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 2.5
   m_Range: 14
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
