@@ -30,7 +30,7 @@ public class ScoreManager : MonoBehaviour
 
     public void StartGame()
     {
-        _bossSpawningScore = GetNextBossScore(_score, _scoreIntervalForBoss, _scoreBracketPercentageForBoss);
+        _bossSpawningScore = _scoreIntervalForBoss;
 
         _enemyManager.OnEnemyCured += (int complexity) =>
         {
@@ -58,7 +58,7 @@ public class ScoreManager : MonoBehaviour
                 _enemyManager.SpawnEnemyBoss();
 
                 _scoreIntervalForBoss = _scoreIntervalForBoss * _scoreIntervarMultiplierForBoss;
-                _bossSpawningScore = GetNextBossScore(_score, _scoreIntervalForBoss, _scoreBracketPercentageForBoss);
+                _score = _scoreIntervalForBoss;
             }
         };
 
@@ -77,16 +77,6 @@ public class ScoreManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             Score += 1;
         }
-    }
-
-    int GetNextBossScore(int currentScore, int scoreIntervalForBoss, int scoreBracketPercentageForBoss)
-    {
-        scoreBracketPercentageForBoss = Mathf.Clamp(scoreBracketPercentageForBoss, 0, 100);
-
-        int lowBracket = currentScore + scoreIntervalForBoss - (scoreIntervalForBoss * scoreBracketPercentageForBoss / 100);
-        int upperBracket = currentScore + scoreIntervalForBoss + (scoreIntervalForBoss * scoreBracketPercentageForBoss / 100);
-
-        return UnityEngine.Random.Range(lowBracket, upperBracket);
     }
 
 
