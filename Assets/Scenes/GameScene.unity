@@ -2149,7 +2149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3146491133151377636, guid: ba36d2d797a6524448a103756e50ae5c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.81
+      value: 12.35
       objectReference: {fileID: 0}
     - target: {fileID: 3146491133151377636, guid: ba36d2d797a6524448a103756e50ae5c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2555,7 +2555,7 @@ MonoBehaviour:
     _trigger:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1163236423}
           m_TargetAssemblyTypeName: EffectBehaviour, Assembly-CSharp
           m_MethodName: Boing
           m_Mode: 1
@@ -2567,7 +2567,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 66270831}
           m_TargetAssemblyTypeName: EffectBehaviour, Assembly-CSharp
           m_MethodName: Boing
           m_Mode: 1
@@ -2579,7 +2579,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 467599673}
           m_TargetAssemblyTypeName: EffectBehaviour, Assembly-CSharp
           m_MethodName: Boing
           m_Mode: 1
@@ -2595,7 +2595,7 @@ MonoBehaviour:
     _trigger:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 85106524}
           m_TargetAssemblyTypeName: EffectBehaviour, Assembly-CSharp
           m_MethodName: Boing
           m_Mode: 1
