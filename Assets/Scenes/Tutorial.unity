@@ -459,8 +459,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6549714601243239838, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_text
-      value: "Hello there! Welcome to Bouba District. I'm here to guide you through
-        some of the basics of the game. Shall we start now?\r"
+      value: "Hello! Welcome to Bouba District. I'm here to guide you through some
+        of the basics of the game. Shall we start now?\r"
       objectReference: {fileID: 0}
     - target: {fileID: 7162188991037387923, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: _showOnStart
@@ -8322,7 +8322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6549714601243239838, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
       propertyPath: m_text
-      value: 'This creatures are a real trouble, tho. Luckily for us they have one
+      value: 'These creatures are a real trouble, tho. Luckily for us they have one
         weakness: music.'
       objectReference: {fileID: 0}
     - target: {fileID: 7162188991037387923, guid: eed7f75165834cb4b86daedcb6be7a3c, type: 3}
