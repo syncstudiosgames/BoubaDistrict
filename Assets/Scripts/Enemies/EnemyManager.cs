@@ -71,12 +71,14 @@ public class EnemyManager : MonoBehaviour
 
     public void StartGame()
     {
+        
         Invoke("StartSpawning", 0);
     }
 
     public void StartGAmeWithDelay(float delay)
     {
         Invoke("StartSpawning", delay);
+        
     }
     #endregion
 
@@ -94,6 +96,7 @@ public class EnemyManager : MonoBehaviour
     }
     void StartSpawning()
     {
+        SpawnEnemyBoss();
         StartCoroutine(SpawningCoroutine());
     }
 

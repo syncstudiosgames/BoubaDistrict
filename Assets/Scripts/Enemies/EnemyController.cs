@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField] Rigidbody _rb;
     [SerializeField] GameObject _modelHolder;
+    [SerializeField] GameObject _stunEffect;
     
     float _moveSpeed = 15;
     float _initialMoveSpeed;
@@ -36,11 +37,13 @@ public class EnemyController : MonoBehaviour
     public void Stun(float stunTime)
     {
         _isStunned = true;
+        _stunEffect?.SetActive(true);
         Invoke("UnStun", stunTime);
     }
     public void UnStun()
     {
         _isStunned = false;
+        _stunEffect?.SetActive(false);
     }
 
     void EnterAnimation()
