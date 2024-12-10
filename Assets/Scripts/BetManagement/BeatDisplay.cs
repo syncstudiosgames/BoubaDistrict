@@ -8,19 +8,19 @@ using UnityEngine.UI;
 public class BeatDisplay : MonoBehaviour
 {
     [SerializeField] BeatManager _beatManager;
-    [SerializeField] Slider _sliderLeftToRight;
-    [SerializeField] Slider _sliderRightToLeft;
 
     [SerializeField] Image _pulseImage;
-    [SerializeField] Color _pulseImageColor;
-    [SerializeField] Color _pulseImageHighlightColor;
+
+    Vector3 _initalPulseImageScale;
 
     [SerializeField] Sprite _pulseHelperSprite;
     [SerializeField] float _pulseHelperSize;
 
     [SerializeField] RectTransform _leftToRightInitialAnchor;
     [SerializeField] RectTransform _rightToLeftInitialAnchor;
-    [SerializeField] RectTransform _convergencePoint;
+
+    [SerializeField] RectTransform _leftToRightFinalAnchor;
+    [SerializeField] RectTransform _rightToLeftFinalAnchor;
 
     GameObject _l2rIcon;
     GameObject _r2lIcon;
@@ -29,6 +29,8 @@ public class BeatDisplay : MonoBehaviour
 
     private void Start()
     {
+        _initalPulseImageScale = _pulseImage.transform.localScale;
+
         _l2rIcon = CreateIcon(_leftToRightInitialAnchor, false);
         _r2lIcon = CreateIcon(_rightToLeftInitialAnchor, true);
 
@@ -40,8 +42,8 @@ public class BeatDisplay : MonoBehaviour
         //_sliderLeftToRight.value = ClipProgressNormalized;
         //_sliderRightToLeft.value = ClipProgressNormalized;
 
-        AnimateIcon(_l2rIcon, _leftToRightInitialAnchor.localPosition, _convergencePoint.localPosition, ClipProgressNormalized);
-        AnimateIcon(_r2lIcon, _rightToLeftInitialAnchor.localPosition, _convergencePoint.localPosition, ClipProgressNormalized);
+        AnimateIcon(_l2rIcon, _leftToRightInitialAnchor.localPosition, _leftToRightFinalAnchor.localPosition, ClipProgressNormalized);
+        AnimateIcon(_r2lIcon, _rightToLeftInitialAnchor.localPosition, _rightToLeftFinalAnchor.localPosition, ClipProgressNormalized);
     }
 
     GameObject CreateIcon(RectTransform anchor, bool invert)
@@ -49,6 +51,7 @@ public class BeatDisplay : MonoBehaviour
         // Create and set up GameObject:
         var icon = new GameObject("Pulse", typeof(RectTransform));
         icon.transform.SetParent(transform);
+        icon.transform.SetAsFirstSibling();
 
         // Set up icon:
         var rectTransform = icon.GetComponent<RectTransform>();
@@ -82,12 +85,16 @@ public class BeatDisplay : MonoBehaviour
     
     void HighlightImage()
     {
-        _pulseImage.color = _pulseImageHighlightColor;
-        Invoke("UnHighlightImage", 0.2f);
-    }
-    void UnHighlightImage()
-    {
-        _pulseImage.color = _pulseImageColor;
+        Vector3 targetScale = _initalPulseImageScale * 1.5f;
+
+        LeanTween.scale(_pulseImage.gameObject, targetScale, 0.1f)
+            .setEase(LeanTweenType.easeOutCirc)
+            .setOnComplete(() =>
+            {
+                LeanTween.scale(_pulseImage.gameObject, _initalPulseImageScale, 0.1f)
+                    .setEase(LeanTweenType.easeInQuad);
+            });
+
     }
 
     Vector3 InterpolatePosition(Vector3 initPos, Vector3 finalPos, float value)

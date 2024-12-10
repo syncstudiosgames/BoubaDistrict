@@ -96,7 +96,6 @@ public class EnemyManager : MonoBehaviour
     }
     void StartSpawning()
     {
-        SpawnEnemyBoss();
         StartCoroutine(SpawningCoroutine());
     }
 
