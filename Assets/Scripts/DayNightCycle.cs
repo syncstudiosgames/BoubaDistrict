@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class DayNightCycle : MonoBehaviour
 {
-    public Light directionalLight; // Asigna tu Directional Light
-    public List<Light> pointLights; // Asigna tus Point Lights aquí
-    public float dayDuration = 30f; // Duración de cada ciclo (30 segundos)
-    public float transitionDuration = 5f; // Duración de la transición (5 segundos)
-    public Color dayColor = Color.white; // Color de la luz para el día
-    public Color nightColor = new Color(0.2f, 0.2f, 0.5f); // Color de la luz para la noche (tono azulado)
+    public Light directionalLight; 
+    public List<Light> pointLights; 
+    public float dayDuration; 
+    public float transitionDuration; 
+    public Color dayColor = Color.white; 
+    public Color nightColor = new Color(0.2f, 0.2f, 0.5f); 
+    public Vector3 dayRotation = new Vector3(50f, 0f, 0f);
+    public Vector3 nightRotation = new Vector3(-30f, 0f, 0f);
 
     private bool isDay = true;
     private bool pointLightsActivated = false;
 
     void Start()
     {
-        // Configuración inicial: Día
         SetDayImmediate();
         StartCoroutine(CycleDayNight());
     }
@@ -41,12 +42,13 @@ public class DayNightCycle : MonoBehaviour
     IEnumerator FadeToNight()
     {
         isDay = false;
-        pointLightsActivated = false; // Asegurar que las luces se activan en el momento adecuado
+        pointLightsActivated = false; 
 
-        // Interpolar la intensidad y el color de la Directional Light hacia "noche"
         float startIntensity = directionalLight.intensity;
-        float endIntensity = 0.1f; // Intensidad más oscura para la noche
+        float endIntensity = 0.1f; 
         Color startColor = directionalLight.color;
+        Quaternion startRotation = Quaternion.Euler(dayRotation);
+        Quaternion endRotation = Quaternion.Euler(nightRotation);
         float elapsed = 0f;
 
         while (elapsed < transitionDuration)
@@ -54,32 +56,34 @@ public class DayNightCycle : MonoBehaviour
             elapsed += Time.deltaTime;
             directionalLight.intensity = Mathf.Lerp(startIntensity, endIntensity, elapsed / transitionDuration);
             directionalLight.color = Color.Lerp(startColor, nightColor, elapsed / transitionDuration);
+            directionalLight.transform.rotation = Quaternion.Lerp(startRotation, endRotation, elapsed / transitionDuration);
 
-            // Encender las Point Lights cuando la intensidad esté por debajo de 0.3
             if (!pointLightsActivated && directionalLight.intensity <= 0.3f)
             {
                 foreach (Light pointLight in pointLights)
                 {
                     pointLight.enabled = true;
                 }
-                pointLightsActivated = true; // Evitar que se activen múltiples veces
+                pointLightsActivated = true; 
             }
 
             yield return null;
         }
 
-        directionalLight.intensity = endIntensity; // Asegurar que alcanza la intensidad final
-        directionalLight.color = nightColor; // Asegurar que el color es el final
+        directionalLight.intensity = endIntensity; 
+        directionalLight.color = nightColor; 
+        directionalLight.transform.rotation = endRotation; 
     }
 
     IEnumerator FadeToDay()
     {
         isDay = true;
 
-        // Interpolar la intensidad y el color de la Directional Light hacia "día"
         float startIntensity = directionalLight.intensity;
-        float endIntensity = 1f; // Intensidad para el día
+        float endIntensity = 1f; 
         Color startColor = directionalLight.color;
+        Quaternion startRotation = Quaternion.Euler(nightRotation);
+        Quaternion endRotation = Quaternion.Euler(dayRotation);
         float elapsed = 0f;
 
         while (elapsed < transitionDuration)
@@ -87,13 +91,14 @@ public class DayNightCycle : MonoBehaviour
             elapsed += Time.deltaTime;
             directionalLight.intensity = Mathf.Lerp(startIntensity, endIntensity, elapsed / transitionDuration);
             directionalLight.color = Color.Lerp(startColor, dayColor, elapsed / transitionDuration);
+            directionalLight.transform.rotation = Quaternion.Lerp(startRotation, endRotation, elapsed / transitionDuration);
             yield return null;
         }
 
-        directionalLight.intensity = endIntensity; // Asegurar que alcanza la intensidad final
-        directionalLight.color = dayColor; // Asegurar que el color es el final
+        directionalLight.intensity = endIntensity; 
+        directionalLight.color = dayColor; 
+        directionalLight.transform.rotation = endRotation; 
 
-        // Apagar las Point Lights al final de la transición
         foreach (Light pointLight in pointLights)
         {
             pointLight.enabled = false;
@@ -105,13 +110,14 @@ public class DayNightCycle : MonoBehaviour
         isDay = true;
         if (directionalLight != null)
         {
-            directionalLight.intensity = 1f; // Intensidad de día inicial
-            directionalLight.color = dayColor; // Color de día inicial
+            directionalLight.intensity = 1f; 
+            directionalLight.color = dayColor;
+            directionalLight.transform.rotation = Quaternion.Euler(dayRotation); 
         }
 
         foreach (Light pointLight in pointLights)
         {
-            pointLight.enabled = false; // Apaga las Point Lights
+            pointLight.enabled = false; 
         }
     }
 }
