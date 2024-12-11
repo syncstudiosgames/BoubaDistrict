@@ -1,19 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class EnemyModelLoader : MonoBehaviour
 {
     [SerializeField] public GameObject[] enemyModels;
     [SerializeField] public GameObject[] enemySplash;
-    [SerializeField] public AnimatorController[] enemyAnimations;
+    [SerializeField] public RuntimeAnimatorController[] enemyAnimations;
 
 
     [SerializeField] private Transform modelHolder;
 
     public GameObject splash;
-    public AnimatorController controller;
+    public RuntimeAnimatorController controller;
 
     private void Start()
     {

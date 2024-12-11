@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
                     Transform targetChild = modelHolderTransform.GetChild(0); // Primer hijo
 
                     // Asegurarse de que tiene el componente Animator, y si no, añadirlo
-                    Animator animator = targetChild.GetComponent<Animator>();
+                    animator = targetChild.GetComponent<Animator>();
                     if (animator == null)
                     {
                         animator = targetChild.gameObject.AddComponent<Animator>();
