@@ -67,7 +67,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -279.3, y: -1}
+  m_AnchoredPosition: {x: -344.7, y: -1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2464973504622998923
@@ -161,7 +161,7 @@ MonoBehaviour:
   _beatManager: {fileID: 0}
   _pulseImage: {fileID: 6307352006396673319}
   _pulseHelperSprite: {fileID: 21300000, guid: 00067ba179a37894889b1aa6d90c8e70, type: 3}
-  _pulseHelperSize: 150
+  _pulseHelperSize: 100
   _leftToRightInitialAnchor: {fileID: 2358857825477002398}
   _rightToLeftInitialAnchor: {fileID: 530048620123781608}
   _leftToRightFinalAnchor: {fileID: 3061994193821094564}
@@ -198,7 +198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 279.3, y: -1.0000277}
+  m_AnchoredPosition: {x: 344.7, y: -1.0000277}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6013939840091879280
