@@ -548,6 +548,18 @@ PrefabInstance:
       value: 92.95557
       objectReference: {fileID: 0}
     - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4183024408757448102, guid: eef9fd78f6682a246b701426e3cf560d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -7013,6 +7025,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 1719730774}
+    - target: {fileID: 2229070527445193511, guid: 20fdf42fe4015284d8b22c3e2d697102, type: 3}
+      propertyPath: _maxHealthValueForIncreasingSlider
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 7842735132610590895, guid: 20fdf42fe4015284d8b22c3e2d697102, type: 3}
       propertyPath: m_Name
       value: PlayerDisplay
@@ -8628,7 +8644,7 @@ MonoBehaviour:
   _enemySpawner: {fileID: 1032032963}
   _waitForTutorial: 1
   _allowCeroEnemies: 1
-  _renderEnemyUI: 0
+  _renderEnemyUI: 1
   _notSpawningBracketLength: 7
 --- !u!4 &1913901264
 Transform:
