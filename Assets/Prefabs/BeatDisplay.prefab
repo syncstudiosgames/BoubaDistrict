@@ -161,7 +161,7 @@ MonoBehaviour:
   _beatManager: {fileID: 0}
   _pulseImage: {fileID: 6307352006396673319}
   _pulseHelperSprite: {fileID: 21300000, guid: 00067ba179a37894889b1aa6d90c8e70, type: 3}
-  _pulseHelperSize: 250
+  _pulseHelperSize: 200
   _leftToRightInitialAnchor: {fileID: 2358857825477002398}
   _rightToLeftInitialAnchor: {fileID: 530048620123781608}
   _leftToRightFinalAnchor: {fileID: 3061994193821094564}
