@@ -9,7 +9,7 @@ public class AreaOfEffect : MonoBehaviour
     [SerializeField] float _effectRadious;
     [SerializeField] CircleDrawer _circleDrawer;
 
-    float speedBoostValue = 20f;
+    float speedBoostValue = 15f;
 
     private void Start()
     {

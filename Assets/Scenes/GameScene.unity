@@ -1086,7 +1086,7 @@ MonoBehaviour:
   - {fileID: 1483484005}
   - {fileID: 1536857381}
   - {fileID: 1395446692}
-  dayDuration: 50
+  dayDuration: 85
   transitionDuration: 10
   dayColor: {r: 1, g: 1, b: 1, a: 1}
   nightColor: {r: 0.050195802, g: 0.050195802, b: 0.0754717, a: 1}

@@ -52,14 +52,14 @@ public class EnemyManager : MonoBehaviour
     float _dificultyStep = 0.01f;
     float _dificultyStepAcceleration = 0.01f;
 
-    float _baseSpawningTime = 5f;
-    const float MIN_SPAWNING_INTERVAL = 1f;
+    float _baseSpawningTime = 4.5f;
+    const float MIN_SPAWNING_INTERVAL = 2f;
 
     float _baseMoveSpeed = 10;
-    const float MAX_MOVE_SPEED = 30f;
+    const float MAX_MOVE_SPEED = 20f;
 
-    float[] _baseComplexityChance = {3f, 8f, 1f, 0.01f}; // Chances for 1,2,3... complexity.
-    readonly float[] MAX_COMPLEXITY_CHANCES = { 1f, 3f, 5f, 6f };
+    float[] _baseComplexityChance = {3f, 9f, 2f, 0.01f}; // Chances for 1,2,3... complexity.
+    readonly float[] MAX_COMPLEXITY_CHANCES = { 1f, 2f, 8f, 6f };
 
     float[] _typeOfEnemyChanche = { 10f, 1f };
 
