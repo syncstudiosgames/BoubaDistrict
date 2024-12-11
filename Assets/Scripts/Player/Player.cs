@@ -59,7 +59,8 @@ public class Player : MonoBehaviour
     private void Start()
     {
         // Recuperar el nombre del jugador desde PlayerPrefs
-        Name = PlayerPrefs.GetString("PlayerName", "Player");
+        Name = PlayerPrefs.GetString("PlayerName");
+        Debug.Log($"UserName: " + Name);
 
         // Inicializar el índice de la skin seleccionada
         SkinIndex = GetSkinIndex();
