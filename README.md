@@ -931,11 +931,20 @@ Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático
 
 ### Laura
 
-### Marta 
+### Marta
+En esta ocasión me he encargado de modelar el último escenario e iluminarlo con luces bakeadas, de las publicaciones en redes sociales y de actualizar el Game Design Document.
+
+Para aumentar el contenido del juego diseñé un nuevo entorno que siguiera el estilo de los anteriores pero que estuviera inspirado por otra estética diferente. Además de las texturas emisivas coloqué otras luces bakeadas para conseguir los reflejos esperados. Esto resultó algo tedioso ya que tuve que hacer varios renderizados para ajustar esta iluminación, y tardé bastante, pero creo que finalmente conseguimos enriquecer la experiencia de juego.
+
+Una vez más he sido la respnonsable de añadir el nuevo contenido al GDD y actualizar las imágenes para que reflejen nuestros avances. Actualizar el GDD de forma constante y mantenerlo claro mejoró la comunicación con el equipo y resolvió dudas que más adelante podrían haber resultado en problemas de más peso. Esta vez he tratado de subir más contenido a las redes para que reflejaran nuestro trabajo.
+
+A lo largo del desarrollo, he aprendido la importancia de equilibrio entre tareas técnicas y de gestión para garantizar el trabajar de manera más efectiva. 
 
 ### Francisco
 
 ### Ana
+En esta entrega me he centrado en la integracion de nuevos personajes, iluminación de los escenarios y en resolvier bugs de la beta. Entre los desafios que he encontrado en esta parte del proyecto mencionaría la incorporación de nuevos personajes, que fue un reto significativo, ya que implicó no solo gestionar su selección, sino también garantizar que la elección persistiera al cambiar entre escenas como la nueva escena de incio. Se utilizó un sistema basado en PlayerPrefs para almacenar temporalmente datos como el índice del personaje seleccionado, combinándolo con un gestor centralizado que aseguraba la carga adecuada en cada escena. Esto incluyó ajustes en la lógica del CharacterSelectionManager y la asignación dinámica de prefabs.
+Por último estacar también la implementacion de lighting como un ciclo de día y noche que mejoró la inmersión y estética del juego.
 
 ### Lucía
 
@@ -985,6 +994,9 @@ Esta diferencia entre nuestras ambiciones y la realidad del tiempo disponible fu
 El realizar un juego completo ha sido una experiencia tanto dura como entretenida para nosotros. A lo largo del proyecto hemos aprendido que la planificación cuidadosa y el establecimiento de objetivos claros desde el principio son esenciales para mantener el enfoque durante todo el proceso.
 
 Hemos aprendido también que es necesario recibir retroalimentación para mejorar la calidad del juego, y observar cómo juega la gente. Esto nos ha permitido identificar áreas críticas que deben ser corregidas antes del lanzamiento o implementar características que no se nos habían ocurrido de primera instancia.
+
 Por otro lado, la gestión del tiempo y la priorización de tareas son fundamentales. Es fácil perderse en la emoción de añadir detalles y características adicionales, pero se debe aprender a identificar lo más importante y trabajar sobre ello.
+
 Finalmente, una buena comunicación y ambiente de trabajo son esenciales para sacar cualquier proyecto adelante. Un equipo unido y bien comunicado es más capaz de superar desafíos y contratiempos y cumplir con los objetivos establecidos.
+
 Este proyecto ha sido un gran paso adelante en nuestra capacidad para crear juegos, pero también nos ha enseñado áreas donde podemos mejorar. Con estas lecciones en mente, estamos mejor preparados para enfrentar nuevos proyectos, manteniendo un enfoque más equilibrado entre creatividad, planificación y eficiencia.
