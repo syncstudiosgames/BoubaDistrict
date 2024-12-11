@@ -8082,7 +8082,7 @@ PrefabInstance:
       objectReference: {fileID: 1199792825}
     - target: {fileID: 2229070527445193511, guid: 20fdf42fe4015284d8b22c3e2d697102, type: 3}
       propertyPath: _maxHealthValueForIncreasingSlider
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7842735132610590895, guid: 20fdf42fe4015284d8b22c3e2d697102, type: 3}
       propertyPath: m_Name
