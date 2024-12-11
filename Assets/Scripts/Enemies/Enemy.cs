@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
     int _lives;
     int _currrentLivePointer = 0;
 
+    int _damageMultiplier;
+
     [SerializeField] private EnemyDisplay _enemyDisplay;
     [SerializeField] EnemyController _enemyController;
     [SerializeField] EnemyModelLoader _enemyModelLoader;
@@ -31,15 +33,14 @@ public class Enemy : MonoBehaviour
     event Action _onRestore;
     public event Action OnRestore { add { _onRestore += value; } remove { _onRestore -= value; } }
 
-    event Action _onDie;
-    public event Action OnDie { add { _onDie += value; } remove { _onDie -= value; } }
 
 
-    public void SetUp(int complexity, float moveSpeed, NoteManager noteManager, EnemyManager enemyManager, int lives = 1, bool renderSequence = true)
+    public void SetUp(int complexity, float moveSpeed, NoteManager noteManager, EnemyManager enemyManager, int damageMultiplier = 1, int lives = 1, bool renderSequence = true)
     {
         _noteManager = noteManager;
         _enemyManager = enemyManager;
         _complexity = Mathf.Clamp(complexity, 1, 4);
+        _damageMultiplier = damageMultiplier;
         _enemyController.SetUp(moveSpeed);
 
         _lives = lives;
@@ -196,7 +197,8 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        _enemyManager.EnemyHit(_complexity);
+        _enemyManager.EnemyHit(_complexity * _damageMultiplier);
+
         Destroy(gameObject);
     }
 

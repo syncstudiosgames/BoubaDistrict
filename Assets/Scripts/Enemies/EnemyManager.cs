@@ -58,6 +58,9 @@ public class EnemyManager : MonoBehaviour
     float _baseMoveSpeed = 10;
     const float MAX_MOVE_SPEED = 20f;
 
+    float _baseDamageMultiplier = 1;
+    const float MAX_DAMAGE_MULTIPLIER = 3;
+
     float[] _baseComplexityChance = {3f, 9f, 2f, 0.01f}; // Chances for 1,2,3... complexity.
     readonly float[] MAX_COMPLEXITY_CHANCES = { 1f, 2f, 8f, 6f };
 
@@ -137,12 +140,14 @@ public class EnemyManager : MonoBehaviour
 
         var moveSpeed = interpolateValueLog(_dificultyStep, _baseMoveSpeed, MAX_MOVE_SPEED);
 
-        return SpawnEnemy(enemyPrefab, position, complexity, moveSpeed, 1, _renderEnemyUI);
+        int damageMultiplier = Mathf.RoundToInt(interpolateValueLog(_dificultyStep, _baseDamageMultiplier, MAX_DAMAGE_MULTIPLIER) + 0.3f);
+
+        return SpawnEnemy(enemyPrefab, position, complexity, moveSpeed, damageMultiplier, 1, _renderEnemyUI);
     }
-    GameObject SpawnEnemy(GameObject prefab, Vector3 pos, int complexity, float moveSpeed, int lives = 1, bool renderSequence = true)
+    GameObject SpawnEnemy(GameObject prefab, Vector3 pos, int complexity, float moveSpeed, int damageMultiplier = 1, int lives = 1, bool renderSequence = true)
     {
         var enemyGO = Instantiate(prefab, pos, Quaternion.identity);
-        enemyGO.GetComponent<Enemy>().SetUp(complexity, moveSpeed, _noteManager, this, lives, renderSequence);
+        enemyGO.GetComponent<Enemy>().SetUp(complexity, moveSpeed, _noteManager, this, damageMultiplier, lives, renderSequence);
         _onEnemySpawned?.Invoke();
         return enemyGO;
     }
@@ -151,11 +156,11 @@ public class EnemyManager : MonoBehaviour
         _bossSpawned = true;
 
         var pos = GetCenterPosAtSpawn();
-        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 4, 5, 3, _renderEnemyUI);
+        return SpawnEnemy(_enemyBossesPrefabs[bossIndex], pos, 4, 5, 4, 3, _renderEnemyUI);
     }
     public void SpawnSimpleEnemy()
     {
-        SpawnEnemy(_enemiesPrefabs[0], GetRandomPositionAtSpawn(), 1, 10, 1, false);
+        SpawnEnemy(_enemiesPrefabs[0], GetRandomPositionAtSpawn(), 1, 10, 1, 1, false);
     }
     public void SpawnEnemyWithComplexity(int complexity)
     {
