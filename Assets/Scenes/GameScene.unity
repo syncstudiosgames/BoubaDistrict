@@ -2607,8 +2607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 320a73fc84a1ff541b40e0f02d01ea0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioClip: {fileID: 8300000, guid: e8a20eb8e39333b40bbb3fe324b1a141, type: 3}
-  _bpm: 130
+  _audioClip: {fileID: 8300000, guid: a085996df33017e4f9407ad608e7da04, type: 3}
+  _bpm: 120
   _errorThreshold: 0.3
 --- !u!4 &526279951
 Transform:
