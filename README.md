@@ -795,21 +795,21 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 Las interfaces combinan elementos 2D y 3D. Algunas están creadas con elementos estilo cartoo y otras están integradas dentro del escenario. Siguen la estética general del juego.
 
 <p align="center">
-<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/PantallaInicio.PNG" width="700">
-</p>
-
-<p align="center">
-  <em>PANTALLA DE INICIO</em></p>
-<p align="center">
-
----
-
-<p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Cinematica.PNG" width="700">
 </p>
 
 <p align="center">
   <em>CINEMÁTICA</em></p>
+<p align="center">
+
+---
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/MenuInicio.PNG" width="700">
+</p>
+
+<p align="center">
+  <em>MENÚ DE INICIO</em></p>
 <p align="center">
 
 ---
@@ -823,7 +823,6 @@ Las interfaces combinan elementos 2D y 3D. Algunas están creadas con elementos 
 <p align="center">
 
 ---
-
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/CharacterSelection.PNG" width="700">
@@ -840,7 +839,27 @@ Las interfaces combinan elementos 2D y 3D. Algunas están creadas con elementos 
 </p>
 
 <p align="center">
-  <em>GAMEPLAY</em></p>
+  <em>GAMEPLAY HARMONIA</em></p>
+<p align="center">
+
+---
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Gameplay2.PNG" width="700">
+</p>
+
+<p align="center">
+  <em>GAMEPLAY SYNTHESIA</em></p>
+<p align="center">
+
+---
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Gameplay3.PNG" width="700">
+</p>
+
+<p align="center">
+  <em>GAMEPLAY SOULWOOD</em></p>
 <p align="center">
 
 ---
