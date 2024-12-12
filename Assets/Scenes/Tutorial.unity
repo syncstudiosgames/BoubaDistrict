@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2785630558674927419, guid: d268511cb720bf94c80b6f8ac56ae3b3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -268
+      value: -317
       objectReference: {fileID: 0}
     - target: {fileID: 2785630558674927419, guid: d268511cb720bf94c80b6f8ac56ae3b3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7852,6 +7852,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyManager: {fileID: 1913901263}
   _maxHealthPoints: 20
+  damageOverlay: {fileID: 0}
+  overlayDuration: 0.5
+  overlayMaxAlpha: 0.5
 --- !u!4 &1719730775
 Transform:
   m_ObjectHideFlags: 0
