@@ -542,13 +542,13 @@ Las mecánicas principales de Bouba District se centran en la combinación de ac
 
 - **Ritmo y secuencia de teclas:** el jugador deberá pulsar las teclas correctas o tocar los botones en pantalla en sintonía con la música. Las secuencias variarán en dificultad según el nivel.
 - **Defensa:** el pulsar las teclas correctas provocará que los enemigos se unan al jugador y le darán más vida. El jugador tendrá que aguantar el mayor tiempo posible, consiguiendo la mayor puntuación o hasta que termine la canción, si se trata de un nivel de duración determinada (en el caso de canciones conocidas).
-- **Puntuación:** la puntuación incrementa cuando se curan Boubas. Cuantas más teclas correctas consecutivas se consigan pulsar, más puntos sumarás. También se tendrá en cuenta la vida final del jugador o el tiempo total que ha sobrevivido (dependiendo del tipo de nivel). Esta puntuación se llevará a un ranking global para fomentar el aspecto competitivo y la rejugabilidad.
+- **Puntuación:** la puntuación incrementa cuando se matan Boubas. Cuantas más teclas correctas consecutivas se consigan pulsar, más puntos sumarás. También se tendrá en cuenta la vida final del jugador o el tiempo total que ha sobrevivido (dependiendo del tipo de nivel). Esta puntuación se llevará a un ranking global para fomentar el aspecto competitivo y la rejugabilidad.
 
 ## 4.3 Controles
 Los controles de Bouba District están diseñados para ser accesibles, simples y precisos.
 
 - **En dispositivos móviles y tablets:** el jugador cuenta con cuatro botones, dos a ambos lados de la pantalla con los que ejecutar las secuencias de notas.
-- En PC: se controlará por teclado, o con ratón, si se desea experimentar un mayor reto. Las teclas asignadas serán A, W, S y D.
+- **En PC:** se controlará por teclado, o con ratón, si se desea experimentar un mayor reto. Las teclas asignadas serán W, A, S y D.
 
 ## 4.4 Niveles y misiones
 El juego contará con varios niveles que se irán actualizando cada 3 meses. Todos con estéticas diferentes y con mejoras y accesorios para el personaje, además de los Boubas característicos de cada temporada. También introducirán nuevos temas musicales y presentarán mayor dificultad, generando enemigos más complicados de matar y aumentando la velocidad de las canciones.
@@ -706,7 +706,7 @@ Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, q
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba6.PNG" width="200">
 </p>
 
-#### 5.2.6.6 Bouboss
+#### 5.2.6.6 BouBoss
 Este Bouba amarillo es el más peligroso. Es el resultado de una combinación y mutación de varios Boubas. Aunque avanza lentamente, es duro de derrotar por su tamaño. Un descuido hará que pierdas una gran cantidad de vida.
 
 <p align="center">
@@ -753,7 +753,7 @@ Se desarrollará en **3D**, con **vista picada**, pero se utilizarán elementos 
 
 Los entornos y personajes están modelados en 3D, con un diseño artístico **caricaturesco y colorido**, inspirado en juegos casuales que transmiten un tono **alegre, divertido y desenfadado**, a pesar de las mecánicas de "ataque y defensa". Los enemigos serán criaturas pequeñas y amables.
 
-- **Entorno:**  Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida. El secundario será uno oscuro con estética moderna y futurista e iluminado con neones y texturas emisivas.
+- **Entorno:**  Los escenarios serán simples pero detallados, con una paleta de colores vibrante. El escenario principal será una arena ambientada en un entorno urbano donde las criaturas se acercan desde la parte superior de la pantalla. Contará con edificios y props como basura, farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida. El secundario será uno oscuro con estética moderna y futurista e iluminado con neones y texturas emisivas. El tercero será también una ciudad nocturna pero con tonos más cálidos e iluminada de la misma manera que el segundo.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario.PNG" width="700">
@@ -763,13 +763,17 @@ Los entornos y personajes están modelados en 3D, con un diseño artístico **ca
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario2.PNG" width="700">
 </p>
 
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Escenario3.PNG" width="700">
+</p>
+
 - **Personajes:** Los personajes siguen en la línea cartoon, con formas redondas y extremidades largas. Los enemigos serán adorables criaturas, con formas inspiradas en slimes o criaturas fantásticas. Serán coloridos, y aunque sean "enemigos", su aspecto visual será entrañable.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kiki3D.PNG" width="250">
 </p>
 
-- **Efectos visuales:** Los Boubas contarán con efectos visuales dependiendo del tipo que sean. También, al conseguir apaciguar a las criaturas, se verán efectos visuales llamativos que darán un toque al videojuego y servirán  como retroalimentación al jugador.
+- **Efectos visuales:** Los Boubas contarán con efectos visuales dependiendo del tipo que sean. También, al matar a las criaturas, se verán efectos visuales llamativos que darán un toque al videojuego y servirán  como retroalimentación al jugador.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Efectos.PNG" width="250">
@@ -781,18 +785,16 @@ La música será un elemento fundamental que impulse la jugabilidad. Se caracter
 
 - **Géneros musicales:** la banda sonora contará con una mezcla de estilos, como pop, electrónica, reggae, jazz… etc. Cada nivel tendrá su propia pista temática que refleje la atmósfera del escenario.
 
-- **Interactividad:** la música se adaptará a la acción del jugador. A medida que se mantenga con vida irán apareciendo cambios de ritmo y se aumentará la velocidad para incrementar progresivamente la dificultad.
-
 - **Motivos:** Kiki y los Boubas realizarán motivos musicales que se repiten a lo largo del juego para crear continuidad y familiaridad entre escenarios.
 
 ## 6.4 Ambiente sonoro
-El ambiente complementará la experiencia del juego. Los efectos de sonido serán variados, desde los sonidos que emiten los integrantes con sus altavoces hasta los ruidos de los Boubas al ser derrotados. Cada acción de Kiki, Kike y Kiko tendrá un efecto de sonido que hará que el juego sea más dinámico y rico.
+El ambiente complementará la experiencia del juego. Los efectos de sonido serán variados. Todas las interfaces cuentan con efectos de sonido en sus botones para aportar variedad y dinamismo.
 
-Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el sonido que hacen los Boubas al avanzar hacia el jugador. Esto fomentará la inmersión del usuario en el mundo. Se implementarán también señales auditivas a modo de retroalimentación, para indicar cómo hay que mantener el ritmo, cuándo ha recibido daño o cuándo realiza una acción correcta y calma a los Boubas
+Los Boubas emitirán sonidos cuando aparezcan. Se incluirán también sonidos en el entorno como el murmullo de la ciudad. Esto fomentará la inmersión del usuario en el escenario.
 
 # 7. Interfaz
 ## 7.1 Diseños básicos de los menús
-Las interfaces combinan elementos 2D y 3D. Algunas están creadas con elementos estilo cartoo y otras están integradas dentro del escenario. Siguen la estética general del juego.
+Las interfaces combinan elementos 2D y 3D. Algunas están creadas con elementos estilo cartoon y otras están integradas dentro del escenario. Siguen la estética general del juego.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Cinematica.PNG" width="700">
@@ -921,10 +923,9 @@ Las mecánicas de Bouba District han sido hechas para sustentar las dinámicas d
 
 El objetivo del juego es aguantar el máximo tiempo posible con vida. Se deberán pulsar las teclas correctas en el momento adecuado para completar la secuencia del Bouba al que se quiere eliminar. Si el Bouba llega al jugador, perderá parte de la vida.
 
-Si el jugador ejecuta una secuencia correctamente, obtendrá puntuación adicional y activará efectos visuales que curarán a la criatura. Conseguir cadenas consecutivas de notas correctas otorga mayor puntuación. Perder el ritmo reinicia el contador, lo cual incentiva la concentración.
+Si el jugador ejecuta una secuencia correctamente, obtendrá puntuación adicional y activará efectos visuales que matarán a la criatura. Conseguir cadenas consecutivas de notas correctas otorga mayor puntuación. Perder el ritmo reinicia el contador, lo cual incentiva la concentración.
 
 Los jugadores pueden elegir entre una variedad de personajes y customizarlos. Al tener la opción de controlar al personaje con el que más conecten, se consigue generar una conexión mayor. Cada personaje cuenta con instrumentos diferentes y accesorios distintivos y coleccionables.
-
 
 # 9. Hoja de ruta del desarrollo
 ## 9.1 Hito 1 - Diseño conceptual y prototipo básico (2 semanas).
@@ -979,7 +980,7 @@ Por último estacar también la implementacion de lighting como un ciclo de día
 
 ## Trabajo grupal
 ## 10.1 Lo que salió bien
-### 10.1.2 
+### 10.1.1 Escuchamos y no juzgamos
 La fase de beta testing fue uno de los puntos clave en esta última fase del desarrollo del proyecto. Nos permitió identificar una gran cantidad de bugs y recibir sugerencias valiosas sobre diferentes aspectos del diseño y la jugabilidad. Esto nos proporcionó una visión clara de las áreas que requerían mayor atención antes del lanzamiento.
 
 Gracias al feedback recopilado durante la beta, pudimos establecer objetivos específicos y prioritarios antes de continuar con el desarrollo. Esto incluyó ajustar la dificultad de algunos niveles, y la vida del jugador, y revisar algunas interfaces y mejorar la UX. Tener estos objetivos bien definidos desde temprano nos ayudó a optimizar los recursos y trabajar de manera más eficiente.
@@ -988,33 +989,27 @@ Después de las pruebas, continuamos recibiendo comentarios de que nos permitió
 
 Esta fase no solo reforzó la calidad técnica del producto. Al final, la fase de beta testing no fue solo una etapa de prueba, sino una oportunidad paraconocer las opiniones de gente con experiencia como consumidores de videojuegos y pulir el proyecto. 
 
-### 10.1.2 BDCU (Bouba District  Cinematic Universe)
+### 10.1.2 BDCU (Bouba District Cinematic Universe)
 El apunte que más se repitió en las pruebas de beta-testing fue que el juego necesitaba la inclusión de más contenido, ya que se hacía corto y algo repetitivo. Los nuevos personajes y escenarios estaban diseñados y modelados pero no estaban implementados en el juego. Al haber elegido el modelo de negocio freemium, con la posibilidad de optar a más contenido a través de pagos, nos fue sencillo integrar nuevas temáticas y temporadas.
 
 Logramos enriquecer significativamente la experiencia del jugador una vez integramos todo el contenido. Además desarrollamos otro escenario con temática Jazz y otros tres personajes diferentes. Esto no solo añadió variedad visual y narrativa, sino que también trajo consigo nuevas canciones y respondió a la falta de variedad en cuanto a la jugabilidad de Bouba District. 
 
 En retrospectiva, la decisión de priorizar esta integración fue clave para mejorar el proyecto final. Ahora, el juego no solo ofrece una experiencia más completa y entretenida, sino que también se alinea mejor con la visión creativa original del proyecto. Los nuevos personajes aportan diversidad y carisma, mientras que los escenarios adicionales enriquecen la jugabilidad y evitan que se sienta demasiado repetitivo.
 
-### 10.1.3
-
-
 ## 10.2 Lo que salió mal
-### 10.2.1 
+### 10.2.1 A la tercera va la vencida
 Al añadir más niveles y personajes, nos dimos cuenta de que la interfaz de usuario, que inicialmente había sido diseñada para el primer nivel, no encajaba bien con el nuevo contenido. Las interfaces estaban integradas en el diseño de ese primer escenario, lo que causó inconsistencias visuales cuando las aplicamos a los nuevos niveles. Esto nos obligó a rehacer casi todas las interfaces de usuario para que se adaptaran al estilo general que escogimos para el juego y no solamente a un nivel.
 
 También tuvimos que modificar el flujo de pantallas del juego. La cinemática se reproducía cada vez que el jugador quería comenzar una partida. Esto nos obligó a replantearnos la navegación para asegurarnos de que la cinemática solo se mostrara una vez al principio. Lo mismo sucedía con la selección de personaje. El jugador debía seleccionar al personaje cada vez que quería jugar. Para solucionarlo añadimos un botón de personalización en el menú inicial, y así reducir el número de pantallas por las que tiene que pasar el usuario hasta empezar a jugar.
 
 Aunque estas modificaciones resultaron ser necesarias, representaron un reto significativo y requirió ajustes importantes tanto en el diseño de las interfaces como en la lógica de navegación del juego. Esto nos ha permitido aprender cómo estructurar mejor el flujo de trabajo y las interfaces en fases de expansión futura.
 
-### 10.2.2
-
-### 10.2.3 Los objetivos están bien... si son realistas
+### 10.2.2 Los objetivos están bien... si son realistas
 A pesar de que teníamos objetivos claros desde el inicio del proyecto, uno de los mayores desafíos fue mantenernos enfocados en lo más importante. Queríamos  revisar cada aspecto del juego, influenciados por la gran cantidad de sugerencias recibidas. 
 
 En muchas ocasiones, perdimos tiempo en áreas que no aportaban un impacto directo a la calidad o a la experiencia del jugador. Esto, combinado con el tiempo limitado del que disponíamos, nos llevó a una sobrecarga de tareas que no se podían completar de manera óptima. En lugar de centrarnos en los arreglos más críticos y en las funciones esenciales para la jugabilidad, a veces nos enfocamos en pequeños detalles que no tenían el mismo nivel de prioridad.
 
 Esta diferencia entre nuestras ambiciones y la realidad del tiempo disponible fue un factor limitante. Con el tiempo limitado, debíamos ser más selectivos con las mejoras y ajustes a implementar. Este es un aspecto en el que definitivamente necesitamos mejorar para futuros proyectos, aprendiendo a gestionar mejor nuestras prioridades sin dejar de lado la calidad, pero con un enfoque más realista sobre los plazos y recursos disponibles.
-
 
 ## 10.3 Conclusión
 El realizar un juego completo ha sido una experiencia tanto dura como entretenida para nosotros. A lo largo del proyecto hemos aprendido que la planificación cuidadosa y el establecimiento de objetivos claros desde el principio son esenciales para mantener el enfoque durante todo el proceso.
