@@ -664,46 +664,53 @@ Mucosas criaturas cuyo objetivo será sembrar el caos allá por donde pasen, est
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Boubas.PNG" width="400">
 </p>
 
-#### 5.2.6.1 Bouba 1
+#### 5.2.6.1 Bouba Rosa
 Este bouba es una criatura gelatinosa de apariencia adorable, pero no te dejes engañar por su aspecto blando. Su cuerpo rosado y brillante lo hace parecer inofensivo. Su apariencia chiclosa engaña, es altamente tóxico y mortal al tacto para el que intente derrotarlo.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba1.PNG" width="200">
 </p>
 
-#### 5.2.6.2 Bouba 2
+#### 5.2.6.2 Bouba Verde
 Este Bouba es una criatura gelatinosa de un vibrante verde esmeralda. Su cuerpo, blando y brillante, da la impresión de ser inofensivo, pero no te dejes engañar. Aunque aparenta ser lento y despreocupado, tiene la sorprendente habilidad de deslizarse ágilmente por el terreno.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba2.PNG" width="200">
 </p>
 
-#### 5.2.6.3 Bouba 3
-Este Bouba azul es una criatura tímida y extremadamente asustadiza, con una forma alargada que evoca una vulnerabilidad innata. La combinación de su apariencia frágil y su eficaz método de defensa hace que el Bouba azul sea una criatura impredecible y peligrosa.
+#### 5.2.6.3 Bouba Azul
+Este Bouba es una criatura tímida y extremadamente asustadiza, con una forma alargada que evoca una vulnerabilidad innata. La combinación de su apariencia frágil y su eficaz método de defensa hace que el Bouba azul sea una criatura impredecible y peligrosa.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba3.PNG" width="200">
 </p>
 
-#### 5.2.6.4 Bouba 4
-Este Bouba amarillo, con su apariencia simple y ojos desorientados, es conocido por su torpeza y falta de inteligencia. Aunque no es el más astuto del grupo, el Bouba amarillo demuestra que incluso la simplicidad puede convertirse en una formidable defensa.
+#### 5.2.6.4 Bouba Amarillo
+Este Bouba, con su apariencia simple y ojos desorientados, es conocido por su torpeza y falta de inteligencia. Aunque no es el más astuto del grupo, el Bouba amarillo demuestra que incluso la simplicidad puede convertirse en una formidable defensa.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba4.PNG" width="200">
 </p>
 
-#### 5.2.6.5 Bouba 5
+#### 5.2.6.5 Bouba Eléctrico
 Este Bouba azul es una criatura amorfa y altamente volátil, cuya forma es tan variable como su temperamento. Su combinación de movilidad impredecible y potencial eléctrico lo establece como una amenaza intrigante, capaz de convertir cualquier enfrentamiento en un espectáculo electrizante.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba5.PNG" width="200">
 </p>
 
-#### 5.2.6.6 Bouba 6
+#### 5.2.6.6 Bouba Cuadrado
 Este Bouba amarillo y cuadrado destaca por su extraña estructura geométrica, que contrasta sorprendentemente con su cuerpo gelatinoso. Sus dientes, que sobresalen de su cara amarilla, son su principal arma, utilizados tanto para morder a sus oponentes como para defenderse de cualquier amenaza. 
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouba6.PNG" width="200">
+</p>
+
+#### 5.2.6.6 Bouboss
+Este Bouba amarillo es el más peligroso. Es el resultado de una combinación y mutación de varios Boubas. Aunque avanza lentamente, es duro de derrotar por su tamaño. Un descuido hará que pierdas una gran cantidad de vida.
+
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Bouboss.PNG" width="200">
 </p>
 
 ## 5.3 Entornos y lugares
@@ -785,7 +792,7 @@ Se incluirán también sonidos en el entorno como el murmullo de la ciudad y el 
 
 # 7. Interfaz
 ## 7.1 Diseños básicos de los menús
-Las interfaces están integradas dentro del escenario. Cuentan con botones estilo cartoon que siguen la estética general del juego y transmiten la atmósfera urbana del nivel principal.
+Las interfaces combinan elementos 2D y 3D. Algunas están creadas con elementos estilo cartoo y otras están integradas dentro del escenario. Siguen la estética general del juego.
 
 <p align="center">
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/PantallaInicio.PNG" width="700">
