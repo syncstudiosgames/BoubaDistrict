@@ -975,9 +975,7 @@ En esta entrega me he centrado en la integracion de nuevos personajes, iluminaci
 Por último estacar también la implementacion de lighting como un ciclo de día y noche que mejoró la inmersión y estética del juego.
 
 ### Lucía
-
-
-
+Para esta última fase del proyecto los requerimientos se centraban mayoritariamente en pulir la experiencia de juego y trabajar para que los sistemas fueran más reactivos y satisfactorios, por lo que he estado enfocada en este ámbito. Una buena evaluación y priorización de las nuevas características permitió ajustarnos al tiempo de desarrollo. El flujo de trabajo fue fluido y no se presentaron demasiadas dificultades, solo algunos componentes -con un peor diseño- presentaron un reto a la hora de mantenerlos o expandirlos.
 
 ## Trabajo grupal
 ## 10.1 Lo que salió bien
