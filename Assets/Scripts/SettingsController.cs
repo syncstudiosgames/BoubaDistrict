@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class SettingsController : MonoBehaviour
 {
     private Slider musicSlider;
-    private Slider effectsSlider;
+    //private Slider effectsSlider;
     private Button acceptButton;
 
     private const string MusicVolumeKey = "MusicVolume";
@@ -25,10 +25,11 @@ public class SettingsController : MonoBehaviour
         }
 
         musicSlider = FindChildByName<Slider>("SliderMusic");
-        effectsSlider = FindChildByName<Slider>("SliderEffects");
+        //effectsSlider = FindChildByName<Slider>("SliderEffects");
         acceptButton = FindChildByName<Button>("AcceptButton");
 
-        if (musicSlider == null || effectsSlider == null || acceptButton == null)
+        if (musicSlider == null || acceptButton == null)
+        //if (musicSlider == null || effectsSlider == null || acceptButton == null)
         {
             Debug.LogError("No se pudieron encontrar los componentes necesarios. Revisa la jerarquía del prefab.");
             return;
@@ -36,7 +37,7 @@ public class SettingsController : MonoBehaviour
 
         acceptButton.onClick.AddListener(OnAcceptButtonClicked);
         musicSlider.onValueChanged.AddListener(OnMusicSliderChanged);
-        effectsSlider.onValueChanged.AddListener(OnEffectsSliderChanged);
+        //effectsSlider.onValueChanged.AddListener(OnEffectsSliderChanged);
 
         LoadSettings();
     }
@@ -69,9 +70,10 @@ public class SettingsController : MonoBehaviour
 
     public void SaveSettings()
     {
-        Debug.Log($"Guardando ajustes: Música = {musicSlider.value}, Efectos = {effectsSlider.value}");
+        Debug.Log($"Guardando ajustes: Música = {musicSlider.value}");
+        //Debug.Log($"Guardando ajustes: Música = {musicSlider.value}, Efectos = {effectsSlider.value}");
         PlayerPrefs.SetFloat(MusicVolumeKey, musicSlider.value);
-        PlayerPrefs.SetFloat(EffectsVolumeKey, effectsSlider.value);
+        //PlayerPrefs.SetFloat(EffectsVolumeKey, effectsSlider.value);
         PlayerPrefs.Save();
 
         ApplySettings();
@@ -85,10 +87,11 @@ public class SettingsController : MonoBehaviour
         float musicVolume = PlayerPrefs.HasKey(MusicVolumeKey) ? PlayerPrefs.GetFloat(MusicVolumeKey) : defaultMusic;
         float effectsVolume = PlayerPrefs.HasKey(EffectsVolumeKey) ? PlayerPrefs.GetFloat(EffectsVolumeKey) : defaultEffects;
 
-        Debug.Log($"Cargando ajustes: Música = {musicVolume}, Efectos = {effectsVolume}");
+        Debug.Log($"Cargando ajustes: Música = {musicVolume}");
+        //Debug.Log($"Cargando ajustes: Música = {musicVolume}, Efectos = {effectsVolume}");
 
         musicSlider.value = musicVolume;
-        effectsSlider.value = effectsVolume;
+        //effectsSlider.value = effectsVolume;
 
         ApplySettings();
     }
@@ -98,7 +101,8 @@ public class SettingsController : MonoBehaviour
     {
         AudioListener.volume = musicSlider.value;
 
-        Debug.Log($"Aplicados ajustes: Música = {musicSlider.value}, Efectos = {effectsSlider.value}");
+        Debug.Log($"Aplicados ajustes: Música = {musicSlider.value}");
+        //Debug.Log($"Aplicados ajustes: Música = {musicSlider.value}, Efectos = {effectsSlider.value}");
     }
 
     private void OnMusicSliderChanged(float value)
@@ -106,14 +110,14 @@ public class SettingsController : MonoBehaviour
         AudioListener.volume = value;
     }
 
-    private void OnEffectsSliderChanged(float value)
-    {
-        Debug.Log($"Volumen de efectos ajustado a: {value}");
-    }
+    //private void OnEffectsSliderChanged(float value)
+    //{
+    //    Debug.Log($"Volumen de efectos ajustado a: {value}");
+    //}
 
     public void OnAcceptButtonClicked()
     {
         SaveSettings();
-        gameObject.SetActive(false); 
+        gameObject.SetActive(false);
     }
 }
