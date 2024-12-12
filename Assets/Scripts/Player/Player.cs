@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -8,6 +10,11 @@ public class Player : MonoBehaviour
     [SerializeField] int _maxHealthPoints;
     int _healthPoints;
     event Action _onHealthValueChange;
+
+    [Header("UI Damage Overlay")]
+    [SerializeField] private Image damageOverlay; 
+    [SerializeField] private float overlayDuration = 0.5f; 
+    [SerializeField] private float overlayMaxAlpha = 0.5f;
 
     public int MaxHealthPoints { get { return _maxHealthPoints; } }
     public int HealthPoints { get { return _healthPoints; } }
@@ -71,6 +78,13 @@ public class Player : MonoBehaviour
 
         _enemyManager.OnEnemyCured += AddHealthPoints;
         _enemyManager.OnEnemyHit += TakeDamage;
+
+        if (damageOverlay != null)
+        {
+            var color = damageOverlay.color;
+            color.a = 0;
+            damageOverlay.color = color;
+        }
     }
 
     void AddHealthPoints(int healthPoints)
@@ -107,5 +121,47 @@ public class Player : MonoBehaviour
         }
 
         _onHealthValueChange?.Invoke();
+        TriggerDamageEffect();
+    }
+
+    private void TriggerDamageEffect()
+    {
+        if (damageOverlay != null)
+        {
+            StartCoroutine(FadeOverlay());
+        }
+    }
+
+    private IEnumerator FadeOverlay()
+    {
+        // Aparecer
+        float elapsedTime = 0;
+        while (elapsedTime < overlayDuration / 2)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, overlayMaxAlpha, elapsedTime / (overlayDuration / 2));
+            SetOverlayAlpha(alpha);
+            yield return null;
+        }
+
+        // Desaparecer
+        elapsedTime = 0;
+        while (elapsedTime < overlayDuration / 2)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Lerp(overlayMaxAlpha, 0, elapsedTime / (overlayDuration / 2));
+            SetOverlayAlpha(alpha);
+            yield return null;
+        }
+    }
+
+    private void SetOverlayAlpha(float alpha)
+    {
+        if (damageOverlay != null)
+        {
+            var color = damageOverlay.color;
+            color.a = alpha;
+            damageOverlay.color = color;
+        }
     }
 }
