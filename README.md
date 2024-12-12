@@ -968,6 +968,7 @@ Una vez más he sido la respnonsable de añadir el nuevo contenido al GDD y actu
 A lo largo del desarrollo, he aprendido la importancia de equilibrio entre tareas técnicas y de gestión para garantizar el trabajar de manera más efectiva. 
 
 ### Francisco
+En esta ocasión, trabajé en las animaciones de los boubas caminando. El principal desafío fue dotar de personalidad y características únicas a cada uno, a pesar de que todos eran slimes. Esto implicó experimentar con muchos movimientos diferenciados que reflejaran su esencia individual,  a la hora de implementar las animaciones lo más complicado fue crear un script que eligiese el “animator controller” correcto dependiendo del enemigo generado. Además, modelé a Kuki, donde me enfoqué en cuidar los detalles para lograr un modelo atractivo y bien optimizado.
 
 ### Ana
 En esta entrega me he centrado en la integracion de nuevos personajes, iluminación de los escenarios y en resolvier bugs de la beta. Entre los desafios que he encontrado en esta parte del proyecto mencionaría la incorporación de nuevos personajes, que fue un reto significativo, ya que implicó no solo gestionar su selección, sino también garantizar que la elección persistiera al cambiar entre escenas como la nueva escena de incio. Se utilizó un sistema basado en PlayerPrefs para almacenar temporalmente datos como el índice del personaje seleccionado, combinándolo con un gestor centralizado que aseguraba la carga adecuada en cada escena. Esto incluyó ajustes en la lógica del CharacterSelectionManager y la asignación dinámica de prefabs.
