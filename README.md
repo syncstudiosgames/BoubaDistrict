@@ -957,6 +957,10 @@ Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático
 ## Trabajo individual
 
 ### Laura
+Para la entrega de la Gold Master me centré en rediseñar todas las interfaces del juego. Al principio no teníamos clara la personalidad concreta del juego en su conjunto, por lo que la UI era muy genérica, a parte del estilo cartoon no teníamos nada especial. Sin embargo, mientras trabajábamos en el Pitch nos dimos cuenta que nos encantaba el estilo artístico de los comics. Por lo que me centré en diseñarlas e implementarlas, así como actualizar la navegación de las diferentes escenas para una experiencia más fluida. Además, implementé la pantalla de elección de mapas e hice los diferentes escenarios jugables, fue un placer verlo funcionando por fin.
+
+Nada fue especialmente díficil, por destacar diría aprender a introducir elementos 3D en los canvas de la UI. Desconocía completamente el proceso, pero fue muy satisfactorio implementar la skin elegida del jugador dentro del menú de inicio.
+El desarrollo de la gold ha sido fluido y satisfactorio.
 
 ### Marta
 En esta ocasión me he encargado de modelar el último escenario e iluminarlo con luces bakeadas, de las publicaciones en redes sociales y de actualizar el Game Design Document.
@@ -1003,7 +1007,7 @@ También tuvimos que modificar el flujo de pantallas del juego. La cinemática s
 
 Aunque estas modificaciones resultaron ser necesarias, representaron un reto significativo y requirió ajustes importantes tanto en el diseño de las interfaces como en la lógica de navegación del juego. Esto nos ha permitido aprender cómo estructurar mejor el flujo de trabajo y las interfaces en fases de expansión futura.
 
-### 10.2.2 Los objetivos están bien... si son realistas
+### 10.2.2 Los objetivos están bien... sí son realistas
 A pesar de que teníamos objetivos claros desde el inicio del proyecto, uno de los mayores desafíos fue mantenernos enfocados en lo más importante. Queríamos  revisar cada aspecto del juego, influenciados por la gran cantidad de sugerencias recibidas. 
 
 En muchas ocasiones, perdimos tiempo en áreas que no aportaban un impacto directo a la calidad o a la experiencia del jugador. Esto, combinado con el tiempo limitado del que disponíamos, nos llevó a una sobrecarga de tareas que no se podían completar de manera óptima. En lugar de centrarnos en los arreglos más críticos y en las funciones esenciales para la jugabilidad, a veces nos enfocamos en pequeños detalles que no tenían el mismo nivel de prioridad.
