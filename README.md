@@ -951,16 +951,88 @@ Se realizarán pruebas en todos los niveles para encontrar errores o aspectos qu
 ## 9.5 Fecha de lanzamiento
 El juego se publicará oficialmente el **17 diciembre.**
 
-# 10. Post-Mortem
+# 10. Estrategias de márketing, publicidad y lanzamiento 
+ 
+Para garantizar el éxito de nuestro juego, es necesario generar interés, construir una comunidad activa y promocionar nuestro producto en el mercado. A continuación, se presenta un plan estratégico para promocionar Bouba District y darlo a conocer.
+
+## 10.1 Estrategia de márketing
+### 10.1.1 DAFO
+<p align="center">
+<img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/DAFO.PNG" width="700">
+</p>
+
+El análisis DAFO realizado para Bouba District nos ha permitido identificar elementos clave que han guiado nuestras decisiones durante el desarrollo y la promoción del juego. Entre nuestras principales fortalezas destaca el concepto innovador que combina mecánicas de tower defense y juegos de ritmo, ofreciendo una experiencia atractiva y diferenciadora para el público casual. Este punto, unido a un estilo visual llamativo y a la accesibilidad desde tanto PCs como móviles, nos posiciona favorablemente para captar la atención de jugadores interesados en propuestas creativas y dinámicas.
+
+Sin embargo, reconocemos que nuestra inexperiencia en la industria y las limitaciones de tiempo y recursos han representado retos significativos. Por ello, ha sido fundamental acotar el alcance del proyecto y priorizar una jugabilidad fluida y accesible para el público objetivo.
+
+Las oportunidades identificadas, como el crecimiento del mercado casual, la viralización en redes sociales y la posibilidad de colaborar con músicos emergentes, nos ofrecen caminos claros para maximizar la visibilidad y el impacto de Bouba District. Al mismo tiempo, somos conscientes de las amenazas externas, como la saturación del mercado y las expectativas de calidad, que deberán ser gestionadas con una planificación cuidadosa y una validación constante mediante pruebas con los jugadores.
+
+Este análisis nos ha permitido avanzar con claridad y confianza hacia un producto final que cumple tanto con nuestras expectativas como con las de nuestros usuarios.
+
+## 10.2 Estrategia del modelo de monetización
+El modelo de monetización y los precios establecidos para Bouba District se fundamentan en un enfoque que busca maximizar los ingresos sin afectar negativamente la experiencia del jugador. Hemos optado por precios accesibles y un modelo híbrido (pase de batalla + moneda virtual) para maximizar tanto la satisfacción del jugador como los ingresos potenciales.
+
+### 10.2.1 Pase de Batalla: 4,99€
+Optamos por establecer un precio competitivo para jugadores casuales. Los pases de batalla en este rango de precio son percibidos como asequibles. El pase de batalla incluye niveles y accesorios temáticos que cambian regularmente, incentivando la compra al generar urgencia (fear of missing out o FOMO). Este modelo fomenta la participación constante de los jugadores, ya que su interés se renueva con cada actualización de contenido. Esto mejora la retención y compromiso, claves para el éxito de juegos competitivos.
+
+### 10.2.2 Moneda virtual: Modelo escalonado
+#### 10.2.2.1 Paquete pequeño (0,99€ - 100 monedas)
+Este precio permite que incluso jugadores más reticentes a gastar dinero prueben el sistema de compras en el juego, reduciendo la barrera psicológica del gasto. En juegos casuales, los paquetes de menor precio generan un volumen significativo de transacciones, impulsando los ingresos totales.
+
+#### 10.2.2.2 Paquete mediano (2,99€ - 350 monedas)
+El paquete mediano ofrece más valor por euro, animando a los jugadores a gastar un poco más para obtener mayores beneficios. Este enfoque psicológico impulsa el upselling al ofrecer una "mejor oferta". Los precios moderados permiten a los jugadores personalizar su experiencia comprando cosméticos o ventajas, sin desbalancear la competitividad del juego.
+
+## 10.3 Estrategia de branding y posicionamiento
+El establecer una narrativa clara que destaque lo que hace único a nuestro videojuego es esencial. Esto incluye las mecánicas, el estilo artístico, y la historia del universo de Bouba District. El diseño de la identidad visual es acorde al de las interfaces del juego para mantener un branding consistente. El logotipo, los colores y la tipografía de los elementos que promocionemos también serán afines al juego. Es fundamental establecer un tono coherente para todo el contenido promocional. 
+ 
+## 10.4 Contenido para redes sociales
+Publicamos teasers y tráilers mostrando mecánicas, ambientación y puntos clave de la historia, junto con clips de gameplay para resaltar momentos emocionantes. También compartimos bocetos, modelos iniciales y concept art creados durante el desarrollo para generar conexión emocional con los fans.
+ 
+Más adelante, crearemos encuestas y haremos preguntas relacionadas con el juego para involucrar a los seguidores. Tomaremos inspiración en la votación de Mobs de Minecraft. Mojang permite a la comunidad votar entre tres nuevas criaturas cuál será la incluida en la última actualización. El público de Bouba District podrá tener voz en la elección de elementos de las siguientes temporadas, como personajes, temáticas de los niveles o canciones.
+ 
+Además, siguiendo la estrategia de Innersloth (creadores de Among Us), compartiremos memes y trataremos de generar contenido viral tanto sobre el juego como sobre los miembros del equipo y el proceso de desarrollo.
+ 
+Las plataformas en las que nos publicitamos son:
+- **Instagram:** contenido visual y dinámico.
+- **Twitter:** actualizaciones del desarrollo e interacciones rápidas.
+- **YouTube:** tráileres, gameplay extendido y contenido detrás de las cámaras.
+- **Linkedin:** tareas concretas del equipo de desarrollo desde un enfoque más profesional y técnico.
+
+## 10.5 Estrategia publicitaria
+Haremos uso de las siguientes herramientas para conseguir el mayor número de usuarios posible.
+- **Instagram y Facebook Ads:** usaremos imágenes impactantes y vídeos cortos para campañas de conversión y conocimiento.
+- **TikTok Ads:** diseñaremos contenido en formato nativo para la plataforma y nos enfocaremos en el público joven.
+- **Google Ads:** Usaremos campañas de búsqueda y display para aparecer en consultas relacionadas con juegos similares. Posicionaremos banners en páginas relacionadas con el juego y tecnología.
+- **Colaboraciones con influencers:** identificaremos microinfluencers y streamers que jueguen a títulos similares y ofreceremos demos o copias del juego para que hagan directos y reseñas. Negociaremos vídeos patrocinados con creadores más grandes para generar un alcance más orgánico en sus comunidades.
+ 
+## 10.6 Creación y mantenimiento de comunidad
+Crearemos un servidor de Discord para construir una comunidad activa donde los jugadores puedan compartir sus experiencias, reportar bugs y estar al tanto de las actualizaciones, incluso conocer adelantos exclusivos.
+ 
+También diseñaremos retos en redes sociales para ganar premios dentro del juego, como skins, acceso anticipado, etc. Participaremos en foros de temáticas relevantes y publicaremos devlogs en plataformas como Itch.io o IndieDB para mantener interesados a los seguidores que les gusta más el conocimiento de las especificaciones técnicas del desarrollo.
+ 
+## 10.7 Estrategia de lanzamiento y post-lanzamiento
+### 10.7.1 Pre-Lanzamiento
+Subimos el tráiler en YouTube y en redes sociales. Compartimos un tráiler impactante con fecha de lanzamiento. El juego ha sido publicado en Itch.io, junto con una página atractiva, capturas de pantalla, descripción del juego y links a nuestras redes sociales.
+ 
+### 10.7.2 Post-Lanzamiento
+Mantendremos el interés con las actualizaciones de los pases de temporada y eventos. Compartiremos clips de jugadores y reseñas en redes sociales e incentivaremos a los fans a compartir sus experiencias e interactuaremos con ellos de manera directa, hasta ofreciendo menciones y premios.
+
+## 10.8 Medición de resultados
+Para mantenernos informados sobre las estadísticas de la estrategia de marketing utilzaremos las siguientes herramientas.
+ 
+- **Google Analytics:** para medir el tráfico en la página del juego.
+- **Métricas de redes sociales:** para analizar el engagement o interacción, alcance y coversiones.
+- **Feedback directo:** recopilaremos comentarios de los jugadores en Discord y redes sociales para ajustar la estrategia y mejorar el juego de manera activa.
+ 
+Con este plan, trataremos de posicionar Bouba District, captar la atención de jugadores potenciales y construir una comunidad sólida y activa para garantizar su éxito a largo plazo.
+
+
+# 11. Post-Mortem
 Como desarrolladores, nuestro objetivo ha sido crear un juego completo temático de manera profesional. Buscamos crear una experiencia divertida que pudiera ser comercializada y aprender a solucionar los conflictos que fueran surgiendo a lo largo del desarrollo.
 
 ## Trabajo individual
 
 ### Laura
-Para la entrega de la Gold Master me centré en rediseñar todas las interfaces del juego. Al principio no teníamos clara la personalidad concreta del juego en su conjunto, por lo que la UI era muy genérica, a parte del estilo cartoon no teníamos nada especial. Sin embargo, mientras trabajábamos en el Pitch nos dimos cuenta que nos encantaba el estilo artístico de los comics. Por lo que me centré en diseñarlas e implementarlas, así como actualizar la navegación de las diferentes escenas para una experiencia más fluida. Además, implementé la pantalla de elección de mapas e hice los diferentes escenarios jugables, fue un placer verlo funcionando por fin.
-
-Nada fue especialmente díficil, por destacar diría aprender a introducir elementos 3D en los canvas de la UI. Desconocía completamente el proceso, pero fue muy satisfactorio implementar la skin elegida del jugador dentro del menú de inicio.
-El desarrollo de la gold ha sido fluido y satisfactorio.
 
 ### Marta
 En esta ocasión me he encargado de modelar el último escenario e iluminarlo con luces bakeadas, de las publicaciones en redes sociales y de actualizar el Game Design Document.
@@ -982,8 +1054,8 @@ Por último estacar también la implementacion de lighting como un ciclo de día
 Para esta última fase del proyecto los requerimientos se centraban mayoritariamente en pulir la experiencia de juego y trabajar para que los sistemas fueran más reactivos y satisfactorios, por lo que he estado enfocada en este ámbito. Una buena evaluación y priorización de las nuevas características permitió ajustarnos al tiempo de desarrollo. El flujo de trabajo fue fluido y no se presentaron demasiadas dificultades, solo algunos componentes -con un peor diseño- presentaron un reto a la hora de mantenerlos o expandirlos.
 
 ## Trabajo grupal
-## 10.1 Lo que salió bien
-### 10.1.1 Escuchamos y no juzgamos
+## 11.1 Lo que salió bien
+### 11.1.1 Escuchamos y no juzgamos
 La fase de beta testing fue uno de los puntos clave en esta última fase del desarrollo del proyecto. Nos permitió identificar una gran cantidad de bugs y recibir sugerencias valiosas sobre diferentes aspectos del diseño y la jugabilidad. Esto nos proporcionó una visión clara de las áreas que requerían mayor atención antes del lanzamiento.
 
 Gracias al feedback recopilado durante la beta, pudimos establecer objetivos específicos y prioritarios antes de continuar con el desarrollo. Esto incluyó ajustar la dificultad de algunos niveles, y la vida del jugador, y revisar algunas interfaces y mejorar la UX. Tener estos objetivos bien definidos desde temprano nos ayudó a optimizar los recursos y trabajar de manera más eficiente.
@@ -992,29 +1064,29 @@ Después de las pruebas, continuamos recibiendo comentarios de que nos permitió
 
 Esta fase no solo reforzó la calidad técnica del producto. Al final, la fase de beta testing no fue solo una etapa de prueba, sino una oportunidad paraconocer las opiniones de gente con experiencia como consumidores de videojuegos y pulir el proyecto. 
 
-### 10.1.2 BDCU (Bouba District Cinematic Universe)
+### 11.1.2 BDCU (Bouba District Cinematic Universe)
 El apunte que más se repitió en las pruebas de beta-testing fue que el juego necesitaba la inclusión de más contenido, ya que se hacía corto y algo repetitivo. Los nuevos personajes y escenarios estaban diseñados y modelados pero no estaban implementados en el juego. Al haber elegido el modelo de negocio freemium, con la posibilidad de optar a más contenido a través de pagos, nos fue sencillo integrar nuevas temáticas y temporadas.
 
 Logramos enriquecer significativamente la experiencia del jugador una vez integramos todo el contenido. Además desarrollamos otro escenario con temática Jazz y otros tres personajes diferentes. Esto no solo añadió variedad visual y narrativa, sino que también trajo consigo nuevas canciones y respondió a la falta de variedad en cuanto a la jugabilidad de Bouba District. 
 
 En retrospectiva, la decisión de priorizar esta integración fue clave para mejorar el proyecto final. Ahora, el juego no solo ofrece una experiencia más completa y entretenida, sino que también se alinea mejor con la visión creativa original del proyecto. Los nuevos personajes aportan diversidad y carisma, mientras que los escenarios adicionales enriquecen la jugabilidad y evitan que se sienta demasiado repetitivo.
 
-## 10.2 Lo que salió mal
-### 10.2.1 A la tercera va la vencida
+## 11.2 Lo que salió mal
+### 11.2.1 A la tercera va la vencida
 Al añadir más niveles y personajes, nos dimos cuenta de que la interfaz de usuario, que inicialmente había sido diseñada para el primer nivel, no encajaba bien con el nuevo contenido. Las interfaces estaban integradas en el diseño de ese primer escenario, lo que causó inconsistencias visuales cuando las aplicamos a los nuevos niveles. Esto nos obligó a rehacer casi todas las interfaces de usuario para que se adaptaran al estilo general que escogimos para el juego y no solamente a un nivel.
 
 También tuvimos que modificar el flujo de pantallas del juego. La cinemática se reproducía cada vez que el jugador quería comenzar una partida. Esto nos obligó a replantearnos la navegación para asegurarnos de que la cinemática solo se mostrara una vez al principio. Lo mismo sucedía con la selección de personaje. El jugador debía seleccionar al personaje cada vez que quería jugar. Para solucionarlo añadimos un botón de personalización en el menú inicial, y así reducir el número de pantallas por las que tiene que pasar el usuario hasta empezar a jugar.
 
 Aunque estas modificaciones resultaron ser necesarias, representaron un reto significativo y requirió ajustes importantes tanto en el diseño de las interfaces como en la lógica de navegación del juego. Esto nos ha permitido aprender cómo estructurar mejor el flujo de trabajo y las interfaces en fases de expansión futura.
 
-### 10.2.2 Los objetivos están bien... sí son realistas
+### 11.2.2 Los objetivos están bien... si son realistas
 A pesar de que teníamos objetivos claros desde el inicio del proyecto, uno de los mayores desafíos fue mantenernos enfocados en lo más importante. Queríamos  revisar cada aspecto del juego, influenciados por la gran cantidad de sugerencias recibidas. 
 
 En muchas ocasiones, perdimos tiempo en áreas que no aportaban un impacto directo a la calidad o a la experiencia del jugador. Esto, combinado con el tiempo limitado del que disponíamos, nos llevó a una sobrecarga de tareas que no se podían completar de manera óptima. En lugar de centrarnos en los arreglos más críticos y en las funciones esenciales para la jugabilidad, a veces nos enfocamos en pequeños detalles que no tenían el mismo nivel de prioridad.
 
 Esta diferencia entre nuestras ambiciones y la realidad del tiempo disponible fue un factor limitante. Con el tiempo limitado, debíamos ser más selectivos con las mejoras y ajustes a implementar. Este es un aspecto en el que definitivamente necesitamos mejorar para futuros proyectos, aprendiendo a gestionar mejor nuestras prioridades sin dejar de lado la calidad, pero con un enfoque más realista sobre los plazos y recursos disponibles.
 
-## 10.3 Conclusión
+## 11.3 Conclusión
 El realizar un juego completo ha sido una experiencia tanto dura como entretenida para nosotros. A lo largo del proyecto hemos aprendido que la planificación cuidadosa y el establecimiento de objetivos claros desde el principio son esenciales para mantener el enfoque durante todo el proceso.
 
 Hemos aprendido también que es necesario recibir retroalimentación para mejorar la calidad del juego, y observar cómo juega la gente. Esto nos ha permitido identificar áreas críticas que deben ser corregidas antes del lanzamiento o implementar características que no se nos habían ocurrido de primera instancia.
