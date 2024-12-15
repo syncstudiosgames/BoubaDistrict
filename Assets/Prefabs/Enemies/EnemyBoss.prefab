@@ -854,6 +854,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animacion_Bouba4_Final
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8eedd028e2535442a32b2319bdafa44, type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
