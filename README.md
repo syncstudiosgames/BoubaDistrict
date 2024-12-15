@@ -639,22 +639,22 @@ Kika es una joven carismática con una voz capaz de cautivar a cualquiera que la
 <img src="https://github.com/syncstudiosgames/BoubaDistrict/blob/main/Assets/GDDImages/Kika.PNG" width="300">
 </p>
 
-### Koko & Co.
-### 5.2.6 Koko - Vocalista
-Koko es una vocalista deslumbrante y llena de energía. Irradia carisma y pasión. Su estilo musical combina ritmos vibrantes de soul y jazz. Con una voz potente y matizada, Koko sabe cómo convertirse en el alma de cada presentación.
+### Triple J Junction
+### 5.2.6 Jess - Vocalista
+Jess es una vocalista deslumbrante y llena de energía. Irradia carisma y pasión. Su estilo musical combina ritmos vibrantes de soul y jazz. Con una voz potente y matizada, Koko sabe cómo convertirse en el alma de cada presentación.
 
-- **Descripción física:** Koko viste un vestido amarillo ajustado que destaca su figura y brilla bajo las luces del escenario. El cabello afro voluminoso es su rasgo más característico.
+- **Descripción física:** Jess viste un vestido amarillo ajustado que destaca su figura y brilla bajo las luces del escenario. El cabello afro voluminoso es su rasgo más característico.
 
-### 5.2.7 Koke - Violonchelista
-Koke es un talentoso violonchelista cuyo talento y presencia en el escenario no dejan a nadie indiferente. Su energía es imponente, y su capacidad para mezclar la tradición con la innovación lo convierte en un artista excepcional.
+### 5.2.7 Jin - Violonchelista
+Jin es un talentoso violonchelista cuyo talento y presencia en el escenario no dejan a nadie indiferente. Su energía es imponente, y su capacidad para mezclar la tradición con la innovación lo convierte en un artista excepcional.
 
-- **Descripción física:** Koke es un hombre alto, de complexión delgada. Su cabello corto y bien cuidado es de un negro azabache, y su camisa blanca, tirantes negros y elegantes pantalones de vestir le dan un aire sofisticado y profesional.
+- **Descripción física:** Jin es un hombre alto, de complexión delgada. Su cabello corto y bien cuidado es de un negro azabache, y su camisa blanca, tirantes negros y elegantes pantalones de vestir le dan un aire sofisticado y profesional.
 
-### 5.2.8 Kuko - Trompetista
+### 5.2.8 Joe - Trompetista
 
-Kuko es un trompetista de espíritu alegre y contagioso, cuya música refleja su personalidad chispeante. Es el corazón del grupo, aportando siempre buen humor y un toque único en cada actuación.
+Joe es un trompetista de espíritu alegre y contagioso, cuya música refleja su personalidad chispeante. Es el corazón del grupo, aportando siempre buen humor y un toque único en cada actuación.
 
-- **Descripción física:** Kuko es bajito, con una figura algo robusta. Viste siempre con una camisa naranja estampada, acompañada de tirantes y unos pantalones de vestir marrón claro, logrando un look que mezcla lo retro y lo alegre. 
+- **Descripción física:** Joe es bajito, con una figura algo robusta. Viste siempre con una camisa naranja estampada, acompañada de tirantes y unos pantalones de vestir marrón claro, logrando un look que mezcla lo retro y lo alegre. 
 
 
 ### 5.2.6 Boubas
